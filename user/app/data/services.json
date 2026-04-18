@@ -1,0 +1,7 @@
+{
+  "selectService": {
+    "batteryReplacement": "Battery Replacement",
+    "tyreReplacement": "Tyre Replacement",
+    "engineServices": "Engine Services"
+  }
+}
