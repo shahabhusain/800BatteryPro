@@ -11,15 +11,13 @@ const Trusted = () => {
     sectionTitle: "What Our Customers Say",
     headingPrefix: "Trusted by",
     headingHighlight: "Drivers Everywhere",
-    testimonial: "As an SEO consultant, I needed a website that not only looked professional but also performed exceptionally in search rankings."
   };
 
-  // Arabic content
+  // Arabic content (translated reviews)
   const arabicContent = {
     sectionTitle: "ماذا يقول عملاؤنا",
     headingPrefix: "موثوق من قبل",
     headingHighlight: "السائقين في كل مكان",
-    testimonial: "كمستشار تحسين محركات البحث، كنت بحاجة إلى موقع ويب لا يبدو احترافيًا فحسب، بل يؤدي أيضًا بشكل استثنائي في ترتيب البحث."
   };
 
   const content = locale === 'en' ? englishContent : arabicContent;
@@ -27,27 +25,93 @@ const Trusted = () => {
   const cardsData = [
     {
       image: 'https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200',
-      name: locale === 'en' ? 'Briar Martin' : 'بريار مارتن',
-      title: locale === 'en' ? 'Project Manager | WFC' : 'مدير مشروع | WFC',
+      name: 'Ahmed Al Mansoori',
+      title: locale === 'en' ? 'Real Estate Consultant (Dubai)' : 'مستشار عقاري (دبي)',
       rating: 5,
+      testimonial: locale === 'en' 
+        ? 'Fast response and very professional. Battery replaced in minutes. Highly reliable service.'
+        : 'استجابة سريعة واحترافية للغاية. تم استبدال البطارية في دقائق. خدمة موثوقة للغاية.'
     },
     {
       image: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=200',
-      name: locale === 'en' ? 'Avery Johnson' : 'إيفري جونسون',
-      title: locale === 'en' ? 'Project Manager | WFC' : 'مدير مشروع | WFC',
+      name: 'Fatima Al Nuaimi',
+      title: locale === 'en' ? 'HR Manager (Abu Dhabi)' : 'مديرة موارد بشرية (أبوظبي)',
       rating: 5,
+      testimonial: locale === 'en'
+        ? 'Called late night and they arrived quickly. Smooth and hassle-free experience.'
+        : 'اتصلت في وقت متأخر من الليل وقد وصلوا بسرعة. تجربة سلسة وخالية من المتاعب.'
     },
     {
       image: 'https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=200&auto=format&fit=crop&q=60',
-      name: locale === 'en' ? 'Jordan Lee' : 'جوردان لي',
-      title: locale === 'en' ? 'Project Manager | WFC' : 'مدير مشروع | WFC',
+      name: 'James Carter',
+      title: locale === 'en' ? 'Project Engineer (Dubai)' : 'مهندس مشاريع (دبي)',
       rating: 5,
+      testimonial: locale === 'en'
+        ? 'Quick jump-start plus full diagnostics. Clear explanation and great service.'
+        : 'تشغيل سريع للبطارية بالإضافة إلى تشخيص كامل. شرح واضح وخدمة رائعة.'
     },
     {
       image: 'https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=200&auto=format&fit=crop&q=60',
-      name: locale === 'en' ? 'Casey Kim' : 'كيسي كيم',
-      title: locale === 'en' ? 'Project Manager | WFC' : 'مدير مشروع | WFC',
+      name: 'Aisha Al Mazrouei',
+      title: locale === 'en' ? 'Entrepreneur (Abu Dhabi)' : 'رائدة أعمال (أبوظبي)',
       rating: 5,
+      testimonial: locale === 'en'
+        ? 'Used them twice—always on time and efficient. Very consistent service.'
+        : 'استخدمتهم مرتين - دائمًا في الوقت المحدد وفعالين. خدمة متسقة للغاية.'
+    },
+    {
+      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&auto=format&fit=crop&q=60',
+      name: 'Daniel Schmidt',
+      title: locale === 'en' ? 'Automotive Consultant (Dubai)' : 'مستشار سيارات (دبي)',
+      rating: 5,
+      testimonial: locale === 'en'
+        ? 'Impressed with their advanced diagnostics. Found the issue instantly.'
+        : 'مبهر بتشخيصهم المتقدم. وجدوا المشكلة فورًا.'
+    },
+    {
+      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&auto=format&fit=crop&q=60',
+      name: 'Khalid Al Falasi',
+      title: locale === 'en' ? 'Logistics Manager (Dubai)' : 'مدير لوجستيات (دبي)',
+      rating: 5,
+      testimonial: locale === 'en'
+        ? 'Got stranded, they reached fast and handled everything professionally.'
+        : 'تعطلت بي السيارة، وصلوا بسرعة وتعاملوا مع كل شيء باحترافية.'
+    },
+    {
+      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&auto=format&fit=crop&q=60',
+      name: 'Sarah Williams',
+      title: locale === 'en' ? 'Marketing Director (Abu Dhabi)' : 'مديرة تسويق (أبوظبي)',
+      rating: 5,
+      testimonial: locale === 'en'
+        ? 'Honest advice—saved me from unnecessary battery replacement.'
+        : 'نصيحة صادقة - أنقذتني من استبدال البطارية غير الضروري.'
+    },
+    {
+      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&auto=format&fit=crop&q=60',
+      name: 'Omar Al Suwaidi',
+      title: locale === 'en' ? 'IT Specialist (Dubai)' : 'أخصائي تقنية معلومات (دبي)',
+      rating: 5,
+      testimonial: locale === 'en'
+        ? 'Called at 3 AM, quick response. Truly reliable 24/7 service.'
+        : 'اتصلت الساعة 3 صباحًا، استجابة سريعة. خدمة موثوقة حقًا على مدار الساعة.'
+    },
+    {
+      image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&auto=format&fit=crop&q=60',
+      name: 'Michael Chen',
+      title: locale === 'en' ? 'Business Analyst (Dubai)' : 'محلل أعمال (دبي)',
+      rating: 5,
+      testimonial: locale === 'en'
+        ? 'Premium service and knowledgeable technician. Smooth experience.'
+        : 'خدمة متميزة وفني خبير. تجربة سلسة.'
+    },
+    {
+      image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&auto=format&fit=crop&q=60',
+      name: 'Noor Al Dhaheri',
+      title: locale === 'en' ? 'Interior Designer (Abu Dhabi)' : 'مصممة داخلية (أبوظبي)',
+      rating: 5,
+      testimonial: locale === 'en'
+        ? 'Best roadside service I\'ve used. Always professional and dependable.'
+        : 'أفضل خدمة طرق استخدمتها. دائمًا محترفون ويمكن الاعتماد عليهم.'
     },
   ];
 
@@ -72,7 +136,7 @@ const Trusted = () => {
 
   // Component for an individual testimonial card
   const CreateCard = ({ card }) => (
-    <div className="p-5 rounded-lg mx-4  transition-all duration-200 w-80 shrink-0 bg-white border border-gray-100" dir={isRTL ? 'rtl' : 'ltr'}>
+    <div className="p-5 rounded-lg mx-4 transition-all duration-200 w-80 shrink-0 bg-white border border-gray-100" dir={isRTL ? 'rtl' : 'ltr'}>
       {/* Star Rating - Always 5 stars as per image */}
       <div className="mb-3">
         <StarRating rating={card.rating} />
@@ -80,7 +144,7 @@ const Trusted = () => {
       
       {/* Testimonial text */}
       <p className={`text-sm text-gray-700 leading-relaxed mb-4 ${isRTL ? 'text-right' : ''}`}>
-        "{content.testimonial}"
+        "{card.testimonial}"
       </p>
       
       {/* Author info - Name and Title only */}

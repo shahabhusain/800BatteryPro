@@ -52,7 +52,7 @@ export default async function RootLayout({ children, params }) {
           {/* Mobile View - Floating WhatsApp & Call Buttons */}
           <div className='fixed bottom-0 left-0 right-0 w-full flex md:hidden items-center z-[9999] shadow-2xl'>
             <a 
-              href="https://971528475675" 
+              href="https://wa.me/971528475675" 
               target="_blank" 
               rel="noopener noreferrer"
               className='w-1/2'
