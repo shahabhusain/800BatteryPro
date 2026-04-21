@@ -23,7 +23,7 @@ export const submitAppointment = createAsyncThunk(
   'appointment/submitAppointment',
   async (formData, { rejectWithValue }) => {
     try {
-      const response = await axios.post('http://localhost:4000/api/appointment', formData, {
+      const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/appointment`, formData, {
         headers: {
           'Content-Type': 'application/json',
         },
