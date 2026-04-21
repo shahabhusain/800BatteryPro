@@ -1,8 +1,9 @@
+"use client"
 import React, { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { useNavigate } from 'react-router-dom'
-import { loginSuccess, setLoading, setError, clearError } from '../store/slice/authSlice'
-import { authAPI } from '../api/appointmentApi'
+import { useRouter } from 'next/navigation' // Changed from react-router-dom
+import { loginSuccess, setLoading, setError, clearError } from '../../store/slice/authSlice'
+import { authAPI } from '../../api/appointmentApi'
 import toast from 'react-hot-toast'
 import { 
   FiMail, 
@@ -23,7 +24,7 @@ const Login = () => {
   const [isHovered, setIsHovered] = useState(false)
   
   const dispatch = useDispatch()
-  const navigate = useNavigate()
+  const router = useRouter() // Changed from useNavigate
   const { loading, error } = useSelector((state) => state.auth)
 
   // Clear error when user types
@@ -76,7 +77,7 @@ const Login = () => {
       
       // Small delay before redirect for better UX
       setTimeout(() => {
-        navigate('/')
+        router.push('/') // Changed from navigate('/')
       }, 500)
     } catch (err) {
       const errorMsg = err.response?.data?.error || 'Login failed. Please check your credentials.'
@@ -86,8 +87,6 @@ const Login = () => {
       dispatch(setLoading(false))
     }
   }
-
-
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-red-50 via-red-100 to-orange-50 flex items-center justify-center p-4 relative overflow-hidden">
@@ -100,9 +99,6 @@ const Login = () => {
 
       {/* Main Login Card */}
       <div className="relative z-10 w-full max-w-md">
-        {/* Brand Logo */}
-
-
         {/* Login Card */}
         <div className="bg-white rounded-2xl shadow-2xl overflow-hidden transform transition-all duration-500 animate-fade-in-up">
           <div className="bg-gradient-to-r from-red-600 to-red-700 px-6 py-4">
@@ -158,11 +154,35 @@ const Login = () => {
                   placeholder="••••••••"
                   autoComplete="current-password"
                 />
-
+                <button
+                  type="button"
+                  onClick={() => setShowPassword(!showPassword)}
+                  className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors"
+                >
+                  {showPassword ? <FiEyeOff /> : <FiEye />}
+                </button>
               </div>
             </div>
 
-
+            {/* Remember Me & Forgot Password */}
+            <div className="flex items-center justify-between">
+              <label className="flex items-center gap-2 cursor-pointer">
+                <input
+                  type="checkbox"
+                  checked={rememberMe}
+                  onChange={(e) => setRememberMe(e.target.checked)}
+                  className="w-4 h-4 text-red-600 rounded border-gray-300 focus:ring-red-500"
+                />
+                <span className="text-sm text-gray-600">Remember me</span>
+              </label>
+              <button
+                type="button"
+                onClick={() => router.push('/forgot-password')}
+                className="text-sm text-red-600 hover:text-red-700 hover:underline transition-colors"
+              >
+                Forgot password?
+              </button>
+            </div>
 
             {/* Login Button */}
             <button
@@ -191,8 +211,6 @@ const Login = () => {
                 </>
               )}
             </button>
-
-
           </form>
         </div>
       </div>

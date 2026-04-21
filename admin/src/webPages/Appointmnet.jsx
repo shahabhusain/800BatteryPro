@@ -1,5 +1,6 @@
+"use client"
 import React, { useState } from 'react'
-import { useAppointment } from '../hooks/useAppointment'
+import { useAppointment } from '../../hooks/useAppointment'
 import LoadingSpinner from '../components/LoadingSpinner'
 import AppointmentModal from '../components/AppointmentModal'
 import { 

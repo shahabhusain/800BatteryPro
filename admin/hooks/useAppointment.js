@@ -1,3 +1,4 @@
+"use client"
 import { useState, useEffect } from 'react'
 import { appointmentAPI } from '../api/appointmentApi'
 import toast from 'react-hot-toast'

@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import { FiX, FiMail, FiPhone, FiCalendar, FiUser, FiClock } from 'react-icons/fi'
 
