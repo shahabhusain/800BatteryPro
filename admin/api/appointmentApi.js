@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 // Next.js uses NEXT_PUBLIC_ prefix for client-side env variables
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://qrc4cazbl9bza690von9ce2i.76.13.221.207.sslip.io/api'
+const API_URL = process.env.NEXT_PUBLIC_API_URL
 
 const api = axios.create({
   baseURL: API_URL,
