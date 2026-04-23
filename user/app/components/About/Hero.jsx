@@ -5,7 +5,7 @@ import { useLocale } from 'next-intl'
 
 const heroEnglishContent = {
   title: "About Us",
-  desc: "800BatteryPro - A-Z Car Battery Replacement & Advanced Car Repair Services in Dubai. Fast & Reliable RSA Services Under 30 Minutes!"
+  desc: "800BatteryPro - A-Z Car Battery Replacement & 24/7 Roadside Assistance in Dubai & Abu Dhabi. Fast & Reliable RSA Services Under 25 Minutes!"
 }
 
 const heroArabicContent = {
