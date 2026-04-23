@@ -4,8 +4,11 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper/modules';
 import Image from 'next/image';
-import ban1 from '@/public/Home/ban1.webp'
-import ban2 from '@/public/Home/ban2.webp'
+import ban1 from '@/public/Home/banner1.webp'
+import ban2 from '@/public/Home/banner2.webp'
+import ban3 from '@/public/Home/banner3.webp'
+import ban4 from '@/public/Home/banner4.webp'
+import ban5 from '@/public/Home/banner5.webp'
 
 // Import Swiper styles
 import 'swiper/css';
@@ -16,7 +19,7 @@ import Link from 'next/link';
 const Banners = ({ autoplayDelay = 3000 }) => {
   // Generate array for slides
   const bannerSlides = [
-    ban1, ban2
+    ban1, ban2, ban3, ban4, ban5
   ]
 
   return (

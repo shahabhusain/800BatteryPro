@@ -16,7 +16,7 @@ import Services from '@/app/components/locations/Services'
 import { FaSitemap } from 'react-icons/fa'
 import Faq from '@/app/components/Brands/subPage/Faq'
 import WhyChooseUs from '@/app/components/Brands/subPage/WhyChooseUs'
-import AboutContent from '@/app/components/About/AboutContent'
+import { TiStarburst } from "react-icons/ti";
 
 export const metadata = {
   title: "Car Battery Replacement & Mobile Repair in Abu Dhabi | 800BatteryPro",
@@ -34,10 +34,10 @@ const AbuDhabi = () => {
 const heroEnglishContent = {
     desc: "Top Car Brands – 24/7 Emergency Support & Anywhere!",
     title: {
-        span1: "800BatteryPro – Trusted Car Service  ",
-        span2: "Center in Abu Dhabi"
+        span1: "800BatteryPro – Best Car Battery ",
+        span2: "Replacement in Abu Dhabi"
     },
-    desc1: "Genuine Car Battery Replacement – 24/7 RSA – OEM-Approved Spare Parts",
+    desc1: "Branded Car Battery Replacement – 24/7 RSA – Under 25 Minute Jump Start Service",
     btn: "Call Now",
     btn1: "Book Service Now"
 }
@@ -56,45 +56,45 @@ const heroArabicContent = {
 // Cards Content
 const englishContent = [
     {
-        icons: <FaSitemap />,
+        icons: <TiStarburst />,
         title: "Genuine Car Battery Replacement ",
         desc: "Don’t panic if you are stranded somewhere with a dead car battery anywhere in Abu Dhabi, 800BatteryPro is just a call away. You can call us at 24/7 for our fast roadside assistance which includes genuine car battery replacement, flat tyre replacement, fuel delivery and car recovery services. Our technicians also provide you with a free car battery testing which ensures our professionalism and transparency towards our loyal customers."
     },
     {
-        icons: <FaSitemap />,
-        title: "Certified Technicians & 10+ Years Of Experience",
-        desc: " 800BatteryPro has a team of over 50+ certified technicians who are capable of working on any of the major car brands in the world. With over 10 years of experience and availability of the latest technology in our garage, we offer premium car battery replacement and advanced repair solutions in Abu Dhabi."
+        icons: <TiStarburst />,
+        title: "Certified Technicians & 6+ Years Of Experience",
+        desc: "800BatteryPro has a team of over 30+ certified technicians who are capable of working on any of the major car brands in the world. With over 6 years of experience and availability of the latest technology, we offer premium car battery replacement and advanced repair solutions in Abu Dhabi by partnering with leading car service centers in the UAE."
     },
     {
-        icons: <FaSitemap />,
+        icons: <TiStarburst />,
         title: "OEM-Approved Spare Parts & Genuine Car Battery",
-        desc: "Our european and italian car specialists at 800BatteryPro only use the OEM-approved spare parts for every car minor and major car jobs in Abu Dhabi. And It doesn’t stop there as our technicians only recommend the genuine car battery for installation only if need after a free car battery testing. "
+        desc: "Our european and italian car specialists at 800BatteryPro only use the OEM-approved spare parts for every car minor and major car jobs in Abu Dhabi as we are partnered with top car workshops in the region. And It doesn’t stop there as our technicians only recommend the genuine car battery for installation only if needed after a free car battery testing. "
     },
     {
-        icons: <FaSitemap />,
+        icons: <TiStarburst />,
         title: "No Hidden Cost & Free Battery Testing",
-        desc: "800BatteryPro offers free battery testing, with branded car battery replacement with no hidden cost and market competitive pricings. Our technicians are trained to work on major European and American car brands, ensuring you get 100 % satisfaction for every car job done at 800BatteryPro. We have a well-equipped service center in Abu Dhabi with the availability of the latest technology and equipment, we ensure to deliver every car battery replacement under 25 minutes anywhere in the Emirates.  "
+        desc: "800BatteryPro offers free battery testing, with branded car battery replacement that too comes with no hidden cost and market competitive pricing. Our technicians are trained to work on all major European and American car brands, ensuring you get 100 % satisfaction for every car job done at 800BatteryPro. We ensure to deliver every car battery replacement under 25 minutes anywhere in Abu Dhabi."
     }
 ]
 
 const arabicContent = [
     {
-        icons: <FaSitemap />,
+        icons: <TiStarburst />,
         title: "استبدال بطارية سيارة أصلية",
         desc: "لا داعي للذعر إذا تعطلت سيارتك بسبب نفاد البطارية في أي مكان في أبو ظبي، فمركز 800BatteryPro على بعد مكالمة واحدة فقط. يمكنك الاتصال بنا على مدار الساعة للحصول على مساعدة سريعة على الطريق تشمل استبدال البطارية الأصلية، وتغيير الإطار المثقوب، وتوصيل الوقود، وخدمات إنقاذ السيارة. كما يقدم فنيونا فحصًا مجانيًا للبطارية، مما يضمن احترافيتنا وشفافيتنا تجاه عملائنا المخلصين."
     },
     {
-        icons: <FaSitemap />,
+        icons: <TiStarburst />,
         title: "فنيون معتمدون وأكثر من 10 سنوات من الخبرة",
         desc: "يضم 800BatteryPro فريقًا يضم أكثر من 50 فنيًا معتمدًا قادرين على العمل على أي من ماركات السيارات الكبرى في العالم. بفضل أكثر من 10 سنوات من الخبرة وتوفر أحدث التقنيات في مركزنا، نقدم استبدال البطاريات الفاخرة وحلول الإصلاح المتقدمة في أبو ظبي."
     },
     {
-        icons: <FaSitemap />,
+        icons: <TiStarburst />,
         title: "قطع غيار معتمدة من OEM وبطارية سيارة أصلية",
         desc: "يستخدم خبراؤنا في السيارات الأوروبية والإيطالية في 800BatteryPro قطع الغيار المعتمدة من الشركة المصنعة الأصلية (OEM) لجميع أعمال السيارات الصغيرة والكبيرة في أبو ظبي. ولا يتوقف الأمر عند هذا الحد، حيث يوصي فنيونا بتركيب بطارية السيارة الأصلية فقط إذا لزم الأمر بعد إجراء فحص مجاني للبطارية."
     },
     {
-        icons: <FaSitemap />,
+        icons: <TiStarburst />,
         title: "بدون تكاليف خفية وفحص بطارية مجاني",
         desc: "يقدم 800BatteryPro فحصًا مجانيًا للبطارية، مع استبدال بطارية بعلامات تجارية وبدون تكاليف خفية وبأسعار تنافسية في السوق. فنيونا مدربون على العمل مع الماركات الأوروبية والأمريكية الكبرى، مما يضمن لك رضا بنسبة 100% عن كل مهمة سيارة تتم في 800BatteryPro. لدينا مركز خدمة مجهز تجهيزًا جيدًا في أبو ظبي بأحدث التقنيات والمعدات، ونضمن توصيل كل بطارية سيارة يتم استبدالها في أقل من 25 دقيقة في أي مكان في الإمارات."
     }
@@ -102,7 +102,7 @@ const arabicContent = [
 
 const englishFaqs = [
     {
-        question: "How much does a car battery replacement cost in Dubai?",
+        question: "How much does a car battery replacement cost in Abu Dubai?",
         answer: "Car battery replacement in Dubai typically costs AED 250–600 depending on brand and model. 800BatteryPro offers competitive pricing with same-day mobile service — no garage visit needed."
     },
     {
@@ -110,7 +110,7 @@ const englishFaqs = [
         answer: "Most car battery replacements take 20–45 minutes. Our mobile technician arrives, fits the new battery and tests the system on-site — zero downtime for you."
     },
     {
-        question: "Does 800BatteryPro come to my location in Dubai?",
+        question: "Does 800BatteryPro come to my location in Abu Dubai?",
         answer: "Yes — 800BatteryPro is a mobile service. We come to your home, office or roadside anywhere in Dubai & Abu Dhabi. No need to visit a garage."
     },
     {
@@ -118,16 +118,16 @@ const englishFaqs = [
         answer: "Yes, if the battery is not damaged. A boost (jump-start) restores enough charge to start the engine. If the battery fails again quickly, replacement is needed."
     },
     {
-        question: "What does roadside assistance include in Dubai?",
+        question: "What does roadside assistance include in Abu Dubai?",
         answer: "800BatteryPro roadside assistance includes battery jump-start, tyre inflation, minor mechanical first-aid & on-site battery replacement — available 24/7 across Dubai & Abu Dhabi."
     },
     {
-        question: "How fast does roadside assistance arrive in Dubai?",
-        answer: "Our technicians typically arrive within 30–90 minutes across Dubai and Abu Dhabi, depending on traffic and your exact location."
+        question: "How fast does roadside assistance arrive in Abu Dubai?",
+        answer: "Our technicians typically arrive within 15–25 minutes across Dubai and Abu Dhabi, depending on traffic and your exact location."
     },
     {
-        question: "How much does a car diagnostic scan cost in Dubai?",
-        answer: "A basic OBD-II diagnostic scan in Dubai typically costs AED 100–300. 800BatteryPro provides full mobile scanning at your location with a detailed fault report."
+        question: "How much does a car diagnostic scan cost in Abu Dubai?",
+        answer: "A basic OBD-II diagnostic scan in Dubai typically costs an average of AED 100–300 but still you have to contact our expert to get a free quote depending upon your car make and model. 800BatteryPro provides full mobile scanning at your location with a detailed fault report."
     },
     {
         question: "How do I know if my car's ECU is faulty?",
@@ -138,20 +138,20 @@ const englishFaqs = [
         answer: "ADAS requires recalibration after windscreen replacement, wheel alignment, camera/sensor replacement, accident repair or if driver assistance warnings appear on the dashboard."
     },
     {
-        question: "Why is my car AC blowing hot air in Dubai?",
+        question: "Why is my car AC blowing hot air in Abu Dubai?",
         answer: "Common causes: low refrigerant, faulty compressor, clogged condenser or blower motor failure. In Dubai's heat, low gas is most frequent. Book a mobile AC check to diagnose."
     },
     {
-        question: "How much does brake pad replacement cost in Dubai?",
-        answer: "Brake pad replacement in Dubai ranges AED 200–600 per axle, depending on the car brand and pad quality. Mobile service means no towing or garage visit required."
+        question: "How much does brake pad replacement cost in Abu Dubai?",
+        answer: "Brake pad replacement in Abu Dubai ranges AED 200–600 per axle, depending on the car brand and pad quality. Mobile service means no towing or garage visit required."
     },
     {
         question: "What type of battery does an Audi need?",
         answer: "Most modern Audis require AGM (Absorbent Glass Mat) batteries. Older models may use EFB. Always match the exact CCA & Ah rating specified in your Audi owner's manual."
     },
     {
-        question: "Is 800BatteryPro available 24 hours in Dubai?",
-        answer: "Yes — 800BatteryPro operates 24/7 across all Dubai districts for battery replacement, boosting & roadside assistance. Call or book online anytime."
+        question: "Is 800BatteryPro available 24 hours in Abu Dubai?",
+        answer: "Yes — 800BatteryPro operates 24/7 across all Abu Dubai districts for battery replacement, boosting & roadside assistance. Call or book online anytime."
     },
     {
         question: "Does 800BatteryPro serve Abu Dhabi?",
@@ -166,19 +166,19 @@ const englishFaqs = [
         answer: "800BatteryPro currently covers all major areas of Dubai and Abu Dhabi (including Al Ain). See our locations page for a full district-by-district breakdown."
     },
     {
-        question: "Can I get an oil change done at home in Dubai?",
+        question: "Can I get an oil change done at home in Abu Dubai?",
         answer: "Yes — 800BatteryPro offers mobile oil & filter change at your home or office across Dubai & Abu Dhabi. Genuine & OEM oils available. Book online."
     },
     {
-        question: "Can a lost car key be programmed in Dubai without going to a dealer?",
+        question: "Can a lost car key be programmed in Abu Dubai without going to a dealer?",
         answer: "Yes — 800BatteryPro offers mobile car key coding & programming for most brands, saving you dealer rates & towing costs. We come to your location in Dubai or Abu Dhabi."
     },
     {
-        question: "Can a flood-damaged car be repaired in Dubai?",
+        question: "Can a flood-damaged car be repaired in Abu Dubai?",
         answer: "Yes, if caught early. Flood damage repair involves drying electrical components, ECU restoration & wiring inspection. Delay causes irreversible corrosion — act immediately."
     },
     {
-        question: "Does BMW battery replacement require coding in Dubai?",
+        question: "Does BMW battery replacement require coding in Abu Dubai?",
         answer: "Yes — most BMW models (F & G series onwards) require battery registration/coding after replacement so the car's BMS (Battery Management System) resets correctly."
     },
 ]
@@ -266,6 +266,30 @@ const arabicFaqs = [
     }
 ]
 
+  const defaultEnglishContent = {
+    title: "About Us",
+    heading: " 800BatteryPro - Car Battery Replacement Under 25 Minutes",
+    description: "Don’t panic if you have a dead car battery as we deliver branded car battery replacement with free battery testing and onsite delivery under 25 minutes. With an experience of over 6+ years and 10,000+ customers in Abu Dhabi, 800BatteryPro is one of best car battery replacement service providers with 30+ certified technicians capable of working on all major car brands. We deliver every minor and major car job by partnering with leading car service centers in the UAE with 100% customer satisfaction, our experts deliver 24/7 roadside assistance services under 25 minutes anywhere in Abu Dhabi. With fully equipped rapid response vans and a compassionate customer support at your service, 800BatteryPro ensures you stay safe on the road. Our technicians only use OEM-approved spare parts and branded car batteries for your car with no hidden cost. Our team of car battery specialists are trained to work on all major car brands such as Audi, Alfa Romeo, Aston Martin, BMW, Lamborghini, Bentley, Bugatti, Ferrari, Jaguar, Land Rover, Mercedes, Chevrolet, Mini Cooper, Maybach, Pagani, Range Rover, Jeep, Rolls Royce, Brabus, Mansory, Lexus, Nissan and Volkswagen.",
+    features: [
+      "Under 25 Minutes & Fast 24/7 Roadside Assistance",
+      "6+ Years of Experience Delivery 100% Satisfactory Work",
+      "10,000+ Customers Served & 30+ Technicians In the UAE"
+    ],
+    cta: "Learn More"
+  };
+
+  const defaultArabicContent = {
+    title: "من نحن",
+    heading: "بطارية برو",
+    description: "مرحباً بكم في 800BatteryPro—اختياركم الأمثل لخدمات بطاريات السيارات السريعة والموثوقة في دبي وأبو ظبي. هل تحتاج إلى أفضل أسعار بطاريات السيارات أو مساعدة على الطريق تعمل 24/7 في دبي؟ لا تضيع وقتك في البحث عن 'محل بطاريات قريب مني'—فريقنا المتنقل ومتجرنا المتكامل يجعلان طوارئ البطارية بسيطة وخالية من التوتر. اختر 800BatteryPro للتمتع بالسرعة الفائقة والحلول التي تضع العميل في المقام الأول.",
+    features: [
+      "خدمات بطاريات سيارات من علامات تجارية ممتازة",
+      "احصل على الخدمة مع مساعدة على الطريق تعمل 24/7",
+      "موثوق من قبل مالكي السيارات في دبي وأبو ظبي"
+    ],
+    cta: "اعرف المزيد"
+  };
+
   const hero = locale === "en" ? heroEnglishContent : heroArabicContent
         const data = locale === "en" ? englishContent : locale === "ar" ? arabicContent : null
        const faqs = locale === "ar" ? arabicFaqs : englishFaqs
@@ -279,7 +303,7 @@ const arabicFaqs = [
       <Review /> {/* move it here */}
 
       <div className='bg-white pb-12 rounded-t-4xl relative z-10'>
-         <AboutContent />
+         <About englishContent={defaultEnglishContent} arabicContent={defaultArabicContent}  />
         <Services /> 
         <Banners />
         <HowItWorks />

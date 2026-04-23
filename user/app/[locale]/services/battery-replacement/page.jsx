@@ -5,7 +5,7 @@ import Faq from '@/app/components/Brands/subPage/Faq'
 import Footer from '@/app/components/Footer'
 import Trusted from '@/app/components/Hero/Trusted'
 import { useLocale } from 'next-intl'
-import serviceImg from "@/public/services/service.jpg"
+import serviceImg from "@/public/services/service.png"
 import React from 'react'
 // battery brands
 import varta from "@/public/batteryBrands/varta.png";
@@ -27,10 +27,10 @@ const BatteryReplacement = () => {
 const heroEnglishContent = {
     desc: "Top Car Brands – 24/7 Emergency Support & Anywhere!",
     title: {
-        span1: "Car Battery Replacement",
-        span2: "Services in Dubai"
+        span1: "#1 Car Battery Replacement ",
+        span2: "Services in Dubai & Abu Dhabi"
     },
-    desc1: "Call 800BatteryPro at +971528475675 For Under 30 Minutes Car Battery Replacement Services In Dubai & Abu Dhabi.",
+    desc1: "Call 800BatteryPro at +971528475675 — Professional Car Battery Replacement in Under 25 Minutes, Anywhere in Dubai & Abu Dhabi.",
     btn: "Call Now",
     btn1: "Book Service Now"
 }
@@ -49,11 +49,31 @@ const heroArabicContent = {
 // Service Section
 const serviceEnglishContent = {
     subtitle: "SERVICES",
-    title: "Free Car Battery Delivery With Under 30 Minute Replacement in Dubai",
+    title: "Fast & Premium Car Battery Replacement Services With Free Battery Testing",
     services: [
         {
             id: 1,
-            description: "Don't let a dead battery derail your day. 800BatteryPro provides 24/7 rapid-response roadside assistance across Dubai and Abu Dhabi, bringing expert care directly to your location. Our certified technicians arrive fast to deliver free onsite Car testing, free delivery, and secure installation using only genuine, OEM-approved batteries. Get back on the road safely with the UAE's most trusted experts, backed by a 100% customer satisfaction guarantee. With 5+ years of experience, we diagnose and resolve battery issues quickly and accurately. Thousands of satisfied customers trust our commitment to honesty and transparency. Rely on 800BatteryPro for prompt, dependable service—every time you need it."
+            description: "Stuck with a dead battery in Dubai at 2 AM? Our 24/7 roadside assistance team is always on standby. 800BatteryPro is Dubai and Abu Dhabi's most trusted provider of car battery replacement services — delivering free battery testing and onsite branded battery installation in under 25 minutes at your location. Whether your car won't start in a parking lot, on a highway, or at home, our 24/7 roadside assistance for dead car batteries brings expert help directly to you - day or night, across the entire UAE. "
+        },
+         {
+            id: 2,
+            description: "Whether you are in Al Reem Island, Khalidiyah, Corniche, Mussafah, or Yas Island, we reach you fast and get you back on the road without delay. Our 24/7 roadside assistance for dead car batteries covers all major areas including Sheikh Zayed Road, Downtown Dubai, JBR, Business Bay, DIFC, Dubai Marina, Jumeirah, Deira, Bur Dubai, and Al Quoz, as well as all major Abu Dhabi districts and highways. Service is also available in Sharjah, Ajman, and other UAE emirates on request."
+        },
+                 {
+            id: 3,
+            description: "800BatteryPro is not just another car battery services provider in the UAE. With over 6 years of proven experience, we have served more than 10,000 satisfied customers across Dubai and Abu Dhabi. Our team of 30+ certified technicians is trained on all American and European car brands, and our fleet of 20+ fully equipped mobile vans is deployed 24/7 to reach you wherever you are. Every service includes free car battery testing, free jump start assistance, and free delivery with secure on-site installation - all backed by a 100% customer satisfaction guarantee and using only genuine, OEM-approved batteries."
+        },
+            {
+            id: 4,
+            description: "Car battery replacement is the process of removing a discharged or failed vehicle battery and installing a new, fully charged, manufacturer-compatible battery — restoring your vehicle's electrical system and starting capability. In Dubai's extreme heat, battery degradation happens significantly faster than in cooler climates. Most car batteries in the UAE last between 2 to 4 years, compared to the 5-year average elsewhere, making regular testing essential. You likely need a car battery replacement in Dubai if your car cranks slowly or fails to start, your dashboard battery warning light is on, your battery is more than 3 years old, your headlights are dimming unexpectedly, or you have needed jump starts more than twice in a single month. When any of these signs appear, call 800BatteryPro immediately for a free on-site diagnosis."
+        },
+            {
+            id: 5,
+            description: "800BatteryPro offers and installs genuine, OEM-approved batteries compatible with all major car brands sold across the UAE. We cover American brands such as Ford, GMC, Chevrolet, Jeep, Dodge, and Cadillac, as well as European brands including BMW, Mercedes-Benz, Audi, Volkswagen, Porsche, and Land Rover. Our range also extends to Japanese and Korean vehicles like Toyota, Nissan, Honda, Hyundai, Kia, and Lexus, along with luxury and electric vehicles including Tesla, Rolls-Royce, Bentley, and Ferrari. Every battery we install comes with a manufacturer warranty and is fitted by a certified technician for maximum safety and long-term performance."
+        },
+         {
+            id: 6,
+            description: "800BatteryPro is the UAE's most trusted name in car battery replacement in Dubai, car battery services in Abu Dhabi, and 24/7 roadside assistance for dead car batteries across the Emirates. With 6+ years of experience, more than 10,000 happy customers, a fleet of 20+ mobile vans, and a 100% satisfaction guarantee, we have built our reputation one reliable service call at a time. Don't wait — our team is ready around the clock to bring expert car battery services directly to your door. Call or WhatsApp Now: +971528475675 we are available 24/7 — Response in Under 25 Minutes"
         },
     ]
 }
@@ -73,23 +93,23 @@ const serviceArabicContent = {
 const englishContent = [
     {
         icons: <FaSitemap />,
-        title: "Under 30-Minute Emergency",
+        title: " 25-Minute Rapid Response",
         desc: "Get back on the road fast when a dead battery interrupts your schedule. 800BatteryPro dispatches a rapid-response unit immediately to your location in the UAE, arriving within 30 minutes fully equipped to test and replace your battery right on the spot."
     },
     {
         icons: <FaSitemap />,
-        title: "24/7 On-Demand Battery Replacement",
-        desc: "Skip the tow truck and let us bring the auto shop directly to you. Our dedicated technicians deliver premium car battery replacement services to your home, office, or roadside location across Dubai and Abu Dhabi, completely on your schedule."
+        title: "Free Battery Testing",
+        desc: " Unlike other car battery services in Dubai that push unnecessary replacements, 800BatteryPro always starts with a free, professional battery diagnostic at your location. Our certified technicians give you an honest assessment first — if your battery can be saved with a jump start, we will tell you. We only recommend a replacement when your vehicle genuinely needs one, because our reputation is built on trust, not upselling."
     },
     {
         icons: <FaSitemap />,
-        title: "Certified Specialists for Premium Car Brands",
-        desc: "Trust your vehicle to certified experts who understand the exact specifications of American, European, and Asian vehicles. We install only genuine, manufacturer-approved car batteries at highly competitive prices, ensuring maximum reliability while protecting your vehicle's warranty."
+        title: "Branded car Batteries",
+        desc: "Every battery we install is a genuine, OEM-approved unit compatible with your specific vehicle make and model — from everyday sedans to high-performance European and American luxury cars. We never use substandard or counterfeit parts, and every installation comes backed by a manufacturer warranty and a 100% customer satisfaction guarantee, giving you complete peace of mind long after we leave."
     },
     {
         icons: <FaSitemap />,
-        title: "Advanced Auto Repair and Diagnostic Solutions",
-        desc: "Secure comprehensive care for your vehicle well beyond a simple battery swap. Our state-of-the-art service centers in Dubai and Abu Dhabi handle complex electrical diagnostics, precision car programming, ECU, BMS, and complete mechanical repairs under one roof."
+        title: " Reliable 24/7 Roadside Assistance",
+        desc: "A dead car battery does not follow business hours, and neither do we. 800BatteryPro's 24/7 roadside assistance in Dubai is available every single day of the year — including weekends, UAE public holidays, and the early hours of the morning. With 30+ certified technicians on call at all times and a dedicated rapid-response dispatch team, help is always just one phone call away at +971528475675."
     }
 ]
 

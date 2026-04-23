@@ -35,7 +35,7 @@ const WhyChooseUs = ({data}) => {
                 <div className=' flex flex-col gap-y-5 items-start bg-white md:p-12 p-3 h-[50ppx] w-[350px]' key={index}>
                     <span className=' md:text-[25px] text-[20px]'>{item.icons}</span>
                     <h2 className=' md:text-[24px] text-[18px] font-semibold '>{item.title}</h2>
-                    <p className=' md:text-[16px] text-[14px] font-normal text-[#4E4E4E]'>{item.desc}</p>
+                    <p className=' h-[120px] custom-scroll overflow-y-auto md:text-[16px] text-[14px] font-normal text-[#4E4E4E]'>{item.desc}</p>
                 </div>
             ))
            }

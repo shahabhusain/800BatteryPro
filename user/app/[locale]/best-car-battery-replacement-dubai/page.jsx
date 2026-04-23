@@ -16,8 +16,11 @@ import Services from '@/app/components/locations/Services'
 import { FaSitemap } from 'react-icons/fa'
 import Faq from '@/app/components/Brands/subPage/Faq'
 import WhyChooseUs from '@/app/components/Brands/subPage/WhyChooseUs'
-import AboutContent from '@/app/components/About/AboutContent'
-
+import service from '@/public/locations/service4.webp'
+import service1 from '@/public/locations/service5.webp'
+import service2 from '@/public/locations/service6.webp'
+import service3 from '@/public/locations/service7.webp'
+import { TiStarburst } from 'react-icons/ti'
 export const metadata = {
   title: "Car Battery Replacement & Mobile Repair in Dubai | 800BatteryPro",
   description:
@@ -34,10 +37,10 @@ const Dubai = () => {
 const heroEnglishContent = {
     desc: "Top Car Brands – 24/7 Emergency Support & Anywhere!",
     title: {
-        span1: "800BatteryPro – Trusted Car Service ",
-        span2: " Center in Dubai"
+        span1: "800BatteryPro – Best Car Battery  ",
+        span2: "Replacement in Dubai Under 25 Minutes"
     },
-    desc1: "Genuine Car Battery Replacement – 24/7 RSA – OEM-Approved Spare Parts",
+    desc1: "Branded Car Battery Replacement – 24/7 RSA Under 25 Minutes – Free Battery Testing Zero Cost",
     btn: "Call Now",
     btn1: "Book Service Now"
 }
@@ -56,45 +59,45 @@ const heroArabicContent = {
 // Cards Content
 const englishContent = [
     {
-        icons: <FaSitemap />,
-        title: "Arrival in Under 30 Minutes",
-        desc: "Your time is valuable. We strategically position our well-equipped service vehicles across Dubai and Abu Dhabi to guarantee an under 30-minute response time. We get to you fast so you can get on with your day."
+        icons: <TiStarburst />,
+        title: "Genuine Car Battery Replacement ",
+        desc: "If you are stuck with a dead car battery or issues in your car electronic system. Don’t Panic !800BatteryPro provides you with 24/7 car battery replacement and free battery testing under 25 minutes, which comes along with expert car electronic system repairs in Dubai. "
     },
     {
-        icons: <FaSitemap />,
-        title: "Free Battery Testing and Delivery",
-        desc: "We never guess what is wrong with your car. Our technicians use the latest technology to perform a free battery test right on the spot. If your battery just needs a boost, we will jump-start it safely. If the battery is completely dead, we offer free battery delivery to your location."
+        icons: <TiStarburst />,
+        title: "Certified Technicians & 6+ Years Of Experience",
+        desc: "800BatteryPro has partnered with the best and trusted car service centers in Dubai. We have 25+ technicians with over 6+ years of experience working on premium car repairs delivering car jobs with 100% precision and customer satisfaction. Our team of technicians are all well-trained and certified by vendors to work on all major car brands."
     },
     {
-        icons: <FaSitemap />,
-        title: "Premium Branded Batteries and Genuine Parts",
-        desc: "We strictly use OEM-approved spare parts and genuine, premium batteries recommended by your vehicle manufacturer. Using top-tier brands ensures your new battery withstands the intense UAE climate and provides reliable power for years to come."
+        icons: <TiStarburst />,
+        title: "OEM-Approved Spare Parts & Genuine Car Battery",
+        desc: "Don’t worry 800BatteryPro only uses OEM-approved spare parts for your car. Our technicians only recommend branded car batteries for installation if needed after a free battery testing. "
     },
     {
-        icons: <FaSitemap />,
-        title: "Advanced Installation Technology",
-        desc: "Swapping a battery in a modern car is not just about turning a wrench. We use advanced diagnostic tools to ensure your new battery syncs perfectly with your car's internal computers. Our expert installation process prevents data loss and ensures your radio, seat memory, and engine management systems function flawlessly."
+        icons: <TiStarburst />,
+        title: "No Hidden Cost & Free Battery Testing",
+        desc: "Unlike other service providers, 800BatteryPro provides every customer with free battery testing services with no hidden costs. If you need a replacement, our technicians will use a branded car battery for replacement services anywhere in Dubai and Abu Dhabi. We provide top-tier car battery services with no hidden cost and free onsite delivery. 800Batterypro has partnered with a well-equipped service center with fully-equipped car workshops and a team of certified technicians who know how to get your car back on the road. You are offered with free battery testing anywhere in Dubai with no hidden costs."
     }
 ]
 
 const arabicContent = [
     {
-        icons: <FaSitemap />,
+        icons: <TiStarburst />,
         title: "الوصول خلال 30 دقيقة",
         desc: "وقتك ثمين. نضع سيارات الخدمة المجهزة بالكامل بشكل استراتيجي في جميع أنحاء دبي وأبو ظبي لضمان وقت استجابة أقل من 30 دقيقة. نصل إليك بسرعة حتى تتمكن من مواصلة يومك."
     },
     {
-        icons: <FaSitemap />,
+        icons: <TiStarburst />,
         title: "فحص وتوصيل البطارية مجاناً",
         desc: "نحن لا نخمن أبداً ما هو الخطأ في سيارتك. يستخدم فنيونا أحدث التقنيات لإجراء فحص مجاني للبطارية في المكان. إذا كانت بطاريتك تحتاج فقط إلى شحن، فسنقوم بتشغيلها بأمان. إذا كانت البطارية فارغة تماماً، فإننا نقدم توصيل مجاني للبطارية إلى موقعك."
     },
     {
-        icons: <FaSitemap />,
+        icons: <TiStarburst />,
         title: "بطاريات ذات علامات تجارية متميزة وقطع أصلية",
         desc: "نستخدم بدقة قطع الغيار المعتمدة من المصنع والبطاريات الأصلية المتميزة الموصى بها من قبل الشركة المصنعة لسيارتك. استخدام العلامات التجارية الراقية يضمن أن بطاريتك الجديدة تتحمل مناخ الإمارات القاسي وتوفر طاقة موثوقة لسنوات قادمة."
     },
     {
-        icons: <FaSitemap />,
+        icons: <TiStarburst />,
         title: "تقنية تركيب متقدمة",
         desc: "استبدال البطارية في سيارة حديثة ليس مجرد استخدام مفتاح ربط. نستخدم أدوات تشخيص متقدمة لضمان تزامن بطاريتك الجديدة بشكل مثالي مع أجهزة الكمبيوتر الداخلية لسيارتك. تمنع عملية التركيب الخبيرة لدينا فقدان البيانات وتضمن عمل الراديو وذاكرة المقاعد وأنظمة إدارة المحرك بشكل لا تشوبه شائبة."
     }
@@ -298,6 +301,75 @@ const arabicFaqs = [
     },
 ]
 
+  const englishService = [
+    {
+      title: "Car Battery Replacement",
+      hoverDec: "Call 800BatteryPro at +971528475675 For Premium Car Battery Replacement Services Under 25 Minutes in Dhabi",
+      img: service
+    },
+    {
+      title: "Car Battery Boosting",
+      hoverDec: "Get 24/7 Car Battery Boosting/jump start services under 25 minutes anywhere in Dhabi with no hidden cost.",
+      img: service2
+    },
+    {
+      title: "24/7 Roadside Assistance",
+      hoverDec: "800BatteryPro has well-equipped mobile vans and 30+ certified car battery replacement technicians providing 24/7 roadside assistance anywhere in the UAE. Fast & Reliable RSA!",
+      img: service1
+    },
+    {
+      title: "Car Scanning & Diagnostics",
+      hoverDec: " Get complete Advanced Car Scanning & Diagnostics at 800BatteryPro as we have partnered with trusted car service centers in Abu Dhabi. Fast Service & Best Pricing in Abu Dhabi. Contact Us Now!",
+      img: service3
+    },
+  ]
+ const  arabicService = [
+    {
+      title: "استبدال بطارية السيارة",
+      hoverDec: "اتصل بـ 800BatteryPro على +971528475675 للحصول على خدمات استبدال بطارية السيارة المتميزة خلال 30 دقيقة في دبي",
+      img: service
+    },
+    {
+      title: "تشغيل بطارية السيارة",
+      hoverDec: "احصل على خدمات تشغيل/بدء تشغيل بطارية السيارة على مدار الساعة خلال 30 دقيقة في أي مكان في دبي من خلال 800BatteryPro",
+      img: service2
+    },
+    {
+      title: "المساعدة على الطريق 24/7",
+      hoverDec: "يمتلك 800BatteryPro شاحنات مجهزة تجهيزًا جيدًا وأكثر من 50 فنيًا معتمدًا يقدمون خدمات المساعدة على الطريق على مدار الساعة في أي مكان في الإمارات. خدمة طرق سريعة وموثوقة!",
+      img: service1
+    },
+    {
+      title: "فحص وتشخيص السيارة",
+      hoverDec: "احصل على فحص وتشخيص متقدم كامل للسيارة في 800BatteryPro. خدمة سريعة وأفضل الأسعار. اتصل بنا الآن!",
+      img: service3
+    },
+  ]
+
+    const defaultEnglishContent = {
+    title: "About Us",
+    heading: " 800BatteryPro - Car Battery Replacement Under 25 Minutes",
+    description: "Signs of a Weak Car Battery? Dim lights ? Car Not Starting? 800BatteryPro is just a call away with its fully equipped rapid response mobile van and a team of 30+ technicians. There is no need to panic as we offer 24/7 roadside assistance our technician will do free car battery testing and inspection for you, if its needed our experts will do a branded car battery replacement for you, or else if there is any flat tyre we will also fix it for you all Under 30 Minutes and no hidden cost! Sounds Amazing, Doesn't It? With over 6+ years delivering excellence in every premium car repair and car battery replacement job in Dubai. 800BatteryPro has over 10,000+ satisfied customers, our team of certified technicians always use OEM-approved spare parts and branded car batteries. We have partnered with a well-equipped workshop stacked with the latest technology and equipment for working on all major car brands. If you drive an old model or an exotic car, we have trained professionals who are certified to work on all American and European car brands in Dubai. Car brands we service include Audi, Alfa Romeo, Aston Martin, BMW, Lamborghini, Bentley, Bugatti, Ferrari, Jaguar, Land Rover, Mercedes, Chevrolet, Mini Cooper, Maybach, Pagani, Range Rover, Jeep, Rolls Royce, Brabus, Mansory, Lexus, Nissan and Volkswagen.",
+    features: [
+      "Under 25 Minutes & Fast 24/7 Roadside Assistance",
+      "6+ Years of Experience Delivery 100% Satisfactory Work",
+      "10,000+ Customers Served & 30+ Technicians In the UAE"
+    ],
+    cta: "Learn More"
+  };
+
+  const defaultArabicContent = {
+    title: "من نحن",
+    heading: "بطارية برو",
+    description: "مرحباً بكم في 800BatteryPro—اختياركم الأمثل لخدمات بطاريات السيارات السريعة والموثوقة في دبي وأبو ظبي. هل تحتاج إلى أفضل أسعار بطاريات السيارات أو مساعدة على الطريق تعمل 24/7 في دبي؟ لا تضيع وقتك في البحث عن 'محل بطاريات قريب مني'—فريقنا المتنقل ومتجرنا المتكامل يجعلان طوارئ البطارية بسيطة وخالية من التوتر. اختر 800BatteryPro للتمتع بالسرعة الفائقة والحلول التي تضع العميل في المقام الأول.",
+    features: [
+      "خدمات بطاريات سيارات من علامات تجارية ممتازة",
+      "احصل على الخدمة مع مساعدة على الطريق تعمل 24/7",
+      "موثوق من قبل مالكي السيارات في دبي وأبو ظبي"
+    ],
+    cta: "اعرف المزيد"
+  };
+
   const hero = locale === "en" ? heroEnglishContent : heroArabicContent
         const data = locale === "en" ? englishContent : locale === "ar" ? arabicContent : null
        const faqs = locale === "ar" ? arabicFaqs : englishFaqs
@@ -311,8 +383,8 @@ const arabicFaqs = [
       <Review /> {/* move it here */}
 
       <div className='bg-white pb-12 rounded-t-4xl relative z-10'>
-          <AboutContent />
-        <Services /> 
+          <About englishContent={defaultEnglishContent} arabicContent={defaultArabicContent} />
+        <Services englishService={englishService} arabicService={arabicService} /> 
          <Banners />
         <HowItWorks />
       </div>

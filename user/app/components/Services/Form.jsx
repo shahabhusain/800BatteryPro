@@ -1,205 +1,166 @@
-'use client';
+import React, { useState } from 'react'
 
-import React, { useEffect } from 'react';
-import { useLocale } from 'next-intl';
-import { useDispatch, useSelector } from 'react-redux';
-import { Toaster } from 'react-hot-toast';
-import {
-  updateFormField,
-  submitAppointment,
-  clearError,
-  clearSuccess,
-  hideSuccessPopup,
-  selectFormData,
-  selectLoading,
-  selectError,
-  selectSuccess,
-  selectShowSuccessPopup,
-} from '@/app/store/slices/appointmentSlice';
-import SuccessPopup from '../SuccessPopup';
+const Form = () => {
+  const [formData, setFormData] = useState({
+    urgency: 'standard',
+    phone: '',
+    location: 'dubai',
+    services: ['battery-replacement']
+  })
+  
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitted, setSubmitted] = useState(false)
 
-const Form = ({ onSuccess }) => {
-  const locale = useLocale();
-  const dispatch = useDispatch();
-  const formData = useSelector(selectFormData);
-  const loading = useSelector(selectLoading);
-  const error = useSelector(selectError);
-  const success = useSelector(selectSuccess);
-  const showSuccessPopup = useSelector(selectShowSuccessPopup);
-
-  const text = locale === "ar" 
-    ? {
-        name: "الاسم الكامل",
-        email: "البريد الإلكتروني",
-        phone: "رقم الهاتف",
-        selectService: "اختر الخدمة",
-        message: "الرسالة",
-        button: "احجز موعداً",
-        booking: "جاري الحجز...",
-        success: "تم حجز الموعد بنجاح! سنتواصل معك قريباً",
-        error: "خطأ: فشل في حجز الموعد",
-        successPopupMessage: "سيتواصل معك فريق المبيعات قريباً",
-        batteryReplacement: "استبدال البطارية",
-        tyreReplacement: "استبدال الإطارات",
-        engineService: "خدمة المحرك",
-      }
-    : {
-        name: "Full Name",
-        email: "Email Address",
-        phone: "Phone Number",
-        selectService: "Select Service",
-        message: "Message",
-        button: "Book an Appointment",
-        booking: "Booking...",
-        success: "Appointment booked successfully! We will contact you soon.",
-        error: "Error: Failed to book appointment",
-        successPopupMessage: "Our sales team will contact you soon",
-        batteryReplacement: "Battery Replacement",
-        tyreReplacement: "Tyre Replacement",
-        engineService: "Engine Service",
-      };
-
-  // Handle input changes
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    dispatch(updateFormField({ field: name, value }));
-    
-    if (error) {
-      dispatch(clearError());
-    }
-    if (success) {
-      dispatch(clearSuccess());
-    }
-  };
+    const { name, value } = e.target
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }))
+  }
 
-  // Handle form submission - no validation
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    
-    // Submit directly without any validation
-    const result = await dispatch(submitAppointment(formData));
-    if (submitAppointment.fulfilled.match(result)) {
-      // Close modal after successful submission
-      if (onSuccess) {
-        setTimeout(() => {
-          onSuccess();
-        }, 3000);
+  const handleServiceToggle = (serviceValue) => {
+    setFormData(prev => {
+      const currentServices = [...prev.services]
+      if (currentServices.includes(serviceValue)) {
+        return {
+          ...prev,
+          services: currentServices.filter(s => s !== serviceValue)
+        }
+      } else {
+        return {
+          ...prev,
+          services: [...currentServices, serviceValue]
+        }
       }
-    }
-  };
+    })
+  }
 
-  // Handle closing the success popup
-  const handleCloseSuccessPopup = () => {
-    dispatch(hideSuccessPopup());
-  };
-
-  // Auto clear success message after 5 seconds
-  useEffect(() => {
-    if (success) {
-      const timer = setTimeout(() => {
-        dispatch(clearSuccess());
-      }, 5000);
-      return () => clearTimeout(timer);
-    }
-  }, [success, dispatch]);
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+    
+    await new Promise(resolve => setTimeout(resolve, 1000))
+    
+    console.log('Form submitted:', formData)
+    setIsSubmitting(false)
+    setSubmitted(true)
+    
+    setTimeout(() => setSubmitted(false), 3000)
+  }
 
   return (
-    <>
-      <Toaster position="top-right" />
-      
-      {/* Success Popup */}
-      <SuccessPopup 
-        isOpen={showSuccessPopup}
-        onClose={handleCloseSuccessPopup}
-        message={text.successPopupMessage}
-      />
-      
-      <div className='bg-[#FFFFFF1A] backdrop-blur-lg p-8 rounded-2xl text-white' dir={locale === "ar" ? "rtl" : "ltr"}>
-        <form onSubmit={handleSubmit} className='flex flex-col gap-y-3 mt-5'>
-          {/* Name Field */}
-          <div>
-            <input 
-              type="text" 
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              placeholder={text.name} 
-              disabled={loading}
-              className='bg-[#FFFFFF0D] focus:outline-none border-none py-2 px-5 rounded-md w-full'
-            />
-          </div>
-          
-          {/* Email Field */}
-          <div>
-            <input 
-              type="email" 
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              placeholder={text.email} 
-              disabled={loading}
-              className='bg-[#FFFFFF0D] focus:outline-none border-none py-2 px-5 rounded-md w-full'
-            />
-          </div>
-          
-       <div className=' flex items-center gap-x-3 justify-between'>
-             {/* Phone Field */}
-          <div className=' w-full'>
-            <input 
-              type="tel" 
-              name="phone"
-              value={formData.phone}
-              onChange={handleChange}
-              placeholder={text.phone} 
-              disabled={loading}
-              className='bg-[#FFFFFF0D] focus:outline-none border-none py-2 px-5 rounded-md w-full'
-            />
-          </div>
-
-          {/* Select Service Field - Properly Integrated */}
-          <div className=' w-full'>
-            <select
-              name="selectService"
-              value={formData.selectService}
-              onChange={handleChange}
-              disabled={loading}
-              className='bg-[#FFFFFF0D] focus:outline-none border-none py-2 px-5 rounded-md w-full appearance-none cursor-pointer'
+    <div className='w-full max-w-md mx-auto bg-[#FFFFFF1A] backdrop-blur-lg rounded-2xl shadow-2xl p-6'>
+      <form onSubmit={handleSubmit} className='space-y-5'>
+        <div className='space-y-2'>
+          <div className='flex gap-3 bg-[#FFFFFF0D] p-3 rounded-full'>
+            <button
+              type='button'
+              onClick={() => setFormData(prev => ({ ...prev, urgency: 'standard' }))}
+              className={`flex-1 py-2 text-sm font-normal px-4 rounded-full transition-all duration-200 ${
+                formData.urgency === 'standard'
+                  ? 'bg-red-600 text-white shadow-lg shadow-red-600/30'
+                  : ''
+              }`}
             >
-              <option value="" disabled className='text-gray-400 '>
-                {text.selectService}
-              </option>
-              <option className=' bg-black' value="Battery Replacement">{text.batteryReplacement}</option>
-              <option className=' bg-black' value="Tyre Replacement">{text.tyreReplacement}</option>
-              <option className=' bg-black' value="Engine Service">{text.engineService}</option>
-            </select>
+              Standard Now
+            </button>
+            <button
+              type='button'
+              onClick={() => setFormData(prev => ({ ...prev, urgency: 'now' }))}
+              className={`flex-1 py-2 px-4 text-sm font-normal rounded-full transition-all duration-200 ${
+                formData.urgency === 'now'
+                  ? 'bg-red-600 text-white shadow-lg shadow-red-600/30'
+                  : ''
+              }`}
+            >
+              Planning ahead
+            </button>
           </div>
-       </div>
-          
-          {/* Message Field */}
-          <div>
-            <textarea 
-              name="message"
-              rows={4} 
-              value={formData.message}
-              onChange={handleChange}
-              placeholder={text.message} 
-              disabled={loading}
-              className='bg-[#FFFFFF0D] focus:outline-none border-none py-2 px-5 rounded-md w-full resize-none'
-            ></textarea>
-          </div>
-          
-          {/* Submit Button */}
-          <button 
-            type="submit"
-            disabled={loading}
-            className='py-2 px-5 rounded-full mt-4 md:text-[16px] text-[12px] bg-red-500 text-white uppercase hover:bg-red-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed'
-          >
-            {loading ? text.booking : text.button}
-          </button>
-        </form>
-      </div>
-    </>
-  );
-};
+        </div>
+        
+        <input
+          type='tel'
+          name='phone'
+          value={formData.phone}
+          onChange={handleChange}
+          placeholder='+971'
+          required
+          className='w-full px-4 py-3 bg-[#FFFFFF0D] border border-gray-600 rounded-full text-white placeholder-gray-400 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/20 transition-all'
+        />
+        
+        <select
+          name='location'
+          value={formData.location}
+          onChange={handleChange}
+          required
+          className='w-full px-4 py-3 bg-[#FFFFFF0D] border border-gray-600 rounded-full text-white placeholder-gray-400 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/20 transition-all appearance-none cursor-pointer'
+        >
+          <option value='dubai' className='bg-gray-800'>Dubai</option>
+          <option value='abu-dhabi' className='bg-gray-800'>Abu Dhabi</option>
+        </select>
 
-export default Form;
+        <div className='space-y-3'>
+          <label className='text-white text-sm font-medium block'>Services Needed (select multiple)</label>
+          <div className='grid grid-cols-2 gap-4'>
+            {[
+              { value: 'battery-replacement', label: 'Battery Replacement' },
+              { value: 'jump-start', label: 'Jump start / boost' },
+              { value: 'battery-test', label: 'Any Others' },
+              { value: 'roadside-assistance', label: 'Roadside assistance' }
+            ].map(service => (
+              <label
+                key={service.value}
+                className={`flex items-center justify-between p-3 rounded-lg cursor-pointer transition-all duration-200 ${
+                  formData.services.includes(service.value)
+                    ? 'bg-red-600/20 border-2 border-red-500'
+                    : 'bg-gray-700/50 border-2 border-gray-600 hover:border-gray-500'
+                }`}
+              >
+                <div className='flex items-center gap-3'>
+                  <input
+                    type='checkbox'
+                    value={service.value}
+                    checked={formData.services.includes(service.value)}
+                    onChange={() => handleServiceToggle(service.value)}
+                    className='w-4 h-4 text-red-600 focus:ring-red-500 rounded'
+                  />
+                  <span className='text-white text-sm font-normal'>{service.label}</span>
+                </div>
+              </label>
+            ))}
+          </div>
+        </div>
+
+        <button
+          type='submit'
+          disabled={isSubmitting}
+          className='w-full bg-gradient-to-r text-sm font-normal from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white py-3 px-4 rounded-lg transition-all duration-200 transform hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 shadow-lg shadow-red-600/30'
+        >
+          {isSubmitting ? (
+            <div className='flex items-center justify-center gap-2'>
+              <div className='w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin'></div>
+              <span>Processing...</span>
+            </div>
+          ) : (
+            'CONFIRM BOOKING'
+          )}
+        </button>
+
+        <div className='flex items-center justify-center gap-4 pt-1 border-t border-gray-700'>
+          <div className='flex items-center gap-1'>
+            <span className='text-yellow-400 text-lg'>⭐</span>
+            <span className='text-white font-bold'>4.9</span>
+            <span className='text-gray-400 text-sm'>(10,000+ customers)</span>
+          </div>
+          <div className='w-px h-4 bg-gray-600'></div>
+          <div className='text-gray-400 text-sm'>
+            ⏱️ Avg. 30 min arrival
+          </div>
+        </div>
+      </form>
+    </div>
+  )
+}
+
+export default Form

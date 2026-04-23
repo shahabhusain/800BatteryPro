@@ -11,7 +11,7 @@ const TopBar = () => {
    </div>
        <div className=' flex items-center gap-3'>
         {/* language selection */}
-          <LaguageSwitcher />
+          {/* <LaguageSwitcher /> */}
          {/* language selection */}
          <div className=' text-white flex items-center gap-x-3'>
             <span className='bg-[#FFFFFF1A] p-2 rounded-full'><FaFacebook /></span>

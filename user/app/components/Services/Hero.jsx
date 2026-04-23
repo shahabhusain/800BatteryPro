@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import herobg from '@/public/services/bg.webp'
 import { GoArrowRight } from 'react-icons/go'
 import { useLocale } from 'next-intl'
-import Form from '../Services/Form'
+import Form from '../Hero/Form'
 import AppointmentModal from '../AppointmentModal'
 const heroEnglishContent = {
   desc:"24/7 Emergency Support & Car Battery Services!",
@@ -48,7 +48,7 @@ const Hero = () => {
        <div className={`absolute md:top-60 top-32  ${locale === "en" ? "md:left-36 md:right-36 left-6 right-6" : locale === "ar" ? "md:right-36 md:left-0 left-6 right-6" : null} flex items-center flex-col md:flex-row justify-between `}>
        <div className='flex flex-col gap-y-6 md:w-1/2'>
             <p className=' w-fit md:text-[14px] text-[10px] font-medium text-center bg-[#ffffff16] px-3 py-2 rounded-full'>{hero.desc}</p>
-        <h1 className=' lg:text-[45px] md:text-[43px] sm:text-[33px] text-[25px] font-bold text-white md:leading-[4rem]'>{hero.title.span1}<span className=' text-red-500'>{hero.title.span2}</span></h1>
+        <h1 className=' lg:text-[45px] md:text-[43px] sm:text-[33px] text-[25px] font-bold text-white md:leading-[4rem]'>{hero.title.span1} <span className=' text-red-500'>{hero.title.span2}</span></h1>
         <p className=' md:text-[16px] text-[12px] font-normal'>{hero.desc1}</p>
               <button className=' text-[12px] md:text-[16px] w-fit bg-red-600 md:py-3 md:px-5 py-2 px-4 uppercase rounded-full text-white md:flex hidden items-center gap-x-2'>{hero.btn}<span className=' rotate-320'><GoArrowRight size={30} /></span></button>
                 <button   onClick={handleOpenModal} className=' text-[12px] md:text-[16px] w-fit bg-red-600 md:py-3 md:px-5 py-2 px-4 uppercase rounded-full text-white flex md:hidden items-center gap-x-2'>{hero.mobileBtn}<span className=' rotate-320'><GoArrowRight size={30} /></span></button>

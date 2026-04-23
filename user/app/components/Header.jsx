@@ -408,7 +408,7 @@ const Header = () => {
 
               {/* Desktop Book Button */}
               <div className="flex items-center gap-4">
-                {scrolled ? <div className="md:block hidden"><LanguageSwitcher scrolled={scrolled} /></div> : null}
+                {/* {scrolled ? <div className="md:block hidden"><LanguageSwitcher scrolled={scrolled} /></div> : null} */}
                 <button 
                   onClick={handleOpenModal}
                   className={`hidden lg:flex text-[12px] xl:text-[14px] font-[400] py-2 xl:py-3 px-3 xl:px-5 rounded-full items-center gap-x-2 whitespace-nowrap transition-all duration-300 hover:scale-105 active:scale-95 group ${
@@ -424,10 +424,10 @@ const Header = () => {
                 </button>
               </div>
 
-              {/* Mobile Menu Button with smooth animation */}
+              {/* Mobile Menu Button with smooth animation
               <div className="md:hidden">
                 <LanguageSwitcher scrolled={scrolled} />
-              </div>
+              </div> */}
               <button 
                 className="lg:hidden p-2 hover:bg-white/20 rounded-full transition-all duration-300 hover:rotate-90"
                 onClick={() => setMobileMenuOpen(true)}

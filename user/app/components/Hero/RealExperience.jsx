@@ -10,17 +10,17 @@ const RealExperience = () => {
     const englishExperience = [
         { 
            id: 1,
-           videoId: "twztYM_nYrE",
+           videoId: "DmnkAjItCX8",
            title: "800 battery pro"
         },
         {
            id: 2,
-           videoId: "DvnzM3hu8fA",
+           videoId: "4zo3jI9sFk8",
            title: "800 battery pro"
         },
         {
            id: 3,
-           videoId: "cgdli2a_Dt0",
+           videoId: "ekwl5yhL-5Q",
            title: "800 battery pro"
         },
     ]
@@ -28,17 +28,17 @@ const RealExperience = () => {
     const arabicExperience = [
         { 
            id: 1,
-           videoId: "twztYM_nYrE",
+           videoId: "DmnkAjItCX8",
            title: "800 بطارية برو"
         },
         {
            id: 2,
-           videoId: "DvnzM3hu8fA",
+           videoId: "4zo3jI9sFk8",
            title: "800 بطارية برو"
         },
         {
            id: 3,
-           videoId: "cgdli2a_Dt0",
+           videoId: "ekwl5yhL-5Q",
            title: "800 بطارية برو"
         },
     ]

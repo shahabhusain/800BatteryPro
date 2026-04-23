@@ -1,16 +1,16 @@
 "use client"
 import React, { useState } from 'react'
-import team1 from '@/public/about/1.webp'
-import team2 from '@/public/about/2.webp'
-import team3 from '@/public/about/3.webp'
-import team4 from '@/public/about/4.webp'
-import team5 from '@/public/about/5.webp'
-import team6 from '@/public/about/6.webp'
-import team7 from '@/public/about/7.webp'
-import team8 from '@/public/about/8.webp'
+import team1 from '@/public/about/se1.webp'
+import team2 from '@/public/about/se2.webp'
+import team3 from '@/public/about/se3.webp'
+import team4 from '@/public/about/se4.webp'
+import team5 from '@/public/about/se5.webp'
+import team6 from '@/public/about/se6.webp'
+import team7 from '@/public/about/se7.webp'
+import team8 from '@/public/about/se8.webp'
+import team9 from '@/public/about/se9.webp'
 import Image from 'next/image'
 import { useLocale } from 'next-intl'
-import { FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa'
 
 const Team = () => {
   const locale = useLocale()
@@ -19,44 +19,49 @@ const Team = () => {
   const team = [
     {
       img: team1,
-      name: locale === "en" ? "John Smith" : "جون سميث",
-      role: locale === "en" ? "Senior Mechanic" : "ميكانيكي أول"
+      name: locale === "en" ? "Mohammed Ali" : "محمد علي",
+      role: locale === "en" ? "Senior Battery Technician" : "فني بطاريات أول"
     },
     {
       img: team2,
-      name: locale === "en" ? " Johnson" : "سارة جونسون",
-      role: locale === "en" ? "Diagnostic Specialist" : "أخصائية تشخيص"
+      name: locale === "en" ? "Ahmed Khan" : "أحمد خان",
+      role: locale === "en" ? "Diagnostic Specialist" : "أخصائي تشخيص"
     },
     {
       img: team3,
-      name: locale === "en" ? "Michael Brown" : "مايكل براون",
+      name: locale === "en" ? "Rahul Sharma" : "راهول شارما",
       role: locale === "en" ? "Electrical Engineer" : "مهندس كهرباء"
     },
     {
       img: team4,
-      name: locale === "en" ? "David Wilson" : "ديفيد ويلسون",
+      name: locale === "en" ? "Abdullah Siddiqui" : "عبد الله صديقي",
       role: locale === "en" ? "Service Manager" : "مدير الخدمة"
     },
     {
       img: team5,
-      name: locale === "en" ? "Emily Davis" : "إيميلي ديفيس",
+      name: locale === "en" ? "Rajesh Kumar" : "راجيش كومار",
       role: locale === "en" ? "Customer Relations" : "علاقات العملاء"
     },
     {
       img: team6,
-      name: locale === "en" ? "Robert Martinez" : "روبرت مارتينيز",
+      name: locale === "en" ? "Vikram Singh" : "فيكرام سينغ",
       role: locale === "en" ? "Brake Specialist" : "أخصائي فرامل"
     },
     {
       img: team7,
-      name: locale === "en" ? " Anderson" : "ليزا أندرسون",
+      name: locale === "en" ? "Hassan Ahmed" : "حسن أحمد",
       role: locale === "en" ? "Quality Control" : "مراقبة الجودة"
     },
     {
       img: team8,
-      name: locale === "en" ? "James Taylor" : "جيمس تايلور",
+      name: locale === "en" ? "Arjun Patel" : "أرجون باتيل",
       role: locale === "en" ? "Transmission Expert" : "خبير ناقل حركة"
     },
+    {
+      img: team9,
+      name: locale === "en" ? "Yusuf Rahman" : "يوسف رحمن",
+      role: locale === "en" ? "Roadside Assistance" : "المساعدة على الطريق"
+    }
   ]
 
   return (
@@ -81,7 +86,6 @@ const Team = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
 
           {team.map((item, index) => {
-
             const isHovered = hoveredIndex === index
 
             return (
@@ -119,25 +123,6 @@ const Team = () => {
                 >
                   {isHovered ? "-" : "+"}
                 </button>
-
-                {/* Social Icons */}
-                <div
-                  className={`absolute top-16 right-8 flex flex-col gap-y-2
-                  transition-all duration-500
-                  ${isHovered ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
-                >
-                  <span className="flex items-center justify-center text-[20px] bg-white text-black h-[50px] w-[50px] rounded-full hover:bg-red-600 hover:text-white transition">
-                    <FaLinkedin />
-                  </span>
-
-                  <span className="flex items-center justify-center text-[20px] bg-white text-black h-[50px] w-[50px] rounded-full hover:bg-red-600 hover:text-white transition">
-                    <FaFacebook />
-                  </span>
-
-                  <span className="flex items-center justify-center text-[20px] bg-white text-black h-[50px] w-[50px] rounded-full hover:bg-red-600 hover:text-white transition">
-                    <FaInstagram />
-                  </span>
-                </div>
 
               </div>
             )

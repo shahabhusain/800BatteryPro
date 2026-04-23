@@ -14,7 +14,7 @@ const HowItWorks = () => {
         {
             icon: <FaPhone />,
             title: "02",
-            desc: "Call our toll free at 971528475675",
+            desc: "Call our Whatsapp at +971528475675",
             bg: "bg-white border-2 border-gray-100 shadow-lg text-gray-800"
         },
         {

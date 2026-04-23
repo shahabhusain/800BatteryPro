@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import herobg from '@/public/brands/bg.webp'
 import { GoArrowRight } from 'react-icons/go'
 import { useLocale } from 'next-intl'
-import Form from '../Services/Form'
+import Form from '../Hero/Form'
 import AppointmentModal from '../AppointmentModal'
 const heroEnglishContent = {
   desc: "Top Car Brands – 24/7 Emergency Support & Anywhere!",

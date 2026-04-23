@@ -5,7 +5,7 @@ import Faq from '@/app/components/Brands/subPage/Faq'
 import Footer from '@/app/components/Footer'
 import Trusted from '@/app/components/Hero/Trusted'
 import { useLocale } from 'next-intl'
-import serviceImg from "@/public/services/service.jpg"
+import serviceImg from "@/public/services/ser1.webp"
 import React from 'react'
 // battery brands
 import varta from "@/public/batteryBrands/varta.png";

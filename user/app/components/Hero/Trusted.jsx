@@ -149,11 +149,7 @@ const Trusted = () => {
       
       {/* Author info - Name and Title only */}
       <div className={`flex items-center gap-3 ${isRTL ? 'flex-row-reverse' : ''}`}>
-        <img 
-          className="w-10 h-10 rounded-full object-cover" 
-          src={card.image} 
-          alt={card.name} 
-        />
+   
         <div className={isRTL ? 'text-right' : ''}>
           <p className="font-semibold text-sm text-gray-900">{card.name}</p>
           <p className="text-xs text-gray-500">{card.title}</p>
