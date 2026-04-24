@@ -51,7 +51,7 @@ const heroEnglishContent = {
         span1: "BMW Car Battery Replacement",
         span2: " & Advanced Repairs in Dubai"
     },
-    desc1: "Don't panic if your Car Battery Is Dead! 800Battery Offers The Under 25 Minute On-site Battery Replacement for your BMW in Dubai? Branded car battery with best customer services.",
+    desc1: "Don't panic if your Car Battery Is Dead! 800Battery Offers Under 25 Minute On-site Battery Replacement for your BMW in Dubai? Branded car battery with best customer services.",
     btn: "Call Now",
     btn1: "Book Service Now"
 }
@@ -206,7 +206,7 @@ const englishContent = [
     {
         icons: <FaSitemap />,
         title: "Certified BMW specialists",
-        desc: "We have a team of certified BMW specialists, who have 5+ years of experience working on different BMW models and Car Batteries."
+        desc: "We have a team of certified BMW specialists, who have 6+ years of experience working on different BMW models and Car Batteries."
     },
     {
         icons: <FaSitemap />,
@@ -215,7 +215,7 @@ const englishContent = [
     },
     {
         icons: <FaSitemap />,
-        title: "Car Battery Under 15 Minutes",
+        title: "Car Battery Under 25 Minutes",
         desc: "800BatteryPro offers 24/7 roadside assistance with our free battery delivery, our technicians use the latest equipment to work on your replacement."
     }
 ]

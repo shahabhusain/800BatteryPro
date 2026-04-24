@@ -15,7 +15,7 @@ const Services = () => {
     {
       link:"/services/battery-replacement",
       title: "Battery Replacement",
-      description: "Need a quick and reliable car battery replacement? Our certified technicians provide premium-quality batteries and expert service, delivered straight to your doorstep in as little as 30 minutes.",
+      description: "Need a quick and reliable car battery replacement? Our certified technicians provide premium-quality batteries and expert service, delivered straight to your doorstep in as little as 25 minutes.",
       image: service1
     },
     {
@@ -27,7 +27,7 @@ const Services = () => {
     {
       link:"/services/roadside-assistance",
       title: "Roadside Assistance",
-      description: "Stranded on the road? Our roadside assistance experts are just a call away. Equipped with the latest tools and technology, we ensure immediate support within 30 minutes, anywhere in the UAE.",
+      description: "Stranded on the road? Our roadside assistance experts are just a call away. Equipped with the latest tools and technology, we ensure immediate support within 25 minutes, anywhere in the UAE.",
       image: service3
     },
     {

@@ -189,13 +189,13 @@ const englishContent = [
   },
   {
     icons: <FaSitemap />,
-    title: "Certified BMW specialists",
-    desc: "We have a team of certified BMW specialists, who have 5+ years of experience working on different BMW models and Car Batteries."
+    title: "Certified GMC specialists",
+    desc: "We have a team of certified GMC specialists, who have 6+ years of experience working on different GMC models and Car Batteries."
   },
   {
     icons: <FaSitemap />,
-    title: "Using Genuine BMW Parts",
-    desc: "Our certified BMW specialists only use OEM approved spare parts and Branded BMW batteries for all car jobs."
+    title: "Using Genuine GMC Parts",
+    desc: "Our certified GMC specialists only use OEM approved spare parts and Branded BMW batteries for all car jobs."
   },
   {
     icons: <FaSitemap />,

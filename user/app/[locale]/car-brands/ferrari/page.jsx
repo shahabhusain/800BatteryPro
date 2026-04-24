@@ -232,7 +232,7 @@ const englishContent = [
   },
   {
     icons: <FaSitemap />,
-    title: "Car Battery Under 15 Minutes",
+    title: "Car Battery Under 25 Minutes",
     desc: "If you are stranded somewhere on the road anywhere in Dubai and Abu Dhabi, call us at +971528475675 for quick roadside assistance services. We offer free car battery and battery testing services to all our customers."
   }
 ]
