@@ -155,7 +155,7 @@ const Form = () => {
           </div>
           <div className='w-px h-4 bg-gray-600'></div>
           <div className='text-gray-400 text-sm'>
-            ⏱️ Avg. 30 min arrival
+            ⏱️ Avg. 25 min arrival
           </div>
         </div>
       </form>
