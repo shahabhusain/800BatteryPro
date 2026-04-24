@@ -13,7 +13,7 @@ const heroEnglishContent = {
     span1:"800BatteryPro - Car Battery Services in Dubai ",
     span2:"& Abu Dhabi!"
   },
-  desc1:"Car Battery Boosting & Replacement - Roadside Assistance - Premium Car Programming",
+  desc1:"Car Battery Replacement Under 25 Min - Quick Car Battery Boosting - 24/7 Roadside Assistance - Advanced Car Repair",
   btn:"Call Now",
   btn1:"Book Service Now"
 }

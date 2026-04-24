@@ -1,9 +1,9 @@
-import AboutContent from '@/app/components/About/AboutContent'
 import Founder from '@/app/components/About/Founder'
 import Hero from '@/app/components/About/Hero'
 import Team from '@/app/components/About/Team'
 import WhyChooseUs from '@/app/components/About/WhyChooseUs'
 import Footer from '@/app/components/Footer'
+import About from '@/app/components/Hero/About'
 import Trusted from '@/app/components/Hero/Trusted'
 import Faqs from '@/app/components/Services/Faqs'
 import React from 'react'
@@ -18,14 +18,14 @@ export const metadata = {
   },
 };
 
-const About = () => {
+const Abouts = () => {
   return (
     <div>
       <div className='sticky top-0'>  {/* Removed z-[-1] */}
         <Hero />
       </div>
       <div className='bg-white  rounded-t-4xl relative z-10'>
-        <AboutContent />
+        <About />
         <WhyChooseUs />
         <Founder />
         <Team />
@@ -37,4 +37,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Abouts
