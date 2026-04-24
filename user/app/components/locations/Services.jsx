@@ -68,7 +68,7 @@ const Services = ({
     : {
         desc: "Battery Services We Offer",
         title1: "Complete",
-        title2: "Battery Solutions UAE",
+        title2: "Battery Solutions in Dubai & Abu Dhabi",
         viewAll: "View All",
       };
 

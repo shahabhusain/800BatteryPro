@@ -43,19 +43,67 @@ import bg from '@/public/brands/ferrari/bg.webp'
 import Services from '@/app/components/locations/Services'
 import Cards from '@/app/components/Hero/Cards'
 import HowItWorks from '@/app/components/Hero/HowItWorks'
-
+    import service from '@/public/brands/ferrari/ser1.png'
+import service1 from '@/public/brands/ferrari/ser2.webp'
+import service2 from '@/public/brands/ferrari/ser3.webp'
+import service3 from '@/public/brands/ferrari/ser4.webp'
 const Ferrari = () => {
   const locale = useLocale()
 const heroEnglishContent = {
   desc: "Top Car Brands – 24/7 Emergency Support & Anywhere!",
   title: {
-    span1: "Ferrari Car Battery & Advanced ",
-    span2: "Repair Experts"
+    span1: "Ferrari Car Battery Replacement ",
+    span2: "Under 25 Minutes Anywhere in Dubai"
   },
-  desc1: "Contact 800BatteryPro for Ferrari Battery Replacement in Dubai or anywhere in the UAE. ",
+  desc1: "Contact 800BatteryPro for Ferrari Car Battery Replacement Under 25 Minutes in Dubai and Abu Dhabi, anytime Day or Night. ",
   btn: "Call Now",
   btn1: "Book Service Now"
 }
+
+        const  englishService = [
+                      {
+                        title: "Car Battery Replacement",
+                        hoverDec: "Call 800BatteryPro at +971528475675 For Premium Car Battery Replacement Services Under 25 Minutes in Abu Dhabi",
+                        img: service
+                      },
+                      {
+                        title: "Car Battery Boosting",
+                        hoverDec: "Get 24/7 Car Battery Boosting/jump start services under 25 minutes anywhere in Abu Dhabi with no hidden cost.",
+                        img: service2
+                      },
+                      {
+                        title: "24/7 Roadside Assistance",
+                        hoverDec: "800BatteryPro has well-equipped mobile vans and 30+ certified car battery replacement technicians providing 24/7 roadside assistance anywhere in the UAE. Fast & Reliable RSA!",
+                        img: service1
+                      },
+                      {
+                        title: "Car Scanning & Diagnostics",
+                        hoverDec: " Get complete Advanced Car Scanning & Diagnostics at 800BatteryPro as we have partnered with trusted car service centers in Abu Dhabi. Fast Service & Best Pricing in Abu Dhabi. Contact Us Now!",
+                        img: service3
+                      },
+                    ]
+                  const  arabicService = [
+                      {
+                        title: "استبدال بطارية السيارة",
+                        hoverDec: "اتصل بـ 800BatteryPro على +971528475675 للحصول على خدمات استبدال بطارية السيارة المتميزة خلال 30 دقيقة في دبي",
+                        img: service
+                      },
+                      {
+                        title: "تشغيل بطارية السيارة",
+                        hoverDec: "احصل على خدمات تشغيل/بدء تشغيل بطارية السيارة على مدار الساعة خلال 30 دقيقة في أي مكان في دبي من خلال 800BatteryPro",
+                        img: service2
+                      },
+                      {
+                        title: "المساعدة على الطريق 24/7",
+                        hoverDec: "يمتلك 800BatteryPro شاحنات مجهزة تجهيزًا جيدًا وأكثر من 50 فنيًا معتمدًا يقدمون خدمات المساعدة على الطريق على مدار الساعة في أي مكان في الإمارات. خدمة طرق سريعة وموثوقة!",
+                        img: service1
+                      },
+                      {
+                        title: "فحص وتشخيص السيارة",
+                        hoverDec: "احصل على فحص وتشخيص متقدم كامل للسيارة في 800BatteryPro. خدمة سريعة وأفضل الأسعار. اتصل بنا الآن!",
+                        img: service3
+                      },
+                    ]
 
 const heroArabicContent = {
   desc: "أفضل ماركات السيارات – دعم طارئ 24/7 أينما كنت!",
@@ -70,15 +118,15 @@ const heroArabicContent = {
 
 const serviceEnglishContent = {
   subtitle: "SERVICES",
-  title: "Ferrari Experts in Dubai - From Car Battery Replacement To Car Scanning",
+  title: "Ferrari Car Battery Experts in Dubai - Under 25 Minutes Service Delivered Onsite ",
   services: [
     {
       id: 1,
-      description: "Ferrari isn't just a car—it's a statement of performance and excellence. Ferrari - A car representing prestige and peak performance. Like any other Italian car brand, 800BatteryPro has certified Ferrari technicians for Ferrari battery replacement services in Dubai. Ferrari car batteries are engineered to sustain under high temperatures and provide support during peak performance. For car models like Ferrari SF90 XX Spider, F80, 849 Testarossa, Amalfi, 488 GTB, to the Portofino, Roma, or its SUV Purosangue, we provide both AGM Batteries and Advanced Lithium-Ion Batteries."
+      description: "800BatteryPro provides you with 24/7 roadside assistance and under 25 minutes Ferrari car battery replacement that to with free battery testing and free onsite delivery. We have 20+ rapid response well-equipped mobile vans with 30+ certified Ferrari technicians. Ferrari isn't just a car—it's a statement of performance and excellence. Ferrari - A car representing prestige and peak performance. Like any other Italian car brand, Ferrari car batteries are engineered to sustain under high temperatures and provide support during peak performance. For car models like Ferrari SF90 XX Spider, F80, 849 Testarossa, Amalfi, 488 GTB, to the Portofino, Roma, or its SUV Purosangue, we provide both AGM Batteries and Advanced Lithium-Ion Batteries."
     },
     {
       id: 2,
-      description: "AGM Batteries support both electrical systems for models featuring start-stop technology. AGM Batteries for Ferrari provide high performance, longevity, and resistance to vibrations in dynamic climates. For the hybrid or electric Ferrari Models, we recommend Lithium-Ion Batteries, which have greater energy density and exceptionally long lifetime cycles. To ensure peak performance and a smooth ride in a Ferrari, there is a requirement for regular maintenance and car diagnostics, which is essential for all Italian Car Brands. Our Certified Ferrari Technicians provide under 15-minute onsite battery replacements with full diagnostics and BMS resets. For Emergency Support call at +971528475675."
+      description: "AGM Batteries support both electrical systems for models featuring start-stop technology. AGM Batteries for Ferrari provide high performance, longevity, and resistance to vibrations in dynamic climates. For the hybrid or electric Ferrari Models, we recommend Lithium-Ion Batteries, which have greater energy density and exceptionally long lifetime cycles. To ensure peak performance and a smooth ride in a Ferrari, there is a requirement for regular maintenance and car diagnostics, which is essential for all Italian Car Brands. Our Certified Ferrari Technicians provide under 25-minute onsite battery replacements with full diagnostics and BMS resets. For Emergency Support call at +971528475675."
     },
   ]
 }
@@ -100,11 +148,11 @@ const serviceArabicContent = {
 
 const serviceEnglishContent1 = {
   subtitle: "SERVICES",
-  title: "Trusted Maserati Service Center in Dubai & Abu Dhabi",
+  title: "Partnered with Top Ferrari Service Center in Dubai & Abu Dhabi",
   services: [
     {
       id: 1,
-      description: "800BatteryPro has years of experience in Ferrari repair and maintenance services. Trusted by thousands of Emirates and expats as one of the best Ferrari Service Centers in the UAE. Our certified Ferrari experts use genuine Ferrari parts and check with every car owner before installation, with a 100 percent success rate in almost every car job. Our team is available 24/7 for roadside assistance and onsite car battery replacement across the UAE. You can trust us with any routine servicing or complex repairs in any Ferrari model, from full car scanning and diagnostics, car battery check-ups & replacement, to advanced car programming services. Contact one of our experts to book your next appointment at 800BatteryPro."
+      description: "We are partnered with top european car experts in Dubai. 800BatteryPro has 6+ years of experience in Ferrari car battery replacement and advanced maintenance services. Trusted by thousands of Emirates and expats as one of the best Ferrari car battery replacment service in the UAE. Our certified Ferrari experts use genuine Ferrari parts and check with every car owner before installation, with a 100% success rate in almost every car job. Our team is available 24/7 for any e,emergency roadside assistance for Ferrari and under 25 minutes onsite car battery replacement across the UAE. You can trust us with any routine servicing or complex repairs in any Ferrari models, from full car scanning and diagnostics, car battery check-ups & replacement, to advanced car programming services. Contact one of our experts to book your next appointment at 800BatteryPro."
     },
   ]
 }
@@ -400,7 +448,7 @@ const text = locale === "ar"
       </div>
         <div className=' bg-white  rounded-t-4xl relative z-10'>
              <Cards />
-            <Services />
+            <Services englishService={englishService} arabicService={arabicService} />
             <HowItWorks />
            <Service serviceContent={serviceContent} serviceImg={serviceImg} />
            <CarBrands text={text} brands={brands} />

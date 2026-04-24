@@ -30,7 +30,7 @@ const heroEnglishContent = {
         span1: "24/7 Car Battery Boosting",
         span2: " Services in Dubai"
     },
-    desc1: "Get expert roadside assistance with free on-site testing and safe jump-starts in under 30 minutes.",
+    desc1: "Get expert roadside assistance with free on-site testing and safe jump-starts in under 25 minutes.",
     btn: "Call Now",
     btn1: "Book Service Now"
 }
@@ -53,7 +53,7 @@ const serviceEnglishContent = {
     services: [
         {
             id: 1,
-            description: "with a dead car battery? Don't wait or take risks—call the experts who guarantee 24/7 roadside assistance and arrival in under 30 minutes! A dead vehicle battery disrupts your entire schedule. You need a fast, reliable team to get your car moving again safely. 800BatteryPro delivers premium 24/7 emergency battery boosting directly to your exact location. We dispatch certified technicians immediately so you never wait long in the heat. Our experts use advanced diagnostic technology to deliver a secure power surge. This precise method protects your car's sensitive internal computers from dangerous electrical spikes. If you need a replacement, we provide only premium branded batteries, delivered and installed at no extra cost. Using advanced installation technology, we ensure your vehicle's electronic systems remain protected and operational, so you can drive away with peace of mind. We pride ourselves on reliability, speed, and hassle-free service—no hidden fees, no compromises. Whether you're stuck at home, work, or on the road, our team is ready to get you moving again quickly and safely. Trust the UAE's leading experts in mobile car battery boosting and enjoy convenience with every call. Contact us now for immediate, reliable help."
+            description: "with a dead car battery? Don't wait or take risks—call the experts who guarantee 24/7 roadside assistance and arrival in under 25 minutes! A dead vehicle battery disrupts your entire schedule. You need a fast, reliable team to get your car moving again safely. 800BatteryPro delivers premium 24/7 emergency battery boosting directly to your exact location. We dispatch certified technicians immediately so you never wait long in the heat. Our experts use advanced diagnostic technology to deliver a secure power surge. This precise method protects your car's sensitive internal computers from dangerous electrical spikes. If you need a replacement, we provide only premium branded batteries, delivered and installed at no extra cost. Using advanced installation technology, we ensure your vehicle's electronic systems remain protected and operational, so you can drive away with peace of mind. We pride ourselves on reliability, speed, and hassle-free service—no hidden fees, no compromises. Whether you're stuck at home, work, or on the road, our team is ready to get you moving again quickly and safely. Trust the UAE's leading experts in mobile car battery boosting and enjoy convenience with every call. Contact us now for immediate, reliable help."
         },
     ]
 }
@@ -78,8 +78,8 @@ const englishContent = [
     },
     {
         icons: <FaSitemap />,
-        title: "Certified Technicians & 5+ Years Of Experience",
-        desc: "800BatteryPro has one of the best and trusted car service centers in Dubai. We have 50+ technicians with over 5+ years of experience working on premium car repairs delivering car jobs with 100 percent precision and customer satisfaction. Our team of technicians are all well-trained and certified by vendors to work on all major car brands."
+        title: "Certified Technicians & 6+ Years Of Experience",
+        desc: "800BatteryPro has one of the best and trusted car service centers in Dubai. We have 30+ technicians with over 6+ years of experience working on premium car repairs delivering car jobs with 100 percent precision and customer satisfaction. Our team of technicians are all well-trained and certified by vendors to work on all major car brands."
     },
     {
         icons: <FaSitemap />,
@@ -121,7 +121,7 @@ const arabicContent = [
   const englishFaqs = [
       {
           question: "How quickly can you reach me in Dubai or Abu Dhabi?",
-          answer: "We strategically place our fully-equipped service vehicles across both cities. This allows our technicians to reach your exact location in under 30 minutes, 24 hours a day, 7 days a week."
+          answer: "We strategically place our fully-equipped service vehicles across both cities. This allows our technicians to reach your exact location in under 25 minutes, 24 hours a day, 7 days a week."
       },
       {
           question: "Will a jump-start damage my modern car?",

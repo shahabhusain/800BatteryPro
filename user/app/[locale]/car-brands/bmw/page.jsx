@@ -37,6 +37,10 @@ import WhyChooseUs from '@/app/components/Brands/subPage/WhyChooseUs'
 import herobg from '@/public/brands/bmwBrands/bg.webp'
 import Cards from '@/app/components/Hero/Cards'
 import Services from '@/app/components/locations/Services'
+import service from '@/public/brands/bmwBrands/ser1.webp'
+import service1 from '@/public/brands/bmwBrands/ser2.webp'
+import service2 from '@/public/brands/bmwBrands/ser3.webp'
+import service3 from '@/public/brands/bmwBrands/ser4.webp'
 
 
 const Bmw = () => {
@@ -45,9 +49,9 @@ const heroEnglishContent = {
     desc: "Top Car Brands – 24/7 Emergency Support & Anywhere!",
     title: {
         span1: "BMW Car Battery Replacement",
-        span2: " & Advanced Repairs"
+        span2: " & Advanced Repairs in Dubai"
     },
-    desc1: "Don't panic if your Car Battery Is Dead! 800Battery Offers The Under 15 Minute On-site Battery Replacement for your BMW in Dubai? Branded car battery with best customer services.",
+    desc1: "Don't panic if your Car Battery Is Dead! 800Battery Offers The Under 25 Minute On-site Battery Replacement for your BMW in Dubai? Branded car battery with best customer services.",
     btn: "Call Now",
     btn1: "Book Service Now"
 }
@@ -73,11 +77,11 @@ const serviceEnglishContent = {
         },
         {
             id: 2,
-            description: "We provide 24/7 roadside assistance and emergency BMW battery replacement services directly at your office, home, or anywhere in Dubai and Abu Dhabi."
+            description: "We provide 24/7 roadside assistance and emergency BMW battery replacement services under 25 minutes directly at your office, home, or anywhere in Dubai and Abu Dhabi."
         },
         {
             id: 3,
-            description: "Our team of experts will offer free battery testing and use the latest tech, along with ensuring a genuine battery brand is used, which typically happens under 15 Minutes. Our Battery replacement service includes free battery health testing, expert installation, and up to 18 months of warranty."
+            description: "Our team of experts will offer free battery testing and use the latest tech, along with ensuring a genuine battery brand is used, which typically happens under 25 Minutes. Our Battery replacement service includes free battery health testing, expert installation, and up to 18 months of warranty."
         },
         {
             id: 4,
@@ -111,15 +115,15 @@ const serviceArabicContent = {
 
 const serviceEnglishContent1 = {
     subtitle: "SERVICES",
-    title: "BMW Service Centre in Dubai",
+    title: "800BatteryPro Delivering Branded Car Batteries In Dubai",
     services: [
         {
             id: 1,
-            description: "Genuine Car Battery Replacement & Advances Car Repairs - BMW are powerful German machine with next-gen powertrains which requires branded battery capable of handling quick acceleration, complex electrical systems, and smart tech features. 800BatteryPro recommends AGM and lithium batteries, which are great in their capacity and trusted for reliable functionality. Our certified BMW experts in Dubai only use the premium AGM Batteries to ensure high performance in the harsh summer season of the UAE."
+            description: "800BatteryPro has partnered with top european car repair workshops in the UAE - BMW are powerful German machine with next-gen powertrains which requires branded battery capable of handling quick acceleration, complex electrical systems, and smart tech features. 800BatteryPro recommends AGM and lithium batteries, which are great in their capacity and trusted for reliable functionality. Our certified BMW experts in Dubai only use the premium AGM Batteries to ensure high performance in the harsh summer season of the UAE."
         },
         {
             id: 2,
-            description: "We serve more than just BMW Car Battery replacement, as we have a car service center ideally located in Dubai and Abu Dhabi. Our services catalogue includes 24/7 roadside assistance, Free Battery Boosting, advance car repairs (I.e ECU, TCM, etc.), and all electrical and mechanical repair services delivered with 100 percent customer satisfaction and market competitive pricing. Our technicians only use OEM standard spare parts for BMW, which ensures peak engine performance and luxury."
+            description: "We serve more than just BMW Car Battery replacement, as we partnered with top car service centers ideally located in Dubai and Abu Dhabi. Our services catalogue includes 24/7 roadside assistance, Free Battery Boosting, advance car repairs (I.e ECU, TCM, etc.), and all electrical and mechanical repair services delivered with 100% customer satisfaction and market competitive pricing. Our technicians only use OEM standard spare parts for BMW, which ensures peak engine performance and luxury."
         },
         {
             id: 3,
@@ -242,7 +246,7 @@ const arabicContent = [
 const englishFaqs = [
     {
         question: "How long does a BMW battery replacement take?",
-        answer: "800BatteryPro guarantees on-site battery replacement under 15 Minutes once our certified BMW technicians arrive at your location. We offer free battery testing and boosting services 24/7 through our specialised roadside assistance services. If you are car battery is dead or something wrong with its electrical system, just call as at +971 528475675 for immediate assistance."
+        answer: "800BatteryPro guarantees on-site battery replacement under 25 Minutes once our certified BMW technicians wth our rapid response mobile van arrives at your location. We offer free battery testing and boosting services through our specialised roadside assistance services. If you are car battery is dead or something wrong with its electrical system, just call as at +971 528475675 for immediate 24/7 roadside assistance."
     },
     {
         question: "How do I know if my BMW battery needs replacing?",
@@ -250,7 +254,7 @@ const englishFaqs = [
     },
     {
         question: "Do you offer battery replacement in Dubai?",
-        answer: "800BatteryPro offers 24/7 battery replacement services in Dubai and Abu Dhabi. We have a team of certified BMW technicians using latest technology and genuine car battery serving residents of UAE with under 15 minutes roadside assistance."
+        answer: "800BatteryPro offers 24/7 battery replacement services in Dubai and Abu Dhabi. We have a team of certified BMW technicians using latest technology and genuine car battery serving residents of UAE with under 25 minutes roadside assistance."
     },
     {
         question: "How much does a BMW battery replacement cost in Dubai?",
@@ -418,6 +422,51 @@ const text = locale === "ar"
                       { image: volcan, name: "Volcan" },
                   ];
 
+                       const  englishService = [
+                      {
+                        title: "Car Battery Replacement",
+                        hoverDec: "Call 800BatteryPro at +971528475675 For Premium Car Battery Replacement Services Under 25 Minutes in Abu Dhabi",
+                        img: service
+                      },
+                      {
+                        title: "Car Battery Boosting",
+                        hoverDec: "Get 24/7 Car Battery Boosting/jump start services under 25 minutes anywhere in Abu Dhabi with no hidden cost.",
+                        img: service2
+                      },
+                      {
+                        title: "24/7 Roadside Assistance",
+                        hoverDec: "800BatteryPro has well-equipped mobile vans and 30+ certified car battery replacement technicians providing 24/7 roadside assistance anywhere in the UAE. Fast & Reliable RSA!",
+                        img: service1
+                      },
+                      {
+                        title: "Car Scanning & Diagnostics",
+                        hoverDec: " Get complete Advanced Car Scanning & Diagnostics at 800BatteryPro as we have partnered with trusted car service centers in Abu Dhabi. Fast Service & Best Pricing in Abu Dhabi. Contact Us Now!",
+                        img: service3
+                      },
+                    ]
+                  const  arabicService = [
+                      {
+                        title: "استبدال بطارية السيارة",
+                        hoverDec: "اتصل بـ 800BatteryPro على +971528475675 للحصول على خدمات استبدال بطارية السيارة المتميزة خلال 30 دقيقة في دبي",
+                        img: service
+                      },
+                      {
+                        title: "تشغيل بطارية السيارة",
+                        hoverDec: "احصل على خدمات تشغيل/بدء تشغيل بطارية السيارة على مدار الساعة خلال 30 دقيقة في أي مكان في دبي من خلال 800BatteryPro",
+                        img: service2
+                      },
+                      {
+                        title: "المساعدة على الطريق 24/7",
+                        hoverDec: "يمتلك 800BatteryPro شاحنات مجهزة تجهيزًا جيدًا وأكثر من 50 فنيًا معتمدًا يقدمون خدمات المساعدة على الطريق على مدار الساعة في أي مكان في الإمارات. خدمة طرق سريعة وموثوقة!",
+                        img: service1
+                      },
+                      {
+                        title: "فحص وتشخيص السيارة",
+                        hoverDec: "احصل على فحص وتشخيص متقدم كامل للسيارة في 800BatteryPro. خدمة سريعة وأفضل الأسعار. اتصل بنا الآن!",
+                        img: service3
+                      },
+                    ]
+
 
   return (
     <div>
@@ -426,7 +475,7 @@ const text = locale === "ar"
       </div>
         <div className=' bg-white  rounded-t-4xl relative z-10'>
             <Cards />
-            <Services />
+            <Services englishService={englishService} arabicService={arabicService} />
            <Service serviceContent={serviceContent} serviceImg={serviceImg} />
           
            <CarBrands text={text} brands={brands} />

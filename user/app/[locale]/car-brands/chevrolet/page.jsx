@@ -42,16 +42,20 @@ import bg from '@/public/brands/che/bg.webp'
 import Cards from '@/app/components/Hero/Cards'
 import Services from '@/app/components/locations/Services'
 import HowItWorks from '@/app/components/Hero/HowItWorks'
+import service from '@/public/brands/che/ser1.webp'
+import service1 from '@/public/brands/che/ser2.webp'
+import service2 from '@/public/brands/che/ser3.webp'
+import service3 from '@/public/brands/che/ser4.webp'
 
 const Chevrolet = () => {
   const locale = useLocale()
 const heroEnglishContent = {
   desc: "Top Car Brands – 24/7 Emergency Support & Anywhere!",
   title: {
-    span1: "Chevrolet Car Battery ",
-    span2: "Replacement"
+    span1: "Chevrolet Car Battery Replacement ",
+    span2: "Under 25 Minutes in Dubai & Abu Dhabi"
   },
-  desc1: "No Need to Panic if your Chevrolet Car Battery is Not Working! At 800BatteryPro, we provide quick on-site battery replacement, battery boosting, 24/7 roadside assistance and advance repair services anywhere in Dubai.",
+  desc1: "No Need to Panic if your Chevrolet Car Battery is Not Working! At 800BatteryPro, we provide quick on-site Chevrolet car battery replacement under 25 minutes in Dubai. Also we offer premium car battery battery boosting, 24/7 roadside assistance and advanced repair services across the Emirates.",
   btn: "Call Now",
   btn1: "Book Service Now"
 }
@@ -69,11 +73,11 @@ const heroArabicContent = {
 
 const serviceEnglishContent = {
   subtitle: "SERVICES",
-  title: "Chevrolet Battery Replacement & Advanced Repair Services",
+  title: "Branded Chevrolet Battery Replacement Services- Fast & Reliable",
   services: [
     {
       id: 1,
-      description: "Chevrolet is one of the best American Car brands with its wide bodies and peak performance powertrains, considered as highly maintenance-demanding vehicles. In the harsh climate of the UAE, Chevrolet faces stressful situations with their car batteries. At 800BatteryPro, we have certified Chevrolet specialists who can do a quick Car Battery Replacement for you under 15 minutes, that too at no cost! Our team of technicians has the best equipment and battery testing technology to work on every car job, delivering 100 percent satisfaction. If you are facing trouble starting your car, flickering lights in the dashboard, or dim headlights, then you should immediately contact our expert at +971528475675. A non-functional battery is the main reason behind a malfunctioning electrical system, which needs to be replaced as soon as possible. Our customer support will assign a Chevrolet specialist to you, helping you get back on the road instantly."
+      description: "Chevrolet is one of the best American Car brands with its wide bodies and peak performance power-trains, considered as highly maintenance-demanding vehicles. In the harsh climate of the UAE, Chevrolet faces stressful situations with their car batteries. At 800BatteryPro, we have certified Chevrolet specialists who can do a quick Car Battery Replacement for you under 25 minutes, that too at no cost! Our team of 30+ technicians has the best equipment and battery testing technology to work on every car job, delivering 100% customer satisfaction. We have our 20+ rapid response mobile vans all ready to provide instant emergency support for you on the road. If you are facing trouble starting your car, flickering lights in the dashboard, or dim headlights, then you should immediately contact our expert at +971528475675. A non-functional battery is the main reason behind a malfunctioning electrical system, which needs to be replaced as soon as possible. Our customer support will assign a Chevrolet specialist to you, helping you get back on the road instantly."
     },
     {
       id: 2,
@@ -85,7 +89,7 @@ const serviceEnglishContent = {
     },
     {
       id: 4,
-      description: "Types of Chevrolet Car Batteries We Provide: MF BATTERY CHEVROLET: For standard Chevrolet Models we recommend Maintenance-Free Batteries for high power output and low maintenance. EFB BATTERY CHEVROLET: There are several Chevrolet Models with a start-stop technology system for which the Enhanced Flooded Battery (EFB) is the best solution used for their next-gen technology and capabilities of providing extended battery life. LEAD ACID BATTERY CHEVROLET: For customers who prefer a traditional lead acid battery for Chevrolet. For some of our customers who need a quick car battery solution within a tight budget, we recommend a Lead Acid Battery for Chevrolet. Our certified technicians recommend using the traditional lead-acid batteries, which are both trustworthy and inexpensive. CHEVROLET AGM BATTERY: For premium Chevrolet Models our technicians use and recommend the Absorbent Glass Mat (AGM) batteries, which are featured with highly capable, highly durable, and excellent performance. 800BatteryPro provides 24/7 roadside assistance with under 15 minutes of on-site Chevrolet car battery delivery anywhere in Dubai. Our battery testing and delivery are free of cost, while our battery warranty lasts up to 18 months. For premium Chevrolet Battery replacement and advanced repairs, contact us now at +971528475675 or book a free car inspection appointment right now!"
+      description: "Types of Chevrolet Car Batteries We Provide: MF BATTERY CHEVROLET: For standard Chevrolet Models we recommend Maintenance-Free Batteries for high power output and low maintenance. EFB BATTERY CHEVROLET: There are several Chevrolet Models with a start-stop technology system for which the Enhanced Flooded Battery (EFB) is the best solution used for their next-gen technology and capabilities of providing extended battery life. LEAD ACID BATTERY CHEVROLET: For customers who prefer a traditional lead acid battery for Chevrolet. For some of our customers who need a quick car battery solution within a tight budget, we recommend a Lead Acid Battery for Chevrolet. Our certified technicians recommend using the traditional lead-acid batteries, which are both trustworthy and inexpensive. CHEVROLET AGM BATTERY: For premium Chevrolet Models our technicians use and recommend the Absorbent Glass Mat (AGM) batteries, which are featured with highly capable, highly durable, and excellent performance. 800BatteryPro provides 24/7 roadside assistance with under 25 minutes of on-site Chevrolet car battery delivery anywhere in Dubai. Our battery testing and delivery are free of cost, while our battery warranty lasts up to 18 months. For premium Chevrolet Battery replacement and advanced repairs, contact us now at +971528475675 or book a free car inspection appointment right now!"
     },
   ]
 }
@@ -115,11 +119,11 @@ const serviceArabicContent = {
 
 const serviceEnglishContent1 = {
   subtitle: "SERVICES",
-  title: "Chevrolet Service Center in Dubai – Premium American Car Battery Replacement",
+  title: "Partnered With Trusted Chevrolet Service Center in Dubai – American Car Experts",
   services: [
     {
       id: 1,
-      description: "800BatteryPro has years of experience delivering 100 percent satisfactory Chevrolet Car Battery Replacement services and advance repair services in the UAE. We have a team of certified Chevrolet experts and a well-equipped service center in Dubai for serving every car job with complete customer satisfaction. Our 24/7 roadside assistance and free car inspections are available for all Chevrolet Standard, hybrid, all-electric, or Premium Models, which generally happen after every 10,000 KMs or once a year. Don't hesitate to book your next car appointment with us, as our technicians only use OEM-approved spare parts and genuine car batteries, ensuring peak performance for your Chevrolet. You can reserve your slot for your next Battery Check-up with the best Chevrolet car experts in Dubai. Contact us at +971 528475675 for 24/7 emergency roadside assistance."
+      description: "800BatteryPro has 6+ years of experience delivering 100% customer satisfactory Chevrolet Car Battery Replacement services under 25 minutes along with other advanced repair solutions. We have a team of 30+ certified Chevrolet experts and 20+ rapid response mobile vans. Along with that we are in partnership wth well-equipped service center in Dubai for serving every car job with complete customer satisfaction. Our 24/7 roadside assistance and free car inspections are available for all Chevrolet Standard, hybrid, all-electric, or Premium Models, which generally happen after every 10,000 KMs or once a year. Don't hesitate to book your next car appointment with us, as our technicians only use OEM-approved spare parts and genuine car batteries, ensuring peak performance for your Chevrolet. You can reserve your slot for your next Battery Check-up with the best Chevrolet car experts in Dubai. Contact us at +971 528475675 for 24/7 emergency roadside assistance."
     },
   ]
 }
@@ -144,7 +148,7 @@ const englishServices = [
   {
     img: serviceImg2,
     title: "Certified GMC Specialists",
-    desc: "Our technicians have 5+ years of experience working on all American Car brands including the GMC (General Motors Truck Company)."
+    desc: "Our technicians have 6+ years of experience working on all American Car brands including the GMC (General Motors Truck Company)."
   },
   {
     img: serviceImg3,
@@ -153,7 +157,7 @@ const englishServices = [
   },
   {
     img: serviceImg4,
-    title: "Car Battery Under 15 Minutes",
+    title: "Car Battery Under 25 Minutes",
     desc: "Our 24/7 road side assistance for ensuring you stay safe on the road. We offer free battery testing and free car battery delivery with no hidden charges."
   }
 ]
@@ -185,21 +189,21 @@ const englishContent = [
   {
     icons: <FaSitemap />,
     title: "Premium Customer Support",
-    desc: "800BatteryPro provides you with 24/7 customer support for your Maserati car battery and advanced repair services in Dubai and Abu Dhabi."
+    desc: "800BatteryPro provides you with 24/7 customer support for your Chevrolet car battery and advanced repair services in Dubai and Abu Dhabi."
   },
   {
     icons: <FaSitemap />,
-    title: "Certified Maserati specialists",
-    desc: "We have 30+ certified Maserati specialists, who are capable of handling every car programming, car battery replacement, and advance repair jobs delivering every car job with 100 percent customer satisfaction."
+    title: "Certified Chevrolet specialists",
+    desc: "We have 30+ certified Chevrolet specialists, who are capable of handling every car programming, car battery replacement, and advance repair jobs delivering every car job with 100 percent customer satisfaction."
   },
   {
     icons: <FaSitemap />,
-    title: "Using Genuine Maserati Parts",
+    title: "Using Genuine Chevrolet Parts",
     desc: "Our technicians only use OEM-approved spare parts and genuine car batteries, making sure you stay safe on the road."
   },
   {
     icons: <FaSitemap />,
-    title: "Free Car Battery Delivery & Under 30 Minutes Service",
+    title: "Free Car Battery Delivery & Under 25 Minutes Service",
     desc: "Upon receiving your emergency call our team of technicians provides you with onsite battery replacement and free battery testing services around the clock."
   }
 ]
@@ -238,7 +242,7 @@ const englishFaqs = [
   },
   {
     question: "How much does it cost to replace a Chevrolet battery?",
-    answer: "Chevrolet battery replacement cost depends on the type and model of your car, while it also depends on the type of Battery too. When it comes to 800BatteryPro, the average prices for a car battery range from AED 500 to AED 1,500 in Dubai and Abu Dhabi, which also includes free installations and system check-ups."
+    answer: "Chevrolet battery replacement cost depends on the type and model of your car, while it also depends on the type of Battery too. When it comes to 800BatteryPro, the average prices for a car battery range depends upon your car model and variant, this also includes free installations and system check-ups."
   },
   {
     question: "Do I need to reset my Chevrolet system after battery replacement?",
@@ -250,7 +254,7 @@ const englishFaqs = [
   },
   {
     question: "Do you offer on-site Chevrolet battery replacement in Dubai?",
-    answer: "Yes, 800BatteryPro offers on-site Chevrolet battery replacement in Dubai. You can call us for 24/7 roadside assistance or any other car battery solutions anywhere in Dubai and Abu Dhabi."
+    answer: "Yes, 800BatteryPro offers on-site Chevrolet battery replacement in Dubai under 25 Minutes. You can call us for 24/7 roadside assistance or any other car battery solutions anywhere in Dubai and Abu Dhabi."
   },
   {
     question: "Any American Car Experts in Dubai?",
@@ -258,9 +262,54 @@ const englishFaqs = [
   },
   {
     question: "Do we provide American Car Battery Replacement in Abu Dhabi?",
-    answer: "Yes, 800BatteryPro has well-equipped service centers in Dubai and Abu Dhabi. We treat every American car battery replacement with genuine and premium car battery replacements. Our customer base is 100 percent satisfied with our auto repair and battery services. If your car battery is dead, call us now at +971528475675 for emergency assistance services."
+    answer: "Yes, 800BatteryPro has well-equipped service centers in Dubai and Abu Dhabi. We treat every American car battery replacement with genuine and premium car battery replacements. Our customer base is 100% satisfied with our auto repair and battery services. If your car battery is dead, call us now at +971528475675 for emergency assistance services."
   },
 ]
+
+    const  englishService = [
+                      {
+                        title: "Car Battery Replacement",
+                        hoverDec: "Call 800BatteryPro at +971528475675 For Premium Car Battery Replacement Services Under 25 Minutes in Abu Dhabi",
+                        img: service
+                      },
+                      {
+                        title: "Car Battery Boosting",
+                        hoverDec: "Get 24/7 Car Battery Boosting/jump start services under 25 minutes anywhere in Abu Dhabi with no hidden cost.",
+                        img: service2
+                      },
+                      {
+                        title: "24/7 Roadside Assistance",
+                        hoverDec: "800BatteryPro has well-equipped mobile vans and 30+ certified car battery replacement technicians providing 24/7 roadside assistance anywhere in the UAE. Fast & Reliable RSA!",
+                        img: service1
+                      },
+                      {
+                        title: "Car Scanning & Diagnostics",
+                        hoverDec: " Get complete Advanced Car Scanning & Diagnostics at 800BatteryPro as we have partnered with trusted car service centers in Abu Dhabi. Fast Service & Best Pricing in Abu Dhabi. Contact Us Now!",
+                        img: service3
+                      },
+                    ]
+                  const  arabicService = [
+                      {
+                        title: "استبدال بطارية السيارة",
+                        hoverDec: "اتصل بـ 800BatteryPro على +971528475675 للحصول على خدمات استبدال بطارية السيارة المتميزة خلال 30 دقيقة في دبي",
+                        img: service
+                      },
+                      {
+                        title: "تشغيل بطارية السيارة",
+                        hoverDec: "احصل على خدمات تشغيل/بدء تشغيل بطارية السيارة على مدار الساعة خلال 30 دقيقة في أي مكان في دبي من خلال 800BatteryPro",
+                        img: service2
+                      },
+                      {
+                        title: "المساعدة على الطريق 24/7",
+                        hoverDec: "يمتلك 800BatteryPro شاحنات مجهزة تجهيزًا جيدًا وأكثر من 50 فنيًا معتمدًا يقدمون خدمات المساعدة على الطريق على مدار الساعة في أي مكان في الإمارات. خدمة طرق سريعة وموثوقة!",
+                        img: service1
+                      },
+                      {
+                        title: "فحص وتشخيص السيارة",
+                        hoverDec: "احصل على فحص وتشخيص متقدم كامل للسيارة في 800BatteryPro. خدمة سريعة وأفضل الأسعار. اتصل بنا الآن!",
+                        img: service3
+                      },
+                    ]
 
 const arabicFaqs = [
   {
@@ -407,7 +456,7 @@ const text = locale === "ar"
       </div>
         <div className=' bg-white  rounded-t-4xl relative z-10'>
            <Cards />
-            <Services />
+            <Services englishService={englishService} arabicService={arabicService} />
             <HowItWorks />
            <Service serviceContent={serviceContent} serviceImg={serviceImg} />
            <CarBrands text={text} brands={brands} />

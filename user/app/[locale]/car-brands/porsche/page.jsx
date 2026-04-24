@@ -33,6 +33,10 @@ import herobg from '@/public/brands/porsche/bg.webp'
 import Cards from '@/app/components/Hero/Cards'
 import Services from '@/app/components/locations/Services'
 import HowItWorks from '@/app/components/Hero/HowItWorks'
+import service from '@/public/brands/porsche/ser1.webp'
+import service1 from '@/public/brands/porsche/ser2.webp'
+import service2 from '@/public/brands/porsche/ser3.webp'
+import service3 from '@/public/brands/porsche/ser4.webp'
 
 
 const Porsche = () => {
@@ -41,9 +45,9 @@ const heroEnglishContent = {
   desc: "Top Car Brands – 24/7 Emergency Support & Anywhere!",
   title: {
     span1: "Porsche Car Battery Replacement",
-    span2: "  & Advanced Repairs"
+    span2: "Under 25 Minutes in Dubai & Abu Dhabi"
   },
-  desc1: "No need to panic if your porsche battery is dead! 800BatteryPro provide 24/7 Porsche Car Battery Replacement & next-gen repair services in Dubai.",
+  desc1: "No need to panic if your porsche battery is dead! 800BatteryPro provide 24/7 Porsche Car Battery Replacement Under 25 Minutes in Dubai. Free battery Testing With No Hidden Cost!",
   btn: "Call Now",
   btn1: "Book Service Now"
 }
@@ -65,7 +69,7 @@ const serviceEnglishContent = {
   services: [
     {
       id: 1,
-      description: "There is no need to stress if your Porsche Battery is not working, you can call the Best Car Battery Replacement services in Dubai. 800BatteryPro provides Under 15 minutes onsite battery boosting and replacement services. We have a team of certified porsche specialists who only works on genuine battery brands with 18+ warranty and use only OEM standard parts. We have a years of experience in all areas of Porsche battery services. We employ high-performance batteries that can handle the heat of Dubai. 800BatteryPro offers the following are the different types of Porsche Battery:"
+      description: "There is no need to stress if your Porsche Battery is not working, you can call the Best Car Battery Replacement services in Dubai. 800BatteryPro provides Under 25 minutes onsite battery boosting and replacement services. We have a team of 30+ certified porsche specialists who only works on genuine battery brands with upto 18+ warranty and use only OEM standard parts. We have 6+ years of experience in working on all models and variants of Porsche. We employ high-performance batteries that can handle the heat of Dubai. 800BatteryPro offers the following are the different types of Porsche Battery:"
     },
     {
       id: 2,
@@ -113,13 +117,58 @@ const serviceArabicContent = {
   ]
 }
 
+    const  englishService = [
+                      {
+                        title: "Car Battery Replacement",
+                        hoverDec: "Call 800BatteryPro at +971528475675 For Premium Car Battery Replacement Services Under 25 Minutes in Abu Dhabi",
+                        img: service
+                      },
+                      {
+                        title: "Car Battery Boosting",
+                        hoverDec: "Get 24/7 Car Battery Boosting/jump start services under 25 minutes anywhere in Abu Dhabi with no hidden cost.",
+                        img: service2
+                      },
+                      {
+                        title: "24/7 Roadside Assistance",
+                        hoverDec: "800BatteryPro has well-equipped mobile vans and 30+ certified car battery replacement technicians providing 24/7 roadside assistance anywhere in the UAE. Fast & Reliable RSA!",
+                        img: service1
+                      },
+                      {
+                        title: "Car Scanning & Diagnostics",
+                        hoverDec: " Get complete Advanced Car Scanning & Diagnostics at 800BatteryPro as we have partnered with trusted car service centers in Abu Dhabi. Fast Service & Best Pricing in Abu Dhabi. Contact Us Now!",
+                        img: service3
+                      },
+                    ]
+                  const  arabicService = [
+                      {
+                        title: "استبدال بطارية السيارة",
+                        hoverDec: "اتصل بـ 800BatteryPro على +971528475675 للحصول على خدمات استبدال بطارية السيارة المتميزة خلال 30 دقيقة في دبي",
+                        img: service
+                      },
+                      {
+                        title: "تشغيل بطارية السيارة",
+                        hoverDec: "احصل على خدمات تشغيل/بدء تشغيل بطارية السيارة على مدار الساعة خلال 30 دقيقة في أي مكان في دبي من خلال 800BatteryPro",
+                        img: service2
+                      },
+                      {
+                        title: "المساعدة على الطريق 24/7",
+                        hoverDec: "يمتلك 800BatteryPro شاحنات مجهزة تجهيزًا جيدًا وأكثر من 50 فنيًا معتمدًا يقدمون خدمات المساعدة على الطريق على مدار الساعة في أي مكان في الإمارات. خدمة طرق سريعة وموثوقة!",
+                        img: service1
+                      },
+                      {
+                        title: "فحص وتشخيص السيارة",
+                        hoverDec: "احصل على فحص وتشخيص متقدم كامل للسيارة في 800BatteryPro. خدمة سريعة وأفضل الأسعار. اتصل بنا الآن!",
+                        img: service3
+                      },
+                    ]
+
 const serviceEnglishContent1 = {
   subtitle: "SERVICES",
-  title: "Porsche Service Centre in Dubai – Premium German Car Battery Replacement",
+  title: "Partnered With Porsche Service Centre in Dubai – German Car Experts",
   services: [
     {
       id: 1,
-      description: "800BatteryPro offers the most advanced Porsche battery replacement services that are tailored to the needs of electric systems in fully electric models like the Porsche Taycan. To make sure that batteries work as well as possible and last as long as possible, our German car experts follow tight rules. We provide the following Porsche battery replacement services for electric cars:"
+      description: "800BatteryPro offers quick Porsche battery replacement services under 25 minutes that are tailored to the needs of electric systems in fully electric models like the Porsche Taycan. To make sure that batteries work as well as possible and last as long as possible, our German car experts follow tight rules. We provide the following Porsche battery replacement services for electric cars:"
     },
     {
       id: 2,
@@ -159,18 +208,18 @@ const englishServices = [
   },
   {
     img: serviceImg2,
-    title: "Certified Mercedes Benz Specialists",
-    desc: "We have a team of certified mercedes benz specialists using Genuine Mercedes Parts and branded car batteries for every car service we deliver."
+    title: "Certified Porsche Specialists",
+    desc: "We have a team of certified porsche specialists using Genuine Mercedes Parts and branded car batteries for every car service we deliver."
   },
   {
     img: serviceImg3,
-    title: "Car Battery Under 15 Minutes",
-    desc: "Once we receive your emergency call for car battery services, our team delivers every car battery replacement under 15 minutes."
+    title: "Car Battery Under 25 Minutes",
+    desc: "Once we receive your emergency call for car battery services, our team delivers every car battery replacement under 25 minutes."
   },
   {
     img: serviceImg4,
     title: "Market Competitive Pricing & No Hidden Charges",
-    desc: "Along with our free battery testing and free battery delivery, our Mercedes car battery services are available on market competitive pricings."
+    desc: "Along with our free battery testing and free battery delivery, our porsche car battery services are available on market competitive pricings."
   }
 ]
 
@@ -215,7 +264,7 @@ const englishContent = [
   },
   {
     icons: <FaSitemap />,
-    title: "Car Battery Under 15 Minutes",
+    title: "Car Battery Under 25 Minutes",
     desc: "If you are stuck somewhere on the road anywhere in the UAE, then you can call us at +971528475675. With free battery testing and free car battery delivery services."
   }
 ]
@@ -258,15 +307,15 @@ const englishFaqs = [
   },
   {
     question: "How Quickly 800BatteryPro does Porsche Battery Replacement?",
-    answer: "800BatteryPro provides Porsche Battery replacement under 15 minutes anywhere in Dubai and Abu Dhabi. Our services include Free Car battery testing, inspection and diagnostic, if your battery needs to be changed, we only use genuine Porsche battery for replacement."
+    answer: "800BatteryPro provides Porsche Battery replacement under 25 minutes anywhere in Dubai and Abu Dhabi. Our services include Free Car battery testing, inspection and diagnostic, if your battery needs to be changed, we only use genuine Porsche battery for replacement."
   },
   {
     question: "Any German Car Experts in Dubai?",
-    answer: "Yes, 800BatteryPro is one of the trusted and has a certified team of German car experts in Dubai. We have a well-equipped service centre with the latest technology used for every German car repair job. We treat every car brand, including Mercedes, BMW, Porsche, and Audi, etc. Call us now for any German car battery replacement services at +971528475675."
+    answer: "Yes, 800BatteryPro is one of the trusted and has a certified team of German car experts in Dubai. We are partnered with well-equipped service centre with the latest technology used for every German car repair job. We treat every car brand, including Mercedes, BMW, Porsche, and Audi, etc. Call us now for any German car battery replacement services at +971528475675."
   },
   {
     question: "Do we provide German Car Battery Replacement in Abu Dhabi?",
-    answer: "Yes, 800BatteryPro has well-equipped service centres in Dubai and Abu Dhabi. We treat every German car battery replacement with genuine and premium car battery replacements. Our customer base is 100 percent satisfied with our auto repair and battery services. If your car battery is dead, call us now at +971528475675 for emergency assistance services."
+    answer: "Yes, 800BatteryPro has partnered with well-equipped service centres in Abu Dhabi. We treat every German car battery replacement with genuine and premium car battery replacements. Our customer base is 100 percent satisfied with our auto repair and battery services. If your car battery is dead, call us now at +971528475675 for emergency assistance services."
   },
 ]
 
@@ -375,7 +424,7 @@ const text = locale === "ar"
       </div>
         <div className='bg-white rounded-t-4xl relative z-10'>
              <Cards />
-            <Services />
+            <Services englishService={englishService} arabicService={arabicService} />
             <HowItWorks />
            <Service serviceContent={serviceContent} serviceImg={serviceImg} />
            <CarBrands text={text} brands={brands} />

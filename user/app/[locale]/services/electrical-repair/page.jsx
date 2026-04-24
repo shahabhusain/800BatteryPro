@@ -29,7 +29,7 @@ const heroEnglishContent = {
         span1: "A-Z Car Electrical Repair",
         span2: "Services in Dubai"
     },
-    desc1: "800BatteryPro has a team of certified technicians who offer premium car electrical repair services in Dubai. Get your free car inspection by calling us at +971528475675.",
+    desc1: "800BatteryPro has partnered with Top Car Service Centers in Dubai - We have a team of certified technicians who offer premium car electrical repair services in Dubai. Get your free car inspection by calling us at +971528475675.",
     btn: "Call Now",
     btn1: "Book Service Now"
 }
@@ -48,11 +48,11 @@ const heroArabicContent = {
 // Service Section
 const serviceEnglishContent = {
     subtitle: "SERVICES",
-    title: "800BatteryPro Reliable Electrical Car & Battery Services",
+    title: "800BatteryPro Providing Reliable Car Electrical & Battery Services",
     services: [
         {
             id: 1,
-            description: "We have 5+ years of experience serving our loyal customer with premium electrical car repairs in Dubai and other Emirates. With a team of 50+ trained car electricians, who are expert in all major American and European Car brands, we deliver every minor and major car job with 100 percent customer satisfaction. 800BatteryPro has a well equipped service center with the latest technology and all the essential equipments to get your car back on road with safety and luxury. If you feel any malfunctioning hardware or electrical part of your car, book a free inspection with us. Never take risk upon your safety, do a routine car checkup each 10,000 KM or per year. No matter if you have a latest or old car, electrical system plays a significant role in keeping your performance at peak. Never compromise on your comfort, call one of our technician to fix your car efficiently. We work on different parts of your car electrical system including the radiator fan replacement, xenon headlight adjustment, wiper motor replacement, and door window regulator replacement etc."
+            description: "800BatteryPro has partnered with the best car repair workshops with 100% customer satisfaction reviews in the Emirates. As for us we have a 6+ years of experience serving more then 10,000+ happy customer with premium electrical car repairs in Dubai and Abu Dhabi. With a team of 30+ trained car electricians and 20+ rapid response mobile vans, who are expert in all major American and European Car brands. We deliver every minor and major car job with 100% customer satisfaction. 800BatteryPro has a partner network of well equipped service center with the latest technology and all the essential equipments to get your car back on road with safety and luxury. If you feel any malfunctioning hardware or electrical part of your car, book a free inspection with us. Never take risk upon your safety, do a routine car checkup each 10,000 KM or per year. No matter if you have a latest or old car, electrical system plays a significant role in keeping your performance at peak. Never compromise on your comfort, call one of our technician to fix your car efficiently. We work on different parts of your car electrical system including the radiator fan replacement, xenon headlight adjustment, wiper motor replacement, and door window regulator replacement etc."
         },
     ]
 }
@@ -119,7 +119,7 @@ const arabicContent = [
 const englishFaqs = [
     {
         question: "How accurate are your electrical repair services?",
-        answer: "800BatteryPro has 5+ years of experience with two fully equipped service centres in Dubai and Abu Dhabi. We have served more than 10000+ customers in the UAE. You can trust our expertise and certified car technicians for fixing any of your complex electrical issues."
+        answer: "800BatteryPro has 6+ years of experience with a partner network of more then two fully equipped service centres in Dubai and Abu Dhabi. We have served more than 10,000+ customers in the UAE with 5/5 Ratings. You can trust with our expertise and certified car technicians for fixing any of your complex electrical issues."
     },
     {
         question: "What types of computer and module repairs do you handle?",
@@ -127,7 +127,7 @@ const englishFaqs = [
     },
     {
         question: "Can you help if my car is stuck in the sand?",
-        answer: "It really depends upon your car brand and model, along with the severity of the electronic system issue you are facing. If it's a minor issue it may range on the lower range but if it's something related to the core electrical system then you might need to set your budget a bit higher for fixing the issue. Fortunately you have 800BatteryPro who provides you with market competitive pricing with OEM-approved spare parts used for fixing every issue in your car. Contact us for more details we will share a custom quote."
+        answer: "Yes, 800BatteryPro provides you with Fast 24/7 roadside assistance anywhere in Dubai and Abu Dhabi. You can call us at +971528475675 anytime day or night, one of our rapid response mobile van will be on its way to assist you back safely. If its a car battery replacement, or tyre replacment issue, our certified techncian will enquire every issue of your car before proceeding to the replacement. As we have offer free car battery testing and inspection with no hidden cost."
     },
     {
         question: "What are the signs of electrical problems in a car?",

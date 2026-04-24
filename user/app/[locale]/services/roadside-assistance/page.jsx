@@ -29,7 +29,7 @@ const heroEnglishContent = {
     desc: "Top Car Brands – 24/7 Emergency Support & Anywhere!",
     title: {
         span1: "24/7 Roadside Assistance in Dubai:",
-        span2: " Under 30 Minutes "
+        span2: " Under 25 Minutes "
     },
     desc1: "Stranded? We dispatch expert technicians immediately. Get premium towing, battery boosting, and emergency rescue for all vehicles, including exotic cars.",
     btn: "Call Now",
@@ -54,7 +54,7 @@ const serviceEnglishContent = {
     services: [
         {
             id: 1,
-            description: "A sudden breakdown halts your day. You need a fast, safe, and reliable team to get you moving again. 800BatteryPro delivers rapid, 24/7 roadside assistance directly to your exact location. We treat every job with absolute precision, ensuring you and your vehicle stay safe. Our Premium Roadside Services includes car towing, battery boosting, and others. We operate a versatile 24/7 fleet for accidents or breakdowns. We provide Sedan/4×4 towing, fully-covered transport, and specialized sports/stance car towing. We deliver fast, safe jump-starts. If your battery cannot hold a charge, we provide an instant replacement to get you back on the road without delay. Stuck in the sand? Our specialized rescue team will extract your vehicle from difficult terrain and tow you to safety. We arrive quickly to swap your flat with your spare tire, ensuring minimal disruption to your journey. Empty tank? We deliver exactly 10 liters of special 95 fuel right to your location. Our fleet includes specialized low-clearance trucks to safely extract your car from tight, low-ceiling parking garages."
+            description: "A sudden breakdown halts your day. You need a fast, safe, and reliable team to get you moving again. 800BatteryPro delivers rapid, 24/7 roadside assistance directly to your exact location. We treat every job with absolute precision, ensuring you and your vehicle stay safe. Our Premium Roadside Services includes car towing, battery boosting, and others. We operate a versatile 24/7 fleet for accidents or breakdowns. We provide Sedan/4×4 towing, fully-covered transport, and specialized sports/stance car towing. We deliver fast, safe jump-starts. If your battery cannot hold a charge, we provide an instant replacement to get you back on the road without delay. Stuck in the sand? Our specialized rescue team will extract your vehicle from difficult terrain and tow you to safety. We arrive quickly to swap your flat with your spare tire, ensuring minimal disruption to your journey. Empty tank? We deliver premium fuel right to your location under 25 minutes anywhere in the UAE. Our fleet includes specialized low-clearance trucks to safely extract your car from tight, low-ceiling parking garages."
         },
     ]
 }
@@ -74,8 +74,8 @@ const serviceArabicContent = {
 const englishContent = [
     {
         icons: <FaSitemap />,
-        title: "Arrival in Under 30 Minutes",
-        desc: "Your time matters. We strategically position our well-equipped service vehicles across Dubai and Abu Dhabi. This guarantees a response time of under 30 minutes so you can get on with your day."
+        title: "Arrival in Under 25 Minutes",
+        desc: "Your time matters. We strategically position our well-equipped service vehicles across Dubai and Abu Dhabi. This guarantees a response time of under 25 minutes so you can get on with your day."
     },
     {
         icons: <FaSitemap />,
@@ -121,7 +121,7 @@ const arabicContent = [
 const englishFaqs = [
     {
         question: "How fast can you reach me in Dubai or Abu Dhabi?",
-        answer: "Our strategically placed fleet guarantees arrival at your exact location in under 30 minutes, any time of day or night."
+        answer: "Our strategically placed fleet guarantees arrival at your exact location in under 25 minutes, any time of day or night."
     },
     {
         question: "Is roadside assistance available in both Dubai and Abu Dhabi?",

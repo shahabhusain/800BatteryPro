@@ -11,6 +11,12 @@ import bosh from "@/public/batteryBrands/bosh.png";
 import amron from "@/public/batteryBrands/amron.png";
 import solite from "@/public/batteryBrands/solit.png";
 import volcan from "@/public/batteryBrands/volcan.png";
+import battery1 from "@/public/batteryBrands/1.webp";
+import battery2 from "@/public/batteryBrands/2.webp";
+import battery3 from "@/public/batteryBrands/3.webp";
+import battery4 from "@/public/batteryBrands/4.webp";
+import battery5 from "@/public/batteryBrands/5.webp";
+import battery6 from "@/public/batteryBrands/6.webp";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -26,6 +32,12 @@ const BatteryBrands = ({ autoplayDelay = 3000 }) => {
     { image: amron, name: "Amaron" },
     { image: solite, name: "Solite" },
     { image: volcan, name: "Volcan" },
+      { image: battery1, name: "FIAMM" },
+        { image: battery2, name: "SF SONIC" },
+          { image: battery3, name: "KAYS" },
+            { image: battery4, name: "ATLAS" },
+              { image: battery5, name: "JPC" },
+                { image: battery6, name: "DURACELL" },
   ];
   const locale = useLocale()
 const batteryText =

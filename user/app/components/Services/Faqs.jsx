@@ -11,15 +11,15 @@ const Faqs = () => {
         ? [
             {
                 question: "What services do you offer?",
-                answer: "We offer comprehensive car battery services including battery testing, jump-starting, replacement, and roadside assistance. We also provide premium car repair services and 24/7 emergency support across Dubai and Abu Dhabi."
+                answer: "We offer comprehensive car battery services including battery testing, jump-starting, replacement, and 24/7 roadside assistance all under 25 minutes anywhere in Dubai. 800BatteryPro is also partnered with the best car service centers in the UAE who provide premium mechanical and electrical car repair services in the UAE with 5/5 customer rating."
             },
             {
                 question: "How long does battery replacement take?",
-                answer: "Our professional technicians can typically replace your car battery within 15-30 minutes at your location. We understand your time is valuable, so we ensure quick and efficient service."
+                answer: "Our professional technicians can typically replace your car battery within 15-25 minutes at your location. With our free battery testing and premium car battery replacement services we understand your time is valuable, so we ensure quick and efficient service."
             },
             {
                 question: "Do you provide 24/7 roadside assistance?",
-                answer: "Yes, we offer 24/7 roadside assistance across Dubai and Abu Dhabi. Whether it's day or night, weekend or holiday, our team is always ready to help you with any battery emergency."
+                answer: "Yes, 800BatteryPro provides rapid 24/7 roadside assistance across Dubai and Abu Dhabi. Whether it's day or night, weekend or holiday, our team is always ready to help you with any of your car battery emergency."
             },
             {
                 question: "What areas do you cover?",
@@ -27,7 +27,7 @@ const Faqs = () => {
             },
             {
                 question: "Do you offer warranty on batteries?",
-                answer: "Yes, all our batteries come with a comprehensive warranty. The warranty period varies depending on the battery brand and type. Contact us for specific warranty details on different battery models."
+                answer: "Yes, all our batteries come with a comprehensive warranty of 12 to 18 Months. The warranty period varies depending on the battery brand and type. Contact us for specific warranty details on different battery models."
             }
         ]
         : [

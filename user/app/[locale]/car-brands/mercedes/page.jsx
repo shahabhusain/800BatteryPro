@@ -41,6 +41,10 @@ import herobg from '@/public/brands/mercedes/bg.webp'
 import Cards from '@/app/components/Hero/Cards'
 import Services from '@/app/components/locations/Services'
 import HowItWorks from '@/app/components/Hero/HowItWorks'
+import service from '@/public/brands/mercedes/ser1.webp'
+import service1 from '@/public/brands/mercedes/ser2.webp'
+import service2 from '@/public/brands/mercedes/ser3.webp'
+import service3 from '@/public/brands/mercedes/ser4.webp'
 
 
 const Mercedes = () => {
@@ -48,10 +52,10 @@ const Mercedes = () => {
 const heroEnglishContent = {
   desc: "Top Car Brands – 24/7 Emergency Support & Anywhere!",
   title: {
-    span1: " Mercedes Car Battery Replacement  ",
-    span2: " & Car Programming"
+    span1: "Mercedes Benz Car Battery Replacement Under",
+    span2: "25 Minutes in Dubai & Abu Dhabi"
   },
-  desc1: "Don't stress if your Car Battery Is Dead! 800BatteryPro provides instant Battery Replacement for your Mercedes-Benz in Dubai. We only provide genuine Battery Brands & Top Customer Support.",
+  desc1: "Don't stress if your Car Battery Is Dead! 800BatteryPro provides 24/7 Mercedes Benz Battery Replacement anywhere in Dubai any time. We only work on genuine Battery Brands with No Hidden Cost.",
   btn: "Call Now",
   btn1: "Book Service Now"
 }
@@ -73,11 +77,11 @@ const serviceEnglishContent = {
   services: [
     {
       id: 1,
-      description: "Don't panic if your Mercedes battery is dead! The best car battery replacement services in Dubai are just a click away. 800BatteryPro is trusted by thousands for its quick response and onsite battery services. We have a team of certified Mercedes specialists in Dubai who knows everything about how to get your car back on the road. With the latest battery boosting equipment and a well-equipped service centre in Dubai and Abu Dhabi, you have us as a trusted partner in all car battery-related services. Whether it's the legendary Mercedes SLR, a luxury vehicle like the S-Class, a premium SUV like the G-Wagon, or any other custom-built model, our technicians only use AGM and Lithium batteries."
+      description: "Don't panic if your Mercedes battery is dead! Get 24/7 car battery replacement services in Dubai Under 25 Minutes just a click away. 800BatteryPro is trusted by 10,000 happy customers for its quick response and onsite battery services. We have a team of 30+ certified Mercedes specialists in Dubai who knows everything about how to get your car back on the road. With 20+ rapid response mobile vans and latest battery boosting equipment. We are partnered with some of the well-equipped service centre in Dubai and Abu Dhabi, as you have us as a trusted partner in all car battery-related services. Whether it's the legendary Mercedes SLR, a luxury vehicle like the S-Class, a premium SUV like the G-Wagon, or any other custom-built model, our technicians only use AGM and Lithium batteries."
     },
     {
       id: 2,
-      description: "800BatteryPro provides 24/7 roadside assistance with under 15 minutes of onsite car battery delivery anywhere in Dubai. Our battery testing and delivery are free of cost, while our battery warranty lasts up to 18 months. For premium Mercedes Battery replacement and car programming, contact us now at +971528475675 or book a free car inspection right now!"
+      description: "800BatteryPro provides 24/7 roadside assistance with under 25 minutes of onsite car battery delivery anywhere in Dubai. Our battery testing and delivery are free of cost, while our battery warranty lasts up to 18 months. For premium Mercedes Battery replacement and car programming, contact us now at +971528475675 or book a free car inspection right now!"
     },
   ]
 }
@@ -99,11 +103,11 @@ const serviceArabicContent = {
 
 const serviceEnglishContent1 = {
   subtitle: "SERVICES",
-  title: "Mercedes Service Centre in Dubai",
+  title: "Partnered With Mercedes Service Centre in Dubai & Abu Dhabi",
   services: [
     {
       id: 1,
-      description: "It's important to get the right Mercedes-Benz battery, and at 800BatteryPro, we're here to help you choose the right one for your model. We have a wide range of batteries in stock, giving you numerous choices."
+      description: "It's important to get only branded Mercedes-Benz battery, and at 800BatteryPro, we're here to help you choose the right one for your model. We have a wide range of batteries in stock, giving you numerous choices."
     },
     {
       id: 2,
@@ -111,7 +115,7 @@ const serviceEnglishContent1 = {
     },
     {
       id: 3,
-      description: "For Mercedes-Benz, our services catalogue includes 24/7 roadside assistance, Free Battery Boosting, advance car repairs (i.e ECU, TCM, etc.), and all electrical and mechanical repair services delivered with 100 percent customer satisfaction and market competitive pricing. Our technicians only use OEM standard spare parts for Mercedes-Benz, which ensures peak engine performance and luxury."
+      description: "For Mercedes-Benz, our services catalogue includes 24/7 roadside assistance, Free Battery Boosting, advance car repairs (i.e ECU, TCM, etc.), and all electrical and mechanical repair services delivered with 100 % customer satisfaction and market competitive pricing. Our technicians only use OEM standard spare parts for Mercedes-Benz, which ensures peak engine performance and luxury."
     },
     {
       id: 4,
@@ -156,8 +160,8 @@ const englishServices = [
   },
   {
     img: serviceImg3,
-    title: "Car Battery Under 15 Minutes",
-    desc: "Once we receive your emergency call for car battery services, our team delivers every car battery replacement under 15 minutes."
+    title: "Car Battery Under 25 Minutes",
+    desc: "Once we receive your emergency call for car battery services, our team delivers every car battery replacement under 25 minutes."
   },
   {
     img: serviceImg4,
@@ -207,7 +211,7 @@ const englishContent = [
   },
   {
     icons: <FaSitemap />,
-    title: "Car Battery Under 15 Minutes",
+    title: "Car Battery Under 25 Minutes",
     desc: "800BatteryPro offers 24/7 roadside assistance with our free battery delivery, our technicians use the latest equipment to work on your replacement."
   }
 ]
@@ -258,11 +262,11 @@ const englishFaqs = [
   },
   {
     question: "Any German Car Experts in Dubai?",
-    answer: "Yes, 800BatteryPro is one of the trusted and has a certified team of German car experts in Dubai. We have a well-equipped service centre with the latest technology used for every German car repair job. We treat every car brand, including Mercedes, BMW, Porsche, and Audi, etc. Call us now for any German car battery replacement services at +971528475675."
+    answer: "Yes, 800BatteryPro is one of the trusted and has a certified team of German car experts in Dubai. We are partnered with well-equipped service centre with the latest technology used for every German car repair job. We treat every car brand, including Mercedes, BMW, Porsche, and Audi, etc. Call us now for any German car battery replacement services at +971528475675."
   },
   {
     question: "Do we provide German Car Battery Replacement in Abu Dhabi?",
-    answer: "Yes, 800BatteryPro has well-equipped service centres in Dubai and Abu Dhabi. We treat every German car battery replacement with genuine and premium car battery replacements. Our customer base is 100 percent satisfied with our auto repair and battery services. If your car battery is dead, call us now at +971528475675 for emergency assistance services."
+    answer: "Yes, 800BatteryPro has well-equipped service centres in Dubai and Abu Dhabi. We treat every German car battery replacement with genuine and premium car battery replacements. Our customer base is 100 % satisfied with our auto repair and battery services. If your car battery is dead, call us now at +971528475675 for emergency assistance services."
   },
   {
     question: "Which car battery do we use for replacement services?",
@@ -273,6 +277,51 @@ const englishFaqs = [
     answer: "Don't get stressed if your car battery is dead. Our German car experts in Dubai and Abu Dhabi use the latest equipment and technology to get your vehicle back on the road. Call us now for instant battery boosting services under 15 minutes."
   },
 ]
+
+    const  englishService = [
+                      {
+                        title: "Car Battery Replacement",
+                        hoverDec: "Call 800BatteryPro at +971528475675 For Premium Car Battery Replacement Services Under 25 Minutes in Abu Dhabi",
+                        img: service
+                      },
+                      {
+                        title: "Car Battery Boosting",
+                        hoverDec: "Get 24/7 Car Battery Boosting/jump start services under 25 minutes anywhere in Abu Dhabi with no hidden cost.",
+                        img: service2
+                      },
+                      {
+                        title: "24/7 Roadside Assistance",
+                        hoverDec: "800BatteryPro has well-equipped mobile vans and 30+ certified car battery replacement technicians providing 24/7 roadside assistance anywhere in the UAE. Fast & Reliable RSA!",
+                        img: service1
+                      },
+                      {
+                        title: "Car Scanning & Diagnostics",
+                        hoverDec: " Get complete Advanced Car Scanning & Diagnostics at 800BatteryPro as we have partnered with trusted car service centers in Abu Dhabi. Fast Service & Best Pricing in Abu Dhabi. Contact Us Now!",
+                        img: service3
+                      },
+                    ]
+                  const  arabicService = [
+                      {
+                        title: "استبدال بطارية السيارة",
+                        hoverDec: "اتصل بـ 800BatteryPro على +971528475675 للحصول على خدمات استبدال بطارية السيارة المتميزة خلال 30 دقيقة في دبي",
+                        img: service
+                      },
+                      {
+                        title: "تشغيل بطارية السيارة",
+                        hoverDec: "احصل على خدمات تشغيل/بدء تشغيل بطارية السيارة على مدار الساعة خلال 30 دقيقة في أي مكان في دبي من خلال 800BatteryPro",
+                        img: service2
+                      },
+                      {
+                        title: "المساعدة على الطريق 24/7",
+                        hoverDec: "يمتلك 800BatteryPro شاحنات مجهزة تجهيزًا جيدًا وأكثر من 50 فنيًا معتمدًا يقدمون خدمات المساعدة على الطريق على مدار الساعة في أي مكان في الإمارات. خدمة طرق سريعة وموثوقة!",
+                        img: service1
+                      },
+                      {
+                        title: "فحص وتشخيص السيارة",
+                        hoverDec: "احصل على فحص وتشخيص متقدم كامل للسيارة في 800BatteryPro. خدمة سريعة وأفضل الأسعار. اتصل بنا الآن!",
+                        img: service3
+                      },
+                    ]
 
 const arabicFaqs = [
   {
@@ -419,7 +468,7 @@ const text = locale === "ar"
       </div>
         <div className='bg-white rounded-t-4xl relative z-10'>
              <Cards />
-            <Services />
+            <Services englishService={englishService} arabicService={arabicService} />
             <HowItWorks />
            <Service serviceContent={serviceContent} serviceImg={serviceImg} />
            <CarBrands text={text} brands={brands} />

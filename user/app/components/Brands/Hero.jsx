@@ -9,10 +9,10 @@ import AppointmentModal from '../AppointmentModal'
 const heroEnglishContent = {
   desc: "Top Car Brands – 24/7 Emergency Support & Anywhere!",
   title: {
-    span1: "24/7 Emergency & Battery",
-    span2: " Services For Premium Cars"
+    span1: "24/7 RSA & Car Battery",
+    span2: " Replacement Services in Dubai & Abu Dhabi"
   },
-  desc1: "Car Battery Boosting - Battery Replacement - Roadside Assistance - Premium Car Repairs",
+  desc1: "Car Battery Boosting - Under 25 Minute Car Battery Replacement - 24/7 Roadside Assistance - Advanced Car Repairs",
   btn: "Call Now",
   btn1: "Book Service Now"
 }

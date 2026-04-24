@@ -40,16 +40,19 @@ import bg from '@/public/brands/masa/bg.webp'
 import Cards from '@/app/components/Hero/Cards'
 import Services from '@/app/components/locations/Services'
 import HowItWorks from '@/app/components/Hero/HowItWorks'
-
+import service from '@/public/brands/masa/ser1.webp'
+import service1 from '@/public/brands/masa/ser2.webp'
+import service2 from '@/public/brands/masa/ser3.webp'
+import service3 from '@/public/brands/masa/ser4.webp'
 const Maserati = () => {
   const locale = useLocale()
 const heroEnglishContent = {
   desc: "Top Car Brands – 24/7 Emergency Support & Anywhere!",
   title: {
-    span1: "Maserati Car Battery & ",
-    span2: " Repair Experts"
+    span1: "Maserati Car Battery Replacement",
+    span2: "Under 25 Minutes In Dubai & Abu Dhabi"
   },
-  desc1: "Don't Stress if your Maserati Car Battery is Dead! 800BatteryPro provides 24/7 Battery Replacement Services Under 25 Minutes anywhere in Dubai.",
+  desc1: "Don't Stress if your Maserati Car Battery is Dead! 800BatteryPro provides 24/7 Battery Replacement Services Under 25 Minutes anywhere in Dubai, Branded Car Battery With Free Battery Testing.",
   btn: "Call Now",
   btn1: "Book Service Now"
 }
@@ -67,11 +70,11 @@ const heroArabicContent = {
 
 const serviceEnglishContent = {
   subtitle: "SERVICES",
-  title: "Maserati Car Battery Replacement & Advance Repair",
+  title: "24/7 Maserati Car Battery Replacement & Advanced Repair Services",
   services: [
     {
       id: 1,
-      description: "Maserati Car Battery is designed to perform, endure high temperatures, and operate reliably to ensure top performance and luxury that one can expect from a Maserati. Car models like Grecale, MC20, Ghibli, Levante, and Quattroporte are powered by advanced EFB or AGM type of Car Batteries to support the car's complex electrical system featured with start-stop technology. To ensure a smooth ride and top-tier performance for Maserati's top Sports and luxury Models, lightweight and high-capacity Car Batteries are recommended and offered by 800BatteryPro. Choosing the right Car Battery For Maserati means choosing reliability, guaranteed starting power and improving the operations of complex On-board systems, which is essential for every Maserati. If you are facing any quirks or electrical issues in your Maserati, contact our experts for a quick Battery Check-up & Replacement across the UAE."
+      description: "800BatteryPro has over 6+ Years of experience in delivering 100% customer satisfactory Maserati Car Battery replacement in Dubai & Abu Dhabi. With 20+ rapid response mobile vans and 30+ certified technicians. We are partnered with top car service centers which are trusted for there market competitive pricing and usage of OEM-approved spare parts. Maserati's are designed to perform, endure high temperatures, and operate reliably to ensure top performance and luxury that one can expect from any other Italian car. Famous car models like Grecale, MC20, Ghibli, Levante, and Quattroporte are powered by advanced EFB or AGM type of Car Batteries to support the car's complex electrical system featured with start-stop technology. To ensure a smooth ride and top-tier performance for Maserati's top Sports and luxury Models, lightweight and high-capacity Car Batteries are recommended and offered by 800BatteryPro. Choosing the right Car Battery For Maserati means choosing reliability, guaranteed starting power and improving the operations of complex On-board systems, which is essential for every Maserati. If you are facing any quirks or electrical issues in your Maserati, contact our experts for a quick Battery Check-up & car battery Replacement across the UAE. Call us at our whatsapp +971528475675"
     },
   ]
 }
@@ -89,11 +92,11 @@ const serviceArabicContent = {
 
 const serviceEnglishContent1 = {
   subtitle: "SERVICES",
-  title: "Trusted Maserati Service Center in Dubai & Abu Dhabi",
+  title: "Partnered With Trusted Maserati Service Center in Dubai & Abu Dhabi",
   services: [
     {
       id: 1,
-      description: "800BatteryPro covers a wide spectrum of Maserati repair and maintenance services, including. One of the trusted Maserati Service Centers in Dubai and Abu Dhabi, 800BatteryPro has a well-equipped garage and certified Maserati specialists, completing every car maintenance, diagnostics and repair job with 100 percent customer satisfaction. Our technicians only use genuine Maserati parts, and with years of experience working with European car brands, you can trust us with routine servicing or complex repairs. We have a record number of jobs completed related to car Battery Check-up & Replacement, Full Inspection and Diagnosis, Minor & Major Issues, and other advance car programming services."
+      description: "800BatteryPro covers a wide spectrum of Maserati repair and maintenance services, including. We have partnered with one of the trusted Maserati Service Centers in Dubai and Abu Dhabi, 800BatteryPro has a well-equipped 20+ rapid response mobile vans and 30+ certified Maserati specialists, completing every car maintenance, diagnostics and repair job with 100% customer satisfaction. Our technicians only use genuine Maserati parts, and with years of experience working with European car brands, you can trust us with routine servicing or complex repairs. We have a record number of jobs completed related to car Battery Check-up & Replacement, Full Inspection and Diagnosis, Minor & Major Issues, and other advance car programming services."
     },
   ]
 }
@@ -109,6 +112,51 @@ const serviceArabicContent1 = {
   ]
 }
 
+    const  englishService = [
+                      {
+                        title: "Car Battery Replacement",
+                        hoverDec: "Call 800BatteryPro at +971528475675 For Premium Car Battery Replacement Services Under 25 Minutes in Abu Dhabi",
+                        img: service
+                      },
+                      {
+                        title: "Car Battery Boosting",
+                        hoverDec: "Get 24/7 Car Battery Boosting/jump start services under 25 minutes anywhere in Abu Dhabi with no hidden cost.",
+                        img: service2
+                      },
+                      {
+                        title: "24/7 Roadside Assistance",
+                        hoverDec: "800BatteryPro has well-equipped mobile vans and 30+ certified car battery replacement technicians providing 24/7 roadside assistance anywhere in the UAE. Fast & Reliable RSA!",
+                        img: service1
+                      },
+                      {
+                        title: "Car Scanning & Diagnostics",
+                        hoverDec: " Get complete Advanced Car Scanning & Diagnostics at 800BatteryPro as we have partnered with trusted car service centers in Abu Dhabi. Fast Service & Best Pricing in Abu Dhabi. Contact Us Now!",
+                        img: service3
+                      },
+                    ]
+                  const  arabicService = [
+                      {
+                        title: "استبدال بطارية السيارة",
+                        hoverDec: "اتصل بـ 800BatteryPro على +971528475675 للحصول على خدمات استبدال بطارية السيارة المتميزة خلال 30 دقيقة في دبي",
+                        img: service
+                      },
+                      {
+                        title: "تشغيل بطارية السيارة",
+                        hoverDec: "احصل على خدمات تشغيل/بدء تشغيل بطارية السيارة على مدار الساعة خلال 30 دقيقة في أي مكان في دبي من خلال 800BatteryPro",
+                        img: service2
+                      },
+                      {
+                        title: "المساعدة على الطريق 24/7",
+                        hoverDec: "يمتلك 800BatteryPro شاحنات مجهزة تجهيزًا جيدًا وأكثر من 50 فنيًا معتمدًا يقدمون خدمات المساعدة على الطريق على مدار الساعة في أي مكان في الإمارات. خدمة طرق سريعة وموثوقة!",
+                        img: service1
+                      },
+                      {
+                        title: "فحص وتشخيص السيارة",
+                        hoverDec: "احصل على فحص وتشخيص متقدم كامل للسيارة في 800BatteryPro. خدمة سريعة وأفضل الأسعار. اتصل بنا الآن!",
+                        img: service3
+                      },
+                    ]
+
 const englishServices = [
   {
     img: serviceImg1,
@@ -118,7 +166,7 @@ const englishServices = [
   {
     img: serviceImg2,
     title: "Certified GMC Specialists",
-    desc: "Our technicians have 5+ years of experience working on all American Car brands including the GMC (General Motors Truck Company)."
+    desc: "Our technicians have 6+ years of experience working on all American Car brands including the GMC (General Motors Truck Company)."
   },
   {
     img: serviceImg3,
@@ -127,7 +175,7 @@ const englishServices = [
   },
   {
     img: serviceImg4,
-    title: "Car Battery Under 15 Minutes",
+    title: "Car Battery Under 25 Minutes",
     desc: "Our 24/7 road side assistance for ensuring you stay safe on the road. We offer free battery testing and free car battery delivery with no hidden charges."
   }
 ]
@@ -204,7 +252,7 @@ const arabicContent = [
 const englishFaqs = [
   {
     question: "Best Maserati experts in Dubai?",
-    answer: "800BatteryPro is one of the trusted Maserati Experts in Dubai with well-equipped service centers and certified european car technicians. Completing every car repair and diagnostic job with precision and minimum delivery time across UAE. You can contact our Expert at +971528475675 for reliable Maserati diagnostics and car battery replacement services."
+    answer: "800BatteryPro is one of the trusted Maserati Experts in Dubai with partership with the well-equipped service centers in Dubai. Completing every car repair and diagnostic job with precision and minimum delivery time across UAE. You can contact our Expert at +971528475675 for reliable Maserati diagnostics and car battery replacement services."
   },
   {
     question: "How often should I service my Maserati?",
@@ -344,7 +392,7 @@ const text = locale === "ar"
       </div>
         <div className=' bg-white  rounded-t-4xl relative z-10'>
              <Cards />
-            <Services />
+            <Services englishService={englishService} arabicService={arabicService} />
             <HowItWorks />
            <Service serviceContent={serviceContent} serviceImg={serviceImg} />
            <CarBrands text={text} brands={brands} />

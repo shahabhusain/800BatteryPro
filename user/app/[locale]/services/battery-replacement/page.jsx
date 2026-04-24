@@ -57,7 +57,7 @@ const serviceEnglishContent = {
         },
          {
             id: 2,
-            description: "Whether you are in Al Reem Island, Khalidiyah, Corniche, Mussafah, or Yas Island, we reach you fast and get you back on the road without delay. Our 24/7 roadside assistance for dead car batteries covers all major areas including Sheikh Zayed Road, Downtown Dubai, JBR, Business Bay, DIFC, Dubai Marina, Jumeirah, Deira, Bur Dubai, and Al Quoz, as well as all major Abu Dhabi districts and highways. Service is also available in Sharjah, Ajman, and other UAE emirates on request."
+            description: "Whether you are in Al Reem Island, Khalidiyah, Corniche, Mussafah, or Yas Island, we reach you fast and get you back on the road without delay. Our 24/7 roadside assistance for dead car batteries covers all major areas including Sheikh Zayed Road, Downtown Dubai, JBR, Business Bay, DIFC, Dubai Marina, Jumeirah, Deira, Bur Dubai, and Al Quoz, as well as all major Abu Dhabi districts and highways. "
         },
                  {
             id: 3,

@@ -7,7 +7,7 @@ const Cards = () => {
     const englishCards = [
       {
         icon:<HiOutlineDotsHorizontal />,
-        title:"10+ ",
+        title:"6+ ",
         desc:"years of experience"
       },
       {
@@ -22,7 +22,7 @@ const Cards = () => {
       },
       {
         icon:<HiOutlineDotsHorizontal />,
-        title:"50+",
+        title:"30+",
         desc:"Certified Technicians"
       },
     ]

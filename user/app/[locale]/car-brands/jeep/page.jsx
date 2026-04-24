@@ -33,16 +33,19 @@ import bg from '@/public/brands/jeep/bg.webp'
 import Services from '@/app/components/locations/Services'
 import Cards from '@/app/components/Hero/Cards'
 import HowItWorks from '@/app/components/Hero/HowItWorks'
-
+import service from '@/public/brands/jeep/ser1.webp'
+import service1 from '@/public/brands/jeep/ser2.webp'
+import service2 from '@/public/brands/jeep/ser3.webp'
+import service3 from '@/public/brands/jeep/ser4.webp'
 const Jeep = () => {
   const locale = useLocale()
 const heroEnglishContent = {
   desc: "Top Car Brands – 24/7 Emergency Support & Anywhere!",
   title: {
-    span1: "Jeep Car Battery Replacement & ",
-    span2: "Advanced Repairs"
+    span1: "Jeep Car Battery Replacement",
+    span2: "Under 25 Minutes in Dubai With 24/7 RSA"
   },
-  desc1: "Don't stress if you are stranded with your dead Jeep battery! 800BatteryPro provides premium Car Battery Replacement Under 30 Minutes, With Free Battery Boosting & Advance Repairs in Dubai.",
+  desc1: "Don't stress if you are stranded with your dead Jeep battery! 800BatteryPro provides premium Car Battery Replacement Under 25 Minutes, With Free Battery Boosting & Advance Repairs in Dubai.",
   btn: "Call Now",
   btn1: "Book Service Now"
 }
@@ -64,7 +67,7 @@ const serviceEnglishContent = {
   services: [
     {
       id: 1,
-      description: "Jeep is one of the major American car brands, with a variety of premium and off-road models. 800BatteryPro has a team of certified Jeep specialist, who only uses OEM-approved batteries and the latest technology to complete every job with 100 percent customer satisfaction. Our Jeep specialists will do an on-site free battery checkup, followed by a car battery replacement using the latest technology and equipment. If you are stuck somewhere with a dead car battery or a malfunctioning electronic system, contact us for immediate roadside assistance at +971528475675."
+      description: "800BatteryPro has an experience of over 6+ years working on Jeep Car Battery replacements delivered under 25 minutes in Dubai and Abu Dhabi.We have 20+ rapid response mobile vans which are just a call away from helping you in any stressful situation on the road.Just like we deliver 100% customer satisfaction for all major American car brands repairs,we also have Jeep experts, who are certified to work on a variety of premium and off-road models. 800BatteryPro has a team of 30+ certified Jeep specialist, who only uses OEM-approved batteries and the latest technology to complete every job with 100 percent customer satisfaction. Our Jeep specialists will do an on-site free battery checkup, followed by a car battery replacement using the latest technology and equipment. If you are stuck somewhere with a dead car battery or a malfunctioning electronic system, contact us for 24/7 immediate roadside assistance at +971528475675."
     },
     {
       id: 2,
@@ -114,11 +117,11 @@ const serviceArabicContent = {
 
 const serviceEnglishContent1 = {
   subtitle: "SERVICES",
-  title: "Jeep Service Center in Dubai – Premium American Car Battery Replacement",
+  title: "Partnered With Jeep Service Center in Dubai – 24/7 RSA & Car Battery Services Under 25 Min",
   services: [
     {
       id: 1,
-      description: "We have well-equipped Jeep car service centers in Dubai and Abu Dhabi, delivering excellence in battery replacement, car programming, electrical, and mechanical repair works. With a team of over 50+ certified Jeep technicians available 24/7 for any emergency roadside assistance and free inspection of your car battery. 800BatteryPro has years of experience serving residents of the Emirates with premium Jeep car batteries and advance repair services. We only use OEM-approved spare parts and genuine Jeep batteries for all our customers. You can reserve your slot for your next Battery Check-up with the best Jeep experts in Dubai. Contact us at +971 528475675 for 24/7 emergency roadside assistance."
+      description: "We are partnered with well-equipped Jeep car service centers in Dubai and Abu Dhabi, delivering excellence in battery replacement, car programming, electrical, and mechanical repair works. With a team of over 30+ certified Jeep technicians available 24/7 for any emergency roadside assistance and free inspection of your car battery. 800BatteryPro has years of experience serving residents of the Emirates with premium Jeep car batteries and advance repair services. We only use OEM-approved spare parts and genuine Jeep batteries for all our customers. You can reserve your slot for your next Battery Check-up with the best Jeep experts in Dubai. Contact us at +971 528475675 for 24/7 emergency roadside assistance."
     },
   ]
 }
@@ -152,7 +155,7 @@ const englishServices = [
   },
   {
     img: serviceImg4,
-    title: "Car Battery Under 15 Minutes",
+    title: "Car Battery Under 25 Minutes",
     desc: "Our 24/7 road side assistance for ensuring you stay safe on the road. We offer free battery testing and free car battery delivery with no hidden charges."
   }
 ]
@@ -198,7 +201,7 @@ const englishContent = [
   },
   {
     icons: <FaSitemap />,
-    title: "Car Battery Under 15 Minutes",
+    title: "Car Battery Under 25 Minutes",
     desc: "If you are stuck somewhere due to a dead car battery anywhere in Dubai and Abu Dhabi, then you can call us at +971 528475675."
   }
 ]
@@ -288,6 +291,51 @@ const arabicFaqs = [
   },
 ]
 
+    const  englishService = [
+                      {
+                        title: "Car Battery Replacement",
+                        hoverDec: "Call 800BatteryPro at +971528475675 For Premium Car Battery Replacement Services Under 25 Minutes in Abu Dhabi",
+                        img: service
+                      },
+                      {
+                        title: "Car Battery Boosting",
+                        hoverDec: "Get 24/7 Car Battery Boosting/jump start services under 25 minutes anywhere in Abu Dhabi with no hidden cost.",
+                        img: service2
+                      },
+                      {
+                        title: "24/7 Roadside Assistance",
+                        hoverDec: "800BatteryPro has well-equipped mobile vans and 30+ certified car battery replacement technicians providing 24/7 roadside assistance anywhere in the UAE. Fast & Reliable RSA!",
+                        img: service1
+                      },
+                      {
+                        title: "Car Scanning & Diagnostics",
+                        hoverDec: " Get complete Advanced Car Scanning & Diagnostics at 800BatteryPro as we have partnered with trusted car service centers in Abu Dhabi. Fast Service & Best Pricing in Abu Dhabi. Contact Us Now!",
+                        img: service3
+                      },
+                    ]
+                  const  arabicService = [
+                      {
+                        title: "استبدال بطارية السيارة",
+                        hoverDec: "اتصل بـ 800BatteryPro على +971528475675 للحصول على خدمات استبدال بطارية السيارة المتميزة خلال 30 دقيقة في دبي",
+                        img: service
+                      },
+                      {
+                        title: "تشغيل بطارية السيارة",
+                        hoverDec: "احصل على خدمات تشغيل/بدء تشغيل بطارية السيارة على مدار الساعة خلال 30 دقيقة في أي مكان في دبي من خلال 800BatteryPro",
+                        img: service2
+                      },
+                      {
+                        title: "المساعدة على الطريق 24/7",
+                        hoverDec: "يمتلك 800BatteryPro شاحنات مجهزة تجهيزًا جيدًا وأكثر من 50 فنيًا معتمدًا يقدمون خدمات المساعدة على الطريق على مدار الساعة في أي مكان في الإمارات. خدمة طرق سريعة وموثوقة!",
+                        img: service1
+                      },
+                      {
+                        title: "فحص وتشخيص السيارة",
+                        hoverDec: "احصل على فحص وتشخيص متقدم كامل للسيارة في 800BatteryPro. خدمة سريعة وأفضل الأسعار. اتصل بنا الآن!",
+                        img: service3
+                      },
+                    ]
+
 const hero = locale === "en" ? heroEnglishContent : locale === "ar" ? heroArabicContent : null
 const services = locale === "en" ? englishServices : locale === "ar" ? arabicServices : null
 const serviceContent = locale === "ar" ? serviceArabicContent : serviceEnglishContent
@@ -366,7 +414,7 @@ const text = locale === "ar"
       </div>
         <div className=' bg-white  rounded-t-4xl relative z-10'>
              <Cards />
-            <Services />
+            <Services englishService={englishService} arabicService={arabicService} />
             <HowItWorks />
            <Service serviceContent={serviceContent} serviceImg={serviceImg} />
            <CarBrands text={text} brands={brands} />

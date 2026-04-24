@@ -39,6 +39,10 @@ import herobg from '@/public/brands/lamburgani/bg.webp'
 import Cards from '@/app/components/Hero/Cards'
 import Services from '@/app/components/locations/Services'
 import HowItWorks from '@/app/components/Hero/HowItWorks'
+import service from '@/public/brands/lamburgani/ser1.webp'
+import service1 from '@/public/brands/lamburgani/ser2.webp'
+import service2 from '@/public/brands/lamburgani/ser3.webp'
+import service3 from '@/public/brands/lamburgani/ser4.webp'
 
 
 const Lamborghini = () => {
@@ -46,10 +50,10 @@ const Lamborghini = () => {
 const heroEnglishContent = {
   desc: "Top Car Brands – 24/7 Emergency Support & Anywhere!",
   title: {
-    span1: " Lamborghini Car Battery &   ",
-    span2: " Advanced Repair Experts"
+    span1: " Lamborghini Car Battery Replacement",
+    span2: " Under 25 Minutes & 24/7 RSA "
   },
-  desc1: "Call our Italian Car Specialist at 800BatteryPro For Lamborghini Battery Replacement in Dubai or Advance Repair Services.",
+  desc1: "Call our Italian Car Specialists at +971528475675 For any Lamborghini Battery Replacement in Dubai or Advance Repair Services.",
   btn: "Call Now",
   btn1: "Book Service Now"
 }
@@ -67,11 +71,11 @@ const heroArabicContent = {
 
 const serviceEnglishContent = {
   subtitle: "SERVICES",
-  title: "Lamborghini Battery Replacement & Auto Repair",
+  title: "Lamborghini Car Battery Replacement in 25 Minutes & Rapid RSA",
   services: [
     {
       id: 1,
-      description: "Lamborghini vehicles are a symbol of power, elegance, and innovation. Speed, style, and sophistication—Lamborghini is the ultimate trifecta. At 800BatteryPro UAE, our team of certified technicians delivers reliable Lamborghini battery replacement in Dubai to align with the craftsmanship and luxury of this iconic car brand. We have Lamborghini specialists for Urus, Huracán, Aventador, Temerario, and Revuelto, who only use premium batteries and OEM standard car parts for each car model."
+      description: "800BatteryPro has an experiance of over 6+ Years delivering excellence in lamborghini car battery replacement under 25 minutes anywhere in Dubai and Abu Dhabi. Lamborghini vehicles are a symbol of power, elegance, and innovation. Speed, style, and sophistication—Lamborghini is the ultimate trifecta. At 800BatteryPro UAE, our team of certified technicians delivers Free Battery testing, 24/7 roadside assistance, and on-site branded car battery replacment for all Lamborghini models which aligns with the craftsmanship and luxury of this iconic car brand. We have Lamborghini specialists for Urus, Huracán, Aventador, Temerario, and Revuelto, who only use premium batteries and OEM standard car parts for each car model."
     },
     {
       id: 2,
@@ -97,7 +101,7 @@ const serviceArabicContent = {
 
 const serviceEnglishContent1 = {
   subtitle: "SERVICES",
-  title: "Lamborghini Service Centre in Dubai – Genuine Car Battery",
+  title: "Partnered With Trusted Lamborghini Service Centre in Dubai – Genuine Car Battery",
   services: [
     {
       id: 1,
@@ -105,7 +109,7 @@ const serviceEnglishContent1 = {
     },
     {
       id: 2,
-      description: "Our services expand beyond just Lamborghini Car Battery replacement, as we have a well-equipped service centre in Dubai and Abu Dhabi. From 24/7 roadside assistance, advance car repair, and mechanical and electrical repair services, we deliver every car job with 100 percent customer satisfaction. Fill out the form to book an appointment with one of our Lamborghini battery experts in Dubai."
+      description: "Our services expand beyond just Lamborghini Car Battery replacement, as we are partner with well-equipped service centre in Dubai and Abu Dhabi. From 24/7 roadside assistance, advance car repair, and mechanical and electrical repair services, we deliver every car job with 100 % customer satisfaction. Fill out the form to book an appointment with one of our Lamborghini battery experts in Dubai."
     },
   ]
 }
@@ -220,7 +224,7 @@ const arabicContent = [
 const englishFaqs = [
   {
     question: "Do you provide car battery replacement for Lamborghini?",
-    answer: "Yes, 800BatteryPro can replace the batteries in Lamborghini cars and is certified to do so. We utilize real OEM-standard parts and batteries from well-known brands for all Italian automobile models, such as Ferrari, Alfa Romeo, Pagani, Fiat, and Maserati. Call us at +971 528475675 for help on the road 24 hours a day, seven days a week."
+    answer: "Yes, 800BatteryPro provides 24/7 Lamborghini car battery replacment under 25 minutes anywhere in Dubai and Abu Dhabi. We utilize real OEM-standard parts and batteries from well-known brands for all Italian automobile models, such as Ferrari, Alfa Romeo, Pagani, Fiat, and Maserati. Call us at +971 528475675 for help on the road 24 hours a day, seven days a week."
   },
   {
     question: "Do you use OEM parts for repairing Italian car brands?",
@@ -228,7 +232,7 @@ const englishFaqs = [
   },
   {
     question: "Who are the best Lamborghini experts in Dubai?",
-    answer: "800BatteryPro is known as one of the best companies in Dubai and Abu Dhabi for Lamborghini service. We work on practically all exotic and luxury automobile brands in the UAE. We have more than 50 qualified Italian car specialists and state-of-the-art service centers."
+    answer: "800BatteryPro is known as one of the best companies in Dubai and Abu Dhabi for Lamborghini service. We work on practically all exotic and luxury automobile brands in the UAE. We have more than 30 qualified Italian car specialists and are partnered with state-of-the-art service centers in Dubai."
   },
   {
     question: "What are the warning Signs of a Weak Lamborghini Battery?",
@@ -236,7 +240,7 @@ const englishFaqs = [
   },
   {
     question: "Why Choose 800BatteryPro for Lamborghini Battery Service in Dubai?",
-    answer: "The following are a few reasons why you should always choose 800BatteryPro as your go-to choice for Lamborghini Battery Service in Dubai. As we have Knowledge About Lamborghinis We have years of experience working on high-end Lamborghini vehicles and know how their unique design and power needs work. We only recommend battery brands that meet OEM standards, batteries we use are from well-known brands and meet or exceed Lamborghini's original specifications. We use diagnostic tools that are specific to each car to examine every important electrical parameter before and after installation. Flexibility at Work and on the Job. You can choose between a mobile service that comes to you or a professional installation in our state-of-the-art Dubai facility. Individualised Help for Customers We give you personalised help and advice after installation to make sure you know how to keep your battery working well."
+    answer: "The following are a few reasons why you should always choose 800BatteryPro as your go-to choice for Lamborghini Battery Service in Dubai. As we have Knowledge About Lamborghinis We have years of experience working on high-end Lamborghini vehicles and know how their unique design and power needs work. We only recommend battery brands that meet OEM standards, batteries we use are from well-known brands and meet or exceed Lamborghini's original specifications. We use diagnostic tools that are specific to each car to examine every important electrical parameter before and after installation. Flexibility at Work and on the Job. You can choose between a mobile service that comes to you under 25 minutes. Individualised Help for Customers We give you personalised help and advice after installation to make sure you know how to keep your battery working well."
   },
   {
     question: "How Much Is To Rent A Lamborghini In Dubai?",
@@ -248,7 +252,7 @@ const englishFaqs = [
   },
   {
     question: "How do I fix an overheating Lamborghini?",
-    answer: "If your Lamborghini is getting too hot, you need to fix it right away to keep the engine from being damaged. Some common reasons for overheating are, coolant levels that are too low, a radiator or thermostat that isn't working right, broken water pump, and radiator pipes that are blocked. To fix the problem, you can refill the coolant, replace broken parts, or flush the cooling system. you can get experienced help at 800batterypro service centres in dubai or abu dhabi."
+    answer: "If your Lamborghini is getting too hot, you need to fix it right away to keep the engine from being damaged. Some common reasons for overheating are, coolant levels that are too low, a radiator or thermostat that isn't working right, broken water pump, and radiator pipes that are blocked. To fix the problem, you can refill the coolant, replace broken parts, or flush the cooling system. you can get experienced help by call +971528475675 in Dubai and Abu Dhabi."
   },
   {
     question: "How do I know if I need new brakes for my Lamborghini?",
@@ -294,6 +298,51 @@ const arabicFaqs = [
     answer: "إليك بعض العلامات التي تشير إلى أن سيارتك لامبورجيني قد تحتاج إلى فرامل جديدة: أصوات صرير أو طحن عند الضغط على الفرامل، دواسة فرامل تبدو طرية أو إسفنجية، ضوء تحذيري على لوحة العدادات يخص الفرامل. من المهم جدًا فحص الفرامل بانتظام للحفاظ على سلامتك وتجنب المشاكل الأكبر. يقدم فنيونا المحترفون في 800BatteryPro خدمات فرامل كاملة لسيارات لامبورجيني."
   },
 ]
+
+        const  englishService = [
+                      {
+                        title: "Car Battery Replacement",
+                        hoverDec: "Call 800BatteryPro at +971528475675 For Premium Car Battery Replacement Services Under 25 Minutes in Abu Dhabi",
+                        img: service
+                      },
+                      {
+                        title: "Car Battery Boosting",
+                        hoverDec: "Get 24/7 Car Battery Boosting/jump start services under 25 minutes anywhere in Abu Dhabi with no hidden cost.",
+                        img: service2
+                      },
+                      {
+                        title: "24/7 Roadside Assistance",
+                        hoverDec: "800BatteryPro has well-equipped mobile vans and 30+ certified car battery replacement technicians providing 24/7 roadside assistance anywhere in the UAE. Fast & Reliable RSA!",
+                        img: service1
+                      },
+                      {
+                        title: "Car Scanning & Diagnostics",
+                        hoverDec: " Get complete Advanced Car Scanning & Diagnostics at 800BatteryPro as we have partnered with trusted car service centers in Abu Dhabi. Fast Service & Best Pricing in Abu Dhabi. Contact Us Now!",
+                        img: service3
+                      },
+                    ]
+                  const  arabicService = [
+                      {
+                        title: "استبدال بطارية السيارة",
+                        hoverDec: "اتصل بـ 800BatteryPro على +971528475675 للحصول على خدمات استبدال بطارية السيارة المتميزة خلال 30 دقيقة في دبي",
+                        img: service
+                      },
+                      {
+                        title: "تشغيل بطارية السيارة",
+                        hoverDec: "احصل على خدمات تشغيل/بدء تشغيل بطارية السيارة على مدار الساعة خلال 30 دقيقة في أي مكان في دبي من خلال 800BatteryPro",
+                        img: service2
+                      },
+                      {
+                        title: "المساعدة على الطريق 24/7",
+                        hoverDec: "يمتلك 800BatteryPro شاحنات مجهزة تجهيزًا جيدًا وأكثر من 50 فنيًا معتمدًا يقدمون خدمات المساعدة على الطريق على مدار الساعة في أي مكان في الإمارات. خدمة طرق سريعة وموثوقة!",
+                        img: service1
+                      },
+                      {
+                        title: "فحص وتشخيص السيارة",
+                        hoverDec: "احصل على فحص وتشخيص متقدم كامل للسيارة في 800BatteryPro. خدمة سريعة وأفضل الأسعار. اتصل بنا الآن!",
+                        img: service3
+                      },
+                    ]
 
 const hero = locale === "en" ? heroEnglishContent : locale === "ar" ? heroArabicContent : null
 const services = locale === "en" ? englishServices : locale === "ar" ? arabicServices : null
@@ -397,7 +446,7 @@ const text = locale === "ar"
       </div>
         <div className='bg-white rounded-t-4xl relative z-10'>
              <Cards />
-            <Services />
+            <Services englishService={englishService} arabicService={arabicService} />
             <HowItWorks />
            <Service serviceContent={serviceContent} serviceImg={serviceImg} />
            <CarBrands text={text} brands={brands} />

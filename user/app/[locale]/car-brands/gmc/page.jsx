@@ -38,6 +38,10 @@ import bg from '@/public/brands/gmc/bg.webp'
 import Cards from '@/app/components/Hero/Cards'
 import Services from '@/app/components/locations/Services'
 import HowItWorks from '@/app/components/Hero/HowItWorks'
+import service from '@/public/brands/gmc/ser1.webp'
+import service1 from '@/public/brands/gmc/ser2.webp'
+import service2 from '@/public/brands/gmc/ser3.webp'
+import service3 from '@/public/brands/gmc/ser4.webp'
 
 const Gmc = () => {
   const locale = useLocale()
@@ -45,9 +49,9 @@ const heroEnglishContent = {
   desc: "Top Car Brands – 24/7 Emergency Support & Anywhere!",
   title: {
     span1: "GMC Car Battery Replacement ",
-    span2: "& Advanced Repairs"
+    span2: "Under 25 Minutes in Dubai & Abu Dhabi"
   },
-  desc1: "Don't panic if your GMC Car Battery Needs Quick Replacement or any other advance repairs. 800BatteryPro provides 24/7 roadside assistance under 30 minutes.",
+  desc1: "Don't panic if your GMC Car Battery Needs Quick Replacement or any other advance repairs. 800BatteryPro provides 24/7 roadside assistance under 25 minutes, along with Free Car Battery Testing and Free Onsite Battery Delivery in Dubai.",
   btn: "Call Now",
   btn1: "Book Service Now"
 }
@@ -65,11 +69,11 @@ const heroArabicContent = {
 
 const serviceEnglishContent = {
   subtitle: "SERVICES",
-  title: "GMC Battery Replacement & Advanced Repair Services",
+  title: "Branded GMC Battery Replacement & Advanced Repair Services",
   services: [
     {
       id: 1,
-      description: "Suppose you got a non-active battery that causes dim lights, electronic system fluctuations, and other issues. Our certified GMC technicians provide on-site services for all GMC car battery replacements, along with battery boosting and advance repairs. 800BatteryPro only recommends and uses car batteries that use Sila Nanotechnologies, sodium-ion batteries, solid-state batteries, and more. Our team of GMC specialists is experienced in providing 100 percent satisfactory jobs related to every GMC Battery replacement in Dubai and Abu Dhabi, ensuring you drive safely and stress-free. We are one of the trusted GMC service centres in Dubai, as we only use manufacturer-recommended car batteries, which ensures long-term peak performance. If you see any battery-failure issues, no need to stress, call us at +971528475675. 800BatteryPro provides Auxiliary and lithium batteries for GMC Cars in Dubai."
+      description: "Suppose you got a non-active battery that causes dim lights, electronic system fluctuations, and other issues. Our certified GMC technicians provide on-site services for all GMC car battery replacements, along with battery boosting and advance repairs. 800BatteryPro only recommends and uses car batteries that use Sila Nanotechnologies, sodium-ion batteries, solid-state batteries, and more. Our team of GMC specialists is experienced in providing 100 percent satisfactory jobs related to every GMC Battery replacement in Dubai and Abu Dhabi, ensuring you drive safely and stress-free. We are partnered with one of the trusted GMC service centres in Dubai, as we only use manufacturer-recommended car batteries, which ensures long-term peak performance. If you see any battery-failure issues, no need to stress, call us at +971528475675. 800BatteryPro provides Auxiliary and lithium batteries for GMC Cars in Dubai."
     },
     {
       id: 2,
@@ -111,11 +115,11 @@ const serviceArabicContent = {
 
 const serviceEnglishContent1 = {
   subtitle: "SERVICES",
-  title: "GMC Service Centre in Dubai",
+  title: "Partnered With GMC Service Centre in Dubai & Abu Dhabi",
   services: [
     {
       id: 1,
-      description: "Premium German Car Battery Replacement & Car Repairs - We offer expert GMC battery service to ensure your vehicle performs at its best. Whether you drive a standard model or a GMC hybrid, maintaining a healthy battery is crucial for smooth and reliable operation. Our skilled technicians are equipped to handle everything from standard battery maintenance to GMC hybrid battery replacement, ensuring optimal performance for your eco-friendly vehicle. 800BatteryPro is one of the trusted GMC service centers in Dubai and Abu Dhabi. If you are driving a GMC premium, standard model or a hybrid version, our American Car experts know how to deliver a 100 percent quality job while using OEM-approved Battery. It's not just about delivering the premium GMC Battery replacement to standard battery maintenance, as we ensure your safety on the road. We recommend routine car battery checkups using a GMC-approved battery for durability and reliability. We have a well-equipped car workshop in Dubai, providing market-competitive pricing for all our GMC Battery services. You can reserve your slot for your next Battery Checkup with the best GMC car experts in Dubai. Contact us at +971 528475675 or for 24/7 emergency roadside assistance."
+      description: "We offer expert GMC battery service to ensure your vehicle performs at its best. Whether you drive a standard model or a GMC hybrid, maintaining a healthy battery is crucial for smooth and reliable operation. Our skilled technicians are equipped to handle everything from standard battery maintenance to GMC hybrid battery replacement, ensuring optimal performance for your eco-friendly vehicle. 800BatteryPro is one of the trusted GMC service centers in Dubai and Abu Dhabi. If you are driving a GMC premium, standard model or a hybrid version, our American Car experts know how to deliver a 100 percent quality job while using OEM-approved Battery. It's not just about delivering the premium GMC Battery replacement to standard battery maintenance, as we ensure your safety on the road. We recommend routine car battery checkups using a GMC-approved battery for durability and reliability. We are in partnership with well-equipped car workshop in Dubai, providing market-competitive pricing for all our GMC Battery services. You can reserve your slot for your next Battery Checkup with the best GMC car experts in Dubai. Contact us at +971 528475675 or for 24/7 emergency roadside assistance."
     },
   ]
 }
@@ -140,7 +144,7 @@ const englishServices = [
   {
     img: serviceImg2,
     title: "Certified GMC Specialists",
-    desc: "Our technicians have 5+ years of experience working on all American Car brands including the GMC (General Motors Truck Company)."
+    desc: "Our technicians have 6+ years of experience working on all American Car brands including the GMC (General Motors Truck Company)."
   },
   {
     img: serviceImg3,
@@ -149,7 +153,7 @@ const englishServices = [
   },
   {
     img: serviceImg4,
-    title: "Car Battery Under 15 Minutes",
+    title: "Car Battery Under 25 Minutes",
     desc: "Our 24/7 road side assistance for ensuring you stay safe on the road. We offer free battery testing and free car battery delivery with no hidden charges."
   }
 ]
@@ -195,10 +199,55 @@ const englishContent = [
   },
   {
     icons: <FaSitemap />,
-    title: "Car Battery Under 15 Minutes",
+    title: "Car Battery Under 25 Minutes",
     desc: "800BatteryPro offers 24/7 roadside assistance with our free battery delivery, our technicians use the latest equipment to work on your replacement."
   }
 ]
+
+    const  englishService = [
+                      {
+                        title: "Car Battery Replacement",
+                        hoverDec: "Call 800BatteryPro at +971528475675 For Premium Car Battery Replacement Services Under 25 Minutes in Abu Dhabi",
+                        img: service
+                      },
+                      {
+                        title: "Car Battery Boosting",
+                        hoverDec: "Get 24/7 Car Battery Boosting/jump start services under 25 minutes anywhere in Abu Dhabi with no hidden cost.",
+                        img: service2
+                      },
+                      {
+                        title: "24/7 Roadside Assistance",
+                        hoverDec: "800BatteryPro has well-equipped mobile vans and 30+ certified car battery replacement technicians providing 24/7 roadside assistance anywhere in the UAE. Fast & Reliable RSA!",
+                        img: service1
+                      },
+                      {
+                        title: "Car Scanning & Diagnostics",
+                        hoverDec: " Get complete Advanced Car Scanning & Diagnostics at 800BatteryPro as we have partnered with trusted car service centers in Abu Dhabi. Fast Service & Best Pricing in Abu Dhabi. Contact Us Now!",
+                        img: service3
+                      },
+                    ]
+                  const  arabicService = [
+                      {
+                        title: "استبدال بطارية السيارة",
+                        hoverDec: "اتصل بـ 800BatteryPro على +971528475675 للحصول على خدمات استبدال بطارية السيارة المتميزة خلال 30 دقيقة في دبي",
+                        img: service
+                      },
+                      {
+                        title: "تشغيل بطارية السيارة",
+                        hoverDec: "احصل على خدمات تشغيل/بدء تشغيل بطارية السيارة على مدار الساعة خلال 30 دقيقة في أي مكان في دبي من خلال 800BatteryPro",
+                        img: service2
+                      },
+                      {
+                        title: "المساعدة على الطريق 24/7",
+                        hoverDec: "يمتلك 800BatteryPro شاحنات مجهزة تجهيزًا جيدًا وأكثر من 50 فنيًا معتمدًا يقدمون خدمات المساعدة على الطريق على مدار الساعة في أي مكان في الإمارات. خدمة طرق سريعة وموثوقة!",
+                        img: service1
+                      },
+                      {
+                        title: "فحص وتشخيص السيارة",
+                        hoverDec: "احصل على فحص وتشخيص متقدم كامل للسيارة في 800BatteryPro. خدمة سريعة وأفضل الأسعار. اتصل بنا الآن!",
+                        img: service3
+                      },
+                    ]
 
 const arabicContent = [
   {
@@ -246,15 +295,15 @@ const englishFaqs = [
   },
   {
     question: "Do you offer on-site GMC battery replacement in Dubai?",
-    answer: "Yes, 800BatteryPro offers on-site GMC battery replacement in Dubai. You can call us for 24/7 roadside assistance or any other car battery solutions anywhere in Dubai and Abu Dhabi."
+    answer: "Yes, 800BatteryPro offers on-site GMC car battery replacement in Dubai. You can call us for 24/7 roadside assistance or any other car battery solutions anywhere in Dubai and Abu Dhabi."
   },
   {
     question: "Any American Car Experts in Dubai?",
-    answer: "Yes, 800BatteryPro is one of the trusted and has a certified team of American car experts in Dubai. We have a well-equipped service center with the latest technology used for every American car repair job. We treat every car brand, including Jeep, GMC, Chevrolet, and Tesla, etc. Call us now for any American car battery replacement services at +971528475675."
+    answer: "Yes, 800BatteryPro is one of the trusted and has a certified team of American car experts in Dubai. We are in partnership with a well-equipped service center in Dubai with the latest technology used for every American car repair job. We treat every car brand, including Jeep, GMC, Chevrolet, and Tesla, etc. Call us now for any American car battery replacement services at +971528475675."
   },
   {
     question: "Do we provide American Car Battery Replacement in Abu Dhabi?",
-    answer: "Yes, 800BatteryPro has well-equipped service centers in Dubai and Abu Dhabi. We treat every American car battery replacement with genuine and premium car battery replacements. Our customer base is 100 percent satisfied with our auto repair and battery services. If your car battery is dead, call us now at +971528475675 for emergency assistance services."
+    answer: "Yes, 800BatteryPro has partnered with well-equipped service centers in Abu Dhabi. We treat every American car battery replacement with genuine and premium car battery replacements. Our customer base is 100% satisfied with our auto repair and battery services. If your car battery is dead, call us now at +971528475675 for emergency assistance services."
   },
 ]
 
@@ -390,7 +439,7 @@ const text = locale === "ar"
       </div>
         <div className=' bg-white  rounded-t-4xl relative z-10'>
              <Cards />
-            <Services />
+            <Services englishService={englishService} arabicService={arabicService} />
             <HowItWorks />
            <Service serviceContent={serviceContent} serviceImg={serviceImg} />
            <CarBrands text={text} brands={brands} />

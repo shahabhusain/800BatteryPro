@@ -106,27 +106,27 @@ const arabicContent = [
 const englishFaqs = [
     {
         question: "Which one is the best car service center in Dubai?",
-        answer: "If you are looking for one of the best and trusted car service center in Dubai, then you should always choose 800BatteryPro. We have a team of 50+ certified technicians who are experienced to work on every major car maker including the American and European car brands."
+        answer: "800BatteryPro has partnered with the best car service centers in Dubai and Abu Dhabi. We have a team of 30+ certified technicians who are experienced to work on every major car maker including the American and European car brands."
     },
     {
         question: "Where do we provide services?",
-        answer: "8000BatteryPro provides 24/7 roadside assistance, car battery replacement, and advanced car programming services across both Dubai and Abu Dhabi. If you need instant services call us at +971528475675."
+        answer: "8000BatteryPro provides 24/7 roadside assistance, car battery replacement under 25 minutes, and advanced car programming services across both Dubai and Abu Dhabi. If you need instant services call us at +971528475675."
     },
     {
         question: "How much does it cost to do car battery replacement?",
-        answer: "The range of car battery replacement really depends upon your car make and model, while the average lies between AED 250 to 600. You can contact 800BatteryPro for market competitive pricing of the car battery replacement and other services. Our technicians only use genuine car batteries and OEM-approved spare parts for all our customers."
+        answer: "The range of car battery replacement really depends upon your car make and model. You can contact 800BatteryPro for market competitive pricing of the car battery replacement and other services. Our technicians only use genuine car batteries and OEM-approved spare parts for all our customers."
     },
     {
         question: "Where is our service centre in Dubai?",
-        answer: "800BatteryPro has a well-equipped and ideally located car service centre in Dubai. With our 20+ mobile vans and 50+ certified technicians, we deliver every car battery and advanced repair service with 100 percent customer satisfaction."
+        answer: "800BatteryPro has partnered with well-equipped and ideally located car service centres in Dubai. With our 20+ mobile vans and 50+ certified technicians, we deliver every car battery and advanced repair service with 100% customer satisfaction."
     },
     {
         question: "How much does a car battery replacement cost in Dubai?",
-        answer: "Car battery replacement in Dubai typically costs AED 250–600 depending on brand and model. 800BatteryPro offers competitive pricing with same-day mobile service — no garage visit needed."
+        answer: "Car battery replacement in Dubai typically depends on brand and model. 800BatteryPro offers competitive pricing with same-day mobile service — no garage visit needed."
     },
     {
         question: "How long does a car battery replacement take?",
-        answer: "Most car battery replacements take 20–45 minutes. Our mobile technician arrives, fits the new battery and tests the system on-site — zero downtime for you."
+        answer: "Most car battery replacements take 20–25 minutes. Our mobile technician arrives, fits the new battery and tests the system on-site — zero downtime for you."
     },
     {
         question: "Does 800BatteryPro come to my location in Dubai?",
@@ -142,11 +142,11 @@ const englishFaqs = [
     },
     {
         question: "How fast does roadside assistance arrive in Dubai?",
-        answer: "Our technicians typically arrive within 30–90 minutes across Dubai and Abu Dhabi, depending on traffic and your exact location."
+        answer: "Our technicians typically arrive within 20–25 minutes across Dubai and Abu Dhabi, depending on traffic and your exact location."
     },
     {
         question: "How much does a car diagnostic scan cost in Dubai?",
-        answer: "A basic OBD-II diagnostic scan in Dubai typically costs AED 100–300. 800BatteryPro provides full mobile scanning at your location with a detailed fault report."
+        answer: "A basic OBD-II diagnostic scan in Dubai typically depends upon your car make and model. 800BatteryPro provides full mobile scanning at your location with a detailed fault report."
     },
     {
         question: "How do I know if my car's ECU is faulty?",
@@ -162,7 +162,7 @@ const englishFaqs = [
     },
     {
         question: "How much does brake pad replacement cost in Dubai?",
-        answer: "Brake pad replacement in Dubai ranges AED 200–600 per axle, depending on the car brand and pad quality. Mobile service means no towing or garage visit required."
+        answer: "Brake pad replacement in Dubai ranges per axle, depends on the car brand and pad quality. Get our rapid 24/7 Mobile van service means no towing or garage visit required."
     },
     {
         question: "What type of battery does an Audi need?",

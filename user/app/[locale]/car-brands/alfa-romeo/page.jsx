@@ -33,7 +33,10 @@ import herobg from '@/public/brands/alfa/bg.webp'
 import Cards from '@/app/components/Hero/Cards'
 import Services from '@/app/components/locations/Services'
 import HowItWorks from '@/app/components/Hero/HowItWorks'
-
+import service from '@/public/brands/alfa/ser1.webp'
+import service1 from '@/public/brands/alfa/ser2.webp'
+import service2 from '@/public/brands/alfa/ser3.webp'
+import service3 from '@/public/brands/alfa/ser4.webp'
 
 const AlfaRomeo = () => {
   const locale = useLocale()
@@ -43,7 +46,7 @@ const heroEnglishContent = {
         span1: "Alfa Romeo Car Battery &",
         span2: "Advanced Repair Experts"
     },
-    desc1: "Talk To Our Expert at 800BatteryPro For Alfa Romeo Battery Replacement in Dubai or Advance Repair Services.",
+    desc1: "Talk To Our Expert at +971528475675 For any Alfa Romeo Battery Replacement in Dubai delivered under 25 Minutes or Advance Repair Services",
     btn: "Call Now",
     btn1: "Book Service Now"
 }
@@ -65,7 +68,7 @@ const serviceEnglishContent = {
     services: [
         {
             id: 1,
-            description: "The Alfa Romeo Logo represents both luxury and Italian prestige, with its peak performance and comfortable ride. Almost every car brand finds it unable to cope with the challenging climate of the UAE, with heat rising to 55°C in summers, both battery services and car programming is high demand. Alfa Romeo batteries are long-lasting and highly durable, but they still it needs certified Alfa Romeo Specialist for treating any car battery replacements or advanced car repairs in Dubai. 800BatteryPro is one of the trusted Alfa Romeo service centres in the UAE, with 100+ technicians and a well-equipped garage. For Alfa Romeo Giulia, Giulietta, Tonale, Giulia QuadriFoglio, Milano, QuadriFoglio, Stelvio, 4c, 8c, we provide both AGM and Enhanced Flooded Battery in most model variants. The AGM Batteries we provide are genuine, long-lasting, and durable, supporting the electrical systems of Alfa Romeo. There is a need for having routine car check-ups once a year or maybe after 10,000 KMs, as it will help you in staying safe on the road and keeping your car in good shape. Do not ignore any unknown mechanical sounds or quirks in your car. Contact 800BatteryPro at +971528475675 for Alfa Romeo Battery replacements, car scanning, engine repairs, electrical repairs or other advanced repair services. Our certified technicians offer on-site services within 15 minutes across the UAE."
+            description: "The Alfa Romeo Logo represents both luxury and Italian prestige, with its peak performance and comfortable ride. Almost every car brand finds it unable to cope with the challenging climate of the UAE, with heat rising to 55°C in summers, both battery services and car programming is high demand. Alfa Romeo batteries are long-lasting and highly durable, but they still it needs certified Alfa Romeo Specialist for treating any car battery replacements or advanced car repairs in Dubai. 800BatteryPro is one of the trusted Alfa Romeo service centres in the UAE, with 100+ technicians and a well-equipped garage. For Alfa Romeo Giulia, Giulietta, Tonale, Giulia QuadriFoglio, Milano, QuadriFoglio, Stelvio, 4c, 8c, we provide both AGM and Enhanced Flooded Battery in most model variants. The AGM Batteries we provide are genuine, long-lasting, and durable, supporting the electrical systems of Alfa Romeo. There is a need for having routine car check-ups once a year or maybe after 10,000 KMs, as it will help you in staying safe on the road and keeping your car in good shape. Do not ignore any unknown mechanical sounds or quirks in your car. Contact 800BatteryPro at +971528475675 for Alfa Romeo Battery replacements, car scanning, engine repairs, electrical repairs or other advanced repair services. Our certified technicians offer on-site services within 25 minutes across the UAE."
         },
     ]
 }
@@ -83,11 +86,11 @@ const serviceArabicContent = {
 
 const serviceEnglishContent1 = {
     subtitle: "SERVICES",
-    title: "Trusted Alfa Romeo Service Center in Dubai & Abu Dhabi",
+    title: "800BatteryPro Partnered With Trusted Alfa Romeo Service Center in Dubai & Abu Dhabi",
     services: [
         {
             id: 1,
-            description: "800BatteryPro has a team of certified Alfa Romeo technicians who know about every technical detail related to its car battery, advanced repair, and maintenance services. Considered the go-to premium service centre in the UAE, we serve our customers with top car care solutions with transparent pricing. Our technicians only use Alfa Romeo genuine and OEM standard parts, which are sourced from branded manufacturers only. We don't stop there as our car repair services in Dubai extend to 24/7 Roadside assistance and onsite battery boosting within 15 minutes across the Emirates. Fill out the form to book an appointment with one of our Alfa Romeo specialists in Dubai."
+            description: "800BatteryPro has a team of certified Alfa Romeo technicians who know about every technical detail related to its car battery, advanced repair, and maintenance services. 800BatteryPro is partnered with premium service centre in the UAE, we serve our customers with top car care solutions with transparent pricing. Our technicians only use Alfa Romeo genuine and OEM standard parts, which are sourced from branded manufacturers only. We don't stop there as our car repair services in Dubai extend to 24/7 Roadside assistance and onsite battery boosting within 25 minutes across the Emirates. Fill out the form to book an appointment with one of our Alfa Romeo specialists in Dubai."
         },
     ]
 }
@@ -202,7 +205,7 @@ const englishFaqs = [
     },
     {
         question: "How often should I change the oil in my Alfa Romeo?",
-        answer: "Regular oil changes are essential for maintaining the performance and longevity of your Alfa Romeo. Oil lubricates the engine and removes contaminants that can accumulate over time. At 800BatteryPro, we recommend changing your oil every 7,500 miles or as per the manufacturer's guidelines. Visit our service centres in Dubai or Abu Dhabi for professional oil change services to keep your Alfa Romeo in peak condition."
+        answer: "Regular oil changes are essential for maintaining the performance and longevity of your Alfa Romeo. Oil lubricates the engine and removes contaminants that can accumulate over time. At 800BatteryPro, we recommend changing your oil every 7,500 miles or as per the manufacturer's guidelines. Book an appointment with one of our partner service centres in Dubai or Abu Dhabi by calling us directley at +971528475675 for professional oil change services to keep your Alfa Romeo in peak condition."
     },
     {
         question: "How can I tell if my car battery is weak?",
@@ -214,7 +217,7 @@ const englishFaqs = [
     },
     {
         question: "How do I fix an overheating car?",
-        answer: "If your Alfa Romeo is overheating, it's essential to address the issue promptly to avoid engine damage. Common causes of overheating includes, low coolant levels, malfunctioning radiator or thermostat, faulty water pump, and clogged radiator hoses. To resolve the issue, refill the coolant, replace faulty components, or flush the cooling system. For professional assistance, visit 800BatteryPro service centres in Dubai or Abu Dhabi."
+        answer: "If your Alfa Romeo is overheating, it's essential to address the issue promptly to avoid engine damage. Common causes of overheating includes, low coolant levels, malfunctioning radiator or thermostat, faulty water pump, and clogged radiator hoses. To resolve the issue, refill the coolant, replace faulty components, or flush the cooling system. For professional assistance, call 800BatteryPro at +971528475675."
     },
     {
         question: "How do I know if I need new brakes for my Alfa Romeo?",
@@ -234,7 +237,7 @@ const englishFaqs = [
     },
     {
         question: "Who are the best Italian car brand experts in Dubai?",
-        answer: "800BatteryPro is recognised as one of the leading service providers for Italian car brands in Dubai and Abu Dhabi. With over 50 certified Italian car specialists and state-of-the-art service centres, we cater to almost every exotic and premium car brand in the UAE."
+        answer: "800BatteryPro is recognised as one of the leading service providers for Italian car brands in Dubai and Abu Dhabi. With over 30+ certified Italian car specialists and partnership with state-of-the-art service centres, we cater to almost every exotic and premium car brand in the UAE."
     },
 ]
 
@@ -280,6 +283,51 @@ const arabicFaqs = [
         answer: "يُعترف بـ 800BatteryPro كأحد مقدمي الخدمات الرائدين لعلامات السيارات الإيطالية في دبي وأبو ظبي. مع أكثر من 50 متخصصاً معتمداً في السيارات الإيطالية ومراكز خدمة حديثة، نحن نخدم تقريباً كل ماركة سيارات فاخرة ومتميزة في الإمارات."
     },
 ]
+
+        const  englishService = [
+                      {
+                        title: "Car Battery Replacement",
+                        hoverDec: "Call 800BatteryPro at +971528475675 For Premium Car Battery Replacement Services Under 25 Minutes in Abu Dhabi",
+                        img: service
+                      },
+                      {
+                        title: "Car Battery Boosting",
+                        hoverDec: "Get 24/7 Car Battery Boosting/jump start services under 25 minutes anywhere in Abu Dhabi with no hidden cost.",
+                        img: service2
+                      },
+                      {
+                        title: "24/7 Roadside Assistance",
+                        hoverDec: "800BatteryPro has well-equipped mobile vans and 30+ certified car battery replacement technicians providing 24/7 roadside assistance anywhere in the UAE. Fast & Reliable RSA!",
+                        img: service1
+                      },
+                      {
+                        title: "Car Scanning & Diagnostics",
+                        hoverDec: " Get complete Advanced Car Scanning & Diagnostics at 800BatteryPro as we have partnered with trusted car service centers in Abu Dhabi. Fast Service & Best Pricing in Abu Dhabi. Contact Us Now!",
+                        img: service3
+                      },
+                    ]
+                  const  arabicService = [
+                      {
+                        title: "استبدال بطارية السيارة",
+                        hoverDec: "اتصل بـ 800BatteryPro على +971528475675 للحصول على خدمات استبدال بطارية السيارة المتميزة خلال 30 دقيقة في دبي",
+                        img: service
+                      },
+                      {
+                        title: "تشغيل بطارية السيارة",
+                        hoverDec: "احصل على خدمات تشغيل/بدء تشغيل بطارية السيارة على مدار الساعة خلال 30 دقيقة في أي مكان في دبي من خلال 800BatteryPro",
+                        img: service2
+                      },
+                      {
+                        title: "المساعدة على الطريق 24/7",
+                        hoverDec: "يمتلك 800BatteryPro شاحنات مجهزة تجهيزًا جيدًا وأكثر من 50 فنيًا معتمدًا يقدمون خدمات المساعدة على الطريق على مدار الساعة في أي مكان في الإمارات. خدمة طرق سريعة وموثوقة!",
+                        img: service1
+                      },
+                      {
+                        title: "فحص وتشخيص السيارة",
+                        hoverDec: "احصل على فحص وتشخيص متقدم كامل للسيارة في 800BatteryPro. خدمة سريعة وأفضل الأسعار. اتصل بنا الآن!",
+                        img: service3
+                      },
+                    ]
 
 // Locale assignments
 const hero = locale === "en" ? heroEnglishContent : locale === "ar" ? heroArabicContent : null
@@ -361,7 +409,7 @@ const text = locale === "ar"
       </div>
         <div className='bg-white rounded-t-4xl relative z-10'>
                 <Cards />
-            <Services />
+            <Services englishService={englishService} arabicService={arabicService} />
              <HowItWorks />
            <Service serviceContent={serviceContent} serviceImg={serviceImg} />
            

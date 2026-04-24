@@ -38,6 +38,10 @@ import herobg from '@/public/brands/audi/bg.webp'
 import Cards from '@/app/components/Hero/Cards'
 import HowItWorks from '@/app/components/Hero/HowItWorks'
 import Services from '@/app/components/locations/Services'
+import service from '@/public/brands/audi/ser1.webp'
+import service1 from '@/public/brands/audi/ser2.webp'
+import service2 from '@/public/brands/audi/ser3.webp'
+import service3 from '@/public/brands/audi/ser4.webp'
 
 
 const Audi = () => {
@@ -45,10 +49,10 @@ const Audi = () => {
 const heroEnglishContent = {
   desc: "Top Car Brands – 24/7 Emergency Support & Anywhere!",
   title: {
-    span1: "Audi Car Battery Replacement ",
+    span1: "Audi Car Battery Replacement Under 25 Minutes",
     span2: " & Advanced Repairs"
   },
-  desc1: "You don’t need to panic if your Audi car battery is dead! 800BatteryPro provides you with 24/7 roadside assistance, under 30 minutes and certified battery replacement. ",
+  desc1: "You don’t need to panic if your Audi car battery is dead! 800BatteryPro provides you with 24/7 roadside assistance and under 25 minutes car battery battery replacement anywhere in Dubai. ",
   btn: "Call Now",
   btn1: "Book Service Now"
 }
@@ -70,7 +74,7 @@ const serviceEnglishContent = {
   services: [
     {
       id: 1,
-      description: "Audi batteries require routine maintenance and under 15 minutes of on-site battery replacement services. We have a team of certified Audi specialist who only works on genuine battery brands with 18+ month warranty. Not only do we ensure the use of OEM standard spare parts through certified procedures and next-gen equipment. Our technicians only recommend branded car batteries, which ensure peak performance and are capable of handling the heat of Dubai."
+      description: "Audi batteries require routine maintenance and under 25 minutes of on-site battery replacement services. We have a team of certified Audi specialist who only works on genuine battery brands with upto 18+ month warranty. Not only do we ensure the use of OEM standard spare parts through certified procedures and next-gen equipment. Our technicians only recommend branded car batteries, which ensure peak performance and are capable of handling the heat of Dubai."
     },
     {
       id: 2,
@@ -78,7 +82,7 @@ const serviceEnglishContent = {
     },
     {
       id: 3,
-      description: "800BatteryPro offers the following are the different types of Audi Battery: AGM Battery Audi: Audi owners who care about performance should get AGM (Absorbent Glass Mat) batteries. These batteries have high CCA and deep cycle features because of the new battery design. EFB (Enhanced Flooded Battery): The EFB (Enhanced Flooded Battery) is also a great choice for Audis with start-stop technology. Many Audi models can use EFB batteries because they are both cost-effective and high-performance. 800BatteryPro provides 24/7 roadside assistance with under 15 minutes of on-site Audi car battery delivery anywhere in Dubai. Our battery testing and delivery are free of cost, while our battery warranty lasts up to 18 months. For premium Audi Battery replacement and advanced repairs, contact us now at +971528475675 or book a free car inspection appointment right now!"
+      description: "800BatteryPro offers the following types of Audi Batteries, first is the AGM Battery for Audi. Audi owners who care about performance should get AGM (Absorbent Glass Mat) batteries. These batteries have high CCA and deep cycle features because of the new battery design. Second one is the EFB (Enhanced Flooded Battery) which is also a great choice for Audis with start-stop technology. Many Audi models can use EFB batteries because they are both cost-effective and high-performance. 800BatteryPro provides 24/7 roadside assistance with under 15 minutes of on-site Audi car battery delivery anywhere in Dubai. Our battery testing and delivery are free of cost, while our battery warranty lasts up to 18 months. For premium Audi Battery replacement and advanced repairs, contact us now at +971528475675 or book a free car inspection appointment right now!"
     },
   ]
 }
@@ -104,15 +108,15 @@ const serviceArabicContent = {
 
 const serviceEnglishContent1 = {
   subtitle: "SERVICES",
-  title: "Audi Service Centre in Dubai – Premium German Car Battery",
+  title: "Partner With Top-tier Audi Service Centres in Dubai – Premium Repairs No Hidden Cost",
   services: [
     {
       id: 1,
-      description: "800BatteryPro is one of the trusted and reliable Audi Service centres in Dubai and Abu Dhabi. With 50+ certified Audi Specialists, our technicians are committed to excellence in providing genuine battery replacement services as well as advance repair solutions. Rest assured that you are getting a high-quality product that will keep your Audi running at its best, whether you choose an AGM or an EFB battery. We have 5+ years of experience in delivering every Audi car job with 100 percent customer satisfaction. Rest assured that you will get the premium services. We provide high-quality AGM and EFB batteries that are made to work best in Audi cars. Our technicians only use branded batteries that last long and work well, so our customers may feel safe when they drive."
+      description: "800BatteryPro has partnered with one of the trusted and reliable Audi Service centres in Dubai and Abu Dhabi. With 30+ certified Audi Specialists, our technicians are committed to excellence in providing genuine battery replacement services as well as advance repair solutions. Rest assured that you are getting a high-quality product that will keep your Audi running at its best, whether you choose an AGM or an EFB battery. We have 6+ years of experience in delivering every Audi car job with 100 percent customer satisfaction. Rest assured that you will get the premium services. We provide high-quality AGM and EFB batteries that are made to work best in Audi cars. Our technicians only use branded batteries that last long and work well, so our customers may feel safe when they drive."
     },
     {
       id: 2,
-      description: "You can reserve your slot for your next Battery Checkup with the best Audi car experts in Dubai. Contact us at +971 528475675 for 24/7 emergency roadside assistance."
+      description: "You can reserve your slot for your next Battery Checkup with the best Audi car experts in Dubai. Contact us at +971 528475675 for 24/7 emergency roadside assistance under 25 minutes."
     },
   ]
 }
@@ -239,11 +243,11 @@ const englishFaqs = [
   },
   {
     question: "Any German Car Experts in Dubai?",
-    answer: "Yes, 800BatteryPro is one of the trusted and has a certified team of German car experts in Dubai. We have a well-equipped service centre with the latest technology used for every German car repair job. We treat every car brand, including Mercedes, BMW, Porsche, and Audi, etc. Call us now for any German car battery replacement services at +971528475675."
+    answer: "Yes, 800BatteryPro is one of the trusted and has a certified team of German car experts in Dubai. We are partnered wih well-equipped service centre with the latest technology used for every German car repair job. We treat every car brand, including Mercedes, BMW, Porsche, and Audi, etc. Call us now for any German car battery replacement services at +971528475675."
   },
   {
     question: "Do we provide German Car Battery Replacement in Abu Dhabi?",
-    answer: "Yes, 800BatteryPro has well-equipped service centres in Dubai and Abu Dhabi. We treat every German car battery replacement with genuine and premium car battery replacements. Our customer base is 100 percent satisfied with our auto repair and battery services. If your car battery is dead, call us now at +971528475675 for emergency assistance services."
+    answer: "Yes, 800BatteryPro has well-equipped service centres in Dubai and Abu Dhabi. We treat every German car battery replacement with genuine and premium car battery replacements under 25 minutes. Our customer base is 100 percent satisfied with our auto repair and battery services. If your car battery is dead, call us now at +971528475675 for emergency assistance services."
   },
 ]
 
@@ -363,6 +367,51 @@ const text = locale === "ar"
                       { image: volcan, name: "Volcan" },
                   ];
 
+                          const  englishService = [
+                      {
+                        title: "Car Battery Replacement",
+                        hoverDec: "Call 800BatteryPro at +971528475675 For Premium Car Battery Replacement Services Under 25 Minutes in Abu Dhabi",
+                        img: service
+                      },
+                      {
+                        title: "Car Battery Boosting",
+                        hoverDec: "Get 24/7 Car Battery Boosting/jump start services under 25 minutes anywhere in Abu Dhabi with no hidden cost.",
+                        img: service2
+                      },
+                      {
+                        title: "24/7 Roadside Assistance",
+                        hoverDec: "800BatteryPro has well-equipped mobile vans and 30+ certified car battery replacement technicians providing 24/7 roadside assistance anywhere in the UAE. Fast & Reliable RSA!",
+                        img: service1
+                      },
+                      {
+                        title: "Car Scanning & Diagnostics",
+                        hoverDec: " Get complete Advanced Car Scanning & Diagnostics at 800BatteryPro as we have partnered with trusted car service centers in Abu Dhabi. Fast Service & Best Pricing in Abu Dhabi. Contact Us Now!",
+                        img: service3
+                      },
+                    ]
+                  const  arabicService = [
+                      {
+                        title: "استبدال بطارية السيارة",
+                        hoverDec: "اتصل بـ 800BatteryPro على +971528475675 للحصول على خدمات استبدال بطارية السيارة المتميزة خلال 30 دقيقة في دبي",
+                        img: service
+                      },
+                      {
+                        title: "تشغيل بطارية السيارة",
+                        hoverDec: "احصل على خدمات تشغيل/بدء تشغيل بطارية السيارة على مدار الساعة خلال 30 دقيقة في أي مكان في دبي من خلال 800BatteryPro",
+                        img: service2
+                      },
+                      {
+                        title: "المساعدة على الطريق 24/7",
+                        hoverDec: "يمتلك 800BatteryPro شاحنات مجهزة تجهيزًا جيدًا وأكثر من 50 فنيًا معتمدًا يقدمون خدمات المساعدة على الطريق على مدار الساعة في أي مكان في الإمارات. خدمة طرق سريعة وموثوقة!",
+                        img: service1
+                      },
+                      {
+                        title: "فحص وتشخيص السيارة",
+                        hoverDec: "احصل على فحص وتشخيص متقدم كامل للسيارة في 800BatteryPro. خدمة سريعة وأفضل الأسعار. اتصل بنا الآن!",
+                        img: service3
+                      },
+                    ]
+
 
   return (
     <div>
@@ -371,7 +420,7 @@ const text = locale === "ar"
       </div>
         <div className='bg-white rounded-t-4xl relative z-10'>
              <Cards />
-            <Services />
+            <Services englishService={englishService} arabicService={arabicService} />
             <HowItWorks />
            <Service serviceContent={serviceContent} serviceImg={serviceImg} />
            
