@@ -4,8 +4,8 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Mousewheel, Keyboard, Autoplay } from 'swiper/modules';
 import Image from 'next/image';
-import banner1 from '@/public/Home/banner1.webp'
-import banner2 from '@/public/Home/banner2.webp'
+import banner1 from '@/public/Home/ban1.webp'
+import banner2 from '@/public/Home/ban2.webp'
 import banner3 from '@/public/Home/banner3.webp'
 import banner4 from '@/public/Home/banner4.webp'
 import banner5 from '@/public/Home/banner5.webp'
