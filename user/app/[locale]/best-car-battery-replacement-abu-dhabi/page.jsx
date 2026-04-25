@@ -62,8 +62,8 @@ const englishContent = [
     },
     {
         icons: <TiStarburst />,
-        title: "Certified Technicians & 6+ Years Of Experience",
-        desc: "800BatteryPro has a team of over 30+ certified technicians who are capable of working on any of the major car brands in the world. With over 6+ years of experience and availability of the latest technology, we offer premium car battery replacement and advanced repair solutions in Abu Dhabi by partnering with leading car service centers in the UAE."
+        title: " Technicians & 6+ Years Of Experience",
+        desc: "800BatteryPro has a team of over 30+  technicians who are capable of working on any of the major car brands in the world. With over 6+ years of experience and availability of the latest technology, we offer premium car battery replacement and advanced repair solutions in Abu Dhabi by partnering with leading car service centers in the UAE."
     },
     {
         icons: <TiStarburst />,
@@ -269,7 +269,7 @@ const arabicFaqs = [
   const defaultEnglishContent = {
     title: "About Us",
     heading: " 800BatteryPro - Car Battery Replacement Under 25 Minutes",
-    description: "Don’t panic if you have a dead car battery as we deliver branded car battery replacement with free battery testing and onsite delivery under 25 minutes. With an experience of over 6+ years and 10,000+ customers in Abu Dhabi, 800BatteryPro is one of best car battery replacement service providers with 30+ certified technicians capable of working on all major car brands. We deliver every minor and major car job by partnering with leading car service centers in the UAE with 100% customer satisfaction, our experts deliver 24/7 roadside assistance services under 25 minutes anywhere in Abu Dhabi. With fully equipped rapid response vans and a compassionate customer support at your service, 800BatteryPro ensures you stay safe on the road. Our technicians only use OEM-approved spare parts and branded car batteries for your car with no hidden cost. Our team of car battery specialists are trained to work on all major car brands such as Audi, Alfa Romeo, Aston Martin, BMW, Lamborghini, Bentley, Bugatti, Ferrari, Jaguar, Land Rover, Mercedes, Chevrolet, Mini Cooper, Maybach, Pagani, Range Rover, Jeep, Rolls Royce, Brabus, Mansory, Lexus, Nissan and Volkswagen.",
+    description: "Don’t panic if you have a dead car battery as we deliver branded car battery replacement with free battery testing and onsite delivery under 25 minutes. With an experience of over 6+ years and 10,000+ customers in Abu Dhabi, 800BatteryPro is one of best car battery replacement service providers with 30+ Experienced technicians capable of working on all major car brands. We deliver every minor and major car job by partnering with leading car service centers in the UAE with 100% customer satisfaction, our experts deliver 24/7 roadside assistance services under 25 minutes anywhere in Abu Dhabi. With fully equipped rapid response vans and a compassionate customer support at your service, 800BatteryPro ensures you stay safe on the road. Our technicians only use OEM-approved spare parts and branded car batteries for your car with no hidden cost. Our team of car battery specialists are trained to work on all major car brands such as Audi, Alfa Romeo, Aston Martin, BMW, Lamborghini, Bentley, Bugatti, Ferrari, Jaguar, Land Rover, Mercedes, Chevrolet, Mini Cooper, Maybach, Pagani, Range Rover, Jeep, Rolls Royce, Brabus, Mansory, Lexus, Nissan and Volkswagen.",
     features: [
       "Under 25 Minutes & Fast 24/7 Roadside Assistance",
       "6+ Years of Experience Delivery 100% Satisfactory Work",

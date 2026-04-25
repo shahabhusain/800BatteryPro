@@ -74,7 +74,7 @@ const serviceEnglishContent = {
   services: [
     {
       id: 1,
-      description: "Audi batteries require routine maintenance and under 25 minutes of on-site battery replacement services. We have a team of certified Audi specialist who only works on genuine battery brands with upto 18+ month warranty. Not only do we ensure the use of OEM standard spare parts through certified procedures and next-gen equipment. Our technicians only recommend branded car batteries, which ensure peak performance and are capable of handling the heat of Dubai."
+      description: "Audi batteries require routine maintenance and under 25 minutes of on-site battery replacement services. We have a team of Experienced Audi specialist who only works on genuine battery brands with upto 18+ month warranty. Not only do we ensure the use of OEM standard spare parts through Experienced procedures and next-gen equipment. Our technicians only recommend branded car batteries, which ensure peak performance and are capable of handling the heat of Dubai."
     },
     {
       id: 2,
@@ -112,7 +112,7 @@ const serviceEnglishContent1 = {
   services: [
     {
       id: 1,
-      description: "800BatteryPro has partnered with one of the trusted and reliable Audi Service centres in Dubai and Abu Dhabi. With 30+ certified Audi Specialists, our technicians are committed to excellence in providing genuine battery replacement services as well as advance repair solutions. Rest assured that you are getting a high-quality product that will keep your Audi running at its best, whether you choose an AGM or an EFB battery. We have 6+ years of experience in delivering every Audi car job with 100 percent customer satisfaction. Rest assured that you will get the premium services. We provide high-quality AGM and EFB batteries that are made to work best in Audi cars. Our technicians only use branded batteries that last long and work well, so our customers may feel safe when they drive."
+      description: "800BatteryPro has partnered with one of the trusted and reliable Audi Service centres in Dubai and Abu Dhabi. With 30+ Experienced Audi Specialists, our technicians are committed to excellence in providing genuine battery replacement services as well as advance repair solutions. Rest assured that you are getting a high-quality product that will keep your Audi running at its best, whether you choose an AGM or an EFB battery. We have 6+ years of experience in delivering every Audi car job with 100 percent customer satisfaction. Rest assured that you will get the premium services. We provide high-quality AGM and EFB batteries that are made to work best in Audi cars. Our technicians only use branded batteries that last long and work well, so our customers may feel safe when they drive."
     },
     {
       id: 2,
@@ -144,8 +144,8 @@ const englishServices = [
   },
   {
     img: serviceImg2,
-    title: "Certified Audi Specialists",
-    desc: "We have certified Audi Specialists who are all experienced dealing with every Audi Car battery job with precision and excellence."
+    title: "Experienced Audi Specialists",
+    desc: "We have Experienced Audi Specialists who are all experienced dealing with every Audi Car battery job with precision and excellence."
   },
   {
     img: serviceImg3,
@@ -190,8 +190,8 @@ const englishContent = [
   },
   {
     icons: <FaSitemap />,
-    title: "Certified Audi Specialists",
-    desc: "We have certified Audi Specialists who are all experienced dealing with every Audi Car battery job with precision and excellence."
+    title: "Experienced Audi Specialists",
+    desc: "We have Experienced Audi Specialists who are all experienced dealing with every Audi Car battery job with precision and excellence."
   },
   {
     icons: <FaSitemap />,
@@ -243,7 +243,7 @@ const englishFaqs = [
   },
   {
     question: "Any German Car Experts in Dubai?",
-    answer: "Yes, 800BatteryPro is one of the trusted and has a certified team of German car experts in Dubai. We are partnered wih well-equipped service centre with the latest technology used for every German car repair job. We treat every car brand, including Mercedes, BMW, Porsche, and Audi, etc. Call us now for any German car battery replacement services at +971528475675."
+    answer: "Yes, 800BatteryPro is one of the trusted and has a Experienced team of German car experts in Dubai. We are partnered wih well-equipped service centre with the latest technology used for every German car repair job. We treat every car brand, including Mercedes, BMW, Porsche, and Audi, etc. Call us now for any German car battery replacement services at +971528475675."
   },
   {
     question: "Do we provide German Car Battery Replacement in Abu Dhabi?",
@@ -380,7 +380,7 @@ const text = locale === "ar"
                       },
                       {
                         title: "24/7 Roadside Assistance",
-                        hoverDec: "800BatteryPro has well-equipped mobile vans and 30+ certified car battery replacement technicians providing 24/7 roadside assistance anywhere in the UAE. Fast & Reliable RSA!",
+                        hoverDec: "800BatteryPro has well-equipped mobile vans and 30+ Experienced car battery replacement technicians providing 24/7 roadside assistance anywhere in the UAE. Fast & Reliable RSA!",
                         img: service1
                       },
                       {

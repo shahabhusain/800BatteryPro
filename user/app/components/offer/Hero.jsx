@@ -5,7 +5,7 @@ import { useLocale } from 'next-intl'
 
 const heroEnglishContent = {
   title: "OFFERS",
-  desc: "800BatteryPro provides premium car battery replacement and 24/7 roadside assistance across Dubai & Abu Dhabi. Our certified technicians arrive in under 30 minutes with genuine OEM-approved batteries. Free battery testing, fast jump-starts, and professional installation with 100% customer satisfaction guaranteed."
+  desc: "800BatteryPro provides premium car battery replacement and 24/7 roadside assistance across Dubai & Abu Dhabi. Our Experienced technicians arrive in under 30 minutes with genuine OEM-approved batteries. Free battery testing, fast jump-starts, and professional installation with 100% customer satisfaction guaranteed."
 }
 
 const heroArabicContent = {

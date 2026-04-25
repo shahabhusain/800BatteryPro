@@ -61,7 +61,7 @@ const serviceEnglishContent = {
         },
                  {
             id: 3,
-            description: "800BatteryPro is not just another car battery services provider in the UAE. With over 6 years of proven experience, we have served more than 10,000 satisfied customers across Dubai and Abu Dhabi. Our team of 30+ certified technicians is trained on all American and European car brands, and our fleet of 20+ fully equipped mobile vans is deployed 24/7 to reach you wherever you are. Every service includes free car battery testing, free jump start assistance, and free delivery with secure on-site installation - all backed by a 100% customer satisfaction guarantee and using only genuine, OEM-approved batteries."
+            description: "800BatteryPro is not just another car battery services provider in the UAE. With over 6 years of proven experience, we have served more than 10,000 satisfied customers across Dubai and Abu Dhabi. Our team of 30+ Experienced technicians is trained on all American and European car brands, and our fleet of 20+ fully equipped mobile vans is deployed 24/7 to reach you wherever you are. Every service includes free car battery testing, free jump start assistance, and free delivery with secure on-site installation - all backed by a 100% customer satisfaction guarantee and using only genuine, OEM-approved batteries."
         },
             {
             id: 4,
@@ -69,7 +69,7 @@ const serviceEnglishContent = {
         },
             {
             id: 5,
-            description: "800BatteryPro offers and installs genuine, OEM-approved batteries compatible with all major car brands sold across the UAE. We cover American brands such as Ford, GMC, Chevrolet, Jeep, Dodge, and Cadillac, as well as European brands including BMW, Mercedes-Benz, Audi, Volkswagen, Porsche, and Land Rover. Our range also extends to Japanese and Korean vehicles like Toyota, Nissan, Honda, Hyundai, Kia, and Lexus, along with luxury and electric vehicles including Tesla, Rolls-Royce, Bentley, and Ferrari. Every battery we install comes with a manufacturer warranty and is fitted by a certified technician for maximum safety and long-term performance."
+            description: "800BatteryPro offers and installs genuine, OEM-approved batteries compatible with all major car brands sold across the UAE. We cover American brands such as Ford, GMC, Chevrolet, Jeep, Dodge, and Cadillac, as well as European brands including BMW, Mercedes-Benz, Audi, Volkswagen, Porsche, and Land Rover. Our range also extends to Japanese and Korean vehicles like Toyota, Nissan, Honda, Hyundai, Kia, and Lexus, along with luxury and electric vehicles including Tesla, Rolls-Royce, Bentley, and Ferrari. Every battery we install comes with a manufacturer warranty and is fitted by a Experienced technician for maximum safety and long-term performance."
         },
          {
             id: 6,
@@ -99,7 +99,7 @@ const englishContent = [
     {
         icons: <FaSitemap />,
         title: "Free Battery Testing",
-        desc: " Unlike other car battery services in Dubai that push unnecessary replacements, 800BatteryPro always starts with a free, professional battery diagnostic at your location. Our certified technicians give you an honest assessment first — if your battery can be saved with a jump start, we will tell you. We only recommend a replacement when your vehicle genuinely needs one, because our reputation is built on trust, not upselling."
+        desc: " Unlike other car battery services in Dubai that push unnecessary replacements, 800BatteryPro always starts with a free, professional battery diagnostic at your location. Our Experienced technicians give you an honest assessment first — if your battery can be saved with a jump start, we will tell you. We only recommend a replacement when your vehicle genuinely needs one, because our reputation is built on trust, not upselling."
     },
     {
         icons: <FaSitemap />,
@@ -109,7 +109,7 @@ const englishContent = [
     {
         icons: <FaSitemap />,
         title: " Reliable 24/7 Roadside Assistance",
-        desc: "A dead car battery does not follow business hours, and neither do we. 800BatteryPro's 24/7 roadside assistance in Dubai is available every single day of the year — including weekends, UAE public holidays, and the early hours of the morning. With 30+ certified technicians on call at all times and a dedicated rapid-response dispatch team, help is always just one phone call away at +971528475675."
+        desc: "A dead car battery does not follow business hours, and neither do we. 800BatteryPro's 24/7 roadside assistance in Dubai is available every single day of the year — including weekends, UAE public holidays, and the early hours of the morning. With 30+ Experienced technicians on call at all times and a dedicated rapid-response dispatch team, help is always just one phone call away at +971528475675."
     }
 ]
 

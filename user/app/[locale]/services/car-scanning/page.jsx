@@ -52,7 +52,7 @@ const serviceEnglishContent = {
     services: [
         {
             id: 1,
-            description: "800BatteryPro has partnered with top car service centers in Dubai which are full-equipped with latest technology and equipments. As modern cars rely on highly advanced computer systems our technicians are certified to resolves every advance issue in latest cars in Dubai and Abu Dhabi. When a warning light flashes or performance drops, you need exact answers. 800BatteryPro uses the latest diagnostic technology to read your vehicle's internal data safely and accurately. We find the exact root cause of the problem so you never pay for unnecessary repairs. Our certified technicians specialize in complex electrical fixes and computer system restorations. We provide a complete range of precision diagnostic and repair services to keep your vehicle running flawlessly: Computer & Module Repairs: ECU Repair, Car BCM Repair Services, TCM Repair Service, and Car PCB Repair Service. Safety & Calibration: Car 360 Calibration, Car ABS Repair, and ADAS Sensor Repair and Recalibration. Specialized Care: Automotive Tuning, Flood Car Repair, and Car Key Programming. Stop guessing what is wrong with your vehicle. Trust our experts to protect your engine and restore your advanced systems quickly. You can call us on our whatsapp at +971528475675 anytime 24/7 in Dubai and Abu Dhabi"
+            description: "800BatteryPro has partnered with top car service centers in Dubai which are full-equipped with latest technology and equipments. As modern cars rely on highly advanced computer systems our technicians are Experienced to resolves every advance issue in latest cars in Dubai and Abu Dhabi. When a warning light flashes or performance drops, you need exact answers. 800BatteryPro uses the latest diagnostic technology to read your vehicle's internal data safely and accurately. We find the exact root cause of the problem so you never pay for unnecessary repairs. Our Experienced technicians specialize in complex electrical fixes and computer system restorations. We provide a complete range of precision diagnostic and repair services to keep your vehicle running flawlessly: Computer & Module Repairs: ECU Repair, Car BCM Repair Services, TCM Repair Service, and Car PCB Repair Service. Safety & Calibration: Car 360 Calibration, Car ABS Repair, and ADAS Sensor Repair and Recalibration. Specialized Care: Automotive Tuning, Flood Car Repair, and Car Key Programming. Stop guessing what is wrong with your vehicle. Trust our experts to protect your engine and restore your advanced systems quickly. You can call us on our whatsapp at +971528475675 anytime 24/7 in Dubai and Abu Dhabi"
         },
     ]
 }
@@ -82,8 +82,8 @@ const englishContent = [
     },
     {
         icons: <FaSitemap />,
-        title: "Certified Diagnostic Technicians",
-        desc: "Modern car repairs require advanced technical skill. Our certified experts train heavily on the latest automotive software and electrical systems. Whether you drive a standard daily commuter or a complex exotic vehicle, we apply the exact manufacturer protocols to protect your engine and wiring."
+        title: "Experienced Diagnostic Technicians",
+        desc: "Modern car repairs require advanced technical skill. Our Experienced experts train heavily on the latest automotive software and electrical systems. Whether you drive a standard daily commuter or a complex exotic vehicle, we apply the exact manufacturer protocols to protect your engine and wiring."
     },
     {
         icons: <FaSitemap />,
@@ -119,7 +119,7 @@ const arabicContent = [
 const englishFaqs = [
     {
         question: "How accurate are your car scanning and diagnostic services?",
-        answer: "We use dealership-level diagnostic tools to read your vehicle's computer systems with absolute precision. This advanced technology allows our certified technicians to pinpoint the exact root cause of any warning light or performance issue. By finding the precise fault, we prevent unnecessary parts replacement and save you money."
+        answer: "We use dealership-level diagnostic tools to read your vehicle's computer systems with absolute precision. This advanced technology allows our Experienced technicians to pinpoint the exact root cause of any warning light or performance issue. By finding the precise fault, we prevent unnecessary parts replacement and save you money."
     },
     {
         question: "What types of computer and module repairs do you handle?",
@@ -131,7 +131,7 @@ const englishFaqs = [
     },
     {
         question: "Do you offer specialised services for flooded cars or key programming?",
-        answer: "We certainly do. Our technicians specialise in severe flood car repair, working carefully to salvage and restore water-damaged electrical systems. We also offer fast car key programming and custom automotive tuning to optimise your daily driving experience."
+        answer: "We Experiencedtainly do. Our technicians specialise in severe flood car repair, working carefully to salvage and restore water-damaged electrical systems. We also offer fast car key programming and custom automotive tuning to optimise your daily driving experience."
     },
     {
         question: "Why is advanced diagnostic technology so important for my car?",

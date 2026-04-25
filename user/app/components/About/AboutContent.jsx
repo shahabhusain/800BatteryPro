@@ -30,51 +30,7 @@ const arabicContent = {
   cta: "اعرف المزيد"
 };
 
-const englishCards = [
-  {
-    icon:<HiOutlineDotsHorizontal />,
-    title:"10+ ",
-    desc:"years of experience"
-  },
-  {
-    icon:<HiOutlineDotsHorizontal />,
-    title:"10000+",
-    desc:"Loyal Customer Serve"
-  },
-  {
-    icon:<HiOutlineDotsHorizontal />,
-    title:"15+",
-    desc:"Services Offered"
-  },
-  {
-    icon:<HiOutlineDotsHorizontal />,
-    title:"50+",
-    desc:"Certified Technicians"
-  },
-]
 
-const arabicCards = [
-  {
-    icon: <HiOutlineDotsHorizontal />,
-    title: "10+ ",
-    desc: "سنوات من الخبرة"
-  },
-  {
-    icon: <HiOutlineDotsHorizontal />,
-    title: "10000+",
-    desc: "عميل مخلص تمت خدمته"
-  },
-  {
-    icon: <HiOutlineDotsHorizontal />,
-    title: "15+",
-    desc: "خدمة مقدمة"
-  },
-  {
-    icon: <HiOutlineDotsHorizontal />,
-    title: "50+",
-    desc: "فني معتمد"
-  },
-]
 
 
 

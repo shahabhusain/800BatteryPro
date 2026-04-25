@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import { FiX, FiMail, FiPhone, FiCalendar, FiUser, FiClock } from 'react-icons/fi'
+import { FiX, FiMail, FiMapPin, FiClock, FiPackage } from 'react-icons/fi'
 
 const AppointmentModal = ({ appointment, onClose }) => {
   if (!appointment) return null
@@ -16,50 +16,52 @@ const AppointmentModal = ({ appointment, onClose }) => {
         </div>
         
         <div className="p-6 space-y-4">
-          <div className="flex items-start gap-3">
-            <div className="bg-neutral-100 rounded-full p-2">
-              <FiUser className="text-neutral-600" size={20} />
-            </div>
-            <div className="flex-1">
-              <label className="text-xs font-medium text-neutral-500 uppercase">Name</label>
-              <p className="text-neutral-900 font-medium mt-1">{appointment.name}</p>
-            </div>
-          </div>
-          
+          {/* Email Section */}
           <div className="flex items-start gap-3">
             <div className="bg-neutral-100 rounded-full p-2">
               <FiMail className="text-neutral-600" size={20} />
             </div>
             <div className="flex-1">
               <label className="text-xs font-medium text-neutral-500 uppercase">Email</label>
-              <a href={`mailto:${appointment.email}`} className="text-neutral-600 hover:underline block mt-1">
+              <a href={`mailto:${appointment.email}`} className="text-blue-600 hover:underline block mt-1 break-all">
                 {appointment.email}
               </a>
             </div>
           </div>
-          
+
+          {/* Location Section */}
           <div className="flex items-start gap-3">
             <div className="bg-neutral-100 rounded-full p-2">
-              <FiPhone className="text-neutral-600" size={20} />
+              <FiMapPin className="text-neutral-600" size={20} />
             </div>
             <div className="flex-1">
-              <label className="text-xs font-medium text-neutral-500 uppercase">Phone</label>
-              <span className="text-neutral-900 block mt-1">{appointment.phone}</span>
+              <label className="text-xs font-medium text-neutral-500 uppercase">Location</label>
+              <p className="text-neutral-700 mt-1">{appointment.location}</p>
+            </div>
+          </div>
+
+          {/* Services Section */}
+          <div className="flex items-start gap-3">
+            <div className="bg-neutral-100 rounded-full p-2">
+              <FiPackage className="text-neutral-600" size={20} />
+            </div>
+            <div className="flex-1">
+              <label className="text-xs font-medium text-neutral-500 uppercase">Services</label>
+              <div className="flex flex-wrap gap-2 mt-1">
+                {Array.isArray(appointment.selectService) ? (
+                  appointment.selectService.map((service, index) => (
+                    <span key={index} className="px-2 py-1 bg-blue-100 text-blue-800 rounded-md text-xs font-medium">
+                      {service}
+                    </span>
+                  ))
+                ) : (
+                  <span className="text-neutral-700">{appointment.selectService}</span>
+                )}
+              </div>
             </div>
           </div>
           
-          {appointment.message && (
-            <div className="flex items-start gap-3">
-              <div className="bg-neutral-100 rounded-full p-2">
-                <FiCalendar className="text-neutral-600" size={20} />
-              </div>
-              <div className="flex-1">
-                <label className="text-xs font-medium text-neutral-500 uppercase">Message</label>
-                <p className="text-neutral-700 mt-1">{appointment.message}</p>
-              </div>
-            </div>
-          )}
-          
+          {/* Created Date */}
           <div className="flex items-start gap-3">
             <div className="bg-neutral-100 rounded-full p-2">
               <FiClock className="text-neutral-600" size={20} />

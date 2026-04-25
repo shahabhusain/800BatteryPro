@@ -29,7 +29,7 @@ const heroEnglishContent = {
         span1: "A-Z Car Electrical Repair",
         span2: "Services in Dubai"
     },
-    desc1: "800BatteryPro has partnered with Top Car Service Centers in Dubai - We have a team of certified technicians who offer premium car electrical repair services in Dubai. Get your free car inspection by calling us at +971528475675.",
+    desc1: "800BatteryPro has partnered with Top Car Service Centers in Dubai - We have a team of Experienced technicians who offer premium car electrical repair services in Dubai. Get your free car inspection by calling us at +971528475675.",
     btn: "Call Now",
     btn1: "Book Service Now"
 }
@@ -72,8 +72,8 @@ const serviceArabicContent = {
 const englishContent = [
     {
         icons: <FaSitemap />,
-        title: "Certified Car Technicians",
-        desc: "Our team of technicians are all qualified and certified by major car brands. With years of experience in delivering every car job with 100% customer satisfaction and efficiency. You can trust 800BatteryPro for your next car job."
+        title: "Experienced Car Technicians",
+        desc: "Our team of technicians are all qualified and Experienced by major car brands. With years of experience in delivering every car job with 100% customer satisfaction and efficiency. You can trust 800BatteryPro for your next car job."
     },
     {
         icons: <FaSitemap />,
@@ -119,7 +119,7 @@ const arabicContent = [
 const englishFaqs = [
     {
         question: "How accurate are your electrical repair services?",
-        answer: "800BatteryPro has 6+ years of experience with a partner network of more then two fully equipped service centres in Dubai and Abu Dhabi. We have served more than 10,000+ customers in the UAE with 5/5 Ratings. You can trust with our expertise and certified car technicians for fixing any of your complex electrical issues."
+        answer: "800BatteryPro has 6+ years of experience with a partner network of more then two fully equipped service centres in Dubai and Abu Dhabi. We have served more than 10,000+ customers in the UAE with 5/5 Ratings. You can trust with our expertise and Experienced car technicians for fixing any of your complex electrical issues."
     },
     {
         question: "What types of computer and module repairs do you handle?",
@@ -127,7 +127,7 @@ const englishFaqs = [
     },
     {
         question: "Can you help if my car is stuck in the sand?",
-        answer: "Yes, 800BatteryPro provides you with Fast 24/7 roadside assistance anywhere in Dubai and Abu Dhabi. You can call us at +971528475675 anytime day or night, one of our rapid response mobile van will be on its way to assist you back safely. If its a car battery replacement, or tyre replacment issue, our certified techncian will enquire every issue of your car before proceeding to the replacement. As we have offer free car battery testing and inspection with no hidden cost."
+        answer: "Yes, 800BatteryPro provides you with Fast 24/7 roadside assistance anywhere in Dubai and Abu Dhabi. You can call us at +971528475675 anytime day or night, one of our rapid response mobile van will be on its way to assist you back safely. If its a car battery replacement, or tyre replacment issue, our Experienced techncian will enquire every issue of your car before proceeding to the replacement. As we have offer free car battery testing and inspection with no hidden cost."
     },
     {
         question: "What are the signs of electrical problems in a car?",

@@ -74,7 +74,7 @@ const serviceEnglishContent = {
   services: [
     {
       id: 1,
-      description: "800BatteryPro has over 6+ Years of experience in delivering 100% customer satisfactory Maserati Car Battery replacement in Dubai & Abu Dhabi. With 20+ rapid response mobile vans and 30+ certified technicians. We are partnered with top car service centers which are trusted for there market competitive pricing and usage of OEM-approved spare parts. Maserati's are designed to perform, endure high temperatures, and operate reliably to ensure top performance and luxury that one can expect from any other Italian car. Famous car models like Grecale, MC20, Ghibli, Levante, and Quattroporte are powered by advanced EFB or AGM type of Car Batteries to support the car's complex electrical system featured with start-stop technology. To ensure a smooth ride and top-tier performance for Maserati's top Sports and luxury Models, lightweight and high-capacity Car Batteries are recommended and offered by 800BatteryPro. Choosing the right Car Battery For Maserati means choosing reliability, guaranteed starting power and improving the operations of complex On-board systems, which is essential for every Maserati. If you are facing any quirks or electrical issues in your Maserati, contact our experts for a quick Battery Check-up & car battery Replacement across the UAE. Call us at our whatsapp +971528475675"
+      description: "800BatteryPro has over 6+ Years of experience in delivering 100% customer satisfactory Maserati Car Battery replacement in Dubai & Abu Dhabi. With 20+ rapid response mobile vans and 30+ Experienced technicians. We are partnered with top car service centers which are trusted for there market competitive pricing and usage of OEM-approved spare parts. Maserati's are designed to perform, endure high temperatures, and operate reliably to ensure top performance and luxury that one can expect from any other Italian car. Famous car models like Grecale, MC20, Ghibli, Levante, and Quattroporte are powered by advanced EFB or AGM type of Car Batteries to support the car's complex electrical system featured with start-stop technology. To ensure a smooth ride and top-tier performance for Maserati's top Sports and luxury Models, lightweight and high-capacity Car Batteries are recommended and offered by 800BatteryPro. Choosing the right Car Battery For Maserati means choosing reliability, guaranteed starting power and improving the operations of complex On-board systems, which is essential for every Maserati. If you are facing any quirks or electrical issues in your Maserati, contact our experts for a quick Battery Check-up & car battery Replacement across the UAE. Call us at our whatsapp +971528475675"
     },
   ]
 }
@@ -96,7 +96,7 @@ const serviceEnglishContent1 = {
   services: [
     {
       id: 1,
-      description: "800BatteryPro covers a wide spectrum of Maserati repair and maintenance services, including. We have partnered with one of the trusted Maserati Service Centers in Dubai and Abu Dhabi, 800BatteryPro has a well-equipped 20+ rapid response mobile vans and 30+ certified Maserati specialists, completing every car maintenance, diagnostics and repair job with 100% customer satisfaction. Our technicians only use genuine Maserati parts, and with years of experience working with European car brands, you can trust us with routine servicing or complex repairs. We have a record number of jobs completed related to car Battery Check-up & Replacement, Full Inspection and Diagnosis, Minor & Major Issues, and other advance car programming services."
+      description: "800BatteryPro covers a wide spectrum of Maserati repair and maintenance services, including. We have partnered with one of the trusted Maserati Service Centers in Dubai and Abu Dhabi, 800BatteryPro has a well-equipped 20+ rapid response mobile vans and 30+ Experienced Maserati specialists, completing every car maintenance, diagnostics and repair job with 100% customer satisfaction. Our technicians only use genuine Maserati parts, and with years of experience working with European car brands, you can trust us with routine servicing or complex repairs. We have a record number of jobs completed related to car Battery Check-up & Replacement, Full Inspection and Diagnosis, Minor & Major Issues, and other advance car programming services."
     },
   ]
 }
@@ -125,7 +125,7 @@ const serviceArabicContent1 = {
                       },
                       {
                         title: "24/7 Roadside Assistance",
-                        hoverDec: "800BatteryPro has well-equipped mobile vans and 30+ certified car battery replacement technicians providing 24/7 roadside assistance anywhere in the UAE. Fast & Reliable RSA!",
+                        hoverDec: "800BatteryPro has well-equipped mobile vans and 30+ Experienced car battery replacement technicians providing 24/7 roadside assistance anywhere in the UAE. Fast & Reliable RSA!",
                         img: service1
                       },
                       {
@@ -165,13 +165,13 @@ const englishServices = [
   },
   {
     img: serviceImg2,
-    title: "Certified GMC Specialists",
+    title: "Experienced GMC Specialists",
     desc: "Our technicians have 6+ years of experience working on all American Car brands including the GMC (General Motors Truck Company)."
   },
   {
     img: serviceImg3,
     title: "Genuine GMC Parts",
-    desc: "Our certified GMC specialists only use genuine battery and OEM-approved spare parts for every car job."
+    desc: "Our Experienced GMC specialists only use genuine battery and OEM-approved spare parts for every car job."
   },
   {
     img: serviceImg4,
@@ -211,8 +211,8 @@ const englishContent = [
   },
   {
     icons: <FaSitemap />,
-    title: "Certified Maserati specialists",
-    desc: "We have 30+ certified Maserati specialists, who are capable of handling every car programming, car battery replacement, and advance repair jobs delivering every car job with 100 percent customer satisfaction."
+    title: "Experienced Maserati specialists",
+    desc: "We have 30+ Experienced Maserati specialists, who are capable of handling every car programming, car battery replacement, and advance repair jobs delivering every car job with 100 percent customer satisfaction."
   },
   {
     icons: <FaSitemap />,
@@ -256,7 +256,7 @@ const englishFaqs = [
   },
   {
     question: "How often should I service my Maserati?",
-    answer: "Our certified Maserati technicians recommends a service after 10,000 Kilometers or may one once an year for all Maserati car models. You should also check on the manufacturer's service schedule as it will help in getting maximum engine performance, luxury ride, and longevity. Schedule your next car service with 800BatteryPro at +971528475675."
+    answer: "Our Experienced Maserati technicians recommends a service after 10,000 Kilometers or may one once an year for all Maserati car models. You should also check on the manufacturer's service schedule as it will help in getting maximum engine performance, luxury ride, and longevity. Schedule your next car service with 800BatteryPro at +971528475675."
   },
   {
     question: "What are the signs that my Maserati needs immediate service?",
@@ -264,7 +264,7 @@ const englishFaqs = [
   },
   {
     question: "Promotions and Discounts on Car Battery Replacement in Abu Dhabi?",
-    answer: "Depending upon what your car really needs, Maserati service includes both Standard and Major services. When it comes to standard services for Maserati models our certified technicians offers you car battery replacement, car battery boosting, roadside assistance, oil change, AC filter replacements, brake inspection, tire rotations, hoses, belts, and car fluid checks for optimising vehicle performance. While, major services for Maserati includes more in-depth inspections of the vehicle engine, transmission system, and suspension systems. Call +971528475675 to learn more about their offers."
+    answer: "Depending upon what your car really needs, Maserati service includes both Standard and Major services. When it comes to standard services for Maserati models our Experienced technicians offers you car battery replacement, car battery boosting, roadside assistance, oil change, AC filter replacements, brake inspection, tire rotations, hoses, belts, and car fluid checks for optimising vehicle performance. While, major services for Maserati includes more in-depth inspections of the vehicle engine, transmission system, and suspension systems. Call +971528475675 to learn more about their offers."
   },
 ]
 

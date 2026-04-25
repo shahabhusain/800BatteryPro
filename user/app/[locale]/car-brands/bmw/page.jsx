@@ -49,7 +49,7 @@ const heroEnglishContent = {
     desc: "Top Car Brands – 24/7 Emergency Support & Anywhere!",
     title: {
         span1: "BMW Car Battery Replacement",
-        span2: " & Advanced Repairs in Dubai"
+        span2: "Under 25 Minutes in Dubai & Abu Dhabi"
     },
     desc1: "Don't panic if your Car Battery Is Dead! 800Battery Offers Under 25 Minute On-site Battery Replacement for your BMW in Dubai? Branded car battery with best customer services.",
     btn: "Call Now",
@@ -73,7 +73,7 @@ const serviceEnglishContent = {
     services: [
         {
             id: 1,
-            description: "Just had your BMW battery die? Don't panic, as you now have 800BatteryPro as a trusted partner for reliable BMW Battery Replacement in Dubai. We have a team of certified technicians who are experienced in all BMW models and a well-equipped garage, too. Our technicians only use genuine battery brands for your BMW, whether it's a sport, sedan, SUV, coupe, or any other model. We are regarded as one of the trusted BMW service centres in the UAE, with 100 percent customer satisfaction."
+            description: "Just had your BMW battery die? Don't panic, as you now have 800BatteryPro as a trusted partner for reliable BMW Battery Replacement in Dubai. We have a team of Experienced technicians who are experienced in all BMW models and a well-equipped garage, too. Our technicians only use genuine battery brands for your BMW, whether it's a sport, sedan, SUV, coupe, or any other model. We are regarded as one of the trusted BMW service centres in the UAE, with 100 percent customer satisfaction."
         },
         {
             id: 2,
@@ -119,7 +119,7 @@ const serviceEnglishContent1 = {
     services: [
         {
             id: 1,
-            description: "800BatteryPro has partnered with top european car repair workshops in the UAE - BMW are powerful German machine with next-gen powertrains which requires branded battery capable of handling quick acceleration, complex electrical systems, and smart tech features. 800BatteryPro recommends AGM and lithium batteries, which are great in their capacity and trusted for reliable functionality. Our certified BMW experts in Dubai only use the premium AGM Batteries to ensure high performance in the harsh summer season of the UAE."
+            description: "800BatteryPro has partnered with top european car repair workshops in the UAE - BMW are powerful German machine with next-gen powertrains which requires branded battery capable of handling quick acceleration, complex electrical systems, and smart tech features. 800BatteryPro recommends AGM and lithium batteries, which are great in their capacity and trusted for reliable functionality. Our Experienced BMW experts in Dubai only use the premium AGM Batteries to ensure high performance in the harsh summer season of the UAE."
         },
         {
             id: 2,
@@ -205,13 +205,13 @@ const englishContent = [
     },
     {
         icons: <FaSitemap />,
-        title: "Certified BMW specialists",
-        desc: "We have a team of certified BMW specialists, who have 6+ years of experience working on different BMW models and Car Batteries."
+        title: "Experienced BMW specialists",
+        desc: "We have a team of Experienced BMW specialists, who have 6+ years of experience working on different BMW models and Car Batteries."
     },
     {
         icons: <FaSitemap />,
         title: "Using Genuine BMW Parts",
-        desc: "Our certified BMW specialists only use OEM approved spare parts and Branded BMW batteries for all car jobs."
+        desc: "Our Experienced BMW specialists only use OEM approved spare parts and Branded BMW batteries for all car jobs."
     },
     {
         icons: <FaSitemap />,
@@ -246,7 +246,7 @@ const arabicContent = [
 const englishFaqs = [
     {
         question: "How long does a BMW battery replacement take?",
-        answer: "800BatteryPro guarantees on-site battery replacement under 25 Minutes once our certified BMW technicians wth our rapid response mobile van arrives at your location. We offer free battery testing and boosting services through our specialised roadside assistance services. If you are car battery is dead or something wrong with its electrical system, just call as at +971 528475675 for immediate 24/7 roadside assistance."
+        answer: "800BatteryPro guarantees on-site battery replacement under 25 Minutes once our Experienced BMW technicians wth our rapid response mobile van arrives at your location. We offer free battery testing and boosting services through our specialised roadside assistance services. If you are car battery is dead or something wrong with its electrical system, just call as at +971 528475675 for immediate 24/7 roadside assistance."
     },
     {
         question: "How do I know if my BMW battery needs replacing?",
@@ -254,7 +254,7 @@ const englishFaqs = [
     },
     {
         question: "Do you offer battery replacement in Dubai?",
-        answer: "800BatteryPro offers 24/7 battery replacement services in Dubai and Abu Dhabi. We have a team of certified BMW technicians using latest technology and genuine car battery serving residents of UAE with under 25 minutes roadside assistance."
+        answer: "800BatteryPro offers 24/7 battery replacement services in Dubai and Abu Dhabi. We have a team of Experienced BMW technicians using latest technology and genuine car battery serving residents of UAE with under 25 minutes roadside assistance."
     },
     {
         question: "How much does a BMW battery replacement cost in Dubai?",
@@ -266,11 +266,11 @@ const englishFaqs = [
     },
     {
         question: "Is BMW battery replacement in Dubai available 24/7?",
-        answer: "Yes, 800BatteryPro has 24/7 roadside assistance available for BMW battery replacement in Dubai. We have our team of certified BMW specialist in Dubai, who uses latest technology and genuine battery brands only for every battery job."
+        answer: "Yes, 800BatteryPro has 24/7 roadside assistance available for BMW battery replacement in Dubai. We have our team of Experienced BMW specialist in Dubai, who uses latest technology and genuine battery brands only for every battery job."
     },
     {
         question: "Why is it important to service my BMW with manufacturer recommended Oil and Filter, when there are cheaper alternative available?",
-        answer: "Your BMW engine is very well built and has very little tolerances. The makers choose a certain brand and grade of oil that works well with each engine while they were testing and designing the engine. Changing the kind and occasionally even the brand of oil can make the engine run worse and wear it out faster. We use the kind and grade of oil that the manufacturer recommends, even if it costs a little more, because it makes the engine last longer and work better."
+        answer: "Your BMW engine is very well built and has very little tolerances. The makers choose a Experiencedtain brand and grade of oil that works well with each engine while they were testing and designing the engine. Changing the kind and occasionally even the brand of oil can make the engine run worse and wear it out faster. We use the kind and grade of oil that the manufacturer recommends, even if it costs a little more, because it makes the engine last longer and work better."
     },
     {
         question: "What do I do when the low engine oil light turns on?",
@@ -435,7 +435,7 @@ const text = locale === "ar"
                       },
                       {
                         title: "24/7 Roadside Assistance",
-                        hoverDec: "800BatteryPro has well-equipped mobile vans and 30+ certified car battery replacement technicians providing 24/7 roadside assistance anywhere in the UAE. Fast & Reliable RSA!",
+                        hoverDec: "800BatteryPro has well-equipped mobile vans and 30+ Experienced car battery replacement technicians providing 24/7 roadside assistance anywhere in the UAE. Fast & Reliable RSA!",
                         img: service1
                       },
                       {

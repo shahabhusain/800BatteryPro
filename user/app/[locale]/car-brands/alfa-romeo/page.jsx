@@ -68,7 +68,7 @@ const serviceEnglishContent = {
     services: [
         {
             id: 1,
-            description: "The Alfa Romeo Logo represents both luxury and Italian prestige, with its peak performance and comfortable ride. Almost every car brand finds it unable to cope with the challenging climate of the UAE, with heat rising to 55°C in summers, both battery services and car programming is high demand. Alfa Romeo batteries are long-lasting and highly durable, but they still it needs certified Alfa Romeo Specialist for treating any car battery replacements or advanced car repairs in Dubai. 800BatteryPro is one of the trusted Alfa Romeo service centres in the UAE, with 100+ technicians and a well-equipped garage. For Alfa Romeo Giulia, Giulietta, Tonale, Giulia QuadriFoglio, Milano, QuadriFoglio, Stelvio, 4c, 8c, we provide both AGM and Enhanced Flooded Battery in most model variants. The AGM Batteries we provide are genuine, long-lasting, and durable, supporting the electrical systems of Alfa Romeo. There is a need for having routine car check-ups once a year or maybe after 10,000 KMs, as it will help you in staying safe on the road and keeping your car in good shape. Do not ignore any unknown mechanical sounds or quirks in your car. Contact 800BatteryPro at +971528475675 for Alfa Romeo Battery replacements, car scanning, engine repairs, electrical repairs or other advanced repair services. Our certified technicians offer on-site services within 25 minutes across the UAE."
+            description: "The Alfa Romeo Logo represents both luxury and Italian prestige, with its peak performance and comfortable ride. Almost every car brand finds it unable to cope with the challenging climate of the UAE, with heat rising to 55°C in summers, both battery services and car programming is high demand. Alfa Romeo batteries are long-lasting and highly durable, but they still it needs Experienced Alfa Romeo Specialist for treating any car battery replacements or advanced car repairs in Dubai. 800BatteryPro is one of the trusted Alfa Romeo service centres in the UAE, with 100+ technicians and a well-equipped garage. For Alfa Romeo Giulia, Giulietta, Tonale, Giulia QuadriFoglio, Milano, QuadriFoglio, Stelvio, 4c, 8c, we provide both AGM and Enhanced Flooded Battery in most model variants. The AGM Batteries we provide are genuine, long-lasting, and durable, supporting the electrical systems of Alfa Romeo. There is a need for having routine car check-ups once a year or maybe after 10,000 KMs, as it will help you in staying safe on the road and keeping your car in good shape. Do not ignore any unknown mechanical sounds or quirks in your car. Contact 800BatteryPro at +971528475675 for Alfa Romeo Battery replacements, car scanning, engine repairs, electrical repairs or other advanced repair services. Our Experienced technicians offer on-site services within 25 minutes across the UAE."
         },
     ]
 }
@@ -90,7 +90,7 @@ const serviceEnglishContent1 = {
     services: [
         {
             id: 1,
-            description: "800BatteryPro has a team of certified Alfa Romeo technicians who know about every technical detail related to its car battery, advanced repair, and maintenance services. 800BatteryPro is partnered with premium service centre in the UAE, we serve our customers with top car care solutions with transparent pricing. Our technicians only use Alfa Romeo genuine and OEM standard parts, which are sourced from branded manufacturers only. We don't stop there as our car repair services in Dubai extend to 24/7 Roadside assistance and onsite battery boosting within 25 minutes across the Emirates. Fill out the form to book an appointment with one of our Alfa Romeo specialists in Dubai."
+            description: "800BatteryPro has a team of Experienced Alfa Romeo technicians who know about every technical detail related to its car battery, advanced repair, and maintenance services. 800BatteryPro is partnered with premium service centre in the UAE, we serve our customers with top car care solutions with transparent pricing. Our technicians only use Alfa Romeo genuine and OEM standard parts, which are sourced from branded manufacturers only. We don't stop there as our car repair services in Dubai extend to 24/7 Roadside assistance and onsite battery boosting within 25 minutes across the Emirates. Fill out the form to book an appointment with one of our Alfa Romeo specialists in Dubai."
         },
     ]
 }
@@ -114,8 +114,8 @@ const englishServices = [
     },
     {
         img: serviceImg2,
-        title: "Certified Alfa Romeo Specialists",
-        desc: "We have certified Alfa Romeo Specialists who are all experienced dealing with every Alfa Romeo Car battery job with precision and excellence."
+        title: "Experienced Alfa Romeo Specialists",
+        desc: "We have Experienced Alfa Romeo Specialists who are all experienced dealing with every Alfa Romeo Car battery job with precision and excellence."
     },
     {
         img: serviceImg3,
@@ -160,8 +160,8 @@ const englishContent = [
     },
     {
         icons: <FaSitemap />,
-        title: "Certified Alfa Romeo Specialists",
-        desc: "800BatteryPro has a team of 50+ certified Alfa Romeo Specialists who are experienced in working on all sorts of car battery and advanced repair services."
+        title: "Experienced Alfa Romeo Specialists",
+        desc: "800BatteryPro has a team of 50+ Experienced Alfa Romeo Specialists who are experienced in working on all sorts of car battery and advanced repair services."
     },
     {
         icons: <FaSitemap />,
@@ -221,7 +221,7 @@ const englishFaqs = [
     },
     {
         question: "How do I know if I need new brakes for my Alfa Romeo?",
-        answer: "Signs that your Alfa Romeo may need new brakes includes, Squealing or grinding noises when braking, A soft or spongy brake pedal, Brake warning light on the dashboard. Regular brake inspections are crucial to ensure safety and prevent more severe issues. At 800BatteryPro, our certified technicians provide comprehensive brake services for Alfa Romeo vehicles."
+        answer: "Signs that your Alfa Romeo may need new brakes includes, Squealing or grinding noises when braking, A soft or spongy brake pedal, Brake warning light on the dashboard. Regular brake inspections are crucial to ensure safety and prevent more severe issues. At 800BatteryPro, our Experienced technicians provide comprehensive brake services for Alfa Romeo vehicles."
     },
     {
         question: "What are common AC system issues in Alfa Romeo cars?",
@@ -229,7 +229,7 @@ const englishFaqs = [
     },
     {
         question: "Do you provide car battery replacement for Alfa Romeo?",
-        answer: "Yes, 800BatteryPro offers certified car battery replacement services for Alfa Romeo vehicles. We use genuine OEM-standard parts and branded batteries for all Italian car brands, including Ferrari, Lamborghini, Pagani, Fiat, and Maserati. For 24/7 roadside assistance, contact us at +971 528475675."
+        answer: "Yes, 800BatteryPro offers Experienced car battery replacement services for Alfa Romeo vehicles. We use genuine OEM-standard parts and branded batteries for all Italian car brands, including Ferrari, Lamborghini, Pagani, Fiat, and Maserati. For 24/7 roadside assistance, contact us at +971 528475675."
     },
     {
         question: "Do you use OEM parts for repairing Italian car brands?",
@@ -237,7 +237,7 @@ const englishFaqs = [
     },
     {
         question: "Who are the best Italian car brand experts in Dubai?",
-        answer: "800BatteryPro is recognised as one of the leading service providers for Italian car brands in Dubai and Abu Dhabi. With over 30+ certified Italian car specialists and partnership with state-of-the-art service centres, we cater to almost every exotic and premium car brand in the UAE."
+        answer: "800BatteryPro is recognised as one of the leading service providers for Italian car brands in Dubai and Abu Dhabi. With over 30+ Experienced Italian car specialists and partnership with state-of-the-art service centres, we cater to almost every exotic and premium car brand in the UAE."
     },
 ]
 
@@ -297,7 +297,7 @@ const arabicFaqs = [
                       },
                       {
                         title: "24/7 Roadside Assistance",
-                        hoverDec: "800BatteryPro has well-equipped mobile vans and 30+ certified car battery replacement technicians providing 24/7 roadside assistance anywhere in the UAE. Fast & Reliable RSA!",
+                        hoverDec: "800BatteryPro has well-equipped mobile vans and 30+ Experienced car battery replacement technicians providing 24/7 roadside assistance anywhere in the UAE. Fast & Reliable RSA!",
                         img: service1
                       },
                       {

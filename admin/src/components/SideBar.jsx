@@ -17,7 +17,7 @@ import {
   FiMenu
 } from 'react-icons/fi'
 import { useDispatch, useSelector } from 'react-redux'
-import { logout } from '../../store/slice/authSlice'
+import { logout } from '../store/slice/authSlice'
 import toast from 'react-hot-toast'
 
 const SideBar = () => {
@@ -29,13 +29,10 @@ const SideBar = () => {
   const { user } = useSelector((state) => state.auth)
 
   const menuItems = [
-    { path: '/', name: 'Appointments', icon: FiCalendar },
+   
     { path: '/dashboard', name: 'Dashboard', icon: FiHome },
+     { path: '/appointments', name: 'Appointments', icon: FiCalendar },
     { path: '/users', name: 'Users', icon: FiUsers },
-    { path: '/analytics', name: 'Analytics', icon: FiBarChart2 },
-    { path: '/messages', name: 'Messages', icon: FiMail },
-    { path: '/database', name: 'Database', icon: FiDatabase },
-    { path: '/settings', name: 'Settings', icon: FiSettings },
   ]
 
   // Close mobile sidebar when window resizes to desktop

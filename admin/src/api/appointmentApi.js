@@ -47,11 +47,10 @@ export const authAPI = {
 
 // Appointment API
 export const appointmentAPI = {
-  getAll: () => api.get('/appointment/get-all'),
-  getById: (id) => api.get(`/appointment/${id}`),
-  create: (data) => api.post('/appointment/', data),
-  update: (id, data) => api.put(`/appointment/${id}`, data),
-  delete: (id) => api.delete(`/appointment/delete/${id}`),
+  getAll: () => api.get('/get-all-second-appointment'),
+  getById: (id) => api.get(`/${id}`),
+  create: (data) => api.post('/create-second-appointment', data),
+  delete: (id) => api.delete(`/delete-second-appointment/${id}`),
 }
 
 export default api

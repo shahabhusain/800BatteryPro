@@ -73,7 +73,7 @@ const heroEnglishContent = {
                       },
                       {
                         title: "24/7 Roadside Assistance",
-                        hoverDec: "800BatteryPro has well-equipped mobile vans and 30+ certified car battery replacement technicians providing 24/7 roadside assistance anywhere in the UAE. Fast & Reliable RSA!",
+                        hoverDec: "800BatteryPro has well-equipped mobile vans and 30+ Experienced car battery replacement technicians providing 24/7 roadside assistance anywhere in the UAE. Fast & Reliable RSA!",
                         img: service1
                       },
                       {
@@ -122,11 +122,11 @@ const serviceEnglishContent = {
   services: [
     {
       id: 1,
-      description: "800BatteryPro provides you with 24/7 roadside assistance and under 25 minutes Ferrari car battery replacement that to with free battery testing and free onsite delivery. We have 20+ rapid response well-equipped mobile vans with 30+ certified Ferrari technicians. Ferrari isn't just a car—it's a statement of performance and excellence. Ferrari - A car representing prestige and peak performance. Like any other Italian car brand, Ferrari car batteries are engineered to sustain under high temperatures and provide support during peak performance. For car models like Ferrari SF90 XX Spider, F80, 849 Testarossa, Amalfi, 488 GTB, to the Portofino, Roma, or its SUV Purosangue, we provide both AGM Batteries and Advanced Lithium-Ion Batteries."
+      description: "800BatteryPro provides you with 24/7 roadside assistance and under 25 minutes Ferrari car battery replacement that to with free battery testing and free onsite delivery. We have 20+ rapid response well-equipped mobile vans with 30+ Experienced Ferrari technicians. Ferrari isn't just a car—it's a statement of performance and excellence. Ferrari - A car representing prestige and peak performance. Like any other Italian car brand, Ferrari car batteries are engineered to sustain under high temperatures and provide support during peak performance. For car models like Ferrari SF90 XX Spider, F80, 849 Testarossa, Amalfi, 488 GTB, to the Portofino, Roma, or its SUV Purosangue, we provide both AGM Batteries and Advanced Lithium-Ion Batteries."
     },
     {
       id: 2,
-      description: "AGM Batteries support both electrical systems for models featuring start-stop technology. AGM Batteries for Ferrari provide high performance, longevity, and resistance to vibrations in dynamic climates. For the hybrid or electric Ferrari Models, we recommend Lithium-Ion Batteries, which have greater energy density and exceptionally long lifetime cycles. To ensure peak performance and a smooth ride in a Ferrari, there is a requirement for regular maintenance and car diagnostics, which is essential for all Italian Car Brands. Our Certified Ferrari Technicians provide under 25-minute onsite battery replacements with full diagnostics and BMS resets. For Emergency Support call at +971528475675."
+      description: "AGM Batteries support both electrical systems for models featuring start-stop technology. AGM Batteries for Ferrari provide high performance, longevity, and resistance to vibrations in dynamic climates. For the hybrid or electric Ferrari Models, we recommend Lithium-Ion Batteries, which have greater energy density and exceptionally long lifetime cycles. To ensure peak performance and a smooth ride in a Ferrari, there is a requirement for regular maintenance and car diagnostics, which is essential for all Italian Car Brands. Our Experienced Ferrari Technicians provide under 25-minute onsite battery replacements with full diagnostics and BMS resets. For Emergency Support call at +971528475675."
     },
   ]
 }
@@ -152,7 +152,7 @@ const serviceEnglishContent1 = {
   services: [
     {
       id: 1,
-      description: "We are partnered with top european car experts in Dubai. 800BatteryPro has 6+ years of experience in Ferrari car battery replacement and advanced maintenance services. Trusted by thousands of Emirates and expats as one of the best Ferrari car battery replacment service in the UAE. Our certified Ferrari experts use genuine Ferrari parts and check with every car owner before installation, with a 100% success rate in almost every car job. Our team is available 24/7 for any e,emergency roadside assistance for Ferrari and under 25 minutes onsite car battery replacement across the UAE. You can trust us with any routine servicing or complex repairs in any Ferrari models, from full car scanning and diagnostics, car battery check-ups & replacement, to advanced car programming services. Contact one of our experts to book your next appointment at 800BatteryPro."
+      description: "We are partnered with top european car experts in Dubai. 800BatteryPro has 6+ years of experience in Ferrari car battery replacement and advanced maintenance services. Trusted by thousands of Emirates and expats as one of the best Ferrari car battery replacment service in the UAE. Our Experienced Ferrari experts use genuine Ferrari parts and check with every car owner before installation, with a 100% success rate in almost every car job. Our team is available 24/7 for any e,emergency roadside assistance for Ferrari and under 25 minutes onsite car battery replacement across the UAE. You can trust us with any routine servicing or complex repairs in any Ferrari models, from full car scanning and diagnostics, car battery check-ups & replacement, to advanced car programming services. Contact one of our experts to book your next appointment at 800BatteryPro."
     },
   ]
 }
@@ -176,13 +176,13 @@ const englishServices = [
   },
   {
     img: serviceImg2,
-    title: "Certified GMC Specialists",
+    title: "Experienced GMC Specialists",
     desc: "Our technicians have 5+ years of experience working on all American Car brands including the GMC (General Motors Truck Company)."
   },
   {
     img: serviceImg3,
     title: "Genuine GMC Parts",
-    desc: "Our certified GMC specialists only use genuine battery and OEM-approved spare parts for every car job."
+    desc: "Our Experienced GMC specialists only use genuine battery and OEM-approved spare parts for every car job."
   },
   {
     img: serviceImg4,
@@ -222,8 +222,8 @@ const englishContent = [
   },
   {
     icons: <FaSitemap />,
-    title: "Certified Ferrari specialists",
-    desc: "800BatteryPro has a team of certified Ferrari specialists who have years of experience working on premium models of Ferrari. You can trust us with different issues related to exotic brands."
+    title: "Experienced Ferrari specialists",
+    desc: "800BatteryPro has a team of Experienced Ferrari specialists who have years of experience working on premium models of Ferrari. You can trust us with different issues related to exotic brands."
   },
   {
     icons: <FaSitemap />,
@@ -263,7 +263,7 @@ const arabicContent = [
 const englishFaqs = [
   {
     question: "How often should a Ferrari battery be replaced in Dubai?",
-    answer: "To maintain peak performance and smooth ride for any of the Ferrari Models, you should do a routine battery check-up, which can be done after 10,000 KM or once a year. In the UAE, due to extreme heat, the car battery suffers, which needs attention. To keep your car optimized, reach out to certified Ferrari experts such as 800BatteryPro at +971528475675."
+    answer: "To maintain peak performance and smooth ride for any of the Ferrari Models, you should do a routine battery check-up, which can be done after 10,000 KM or once a year. In the UAE, due to extreme heat, the car battery suffers, which needs attention. To keep your car optimized, reach out to Experienced Ferrari experts such as 800BatteryPro at +971528475675."
   },
   {
     question: "Do you replace both auxiliary and main batteries?",

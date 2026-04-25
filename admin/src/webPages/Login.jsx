@@ -2,8 +2,8 @@
 import React, { useState, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useRouter } from 'next/navigation' // Changed from react-router-dom
-import { loginSuccess, setLoading, setError, clearError } from '../../store/slice/authSlice'
-import { authAPI } from '../../api/appointmentApi'
+import { loginSuccess, setLoading, setError, clearError } from '../store/slice/authSlice'
+import { authAPI } from '../api/appointmentApi'
 import toast from 'react-hot-toast'
 import { 
   FiMail, 

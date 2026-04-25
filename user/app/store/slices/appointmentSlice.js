@@ -1,51 +1,48 @@
-// app/store/slices/appointmentSlice.js (updated)
+// app/store/slices/appointmentSlice.js
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 import toast from 'react-hot-toast';
 
 const initialState = {
   formData: {
-    name: '',      // Matches backend: name
-    email: '',
-    phone: '',
-    message: '',   // Matches backend: message
-    selectService:''
+    email: '',      // Required field
+    location: '',   // Required field  
+    selectService: '' // Required field
   },
   loading: false,
   error: null,
   success: false,
-  showSuccessPopup: false, // Add this
+  showSuccessPopup: false,
 };
 
-// Async thunk for submitting appointment with axios
-// appointmentSlice.js - Update the submitAppointment thunk
+// Async thunk for creating second appointment
 export const submitAppointment = createAsyncThunk(
   'appointment/submitAppointment',
   async (formData, { rejectWithValue }) => {
     try {
-      const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/appointment`, formData, {
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      });
+      const response = await axios.post(
+        `${process.env.NEXT_PUBLIC_API_URL}/create-second-appointment`, 
+        formData,
+        {
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        }
+      );
       
       // Show success message from backend
-      toast.success(response.data.message || 'Appointment booked successfully!');
+      toast.success(response.data.message || 'Appointment created successfully! Sales team will contact you soon!');
       return response.data;
     } catch (error) {
-      // Handle validation errors from backend
-      if (error.response?.data?.errors) {
-        // Multiple validation errors
-        error.response.data.errors.forEach(err => {
-          toast.error(err);
-        });
-        return rejectWithValue(error.response.data.errors);
+      // Handle validation errors
+      if (error.response?.status === 404) {
+        toast.error(error.response?.data?.message || 'Invalid fields provided');
+        return rejectWithValue(error.response?.data?.message);
       } else if (error.response?.data?.message) {
-        // Single error message
         toast.error(error.response.data.message);
         return rejectWithValue(error.response.data.message);
       } else {
-        const errorMessage = error.response?.data?.error || error.message || 'Failed to book appointment';
+        const errorMessage = error.message || 'Failed to book appointment';
         toast.error(errorMessage);
         return rejectWithValue(errorMessage);
       }
@@ -63,11 +60,9 @@ const appointmentSlice = createSlice({
     },
     resetForm: (state) => {
       state.formData = {
-        name: '',
         email: '',
-        phone: '',
-        message: '',
-        selectService:''
+        location: '',
+        selectService: ''
       };
       state.success = false;
       state.error = null;
@@ -95,14 +90,12 @@ const appointmentSlice = createSlice({
       .addCase(submitAppointment.fulfilled, (state) => {
         state.loading = false;
         state.success = true;
-        state.showSuccessPopup = true; // Show popup on success
+        state.showSuccessPopup = true;
         // Reset form after successful submission
         state.formData = {
-          name: '',
           email: '',
-          phone: '',
-          message: '',
-          selectService:''
+          location: '',
+          selectService: ''
         };
       })
       .addCase(submitAppointment.rejected, (state, action) => {

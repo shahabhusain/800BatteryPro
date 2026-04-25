@@ -2,7 +2,7 @@
 
 import Image from 'next/image'
 import React, { useState } from 'react'
-import herobg from '@/public/Home/ban3.webp'
+import herobg from '@/public/Home/b1.webp'
 import { GoArrowRight } from 'react-icons/go'
 import { useLocale } from 'next-intl'
 import AppointmentModal from '../AppointmentModal'

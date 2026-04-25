@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Modal from './Modal';
-import Form from './Hero/Form';
+import Form from './Services/Form';
 
 const AppointmentModal = ({ isOpen, onClose }) => {
   return (

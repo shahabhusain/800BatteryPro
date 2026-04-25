@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
-import { hydrateAuth } from '@/store/slice/authSlice'
+import { hydrateAuth } from '@/src/store/slice/authSlice'
 
 export function AuthHydrator({ children }) {
   const dispatch = useDispatch()

@@ -15,7 +15,7 @@ const Services = () => {
     {
       link:"/services/battery-replacement",
       title: "Battery Replacement",
-      description: "Need a quick and reliable car battery replacement? Our certified technicians provide premium-quality batteries and expert service, delivered straight to your doorstep in as little as 25 minutes.",
+      description: "Need a quick and reliable car battery replacement? Our Experienced technicians provide premium-quality batteries and expert service, delivered straight to your doorstep in as little as 25 minutes.",
       image: service1
     },
     {
@@ -33,7 +33,7 @@ const Services = () => {
     {
       link:"/services/car-scanning",
       title: "Other Services",
-      description: "At 800BatteryPro we have a certified team of italian and German car experts in Dubai. As we offer advance car programming and car scanning services using the latest Technology.",
+      description: "At 800BatteryPro we have a Experienced team of italian and German car experts in Dubai. As we offer advance car programming and car scanning services using the latest Technology.",
       image: service4
     }
   ];

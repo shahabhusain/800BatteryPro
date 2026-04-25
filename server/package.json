@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
-"scripts": {
-   "build": "prisma generate && prisma db push",
-  "dev": "nodemon server.js",
-  "start": "node server.js"
-},
+  "scripts": {
+    "build": "prisma generate && prisma db push",
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

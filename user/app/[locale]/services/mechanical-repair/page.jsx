@@ -29,7 +29,7 @@ const heroEnglishContent = {
         span1: "Premium Mechanical Repair",
         span2: "Services in Dubai"
     },
-    desc1: "With 800BatteryPro has partner with Best Car Service Centers in Dubai & Abu Dhabi to get back on the road safely with precision repairs, advanced tools, and certified technicians.",
+    desc1: "With 800BatteryPro has partner with Best Car Service Centers in Dubai & Abu Dhabi to get back on the road safely with precision repairs, advanced tools, and Experienced technicians.",
     btn: "Call Now",
     btn1: "Book Service Now"
 }
@@ -52,7 +52,7 @@ const serviceEnglishContent = {
     services: [
         {
             id: 1,
-            description: "800BatteryPro has partnered with trusted car service centers in Dubai & Abu Dhabi. As we have a team of certified technicians who are experienced in working different european and American car brands. From minor repair to advance mechanical repairs any where in Dubai you can book an appointment by just giving us call at +971528475675. A sudden car breakdown disrupts your entire schedule. You need a trusted team to handle complex mechanical failures without delay. 800BatteryPro has partnered with top car repair workshops in the UAE, who are experienced in providing complete mechanical repair services to restore your vehicle to peak performance. We eliminate the guesswork and fix the actual problem the first time.   "
+            description: "800BatteryPro has partnered with trusted car service centers in Dubai & Abu Dhabi. As we have a team of Experienced technicians who are experienced in working different european and American car brands. From minor repair to advance mechanical repairs any where in Dubai you can book an appointment by just giving us call at +971528475675. A sudden car breakdown disrupts your entire schedule. You need a trusted team to handle complex mechanical failures without delay. 800BatteryPro has partnered with top car repair workshops in the UAE, who are experienced in providing complete mechanical repair services to restore your vehicle to peak performance. We eliminate the guesswork and fix the actual problem the first time.   "
         },
         {
             id:2,
@@ -122,8 +122,8 @@ const englishContent = [
     },
     {
         icons: <FaSitemap />,
-        title: "Certified Diagnostic Technicians",
-        desc: "Modern car repairs require advanced technical skill. Our certified experts train heavily on the latest automotive software and electrical systems."
+        title: "Experienced Diagnostic Technicians",
+        desc: "Modern car repairs require advanced technical skill. Our Experienced experts train heavily on the latest automotive software and electrical systems."
     },
     {
         icons: <FaSitemap />,
@@ -159,7 +159,7 @@ const arabicContent = [
 const englishFaqs = [
     {
         question: "Do you offer mechanical services in Dubai?",
-        answer: "800BatteryPro has partnered with premium car service centers in Dubai and Abu Dhabi who are trusted for there premium mechanical services in Dubai to all major American and European car brands. We have a team of 30+ certified mechanics who are experienced in working on all minor and major car jobs. No matter if it's an engine repair, transmission repair, or any other hardware job in your car we take care of it with 100% customer satisfaction."
+        answer: "800BatteryPro has partnered with premium car service centers in Dubai and Abu Dhabi who are trusted for there premium mechanical services in Dubai to all major American and European car brands. We have a team of 30+ Experienced mechanics who are experienced in working on all minor and major car jobs. No matter if it's an engine repair, transmission repair, or any other hardware job in your car we take care of it with 100% customer satisfaction."
     },
     {
         question: "Do we use OEM-Approved Spare parts?",
@@ -171,7 +171,7 @@ const englishFaqs = [
     },
     {
         question: "Which one is the best service center for mechanical repair in Dubai?",
-        answer: "800BatteryPro has partnered with well-equipped car service centers for mechanical repair in Dubai. We have a team of certified technicians who use the latest technology for fixing your car and making sure you drive safe on the road. Call us now!"
+        answer: "800BatteryPro has partnered with well-equipped car service centers for mechanical repair in Dubai. We have a team of Experienced technicians who use the latest technology for fixing your car and making sure you drive safe on the road. Call us now!"
     },
 ]
 

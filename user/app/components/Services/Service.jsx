@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import service from '@/public/services/service.jpg'
-const ServiceR = () => {
+const ServiExperienced = () => {
   return (
     <div className=' w-[85%] mx-auto flex items-start py-20 gap-12 justify-between'>
        <div className=' w-1/2 flex flex-col gap-y-3'>
@@ -21,4 +21,4 @@ const ServiceR = () => {
   )
 }
 
-export default ServiceR
+export default ServiExperienced

@@ -2,8 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import cors from "cors";
 import authRoutes from "./routes/authRoutes.js";
-import appointmentRoutes from "./routes/appintmentRoutes.js";
-
+import secondAppointmentRoutes from './routes/secondAppoitmentRoutes.js'
 dotenv.config();
 
 const app = express();
@@ -14,8 +13,7 @@ app.use(express.json());
 const port = process.env.PORT || 4000;
 
 app.use("/api/auth", authRoutes);
-app.use("/api/appointment", appointmentRoutes);
-
+app.use("/api", secondAppointmentRoutes)
 app.listen(port, () => {
   console.log(`server is running on port ${port}`);
 });

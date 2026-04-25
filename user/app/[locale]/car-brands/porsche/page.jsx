@@ -69,11 +69,11 @@ const serviceEnglishContent = {
   services: [
     {
       id: 1,
-      description: "There is no need to stress if your Porsche Battery is not working, you can call the Best Car Battery Replacement services in Dubai. 800BatteryPro provides Under 25 minutes onsite battery boosting and replacement services. We have a team of 30+ certified porsche specialists who only works on genuine battery brands with upto 18+ warranty and use only OEM standard parts. We have 6+ years of experience in working on all models and variants of Porsche. We employ high-performance batteries that can handle the heat of Dubai. 800BatteryPro offers the following are the different types of Porsche Battery:"
+      description: "There is no need to stress if your Porsche Battery is not working, you can call the Best Car Battery Replacement services in Dubai. 800BatteryPro provides Under 25 minutes onsite battery boosting and replacement services. We have a team of 30+ Experienced porsche specialists who only works on genuine battery brands with upto 18+ warranty and use only OEM standard parts. We have 6+ years of experience in working on all models and variants of Porsche. We employ high-performance batteries that can handle the heat of Dubai. 800BatteryPro offers the following are the different types of Porsche Battery:"
     },
     {
       id: 2,
-      description: "Porsche 911 Series: Our certified Porsche technicians use high-performance batteries that can handle the heat of Dubai."
+      description: "Porsche 911 Series: Our Experienced Porsche technicians use high-performance batteries that can handle the heat of Dubai."
     },
     {
       id: 3,
@@ -130,7 +130,7 @@ const serviceArabicContent = {
                       },
                       {
                         title: "24/7 Roadside Assistance",
-                        hoverDec: "800BatteryPro has well-equipped mobile vans and 30+ certified car battery replacement technicians providing 24/7 roadside assistance anywhere in the UAE. Fast & Reliable RSA!",
+                        hoverDec: "800BatteryPro has well-equipped mobile vans and 30+ Experienced car battery replacement technicians providing 24/7 roadside assistance anywhere in the UAE. Fast & Reliable RSA!",
                         img: service1
                       },
                       {
@@ -208,8 +208,8 @@ const englishServices = [
   },
   {
     img: serviceImg2,
-    title: "Certified Porsche Specialists",
-    desc: "We have a team of certified porsche specialists using Genuine Mercedes Parts and branded car batteries for every car service we deliver."
+    title: "Experienced Porsche Specialists",
+    desc: "We have a team of Experienced porsche specialists using Genuine Mercedes Parts and branded car batteries for every car service we deliver."
   },
   {
     img: serviceImg3,
@@ -254,8 +254,8 @@ const englishContent = [
   },
   {
     icons: <FaSitemap />,
-    title: "Certified Porsche Specialists",
-    desc: "We have a team of 50+ certified Porsche specialists who know how to deliver 100% customer satisfaction for every car battery job."
+    title: "Experienced Porsche Specialists",
+    desc: "We have a team of 50+ Experienced Porsche specialists who know how to deliver 100% customer satisfaction for every car battery job."
   },
   {
     icons: <FaSitemap />,
@@ -311,7 +311,7 @@ const englishFaqs = [
   },
   {
     question: "Any German Car Experts in Dubai?",
-    answer: "Yes, 800BatteryPro is one of the trusted and has a certified team of German car experts in Dubai. We are partnered with well-equipped service centre with the latest technology used for every German car repair job. We treat every car brand, including Mercedes, BMW, Porsche, and Audi, etc. Call us now for any German car battery replacement services at +971528475675."
+    answer: "Yes, 800BatteryPro is one of the trusted and has a Experienced team of German car experts in Dubai. We are partnered with well-equipped service centre with the latest technology used for every German car repair job. We treat every car brand, including Mercedes, BMW, Porsche, and Audi, etc. Call us now for any German car battery replacement services at +971528475675."
   },
   {
     question: "Do we provide German Car Battery Replacement in Abu Dhabi?",

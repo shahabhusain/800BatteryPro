@@ -73,7 +73,7 @@ const serviceEnglishContent = {
   services: [
     {
       id: 1,
-      description: "Suppose you got a non-active battery that causes dim lights, electronic system fluctuations, and other issues. Our certified GMC technicians provide on-site services for all GMC car battery replacements, along with battery boosting and advance repairs. 800BatteryPro only recommends and uses car batteries that use Sila Nanotechnologies, sodium-ion batteries, solid-state batteries, and more. Our team of GMC specialists is experienced in providing 100 percent satisfactory jobs related to every GMC Battery replacement in Dubai and Abu Dhabi, ensuring you drive safely and stress-free. We are partnered with one of the trusted GMC service centres in Dubai, as we only use manufacturer-recommended car batteries, which ensures long-term peak performance. If you see any battery-failure issues, no need to stress, call us at +971528475675. 800BatteryPro provides Auxiliary and lithium batteries for GMC Cars in Dubai."
+      description: "Suppose you got a non-active battery that causes dim lights, electronic system fluctuations, and other issues. Our Experienced GMC technicians provide on-site services for all GMC car battery replacements, along with battery boosting and advance repairs. 800BatteryPro only recommends and uses car batteries that use Sila Nanotechnologies, sodium-ion batteries, solid-state batteries, and more. Our team of GMC specialists is experienced in providing 100 percent satisfactory jobs related to every GMC Battery replacement in Dubai and Abu Dhabi, ensuring you drive safely and stress-free. We are partnered with one of the trusted GMC service centres in Dubai, as we only use manufacturer-recommended car batteries, which ensures long-term peak performance. If you see any battery-failure issues, no need to stress, call us at +971528475675. 800BatteryPro provides Auxiliary and lithium batteries for GMC Cars in Dubai."
     },
     {
       id: 2,
@@ -143,13 +143,13 @@ const englishServices = [
   },
   {
     img: serviceImg2,
-    title: "Certified GMC Specialists",
+    title: "Experienced GMC Specialists",
     desc: "Our technicians have 6+ years of experience working on all American Car brands including the GMC (General Motors Truck Company)."
   },
   {
     img: serviceImg3,
     title: "Genuine GMC Parts",
-    desc: "Our certified GMC specialists only use genuine battery and OEM-approved spare parts for every car job."
+    desc: "Our Experienced GMC specialists only use genuine battery and OEM-approved spare parts for every car job."
   },
   {
     img: serviceImg4,
@@ -189,13 +189,13 @@ const englishContent = [
   },
   {
     icons: <FaSitemap />,
-    title: "Certified GMC specialists",
-    desc: "We have a team of certified GMC specialists, who have 6+ years of experience working on different GMC models and Car Batteries."
+    title: "Experienced GMC specialists",
+    desc: "We have a team of Experienced GMC specialists, who have 6+ years of experience working on different GMC models and Car Batteries."
   },
   {
     icons: <FaSitemap />,
     title: "Using Genuine GMC Parts",
-    desc: "Our certified GMC specialists only use OEM approved spare parts and Branded BMW batteries for all car jobs."
+    desc: "Our Experienced GMC specialists only use OEM approved spare parts and Branded BMW batteries for all car jobs."
   },
   {
     icons: <FaSitemap />,
@@ -217,7 +217,7 @@ const englishContent = [
                       },
                       {
                         title: "24/7 Roadside Assistance",
-                        hoverDec: "800BatteryPro has well-equipped mobile vans and 30+ certified car battery replacement technicians providing 24/7 roadside assistance anywhere in the UAE. Fast & Reliable RSA!",
+                        hoverDec: "800BatteryPro has well-equipped mobile vans and 30+ Experienced car battery replacement technicians providing 24/7 roadside assistance anywhere in the UAE. Fast & Reliable RSA!",
                         img: service1
                       },
                       {
@@ -275,7 +275,7 @@ const arabicContent = [
 const englishFaqs = [
   {
     question: "What type of Battery does my GMC need?",
-    answer: "Like all American Brands, GMC models specify the type of Battery required, which also includes AGM (Absorbent Glass Mat) or EFB (Enhanced Flooded Batteries) for cars with start-stop systems. While for the hybrid or all-electric models, 800BatteryPro recommends the lithium-ion batteries. For more details related to certified GMC technicians, call us at +971528475675"
+    answer: "Like all American Brands, GMC models specify the type of Battery required, which also includes AGM (Absorbent Glass Mat) or EFB (Enhanced Flooded Batteries) for cars with start-stop systems. While for the hybrid or all-electric models, 800BatteryPro recommends the lithium-ion batteries. For more details related to Experienced GMC technicians, call us at +971528475675"
   },
   {
     question: "How long does a GMC battery last?",
@@ -299,7 +299,7 @@ const englishFaqs = [
   },
   {
     question: "Any American Car Experts in Dubai?",
-    answer: "Yes, 800BatteryPro is one of the trusted and has a certified team of American car experts in Dubai. We are in partnership with a well-equipped service center in Dubai with the latest technology used for every American car repair job. We treat every car brand, including Jeep, GMC, Chevrolet, and Tesla, etc. Call us now for any American car battery replacement services at +971528475675."
+    answer: "Yes, 800BatteryPro is one of the trusted and has a Experienced team of American car experts in Dubai. We are in partnership with a well-equipped service center in Dubai with the latest technology used for every American car repair job. We treat every car brand, including Jeep, GMC, Chevrolet, and Tesla, etc. Call us now for any American car battery replacement services at +971528475675."
   },
   {
     question: "Do we provide American Car Battery Replacement in Abu Dhabi?",

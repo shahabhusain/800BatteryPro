@@ -54,7 +54,7 @@ const About = ({
     {
       icon:<HiOutlineDotsHorizontal />,
       title:"30+",
-      desc:"Certified Technicians"
+      desc:"Experienced Technicians"
     },
   ]
   

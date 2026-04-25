@@ -75,7 +75,7 @@ const serviceEnglishContent = {
   services: [
     {
       id: 1,
-      description: "800BatteryPro has an experiance of over 6+ Years delivering excellence in lamborghini car battery replacement under 25 minutes anywhere in Dubai and Abu Dhabi. Lamborghini vehicles are a symbol of power, elegance, and innovation. Speed, style, and sophistication—Lamborghini is the ultimate trifecta. At 800BatteryPro UAE, our team of certified technicians delivers Free Battery testing, 24/7 roadside assistance, and on-site branded car battery replacment for all Lamborghini models which aligns with the craftsmanship and luxury of this iconic car brand. We have Lamborghini specialists for Urus, Huracán, Aventador, Temerario, and Revuelto, who only use premium batteries and OEM standard car parts for each car model."
+      description: "800BatteryPro has an experiance of over 6+ Years delivering excellence in lamborghini car battery replacement under 25 minutes anywhere in Dubai and Abu Dhabi. Lamborghini vehicles are a symbol of power, elegance, and innovation. Speed, style, and sophistication—Lamborghini is the ultimate trifecta. At 800BatteryPro UAE, our team of Experienced technicians delivers Free Battery testing, 24/7 roadside assistance, and on-site branded car battery replacment for all Lamborghini models which aligns with the craftsmanship and luxury of this iconic car brand. We have Lamborghini specialists for Urus, Huracán, Aventador, Temerario, and Revuelto, who only use premium batteries and OEM standard car parts for each car model."
     },
     {
       id: 2,
@@ -105,7 +105,7 @@ const serviceEnglishContent1 = {
   services: [
     {
       id: 1,
-      description: "Lamborghini's advanced powertrains need batteries that can handle quick acceleration, electronics that use a lot of power, and clever power distribution. 800BatteryPro sells AGM and lithium batteries that are made to be as reliable as possible. Our certified Lamborghini experts in Dubai recommend using premium AGM Batteries to ensure high performance and reliability in the harsh summer of the UAE."
+      description: "Lamborghini's advanced powertrains need batteries that can handle quick acceleration, electronics that use a lot of power, and clever power distribution. 800BatteryPro sells AGM and lithium batteries that are made to be as reliable as possible. Our Experienced Lamborghini experts in Dubai recommend using premium AGM Batteries to ensure high performance and reliability in the harsh summer of the UAE."
     },
     {
       id: 2,
@@ -137,8 +137,8 @@ const englishServices = [
   },
   {
     img: serviceImg2,
-    title: "Certified Mercedes Benz Specialists",
-    desc: "We have a team of certified mercedes benz specialists using Genuine Mercedes Parts and branded car batteries for every car service we deliver."
+    title: "Experienced Mercedes Benz Specialists",
+    desc: "We have a team of Experienced mercedes benz specialists using Genuine Mercedes Parts and branded car batteries for every car service we deliver."
   },
   {
     img: serviceImg3,
@@ -183,8 +183,8 @@ const englishContent = [
   },
   {
     icons: <FaSitemap />,
-    title: "Certified Lamborghini specialists",
-    desc: "We have certified Lamborghini specialists, who are experienced in delivering precision with complete car care in Dubai and Abu Dhabi."
+    title: "Experienced Lamborghini specialists",
+    desc: "We have Experienced Lamborghini specialists, who are experienced in delivering precision with complete car care in Dubai and Abu Dhabi."
   },
   {
     icons: <FaSitemap />,
@@ -312,7 +312,7 @@ const arabicFaqs = [
                       },
                       {
                         title: "24/7 Roadside Assistance",
-                        hoverDec: "800BatteryPro has well-equipped mobile vans and 30+ certified car battery replacement technicians providing 24/7 roadside assistance anywhere in the UAE. Fast & Reliable RSA!",
+                        hoverDec: "800BatteryPro has well-equipped mobile vans and 30+ Experienced car battery replacement technicians providing 24/7 roadside assistance anywhere in the UAE. Fast & Reliable RSA!",
                         img: service1
                       },
                       {

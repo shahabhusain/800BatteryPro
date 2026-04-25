@@ -11,7 +11,7 @@ import React from 'react'
 export const metadata = {
   title: "24/7 Car Battery & Premium Auto Repair in UAE |800BatteryPro",
   description:
-    "Looking for 24/7 car battery replacement & premium auto repair in UAE? 800BatteryPro is trusted by thousands for fast, reliable car battery and roadside assistance in Dubai & Abu Dhabi. Certified technicians—Call Now!",
+    "Looking for 24/7 car battery replacement & premium auto repair in UAE? 800BatteryPro is trusted by thousands for fast, reliable car battery and roadside assistance in Dubai & Abu Dhabi. Experienced technicians—Call Now!",
       keywords: "car battery replacement in Dubai, mobile car repair dubai, emergency roadside assistance, car scanning, jump start service in Dubai, 24/7 roadside assistance in abu dhabi",
       alternates: {
     canonical: "https://800batterypro.com/services",

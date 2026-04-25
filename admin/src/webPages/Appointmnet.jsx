@@ -1,13 +1,13 @@
 "use client"
 import React, { useState } from 'react'
-import { useAppointment } from '../../hooks/useAppointment'
+import { useAppointment } from '../hooks/useAppointment'
 import LoadingSpinner from '../components/LoadingSpinner'
 import AppointmentModal from '../components/AppointmentModal'
 import { 
   FiEye, 
   FiTrash2, 
   FiMail, 
-  FiPhone, 
+  FiMapPin,
   FiCalendar, 
   FiSearch,
   FiFilter,
@@ -15,13 +15,12 @@ import {
   FiRefreshCw,
   FiChevronLeft,
   FiChevronRight,
-  FiMessageSquare,
-  FiUser,
+  FiPackage,
   FiBriefcase
 } from 'react-icons/fi'
 import toast from 'react-hot-toast'
 
-const Appointments = () => {
+const AppointmentsPage = () => {
   const { appointments, loading, deleteAppointment, fetchAppointments } = useAppointment()
   const [selectedAppointment, setSelectedAppointment] = useState(null)
   const [deletingId, setDeletingId] = useState(null)
@@ -29,7 +28,7 @@ const Appointments = () => {
   const [currentPage, setCurrentPage] = useState(1)
   const [itemsPerPage] = useState(10)
   const [sortBy, setSortBy] = useState('newest')
-  const [filterService, setFilterService] = useState('all')
+  const [filterLocation, setFilterLocation] = useState('all')
 
   const handleDelete = async (id) => {
     if (window.confirm('Are you sure you want to delete this appointment?')) {
@@ -49,28 +48,35 @@ const Appointments = () => {
     })
   }
 
-  // Get unique services for filter
-  const getUniqueServices = () => {
-    const services = appointments?.map(app => app.selectService).filter(Boolean)
-    return ['all', ...new Set(services)]
+  // Get unique locations for filter
+  const getUniqueLocations = () => {
+    const locations = appointments?.map(app => app.location).filter(Boolean)
+    return ['all', ...new Set(locations)]
   }
 
-  // Filter appointments based on search and service
+  // Get all unique services
+  const getAllServices = () => {
+    const services = appointments?.flatMap(app => app.selectService).filter(Boolean)
+    return [...new Set(services)]
+  }
+
+  // Filter appointments based on search and location
   const filteredAppointments = appointments?.filter(appointment => {
     // Search filter
     const searchLower = searchTerm.toLowerCase()
     const matchesSearch = (
-      appointment.name?.toLowerCase().includes(searchLower) ||
       appointment.email?.toLowerCase().includes(searchLower) ||
-      appointment.phone?.includes(searchTerm) ||
-      appointment.message?.toLowerCase().includes(searchLower) ||
-      appointment.selectService?.toLowerCase().includes(searchLower)
+      appointment.location?.toLowerCase().includes(searchLower) ||
+      (Array.isArray(appointment.selectService) && 
+       appointment.selectService.some(service => service.toLowerCase().includes(searchLower))) ||
+      (typeof appointment.selectService === 'string' && 
+       appointment.selectService.toLowerCase().includes(searchLower))
     )
     
-    // Service filter
-    const matchesService = filterService === 'all' || appointment.selectService === filterService
+    // Location filter
+    const matchesLocation = filterLocation === 'all' || appointment.location === filterLocation
     
-    return matchesSearch && matchesService
+    return matchesSearch && matchesLocation
   })
 
   // Sort appointments
@@ -79,10 +85,14 @@ const Appointments = () => {
       return new Date(b.createdAt) - new Date(a.createdAt)
     } else if (sortBy === 'oldest') {
       return new Date(a.createdAt) - new Date(b.createdAt)
-    } else if (sortBy === 'name') {
-      return a.name.localeCompare(b.name)
-    } else if (sortBy === 'service') {
-      return (a.selectService || '').localeCompare(b.selectService || '')
+    } else if (sortBy === 'email') {
+      return a.email.localeCompare(b.email)
+    } else if (sortBy === 'location') {
+      return a.location.localeCompare(b.location)
+    } else if (sortBy === 'services') {
+      const aServices = Array.isArray(a.selectService) ? a.selectService.length : 1
+      const bServices = Array.isArray(b.selectService) ? b.selectService.length : 1
+      return bServices - aServices
     }
     return 0
   })
@@ -97,13 +107,11 @@ const Appointments = () => {
 
   // Export to CSV
   const exportToCSV = () => {
-    const headers = ['Name', 'Email', 'Phone', 'Service', 'Message', 'Date']
+    const headers = ['Email', 'Location', 'Services', 'Date']
     const csvData = sortedAppointments.map(app => [
-      app.name,
       app.email,
-      app.phone,
-      app.selectService || 'Not specified',
-      app.message || '',
+      app.location,
+      Array.isArray(app.selectService) ? app.selectService.join(', ') : app.selectService,
       new Date(app.createdAt).toLocaleString()
     ])
     
@@ -112,7 +120,7 @@ const Appointments = () => {
     const url = window.URL.createObjectURL(blob)
     const a = document.createElement('a')
     a.href = url
-    a.download = `appointments_${new Date().toISOString().split('T')[0]}.csv`
+    a.download = `second_appointments_${new Date().toISOString().split('T')[0]}.csv`
     a.click()
     window.URL.revokeObjectURL(url)
     toast.success('Exported to CSV successfully!')
@@ -126,41 +134,9 @@ const Appointments = () => {
     <div>
       {/* Header */}
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-800">Appointments</h1>
-        <p className="text-gray-500 mt-1">Manage and view all customer appointments</p>
+        <h1 className="text-3xl font-bold text-gray-800">Second Appointments</h1>
+        <p className="text-gray-500 mt-1">Manage and view all customer second appointments</p>
       </div>
-      
-      {/* Stats Cards
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-4 mb-6">
-        <div className="bg-gradient-to-r from-red-500 to-red-600 rounded-lg shadow-md p-4 text-white">
-          <p className="text-sm opacity-90">Total Appointments</p>
-          <p className="text-2xl font-bold">{appointments?.length || 0}</p>
-        </div>
-        <div className="bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg shadow-md p-4 text-white">
-          <p className="text-sm opacity-90">Battery Replacement</p>
-          <p className="text-2xl font-bold">
-            {appointments?.filter(app => app.selectService === 'Battery Replacement').length || 0}
-          </p>
-        </div>
-        <div className="bg-gradient-to-r from-green-500 to-green-600 rounded-lg shadow-md p-4 text-white">
-          <p className="text-sm opacity-90">Tyre Replacement</p>
-          <p className="text-2xl font-bold">
-            {appointments?.filter(app => app.selectService === 'Tyre Replacement').length || 0}
-          </p>
-        </div>
-        <div className="bg-gradient-to-r from-purple-500 to-purple-600 rounded-lg shadow-md p-4 text-white">
-          <p className="text-sm opacity-90">Engine Service</p>
-          <p className="text-2xl font-bold">
-            {appointments?.filter(app => app.selectService === 'Engine Service').length || 0}
-          </p>
-        </div>
-        <div className="bg-gradient-to-r from-orange-500 to-orange-600 rounded-lg shadow-md p-4 text-white">
-          <p className="text-sm opacity-90">This Month</p>
-          <p className="text-2xl font-bold">
-            {appointments?.filter(app => new Date(app.createdAt).getMonth() === new Date().getMonth()).length || 0}
-          </p>
-        </div>
-      </div> */}
       
       {/* Search and Filter Bar */}
       <div className="bg-white rounded-lg shadow-md p-4 mb-6">
@@ -170,7 +146,7 @@ const Appointments = () => {
               <FiSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
               <input
                 type="text"
-                placeholder="Search by name, email, phone, service..."
+                placeholder="Search by email, location, services..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
@@ -180,14 +156,15 @@ const Appointments = () => {
           
           <div className="flex gap-2">
             <select
-              value={filterService}
-              onChange={(e) => setFilterService(e.target.value)}
+              value={filterLocation}
+              onChange={(e) => setFilterLocation(e.target.value)}
               className="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
             >
-              <option value="all">All Services</option>
-              <option value="Battery Replacement">Battery Replacement</option>
-              <option value="Tyre Replacement">Tyre Replacement</option>
-              <option value="Engine Service">Engine Service</option>
+              {getUniqueLocations().map(location => (
+                <option key={location} value={location}>
+                  {location === 'all' ? 'All Locations' : location}
+                </option>
+              ))}
             </select>
             
             <select
@@ -197,8 +174,9 @@ const Appointments = () => {
             >
               <option value="newest">Newest First</option>
               <option value="oldest">Oldest First</option>
-              <option value="name">Sort by Name</option>
-              <option value="service">Sort by Service</option>
+              <option value="email">Sort by Email</option>
+              <option value="location">Sort by Location</option>
+              <option value="services">Sort by Services Count</option>
             </select>
             
             <button
@@ -220,16 +198,37 @@ const Appointments = () => {
         </div>
       </div>
       
+      {/* Stats Cards
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+        <div className="bg-gradient-to-r from-red-500 to-red-600 rounded-lg shadow-md p-4 text-white">
+          <p className="text-sm opacity-90">Total Appointments</p>
+          <p className="text-2xl font-bold">{appointments?.length || 0}</p>
+        </div>
+        <div className="bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg shadow-md p-4 text-white">
+          <p className="text-sm opacity-90">Unique Locations</p>
+          <p className="text-2xl font-bold">{getUniqueLocations().length - 1 || 0}</p>
+        </div>
+        <div className="bg-gradient-to-r from-green-500 to-green-600 rounded-lg shadow-md p-4 text-white">
+          <p className="text-sm opacity-90">Total Services</p>
+          <p className="text-2xl font-bold">{getAllServices().length || 0}</p>
+        </div>
+        <div className="bg-gradient-to-r from-purple-500 to-purple-600 rounded-lg shadow-md p-4 text-white">
+          <p className="text-sm opacity-90">This Month</p>
+          <p className="text-2xl font-bold">
+            {appointments?.filter(app => new Date(app.createdAt).getMonth() === new Date().getMonth()).length || 0}
+          </p>
+        </div>
+      </div> */}
+      
       {/* Appointments Table */}
       <div className="bg-white rounded-lg shadow-md overflow-hidden">
         <div className="overflow-x-auto">
           <table className="w-full">
             <thead className="bg-gray-50">
               <tr>
-                <th className="text-left py-3 px-4 font-semibold text-gray-600">Customer</th>
-                <th className="text-left py-3 px-4 font-semibold text-gray-600">Contact</th>
-                <th className="text-left py-3 px-4 font-semibold text-gray-600">Service</th>
-                <th className="text-left py-3 px-4 font-semibold text-gray-600">Message</th>
+                <th className="text-left py-3 px-4 font-semibold text-gray-600">Email</th>
+                <th className="text-left py-3 px-4 font-semibold text-gray-600">Location</th>
+                <th className="text-left py-3 px-4 font-semibold text-gray-600">Services</th>
                 <th className="text-left py-3 px-4 font-semibold text-gray-600">Date</th>
                 <th className="text-left py-3 px-4 font-semibold text-gray-600">Actions</th>
               </tr>
@@ -237,7 +236,7 @@ const Appointments = () => {
             <tbody>
               {currentItems.length === 0 ? (
                 <tr>
-                  <td colSpan="6" className="text-center py-12">
+                  <td colSpan="5" className="text-center py-12">
                     <div className="flex flex-col items-center">
                       <FiCalendar className="text-gray-400 text-5xl mb-3" />
                       <p className="text-gray-500 text-lg">No appointments found</p>
@@ -251,48 +250,39 @@ const Appointments = () => {
                     <td className="py-3 px-4">
                       <div className="flex items-center gap-2">
                         <div className="bg-red-100 rounded-full w-8 h-8 flex items-center justify-center">
-                          <FiUser className="text-red-600" size={16} />
+                          <FiMail className="text-red-600" size={16} />
                         </div>
-                        <div className="font-medium text-gray-900">{appointment.name}</div>
-                      </div>
-                    </td>
-                    <td className="py-3 px-4">
-                      <div className="space-y-1">
-                        <div className="flex items-center gap-2 text-sm">
-                          <FiMail className="text-gray-400" size={14} />
-                          <a href={`mailto:${appointment.email}`} className="text-blue-600 hover:underline">
+                        <div>
+                          <a href={`mailto:${appointment.email}`} className="text-blue-600 hover:underline font-medium break-all">
                             {appointment.email}
-                          </a>
-                        </div>
-                        <div className="flex items-center gap-2 text-sm">
-                          <FiPhone className="text-gray-400" size={14} />
-                          <a href={`tel:${appointment.phone}`} className="text-gray-600 hover:text-blue-600">
-                            {appointment.phone}
                           </a>
                         </div>
                       </div>
                     </td>
                     <td className="py-3 px-4">
                       <div className="flex items-center gap-2">
-                        <div className={`px-2 py-1 rounded-full text-xs font-medium ${
-                          appointment.selectService === 'Battery Replacement' ? 'bg-blue-100 text-blue-800' :
-                          appointment.selectService === 'Tyre Replacement' ? 'bg-green-100 text-green-800' :
-                          appointment.selectService === 'Engine Service' ? 'bg-purple-100 text-purple-800' :
-                          'bg-gray-100 text-gray-800'
-                        }`}>
-                          <div className="flex items-center gap-1">
-                            <FiBriefcase size={12} />
-                            <span>{appointment.selectService || 'Not specified'}</span>
-                          </div>
-                        </div>
+                        <FiMapPin className="text-gray-400" size={14} />
+                        <span className="text-gray-900">{appointment.location}</span>
                       </div>
                     </td>
                     <td className="py-3 px-4">
-                      <div className="flex items-center gap-2 max-w-xs">
-                        <FiMessageSquare className="text-gray-400 flex-shrink-0" size={14} />
-                        <p className="text-gray-600 text-sm truncate" title={appointment.message}>
-                          {appointment.message || 'No message'}
-                        </p>
+                      <div className="flex flex-wrap gap-1">
+                        {Array.isArray(appointment.selectService) ? (
+                          appointment.selectService.slice(0, 2).map((service, idx) => (
+                            <span key={idx} className="px-2 py-1 bg-blue-100 text-blue-800 rounded-md text-xs font-medium">
+                              {service}
+                            </span>
+                          ))
+                        ) : (
+                          <span className="px-2 py-1 bg-blue-100 text-blue-800 rounded-md text-xs font-medium">
+                            {appointment.selectService}
+                          </span>
+                        )}
+                        {Array.isArray(appointment.selectService) && appointment.selectService.length > 2 && (
+                          <span className="px-2 py-1 bg-gray-100 text-gray-600 rounded-md text-xs font-medium">
+                            +{appointment.selectService.length - 2}
+                          </span>
+                        )}
                       </div>
                     </td>
                     <td className="py-3 px-4">
@@ -324,8 +314,8 @@ const Appointments = () => {
                         </button>
                       </div>
                     </td>
-                  </tr>
-                ))
+                </tr>
+              ))
               )}
             </tbody>
           </table>
@@ -396,4 +386,4 @@ const Appointments = () => {
   )
 }
 
-export default Appointments
+export default AppointmentsPage

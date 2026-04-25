@@ -49,7 +49,7 @@ const batteryText =
         viewAll: "عرض الكل",
       }
     : {
-        title1: "Reliable",
+        title1: " We Recommend Reliable",
         title2: "Battery",
         title3: "Brand",
         viewAll: "View All",

@@ -11,7 +11,7 @@ import React from 'react'
 export const metadata = {
   title: "About Us – 800BatteryPro",
   description:
-    "800BatteryPro provides a complete car battery and repair solutions from over 10+ years and 50+ certified technicians. Call Us Now!",
+    "800BatteryPro provides a complete car battery and repair solutions from over 6+ years and 30+ technicians. Call Us Now!",
       keywords: "Trusted car service center in Dubai, trusted car service center in Abu Dhabi, car repair specialits in Dubai, car scanning & diagnostics",
       alternates: {
     canonical: "https://800batterypro.com/about-us",

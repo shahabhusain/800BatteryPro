@@ -1,91 +1,70 @@
 import prisma from "../lib/prisma.js";
 
-export const createAppointment = async (req, res) => {
+export const createSecondAppointment = async (req, res) => {
   try {
-    const { name, email, phone, message, selectService } = req.body;
-
-    // Create appointment without any validation
-    const appointment = await prisma.appointment.create({
-      data: {
-        name: name || null,
-        email: email || null,
-        phone: phone || null,
-        message: message || null,
-        selectService: selectService || null
-      }
-    });
-
-    // Return success response
-    res.status(201).json({ 
-      success: true,
-      message: "Appointment booked successfully! Our sales team will contact you soon.",
-      data: {
-        id: appointment.id,
-        name: appointment.name,
-        email: appointment.email,
-        selectService: appointment.selectService,
-        phone: appointment.phone,
-        createdAt: appointment.createdAt
-      }
-    });
-
-  } catch (error) {
-    console.error("Appointment creation error:", error);
-    
-    // Handle Prisma-specific errors
-    if (error.code === 'P2002') {
-      return res.status(409).json({ 
-        success: false,
-        message: "An appointment with this information already exists",
-        error: "UNIQUE_CONSTRAINT_VIOLATION"
-      });
-    }
-    
-    if (error.code === 'P2025') {
-      return res.status(404).json({ 
-        success: false,
-        message: "Resource not found",
-        error: "NOT_FOUND"
-      });
+    const {email,location, selectService} = req.body
+    if(!email || !location || !selectService) {
+      return res.status(404).json({message:"Invalid fields"})
     }
 
-    // Generic error response
-    res.status(500).json({ 
-      success: false,
-      message: "Internal server error. Please try again later.",
-      error: process.env.NODE_ENV === 'development' ? error.message : "SERVER_ERROR"
-    });
-  }
-};
+    const appointment = await prisma.secondAppointment.create({
+       data:{
+        email,location,selectService
+       }
+    })
 
-export const getAllAppointment = async (req, res) => {
-  try {
-    const appointments = await prisma.appointment.findMany({
-      orderBy: {
-        createdAt: "desc"
-      }
-    });
-
-    res.json(appointments);
+    res.status(200).json({success:true, message:"Appointment created successfully and sales team will contact you soon!"})
 
   } catch (error) {
-    res.status(500).json({ error: error.message });
+      console.error("Appointment creation error:", error);
   }
-};
+}
 
-export const deleteAppointment = async (req, res) => {
+export const getAllSecondAppointment = async (req, res) => {
+  try {
+    const appointment = await prisma.secondAppointment.findMany({
+      orderBy:{
+        createdAt:"desc"
+      }
+    })
+    res.json(appointment)
+  } catch (error) {
+    res.status(500).json({message:"server error",error})
+  }
+}
+
+export const deleteSecondAppointment = async (req, res) => {
   try {
     const { id } = req.params;
-
-    await prisma.appointment.delete({
+    if (!id) {
+      return res.status(400).json({ 
+        success: false,
+        message: "Appointment ID is required" 
+      });
+    }
+    const appointment = await prisma.secondAppointment.delete({
       where: { id: Number(id) }
     });
-
-    res.json({
-      message: "Appointment deleted"
+    res.status(200).json({
+      success: true,
+      message: "Appointment deleted successfully.",
+      data: appointment
     });
-
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    console.error("❌ Delete appointment error:", error);
+    
+    if (error.code === 'P2025') {
+      return res.status(404).json({
+        success: false,
+        message: "Appointment not found"
+      });
+    }
+    
+    res.status(500).json({
+      success: false,
+      message: "Server error",
+      error: process.env.NODE_ENV === 'development' ? error.message : undefined
+    });
   }
 };
+

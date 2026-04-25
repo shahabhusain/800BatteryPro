@@ -67,7 +67,7 @@ const serviceEnglishContent = {
   services: [
     {
       id: 1,
-      description: "800BatteryPro has an experience of over 6+ years working on Jeep Car Battery replacements delivered under 25 minutes in Dubai and Abu Dhabi.We have 20+ rapid response mobile vans which are just a call away from helping you in any stressful situation on the road.Just like we deliver 100% customer satisfaction for all major American car brands repairs,we also have Jeep experts, who are certified to work on a variety of premium and off-road models. 800BatteryPro has a team of 30+ certified Jeep specialist, who only uses OEM-approved batteries and the latest technology to complete every job with 100 percent customer satisfaction. Our Jeep specialists will do an on-site free battery checkup, followed by a car battery replacement using the latest technology and equipment. If you are stuck somewhere with a dead car battery or a malfunctioning electronic system, contact us for 24/7 immediate roadside assistance at +971528475675."
+      description: "800BatteryPro has an experience of over 6+ years working on Jeep Car Battery replacements delivered under 25 minutes in Dubai and Abu Dhabi.We have 20+ rapid response mobile vans which are just a call away from helping you in any stressful situation on the road.Just like we deliver 100% customer satisfaction for all major American car brands repairs,we also have Jeep experts, who are Experienced to work on a variety of premium and off-road models. 800BatteryPro has a team of 30+ Experienced Jeep specialist, who only uses OEM-approved batteries and the latest technology to complete every job with 100 percent customer satisfaction. Our Jeep specialists will do an on-site free battery checkup, followed by a car battery replacement using the latest technology and equipment. If you are stuck somewhere with a dead car battery or a malfunctioning electronic system, contact us for 24/7 immediate roadside assistance at +971528475675."
     },
     {
       id: 2,
@@ -121,7 +121,7 @@ const serviceEnglishContent1 = {
   services: [
     {
       id: 1,
-      description: "We are partnered with well-equipped Jeep car service centers in Dubai and Abu Dhabi, delivering excellence in battery replacement, car programming, electrical, and mechanical repair works. With a team of over 30+ certified Jeep technicians available 24/7 for any emergency roadside assistance and free inspection of your car battery. 800BatteryPro has years of experience serving residents of the Emirates with premium Jeep car batteries and advance repair services. We only use OEM-approved spare parts and genuine Jeep batteries for all our customers. You can reserve your slot for your next Battery Check-up with the best Jeep experts in Dubai. Contact us at +971 528475675 for 24/7 emergency roadside assistance."
+      description: "We are partnered with well-equipped Jeep car service centers in Dubai and Abu Dhabi, delivering excellence in battery replacement, car programming, electrical, and mechanical repair works. With a team of over 30+ Experienced Jeep technicians available 24/7 for any emergency roadside assistance and free inspection of your car battery. 800BatteryPro has years of experience serving residents of the Emirates with premium Jeep car batteries and advance repair services. We only use OEM-approved spare parts and genuine Jeep batteries for all our customers. You can reserve your slot for your next Battery Check-up with the best Jeep experts in Dubai. Contact us at +971 528475675 for 24/7 emergency roadside assistance."
     },
   ]
 }
@@ -145,13 +145,13 @@ const englishServices = [
   },
   {
     img: serviceImg2,
-    title: "Certified GMC Specialists",
+    title: "Experienced GMC Specialists",
     desc: "Our technicians have 5+ years of experience working on all American Car brands including the GMC (General Motors Truck Company)."
   },
   {
     img: serviceImg3,
     title: "Genuine GMC Parts",
-    desc: "Our certified GMC specialists only use genuine battery and OEM-approved spare parts for every car job."
+    desc: "Our Experienced GMC specialists only use genuine battery and OEM-approved spare parts for every car job."
   },
   {
     img: serviceImg4,
@@ -191,8 +191,8 @@ const englishContent = [
   },
   {
     icons: <FaSitemap />,
-    title: "Certified Jeep Specialists",
-    desc: "We have a team of certified technicians who are experienced in working on all American car brands including the Jeep."
+    title: "Experienced Jeep Specialists",
+    desc: "We have a team of Experienced technicians who are experienced in working on all American car brands including the Jeep."
   },
   {
     icons: <FaSitemap />,
@@ -232,7 +232,7 @@ const arabicContent = [
 const englishFaqs = [
   {
     question: "What type of Battery does my Jeep need?",
-    answer: "At 800BatteryPro, we have certified Jeep technicians who only recommends the AGM (Absorbent Glass Mat) car batteries. Because of its durability, high-density, and peak performance support features. You can book your next battery replacement by contacting us at 800BatteryPro right now!"
+    answer: "At 800BatteryPro, we have Experienced Jeep technicians who only recommends the AGM (Absorbent Glass Mat) car batteries. Because of its durability, high-density, and peak performance support features. You can book your next battery replacement by contacting us at 800BatteryPro right now!"
   },
   {
     question: "How long does a Jeep battery last?",
@@ -252,7 +252,7 @@ const englishFaqs = [
   },
   {
     question: "Any American Car Experts in Dubai?",
-    answer: "Yes, 800BatteryPro is one of the trusted and has a certified team of American car experts in Dubai. We have a well-equipped service center with the latest technology used for every German car repair job. We treat every car brand, including Jeep, GMC, Chevrolet, and Tesla, etc. Call us now for any American car battery replacement services at +971528475675."
+    answer: "Yes, 800BatteryPro is one of the trusted and has a Experienced team of American car experts in Dubai. We have a well-equipped service center with the latest technology used for every German car repair job. We treat every car brand, including Jeep, GMC, Chevrolet, and Tesla, etc. Call us now for any American car battery replacement services at +971528475675."
   },
   {
     question: "Do we provide American Car Battery Replacement in Abu Dhabi?",
@@ -304,7 +304,7 @@ const arabicFaqs = [
                       },
                       {
                         title: "24/7 Roadside Assistance",
-                        hoverDec: "800BatteryPro has well-equipped mobile vans and 30+ certified car battery replacement technicians providing 24/7 roadside assistance anywhere in the UAE. Fast & Reliable RSA!",
+                        hoverDec: "800BatteryPro has well-equipped mobile vans and 30+ Experienced car battery replacement technicians providing 24/7 roadside assistance anywhere in the UAE. Fast & Reliable RSA!",
                         img: service1
                       },
                       {

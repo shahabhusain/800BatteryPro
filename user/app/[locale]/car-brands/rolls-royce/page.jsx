@@ -72,7 +72,7 @@ const serviceEnglishContent = {
   services: [
     {
       id: 1,
-      description: "800BatteryPro will fix your dead battery in under 25 minutes anywhere in Dubai or Abu Dhabi. Rolls Rouce is a British prestige and one of the top-tier luxury cars in the World. With 500+ horsepower your Rolls Royce needs trusted car battery replacement and certified technician services, that too on market competitive pricing. We have 20+ rapid response mobile vans with 6+ years of experiance working on all types of Rolls Royce car battery replacements, as 800BatteryPro has partnered with one of the best Rolls Royce car service Centers in Dubai and Abu Dhabi. With 30+ certified Rolls Royce specialist we take pride in delivering every car job with 100% customer satisfaction. If you are stuck somewhere on the road with a non-functional electronic system, a dead car battery, or any other car repair issue, call us at +971528475675 for immediate 24/7 roadside assistance. Our technicians only use OEM-approved spare parts and genuine batteries for Rolls Royce. We offer free battery testing and free of cost battery delivery anywhere in Dubai and Abu Dhabi."
+      description: "800BatteryPro will fix your dead battery in under 25 minutes anywhere in Dubai or Abu Dhabi. Rolls Rouce is a British prestige and one of the top-tier luxury cars in the World. With 500+ horsepower your Rolls Royce needs trusted car battery replacement and Experienced technician services, that too on market competitive pricing. We have 20+ rapid response mobile vans with 6+ years of experiance working on all types of Rolls Royce car battery replacements, as 800BatteryPro has partnered with one of the best Rolls Royce car service Centers in Dubai and Abu Dhabi. With 30+ Experienced Rolls Royce specialist we take pride in delivering every car job with 100% customer satisfaction. If you are stuck somewhere on the road with a non-functional electronic system, a dead car battery, or any other car repair issue, call us at +971528475675 for immediate 24/7 roadside assistance. Our technicians only use OEM-approved spare parts and genuine batteries for Rolls Royce. We offer free battery testing and free of cost battery delivery anywhere in Dubai and Abu Dhabi."
     },
     {
       id: 2,
@@ -110,7 +110,7 @@ const serviceEnglishContent1 = {
   services: [
     {
       id: 1,
-      description: "800BatteryPro has 6+ years of experience delivering 100% customer satisfactory services related to Rolls Royce Car Battery Replacement under 25 minutes along with advance repair services in Dubai and Abu Dhabi. We have a team of 30+ certified Rolls Royce experts and are in partnership with some of the well-equipped service center in Dubai for serving every car job with complete customer satisfaction. Our 24/7 roadside assistance and free car inspections are available for all Rolls Royce Standard, hybrid, all-electric, or Premium Models, this routine generally happen after every 10,000 KMs or once a year. Don't hesitate to book your next car appointment with us, as our technicians only use OEM-approved spare parts and genuine car batteries, ensuring peak performance for your Rolls Royce."
+      description: "800BatteryPro has 6+ years of experience delivering 100% customer satisfactory services related to Rolls Royce Car Battery Replacement under 25 minutes along with advance repair services in Dubai and Abu Dhabi. We have a team of 30+ Experienced Rolls Royce experts and are in partnership with some of the well-equipped service center in Dubai for serving every car job with complete customer satisfaction. Our 24/7 roadside assistance and free car inspections are available for all Rolls Royce Standard, hybrid, all-electric, or Premium Models, this routine generally happen after every 10,000 KMs or once a year. Don't hesitate to book your next car appointment with us, as our technicians only use OEM-approved spare parts and genuine car batteries, ensuring peak performance for your Rolls Royce."
     },
     {
       id: 2,
@@ -142,8 +142,8 @@ const englishServices = [
   },
   {
     img: serviceImg2,
-    title: "Certified Rolls Royce Specialists",
-    desc: "We have a team of 30+ certified Rolls Rouce specialists using genuine spare parts and branded car batteries for every car service we deliver."
+    title: "Experienced Rolls Royce Specialists",
+    desc: "We have a team of 30+ Experienced Rolls Rouce specialists using genuine spare parts and branded car batteries for every car service we deliver."
   },
   {
     img: serviceImg3,
@@ -188,7 +188,7 @@ const englishContent = [
   },
   {
     icons: <FaSitemap />,
-    title: "Certified Rolls Royce Specialists",
+    title: "Experienced Rolls Royce Specialists",
     desc: "800BatteryPro has a team of 30+ Rolls Royce experts in Dubai and Abu Dhabi."
   },
   {
@@ -233,7 +233,7 @@ const englishFaqs = [
   },
   {
     question: "What type of Battery does my Rolls Royce need?",
-    answer: "At 800BatteryPro, we have certified Rolls Royce technicians who are great at working on all British car brands using only OEM-approved and genuine Car batteries. We recommend using AGM (Absorbent Glass Mat) or EFB (Enhanced Flooded Batteries) for cars with start-stop systems. While for the hybrid or all-electric models, the lithium-ion batteries. For more details related to certified Rolls Royce technicians, call us at +971 528475675."
+    answer: "At 800BatteryPro, we have Experienced Rolls Royce technicians who are great at working on all British car brands using only OEM-approved and genuine Car batteries. We recommend using AGM (Absorbent Glass Mat) or EFB (Enhanced Flooded Batteries) for cars with start-stop systems. While for the hybrid or all-electric models, the lithium-ion batteries. For more details related to Experienced Rolls Royce technicians, call us at +971 528475675."
   },
   {
     question: "How long does a Rolls Royce battery last?",
@@ -261,7 +261,7 @@ const englishFaqs = [
   },
   {
     question: "Any British Car Experts in Dubai?",
-    answer: "Yes, 800BatteryPro is one of the trusted and has a certified team of British car experts in Dubai. We are partnered with some of the well-equipped service center with the latest technology used for every British car repair job. We treat every car brand, including Aston Martin, Rolls Royce, and Bentley, etc. Call us now for any British car battery replacement services at +971528475675."
+    answer: "Yes, 800BatteryPro is one of the trusted and has a Experienced team of British car experts in Dubai. We are partnered with some of the well-equipped service center with the latest technology used for every British car repair job. We treat every car brand, including Aston Martin, Rolls Royce, and Bentley, etc. Call us now for any British car battery replacement services at +971528475675."
   },
 ]
 
@@ -278,7 +278,7 @@ const englishFaqs = [
                       },
                       {
                         title: "24/7 Roadside Assistance",
-                        hoverDec: "800BatteryPro has well-equipped mobile vans and 30+ certified car battery replacement technicians providing 24/7 roadside assistance anywhere in the UAE. Fast & Reliable RSA!",
+                        hoverDec: "800BatteryPro has well-equipped mobile vans and 30+ Experienced car battery replacement technicians providing 24/7 roadside assistance anywhere in the UAE. Fast & Reliable RSA!",
                         img: service1
                       },
                       {

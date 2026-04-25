@@ -77,7 +77,7 @@ const serviceEnglishContent = {
   services: [
     {
       id: 1,
-      description: "Don't panic if your Mercedes battery is dead! Get 24/7 car battery replacement services in Dubai Under 25 Minutes just a click away. 800BatteryPro is trusted by 10,000 happy customers for its quick response and onsite battery services. We have a team of 30+ certified Mercedes specialists in Dubai who knows everything about how to get your car back on the road. With 20+ rapid response mobile vans and latest battery boosting equipment. We are partnered with some of the well-equipped service centre in Dubai and Abu Dhabi, as you have us as a trusted partner in all car battery-related services. Whether it's the legendary Mercedes SLR, a luxury vehicle like the S-Class, a premium SUV like the G-Wagon, or any other custom-built model, our technicians only use AGM and Lithium batteries."
+      description: "Don't panic if your Mercedes battery is dead! Get 24/7 car battery replacement services in Dubai Under 25 Minutes just a click away. 800BatteryPro is trusted by 10,000 happy customers for its quick response and onsite battery services. We have a team of 30+ Experienced Mercedes specialists in Dubai who knows everything about how to get your car back on the road. With 20+ rapid response mobile vans and latest battery boosting equipment. We are partnered with some of the well-equipped service centre in Dubai and Abu Dhabi, as you have us as a trusted partner in all car battery-related services. Whether it's the legendary Mercedes SLR, a luxury vehicle like the S-Class, a premium SUV like the G-Wagon, or any other custom-built model, our technicians only use AGM and Lithium batteries."
     },
     {
       id: 2,
@@ -155,8 +155,8 @@ const englishServices = [
   },
   {
     img: serviceImg2,
-    title: "Certified Mercedes Benz Specialists",
-    desc: "We have a team of certified mercedes benz specialists using Genuine Mercedes Parts and branded car batteries for every car service we deliver."
+    title: "Experienced Mercedes Benz Specialists",
+    desc: "We have a team of Experienced mercedes benz specialists using Genuine Mercedes Parts and branded car batteries for every car service we deliver."
   },
   {
     img: serviceImg3,
@@ -201,13 +201,13 @@ const englishContent = [
   },
   {
     icons: <FaSitemap />,
-    title: "Certified Mercedes Benz specialists",
-    desc: "We have a team of certified BMW specialists, who have 6+ years of experience working on different BMW models and Car Batteries."
+    title: "Experienced Mercedes Benz specialists",
+    desc: "We have a team of Experienced BMW specialists, who have 6+ years of experience working on different BMW models and Car Batteries."
   },
   {
     icons: <FaSitemap />,
     title: "Using Genuine Mercedes Benz Parts",
-    desc: "Our certified Mercedes Benz specialists only use OEM approved spare parts and Branded Mercedes Benz batteries for all car jobs."
+    desc: "Our Experienced Mercedes Benz specialists only use OEM approved spare parts and Branded Mercedes Benz batteries for all car jobs."
   },
   {
     icons: <FaSitemap />,
@@ -250,7 +250,7 @@ const englishFaqs = [
   },
   {
     question: "Why is it important to service my Mercedes with manufacturer-recommended oil and Filter, when there are cheaper alternatives available?",
-    answer: "Your Mercedes engine is very well designed and has very small tolerances. The makers picked a certain brand and grade of oil that works best with each engine during testing and design. Changing the kind and occasionally even the brand of oil can make the engine run worse and wear it out faster. We use the kind and grade of oil that the manufacturer recommends, even if it costs a little more, because it makes the engine last longer and work better."
+    answer: "Your Mercedes engine is very well designed and has very small tolerances. The makers picked a Experiencedtain brand and grade of oil that works best with each engine during testing and design. Changing the kind and occasionally even the brand of oil can make the engine run worse and wear it out faster. We use the kind and grade of oil that the manufacturer recommends, even if it costs a little more, because it makes the engine last longer and work better."
   },
   {
     question: "When I brake, my Mercedes vibrates, why?",
@@ -262,7 +262,7 @@ const englishFaqs = [
   },
   {
     question: "Any German Car Experts in Dubai?",
-    answer: "Yes, 800BatteryPro is one of the trusted and has a certified team of German car experts in Dubai. We are partnered with well-equipped service centre with the latest technology used for every German car repair job. We treat every car brand, including Mercedes, BMW, Porsche, and Audi, etc. Call us now for any German car battery replacement services at +971528475675."
+    answer: "Yes, 800BatteryPro is one of the trusted and has a Experienced team of German car experts in Dubai. We are partnered with well-equipped service centre with the latest technology used for every German car repair job. We treat every car brand, including Mercedes, BMW, Porsche, and Audi, etc. Call us now for any German car battery replacement services at +971528475675."
   },
   {
     question: "Do we provide German Car Battery Replacement in Abu Dhabi?",
@@ -291,7 +291,7 @@ const englishFaqs = [
                       },
                       {
                         title: "24/7 Roadside Assistance",
-                        hoverDec: "800BatteryPro has well-equipped mobile vans and 30+ certified car battery replacement technicians providing 24/7 roadside assistance anywhere in the UAE. Fast & Reliable RSA!",
+                        hoverDec: "800BatteryPro has well-equipped mobile vans and 30+ Experienced car battery replacement technicians providing 24/7 roadside assistance anywhere in the UAE. Fast & Reliable RSA!",
                         img: service1
                       },
                       {
