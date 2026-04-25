@@ -22,7 +22,7 @@ const Founder = () => {
         }
 
     return (
-        <div className=' md:w-[85%] w-[90%] md:mb-20 mb-[900px] mx-auto max-w-[1500px]' dir={locale === "ar" ? "rtl" : "ltr"}>
+        <div className=' md:w-[85%] w-[90%] mb-20  mx-auto max-w-[1500px]' dir={locale === "ar" ? "rtl" : "ltr"}>
             <div className=' w-full flex flex-col md:flex-row items-center justify-around'>
                 <div className='md:w-1/2'>
                     <Image className='' src={founder} alt='founder' />
