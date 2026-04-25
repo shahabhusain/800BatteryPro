@@ -75,7 +75,7 @@ const serviceEnglishContent = {
   services: [
     {
       id: 1,
-      description: "800BatteryPro has an experiance of over 6+ Years delivering excellence in lamborghini car battery replacement under 25 minutes anywhere in Dubai and Abu Dhabi. Lamborghini vehicles are a symbol of power, elegance, and innovation. Speed, style, and sophistication—Lamborghini is the ultimate trifecta. At 800BatteryPro UAE, our team of Experienced technicians delivers Free Battery testing, 24/7 roadside assistance, and on-site branded car battery replacment for all Lamborghini models which aligns with the craftsmanship and luxury of this iconic car brand. We have Lamborghini specialists for Urus, Huracán, Aventador, Temerario, and Revuelto, who only use premium batteries and OEM standard car parts for each car model."
+      description: "800BatteryPro has an experience of over 6+ Years delivering excellence in lamborghini car battery replacement under 25 minutes anywhere in Dubai and Abu Dhabi. Lamborghini vehicles are a symbol of power, elegance, and innovation. Speed, style, and sophistication—Lamborghini is the ultimate trifecta. At 800BatteryPro UAE, our team of Experienced technicians delivers Free Battery testing, 24/7 roadside assistance, and on-site branded car battery replacment for all Lamborghini models which aligns with the craftsmanship and luxury of this iconic car brand. We have Lamborghini specialists for Urus, Huracán, Aventador, Temerario, and Revuelto, who only use premium batteries and OEM standard car parts for each car model."
     },
     {
       id: 2,
