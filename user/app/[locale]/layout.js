@@ -6,6 +6,7 @@ import { routing } from "@/i18n/routing";
 import { FaWhatsapp } from 'react-icons/fa';
 import { MdCall } from 'react-icons/md';
 import { Providers } from "./providers";
+import Clarity from "../components/Clarity";
 
 export default async function RootLayout({ children, params }) {
     const { locale } = await params;
@@ -24,9 +25,9 @@ export default async function RootLayout({ children, params }) {
         <Providers>
         <NextIntlClientProvider locale={locale}>
           <Header />
-              
+               
           {children}
-          
+          <Clarity />
           {/* Desktop View - Floating WhatsApp & Call Buttons */}
           <div className='fixed top-[37rem] md:flex hidden flex-col gap-y-3 right-6 z-[9999]'>
             <a 
