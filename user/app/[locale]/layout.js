@@ -7,6 +7,7 @@ import { FaWhatsapp } from 'react-icons/fa';
 import { MdCall } from 'react-icons/md';
 import { Providers } from "./providers";
 import Clarity from "../components/Clarity";
+import Analytics from "../components/Analytics";
 
 export default async function RootLayout({ children, params }) {
     const { locale } = await params;
@@ -21,13 +22,24 @@ export default async function RootLayout({ children, params }) {
   
   return (
     <html lang={locale} dir={direction}>
+       <head>
+        <Analytics />
+      </head>
       <body className={direction === 'rtl' ? 'rtl' : 'ltr'}>
+         <noscript>
+          <iframe 
+            src="https://www.googletagmanager.com/ns.html?id=GTM-PLKBC2LK"
+            height="0" 
+            width="0" 
+            style={{ display: 'none', visibility: 'hidden' }}
+          />
+        </noscript>
         <Providers>
         <NextIntlClientProvider locale={locale}>
           <Header />
                
           {children}
-          <Clarity />
+        
           {/* Desktop View - Floating WhatsApp & Call Buttons */}
           <div className='fixed top-[37rem] md:flex hidden flex-col gap-y-3 right-6 z-[9999]'>
             <a 
