@@ -6,7 +6,6 @@ import { routing } from "@/i18n/routing";
 import { FaWhatsapp } from 'react-icons/fa';
 import { MdCall } from 'react-icons/md';
 import { Providers } from "./providers";
-import Clarity from "../components/Clarity";
 import Analytics from "../components/Analytics";
 
 export default async function RootLayout({ children, params }) {
