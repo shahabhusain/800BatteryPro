@@ -45,7 +45,7 @@ const Hero = () => {
         <div className='relative'>
                <Image className=' w-full md:h-[800px] h-[500px] object-cover' src={herobg} alt='image'/>
       <div className=' bg-[#000000BD] absolute top-0 w-full md:h-[800px] h-[500px]'></div>
-       <div className={`absolute md:top-60 top-32  ${locale === "en" ? "md:left-36 md:right-36 left-6 right-6" : locale === "ar" ? "md:right-36 md:left-0 left-6 right-6" : null} flex items-center flex-col md:flex-row justify-between `}>
+       <div className={`absolute md:top-44 top-32  ${locale === "en" ? "md:left-36 md:right-36 left-6 right-6" : locale === "ar" ? "md:right-36 md:left-0 left-6 right-6" : null} flex items-center flex-col md:flex-row justify-between `}>
        <div className='flex flex-col gap-y-6 md:w-1/2'>
             <p className=' w-fit md:text-[14px] text-[10px] font-medium text-center bg-[#ffffff16] px-3 py-2 rounded-full'>{hero.desc}</p>
         <h1 className=' lg:text-[45px] md:text-[43px] sm:text-[33px] text-[25px] font-bold text-white md:leading-[4rem]'>{hero.title.span1} <span className=' text-red-500'>{hero.title.span2}</span></h1>
