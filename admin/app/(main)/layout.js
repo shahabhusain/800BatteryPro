@@ -13,8 +13,8 @@ export default function RootLayout({ children }) {
         <Provider store={store}>
           <AuthHydrator>
                 <div className="min-h-screen bg-gray-50 flex">
-      <SideBar />
-      <main className="flex-1 transition-all duration-300 ml-0">
+         <div className=" fixed"> <SideBar /></div>
+      <main className="flex-1 ml-60 transition-all duration-300 ">
         <div className="p-4 lg:p-8">
                   {children}
                   </div>

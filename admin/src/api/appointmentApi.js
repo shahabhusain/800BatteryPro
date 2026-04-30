@@ -22,16 +22,19 @@ api.interceptors.request.use((config) => {
   return config
 })
 
-// Response interceptor for error handling
+// ✅ FIXED Response interceptor for error handling
 api.interceptors.response.use(
   (response) => response,
   (error) => {
+    // Only handle 401 if not already on login page
     if (error.response?.status === 401) {
-      // Handle unauthorized access
       if (typeof window !== 'undefined') {
-        localStorage.removeItem('token')
-        localStorage.removeItem('user')
-        window.location.href = '/login'
+        // Check if we're not already on login page to prevent loops
+        if (!window.location.pathname.includes('/login')) {
+          localStorage.removeItem('token')
+          localStorage.removeItem('user')
+          window.location.href = '/login'
+        }
       }
     }
     return Promise.reject(error)

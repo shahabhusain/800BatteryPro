@@ -1,11 +1,13 @@
+import ProtectedRoute from '@/src/components/PrivateRoute'
+import Dashboard from '@/src/webPages/Dashboard'
 import React from 'react'
 
-const Dashboard = () => {
+const DashboardPage = () => {
   return (
     <div>
-      Dashboard
+      <Dashboard />
     </div>
   )
 }
 
-export default Dashboard
+export default DashboardPage

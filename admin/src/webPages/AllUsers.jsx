@@ -1,5 +1,5 @@
 "use client"
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {
   getAllUsers,
@@ -14,10 +14,14 @@ import {
   selectDeletingUser,
   selectUserActionSuccess
 } from '@/src/store/slice/authSlice';
+import { useRouter } from 'next/navigation';
 
 const AllUsers = () => {
   const dispatch = useDispatch();
-  const { user: currentUser } = useSelector((state) => state.auth);
+  const router = useRouter();
+  
+  // Consolidated auth selectors
+  const { user: currentUser, token } = useSelector((state) => state.auth);
   
   // Redux state selectors
   const users = useSelector(selectAllUsers);
@@ -36,37 +40,56 @@ const AllUsers = () => {
   const [localError, setLocalError] = useState('');
   const [showSuccess, setShowSuccess] = useState(false);
 
+  // Protected route check
   useEffect(() => {
-    fetchUsers();
-  }, [pagination.currentPage, filters.role]);
-
-  useEffect(() => {
-    if (userActionSuccess) {
-      setShowSuccess(true);
-      setTimeout(() => {
-        setShowSuccess(false);
-        dispatch(clearUserActionSuccess());
-      }, 3000);
+    if (!token || currentUser?.role !== "ADMIN") {
+      router.push("/login");
     }
-  }, [userActionSuccess, dispatch]);
+  }, [token, currentUser?.role, router]);
 
-  const fetchUsers = () => {
+  // Wrap fetchUsers in useCallback
+  const fetchUsers = useCallback(() => {
+    if (!token) return;
+    
     dispatch(getAllUsers({
       page: pagination.currentPage,
       limit: pagination.limit,
       search: filters.search,
       role: filters.role
     }));
-  };
+  }, [dispatch, pagination.currentPage, pagination.limit, filters.search, filters.role, token]);
+
+  // Fetch users when dependencies change
+  useEffect(() => {
+    if (token && currentUser?.role === "ADMIN") {
+      fetchUsers();
+    }
+  }, [fetchUsers, pagination.currentPage, filters.role, token, currentUser?.role]);
+
+  // Handle success messages
+  useEffect(() => {
+    if (userActionSuccess) {
+      setShowSuccess(true);
+      const timer = setTimeout(() => {
+        setShowSuccess(false);
+        dispatch(clearUserActionSuccess());
+      }, 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [userActionSuccess, dispatch]);
 
   const handleRoleUpdate = async (userId, newRole) => {
     setLocalError('');
-    const result = await dispatch(updateUserRole({ userId, role: newRole }));
-    if (updateUserRole.fulfilled.match(result)) {
-      // Success - refresh users list
-      fetchUsers();
-    } else {
-      setLocalError(result.payload || 'Failed to update user role');
+    try {
+      const result = await dispatch(updateUserRole({ userId, role: newRole }));
+      if (updateUserRole.fulfilled.match(result)) {
+        fetchUsers(); // Refresh users list
+      } else {
+        setLocalError(result.payload || 'Failed to update user role');
+        setTimeout(() => setLocalError(''), 3000);
+      }
+    } catch (error) {
+      setLocalError('An error occurred while updating role');
       setTimeout(() => setLocalError(''), 3000);
     }
   };
@@ -77,12 +100,16 @@ const AllUsers = () => {
     }
 
     setLocalError('');
-    const result = await dispatch(deleteUser({ userId }));
-    if (deleteUser.fulfilled.match(result)) {
-      // Success - refresh users list
-      fetchUsers();
-    } else {
-      setLocalError(result.payload || 'Failed to delete user');
+    try {
+      const result = await dispatch(deleteUser({ userId }));
+      if (deleteUser.fulfilled.match(result)) {
+        fetchUsers(); // Refresh users list
+      } else {
+        setLocalError(result.payload || 'Failed to delete user');
+        setTimeout(() => setLocalError(''), 3000);
+      }
+    } catch (error) {
+      setLocalError('An error occurred while deleting user');
       setTimeout(() => setLocalError(''), 3000);
     }
   };
@@ -95,14 +122,14 @@ const AllUsers = () => {
 
   const handleFilterChange = (e) => {
     const { name, value } = e.target;
-    setFilters({ ...filters, [name]: value });
+    setFilters(prev => ({ ...prev, [name]: value }));
     dispatch(setCurrentPage(1));
   };
 
   const handleClearFilters = () => {
     setFilters({ search: '', role: '' });
     dispatch(setCurrentPage(1));
-    setTimeout(() => fetchUsers(), 0);
+    // fetchUsers will be triggered by useEffect
   };
 
   const getRoleBadgeStyles = (role) => {
@@ -118,6 +145,11 @@ const AllUsers = () => {
   const isUpdating = (userId) => updatingRole === userId;
   const isDeleting = (userId) => deletingUser === userId;
 
+  // Show nothing or loading while checking authentication
+  if (!token || currentUser?.role !== "ADMIN") {
+    return null;
+  }
+
   return (
     <div className="min-h-screen bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -130,7 +162,6 @@ const AllUsers = () => {
                 Welcome back, <span className="font-semibold">{currentUser?.name}</span> ({currentUser?.role})
               </p>
             </div>
-       
           </div>
         </div>
 
@@ -165,6 +196,7 @@ const AllUsers = () => {
           </div>
         )}
 
+        {/* Rest of your JSX remains the same */}
         {/* Filters Section */}
         <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-4 mb-6">
           <form onSubmit={handleSearch} className="flex flex-col sm:flex-row gap-3">
@@ -209,7 +241,7 @@ const AllUsers = () => {
           </form>
         </div>
 
-        {/* Users Table */}
+        {/* Users Table - keep your existing table JSX */}
         <div className="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden">
           {loading ? (
             <div className="flex flex-col items-center justify-center py-12">
