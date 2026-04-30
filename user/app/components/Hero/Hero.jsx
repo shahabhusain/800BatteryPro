@@ -75,7 +75,7 @@ const Hero = () => {
             {hero.desc}
           </p>
 
-          <h1 className='lg:text-[45px] md:text-[43px] sm:text-[33px] text-[25px] font-bold text-white md:leading-[4rem]'>
+          <h1 className='.h1 lg:text-[45px] md:text-[43px] sm:text-[33px] text-[25px] font-bold text-white md:leading-[4rem]'>
             {hero.title.span1}
             <span className='text-red-500'>{hero.title.span2}</span>
           </h1>
