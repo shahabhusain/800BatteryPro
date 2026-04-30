@@ -50,7 +50,7 @@ const Hero = () => {
             <p className=' w-fit md:text-[14px] text-[10px] font-medium text-center bg-[#ffffff16] px-3 py-2 rounded-full'>{hero.desc}</p>
         <h1 className=' lg:text-[45px] md:text-[43px] sm:text-[33px] text-[25px] font-bold text-white md:leading-[4rem]'>{hero.title.span1} <span className=' text-red-500'>{hero.title.span2}</span></h1>
         <p className=' md:text-[16px] text-[12px] font-normal'>{hero.desc1}</p>
-              <button className=' text-[12px] md:text-[16px] w-fit bg-red-600 md:py-3 md:px-5 py-2 px-4 uppercase rounded-full text-white md:flex hidden items-center gap-x-2'>{hero.btn}<span className=' rotate-320'><GoArrowRight size={30} /></span></button>
+              <a href="tel:971528475675"  className=' text-[12px] md:text-[16px] w-fit bg-red-600 md:py-3 md:px-5 py-2 px-4 uppercase rounded-full text-white md:flex hidden items-center gap-x-2'>{hero.btn}<span className=' rotate-320'><GoArrowRight size={30} /></span></a>
                 <button   onClick={handleOpenModal} className=' text-[12px] md:text-[16px] w-fit bg-red-600 md:py-3 md:px-5 py-2 px-4 uppercase rounded-full text-white flex md:hidden items-center gap-x-2'>{hero.mobileBtn}<span className=' rotate-320'><GoArrowRight size={30} /></span></button>
        </div>
          <div className={`md:w-[45%] md:block hidden ${locale === "ar" ? " ml-10" : ""}`}>

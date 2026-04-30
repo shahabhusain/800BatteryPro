@@ -84,12 +84,12 @@ const Hero = () => {
             {hero.desc1}
           </p>
 
-          <button className='text-[12px] md:text-[16px] w-fit bg-red-600 md:py-3 md:px-5 py-2 px-4 uppercase rounded-full text-white md:flex hidden items-center gap-x-2 hover:bg-red-700 transition'>
+          <a href="tel:971528475675"  className='text-[12px] md:text-[16px] w-fit bg-red-600 md:py-3 md:px-5 py-2 px-4 uppercase rounded-full text-white md:flex hidden items-center gap-x-2 hover:bg-red-700 transition'>
             {hero.btn}
             <span className='rotate-[320deg]'>
               <GoArrowRight size={30} />
             </span>
-          </button>
+          </a>
 
           <button   onClick={handleOpenModal} className='text-[12px] md:text-[16px] w-fit bg-red-600 md:py-3 md:px-5 py-2 px-4 uppercase rounded-full text-white flex md:hidden items-center gap-x-2 hover:bg-red-700 transition'>
             {hero.btn1}
