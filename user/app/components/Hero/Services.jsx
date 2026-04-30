@@ -73,12 +73,12 @@ const arabicServices = [
     <div className='w-[95%] md:w-[85%] lg:w-[80%] mx-auto mt-12 md:mt-16 lg:mt-20 px-4 sm:px-0' dir={isRTL ? 'rtl' : 'ltr'}>
       {/* Header Section */}
       <div className={isRTL ? 'text-right' : 'text-left'}>
-        <h1 className='text-[14px] md:text-[16px] font-bold text-gray-600 uppercase tracking-wider'>
+        <p className='text-[14px] md:text-[16px] font-bold text-gray-600 uppercase tracking-wider'>
           {locale === 'en' ? 'SERVICES' : 'خدماتنا'}
-        </h1>
+        </p>
         
         <div className={`flex flex-col ${isRTL ? 'md:flex-row-reverse' : 'md:flex-row'} items-center justify-between mt-4 md:mt-6 gap-4 md:gap-0`}>
-          <h1 className='text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] font-bold leading-tight'>
+          <h2 className='text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] font-bold leading-tight'>
             {locale === 'en' ? (
               <>
                 <span className='font-normal'>Reliable</span>{' '}
@@ -92,7 +92,7 @@ const arabicServices = [
                 <span className='block sm:inline'>الموثوقة</span>
               </>
             )}
-          </h1>
+          </h2>
           
           <Link href="/services" className='w-full sm:w-fit bg-red-600 py-2.5 sm:py-3 px-4 sm:px-5 uppercase rounded-full text-white flex items-center justify-center gap-x-2 hover:bg-red-700 transition-colors text-sm sm:text-base'>
             {locale === 'en' ? 'view all' : 'عرض الكل'}
@@ -112,9 +112,9 @@ const arabicServices = [
             className='group transition-all duration-300 hover:px-6 ease-in-out flex flex-col lg:flex-row hover:bg-gradient-to-r from-red-500 to-red-400 px-3 items-start lg:items-center gap-4 lg:gap-8 xl:gap-12 relative cursor-pointer border border-gray-100 hover:border-transparent'
           >
             {/* Title */}
-            <h2 className={`text-[20px] sm:text-[22px] lg:text-[24px] xl:text-[26px] font-semibold group-hover:text-red-50 transition-colors w-full lg:w-auto ${isRTL ? 'lg:text-right' : ''}`}>
+            <h3 className={`text-[20px] sm:text-[22px] lg:text-[24px] xl:text-[26px] font-semibold group-hover:text-red-50 transition-colors w-full lg:w-auto ${isRTL ? 'lg:text-right' : ''}`}>
               {serviceItem.title}
-            </h2>
+            </h3>
             
             {/* Image Container - Hidden on mobile, visible on larger screens */}
             {serviceItem.image && (

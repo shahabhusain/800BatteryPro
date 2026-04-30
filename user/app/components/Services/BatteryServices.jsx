@@ -162,7 +162,7 @@ const BatteryServices = () => {
             {/* Header Section */}
             <div className='text-center space-y-4'>
                <p className=' uppercase text-center text-[16px] font-semibold'>sERVICES</p>
-      <h1 className=' ld:text-[40px] md:text-[35px] sm:text-[30px] text-[25px] font-semibold text-center'><span className=' font-normal'>Reliable</span> <span className=' text-red-700'>Car Battery</span> Services</h1>
+      <h2 className=' ld:text-[40px] md:text-[35px] sm:text-[30px] text-[25px] font-semibold text-center'><span className=' font-normal'>Reliable</span> <span className=' text-red-700'>Car Battery</span> Services</h2>
             </div>
             
             {/* Services Grid */}
@@ -196,9 +196,9 @@ const BatteryServices = () => {
                         {/* Content */}
                         <div className='p-6 space-y-3'>
                             {/* Title with hover effect */}
-                            <h2 className='text-xl font-bold text-gray-800 group-hover:text-red-600 transition-colors duration-300 line-clamp-2'>
+                            <h3 className='text-xl font-bold text-gray-800 group-hover:text-red-600 transition-colors duration-300 line-clamp-2'>
                                 {item.title}
-                            </h2>
+                            </h3>
                             
                             {/* Decorative line */}
                             <div className='w-12 h-0.5 bg-red-600 group-hover:w-16 transition-all duration-300'></div>

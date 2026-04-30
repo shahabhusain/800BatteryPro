@@ -57,13 +57,13 @@ const HowItWorks = () => {
             <span className='py-2 px-6 rounded-full bg-red-100 text-red-700 font-semibold text-sm tracking-wide shadow-sm'>
                 {locale === "en" ? "How it Works?" : locale === "ar" ? "كيف يعمل؟" : "How it Works?"}
             </span>
-            <h1 className='text-4xl md:text-5xl font-extrabold text-center'>
+            <h2 className='text-4xl md:text-5xl font-extrabold text-center'>
                 {locale === "en" ? "OUR " : ""}
                 <span className='text-red-600'>
                     {locale === "en" ? "WORKING" : locale === "ar" ? "العمل" : "WORKING"}
                 </span>
                 {locale === "en" ? " PROCESS" : locale === "ar" ? " عملية" : " PROCESS"}
-            </h1>
+            </h2>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-x-1 max-w-6xl w-full mt-8 relative'>
                 {cards.map((item, index) => (
                     <div key={index} className="relative flex items-center">
@@ -74,7 +74,7 @@ const HowItWorks = () => {
                             <div className='text-4xl bg-white/20 p-3 rounded-full'>
                                 {item.icon}
                             </div>
-                            <h1 className='text-5xl font-black opacity-80'>{item.title}</h1>
+                            <p className='text-5xl font-black opacity-80'>{item.title}</p>
                             <p className='text-lg font-medium leading-relaxed'>{item.desc}</p>
                         </div>
 

@@ -65,7 +65,7 @@ const Form = () => {
       <div className='w-full max-w-md mx-auto bg-[#FFFFFF1A] backdrop-blur-lg rounded-2xl shadow-2xl p-6'>
         <form onSubmit={handleSubmit} className='md:space-y-5 space-y-3'>
           <div className='space-y-2'>
-            <h1 className='text-white md:text-2xl text-xl font-bold'>Book an Appointment</h1>
+            <p className='text-white md:text-2xl text-xl font-bold'>Book an Appointment</p>
             <p className='text-gray-300 text-sm'>Our sales team will contact you soon!</p>
           </div>
           

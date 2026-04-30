@@ -9,8 +9,8 @@ import Form from '../Services/Form'
 const heroEnglishContent = {
   desc: "Top Car Brands – 24/7 Emergency Support & Anywhere!",
   title: {
-    span1: "24/7 RSA & Car Battery",
-    span2: " Replacement Services in Dubai & Abu Dhabi"
+    span1: "Car Battery Replacement for ",
+    span2: "All Car Brands in Dubai & Abu Dhabi"
   },
   desc1: "Car Battery Boosting - Under 25 Minute Car Battery Replacement - 24/7 Roadside Assistance - Advanced Car Repairs",
   btn: "Call Now",

@@ -74,12 +74,12 @@ const Team = () => {
             {locale === "en" ? "Our Team" : "فريقنا"}
           </p>
 
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
             {locale === "en" ? "Meet Our" : "تعرف على"}{" "}
             <span className="text-red-600">
               {locale === "en" ? "Team Members" : "أعضاء الفريق"}
             </span>
-          </h1>
+          </h2>
         </div>
 
         {/* Grid */}
@@ -106,9 +106,9 @@ const Team = () => {
 
                 {/* Info */}
                 <div className="p-6 text-start">
-                  <h2 className="text-[24px] font-bold text-gray-900 mb-2">
+                  <p className="text-[24px] font-bold text-gray-900 mb-2">
                     {item.name}
-                  </h2>
+                  </p>
                   <p className="text-[#4E4E4E] font-normal">
                     {item.role}
                   </p>

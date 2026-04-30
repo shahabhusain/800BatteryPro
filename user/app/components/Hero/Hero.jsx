@@ -8,10 +8,10 @@ import { useLocale } from 'next-intl'
 import AppointmentModal from '../AppointmentModal'
 
 const heroEnglishContent = {
-  desc:"24/7 Roadside Assistance & Car Battery Service in Dubai",
+  desc:"Avg. 25 Minute & 24/7 RSA in Dubai & Abu Dhabi",
   title:{
-    span1:"800BatteryPro - Car Battery Services in Dubai ",
-    span2:"& Abu Dhabi!"
+    span1:"Car Battery Replacement & 24/7 Roadside ",
+    span2:"Assistance in Dubai "
   },
   desc1:"Car Battery Replacement Under 25 Min - Quick Car Battery Boosting - 24/7 Roadside Assistance - Advanced Car Repair",
   btn:"Call Now",

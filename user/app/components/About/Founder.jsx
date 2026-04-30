@@ -28,8 +28,8 @@ const Founder = () => {
                     <Image className='' src={founder} alt='founder' />
                 </div>
                 <div className='md:w-1/2 flex flex-col gap-2'>
-                    <h1 className='text-red-800 text-[40px] font-semibold'>{text.name}</h1>
-                    <h2 className='text-[20px] font-semibold'>{text.title}</h2>
+                    <h2 className='text-red-800 text-[40px] font-semibold'>{text.name}</h2>
+                    <p className='text-[20px] font-semibold'>{text.title}</p>
                     <p className='text-[#00000099] mt-6'>{text.description1}</p>
                     <p className='text-[#00000099] mt-4'>{text.description2}</p>
                 </div>

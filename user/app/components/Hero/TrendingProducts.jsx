@@ -74,15 +74,15 @@ const TrendingProducts = () => {
     >
       {/* Header */}
       <div>
-        <h1 className="text-[12px] sm:text-[14px] md:text-[16px] font-bold text-gray-600 uppercase tracking-wider">
+        <p className="text-[12px] sm:text-[14px] md:text-[16px] font-bold text-gray-600 uppercase tracking-wider">
           {text.shop}
-        </h1>
+        </p>
 
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mt-4 md:mt-6 gap-4 sm:gap-6">
-          <h1 className="text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] xl:text-[40px] font-semibold w-full sm:max-w-[544px] leading-tight">
+          <h2 className="text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] xl:text-[40px] font-semibold w-full sm:max-w-[544px] leading-tight">
             <span className="text-gray-900">{text.title1}</span>{" "}
             <span className="text-[#C1121F]">{text.title2}</span>
-          </h1>
+          </h2>
 
           <button className="w-full sm:w-fit bg-[#C1121F] py-2.5 sm:py-3 px-4 sm:px-5 uppercase rounded-full text-white flex items-center justify-center gap-x-2 hover:bg-red-700 transition-all duration-300 text-sm sm:text-base group">
             <span>{text.viewAll}</span>
@@ -123,9 +123,9 @@ const TrendingProducts = () => {
               {item.desc}
             </p>
 
-            <h2 className="font-semibold text-lg sm:text-xl text-gray-900 mt-2">
+            <p className="font-semibold text-lg sm:text-xl text-gray-900 mt-2">
               {item.price}
-            </h2>
+            </p>
           </div>
         ))}
       </div>

@@ -58,11 +58,11 @@ const batteryText =
   return (
     <div className="bg-[#FDF8F8] py-20">
            <div className='flex flex-col gap-y-3 md:flex-row items-center md:w-[80%] w-[95%] mx-auto justify-between'>
-                <h1 className='text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] font-semibold max-w-full md:max-w-[544px] leading-tight text-left'>
+                <h2 className='text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] font-semibold max-w-full md:max-w-[544px] leading-tight text-left'>
                   <span className='font-normal'>{batteryText.title1}</span>{' '}
                   <span className='text-[#C1121F]'>{batteryText.title2} </span>{' '}
                   <span>{batteryText.title3}</span>
-                </h1>
+                </h2>
                 {/* <button className='w-full sm:w-fit bg-red-600 py-2.5 sm:py-3 px-4 sm:px-5 uppercase rounded-full text-white flex items-center justify-center gap-x-2 hover:bg-red-700 transition-colors text-sm sm:text-base'>
                    {batteryText.viewAll}
                   <span className='rotate-320'>

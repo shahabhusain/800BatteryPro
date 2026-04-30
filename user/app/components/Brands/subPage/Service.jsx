@@ -20,9 +20,9 @@ const Service = ({ serviceContent, serviceImg }) => {
           {serviceContent.subtitle}
         </p>
 
-        <h1 className="lg:text-[40px] md:text-[35px] sm:text-[30px] text-[26px] font-bold leading-tight">
+        <h2 className="lg:text-[40px] md:text-[35px] sm:text-[30px] text-[26px] font-bold leading-tight">
           {serviceContent.title}
-        </h1>
+        </h2>
 
        
           <Image

@@ -162,7 +162,7 @@ const Trusted = () => {
     <div className="py-12 bg-[#FDF8F8]" dir={isRTL ? 'ltr' : 'ltr'}>
       <div className='flex items-center justify-center flex-col gap-y-3 mt-6'>
         <p className={isRTL ? 'text-right' : ''}>{content.sectionTitle}</p>
-        <h1 className={`lg:text-[40px] md:text-[35px] text-[30px] text-center md:text-left font-bold ${isRTL ? 'md:text-right' : ''}`}>
+        <h2 className={`lg:text-[40px] md:text-[35px] text-[30px] text-center md:text-left font-bold ${isRTL ? 'md:text-right' : ''}`}>
           {isRTL ? (
             <>
               <span>{content.headingPrefix}</span>{' '}
@@ -174,7 +174,7 @@ const Trusted = () => {
               <span className='text-[#C1121F]'>{content.headingHighlight}</span>{' '}
             </>
           )}
-        </h1>
+        </h2>
       </div>
 
       {/* Inline keyframes for the marquee animation */}

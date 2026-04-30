@@ -79,17 +79,17 @@ const Services = ({
         <div className='text-left animate-fade-in-up'>
           <div className='inline-block'>
             <div className='relative'>
-              <h1 className='text-[12px] md:text-[16px] font-bold text-red-300 uppercase tracking-wider px-2'>
+              <p className='text-[12px] md:text-[16px] font-bold text-red-300 uppercase tracking-wider px-2'>
                 {text.desc}
-              </h1>
+              </p>
             </div>
           </div>
           
           <div className='flex flex-col md:flex-row items-center justify-between mt-4 md:mt-6 gap-6 md:gap-0'>
-            <h1 className='text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold max-w-full md:max-w-[600px] leading-tight text-left text-white'>
+            <h2 className='text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold max-w-full md:max-w-[600px] leading-tight text-left text-white'>
               {text.title1}{' '}
               <span className='text-red-500'>{text.title2}</span>
-            </h1>
+            </h2>
             
             <Link href="/services" className='group relative w-full sm:w-fit bg-gradient-to-r from-red-600 to-red-800 py-3 sm:py-3.5 px-6 sm:px-8 uppercase rounded-full text-white flex items-center justify-center gap-x-2 transition-all duration-300 text-sm sm:text-base overflow-hidden shadow-lg hover:shadow-red-500/50'>
               <span className='relative z-10'>{text.viewAll}</span>
@@ -109,7 +109,7 @@ const Services = ({
                 <FaArrowDown className='text-white' />
               </span>
               <div className='absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-black/80 to-transparent p-6 rounded-b-2xl'>
-                <h2 className='text-white font-bold text-xl'>{item.title}</h2>
+                <h3 className='text-white font-bold text-xl'>{item.title}</h3>
               </div>
               <div className='absolute inset-0 bg-black/90 backdrop-blur-md rounded-2xl p-6 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500'>
                 <p className='text-white text-center text-sm leading-relaxed'>{item.hoverDec}</p>

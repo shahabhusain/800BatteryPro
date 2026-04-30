@@ -6,7 +6,7 @@ const ServiExperienced = () => {
     <div className=' w-[85%] mx-auto flex items-start py-20 gap-12 justify-between'>
        <div className=' w-1/2 flex flex-col gap-y-3'>
             <p className=' uppercase text-[16px] font-semibold'>sERVICES</p>
-           <h1 className=' text-[40px] font-semibold '>Reliable <span className=' text-red-600'> Car Battery </span> Services</h1>
+           <h2 className=' text-[40px] font-semibold '>Reliable <span className=' text-red-600'> Car Battery </span> Services</h2>
            <Image className=' rounded-2xl' src={service}  alt='service'/>
        </div>
        <div className=' flex flex-col gap-y-8 w-1/2'>

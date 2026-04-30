@@ -97,9 +97,9 @@ const arabicContent = {
         <div className='absolute top-16 sm:top-20 md:top-24 lg:top-32 left-0 right-0 px-4 sm:px-6'>
           {/* Top Section */}
           <div className={`flex flex-col lg:flex-row items-center justify-between w-full lg:w-[90%] xl:w-[80%] mx-auto gap-6 lg:gap-0 ${isRTL ? 'lg:flex-row-reverse' : ''}`}>
-            <h1 className={`text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] xl:text-[40px] font-semibold max-w-full lg:max-w-[655px] ${isRTL ? 'text-center lg:text-right' : 'text-center lg:text-left'}`}>
+            <h2 className={`text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] xl:text-[40px] font-semibold max-w-full lg:max-w-[655px] ${isRTL ? 'text-center lg:text-right' : 'text-center lg:text-left'}`}>
               {content.headline}
-            </h1>
+            </h2>
             
             {/* Vertical Divider - Hidden on mobile/tablet */}
             <div className='hidden lg:block w-[1px] h-[100px] md:h-[120px] lg:h-[150px] bg-white'></div>
@@ -122,7 +122,7 @@ const arabicContent = {
                 alt='logo' 
               />
               <ul className={`flex flex-col ${isRTL ? 'items-end' : 'items-start'} gap-y-2 md:gap-y-3 mt-4`}>
-                <h1 className='text-[18px] md:text-[20px] font-medium'>{content.quickLinks.title}</h1>
+                <h2 className='text-[18px] md:text-[20px] font-medium'>{content.quickLinks.title}</h2>
                 {content.quickLinks.links.map((link, index) => (
                   <Link
                     href={link.link} 
@@ -157,9 +157,9 @@ const arabicContent = {
 
             {/* Column 3 - Newsletter */}
             <div className={`w-full lg:w-[40%] bg-[#ffffff1a] flex flex-col gap-y-3 md:gap-y-4 p-4 md:p-5 lg:p-6 rounded-xl lg:rounded-2xl border-[1px] border-[#ffffff45] ${isRTL ? 'text-right' : ''}`}>
-              <h1 className='text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] xl:text-[40px] font-bold'>
+              <h2 className='text-[24px] sm:text-[28px] md:text-[32px] lg:text-[36px] xl:text-[40px] font-bold'>
                 {content.newsletter.title}
-              </h1>
+              </h2>
               <p className='text-[13px] md:text-[14px] text-gray-200'>
                 {content.newsletter.description}
               </p>

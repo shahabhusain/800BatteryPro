@@ -100,7 +100,7 @@ const About = ({
             cards.map((item, index) => (
               <div key={index} className='flex flex-col items-start gap-y-3 bg-[#FFFFFF0D] backdrop-blur-lg md:p-6 p-2 rounded-md text-white'>
                 <span className='md:text-xl text-lg'>{item.icon}</span>
-                <h2 className='lg:text-4xl md:text-3xl text-2xl font-bold'>{item.title}</h2>
+                <p className='lg:text-4xl md:text-3xl text-2xl font-bold'>{item.title}</p>
                 <p>{item.desc}</p>
               </div>
             ))
@@ -112,9 +112,9 @@ const About = ({
             <p className='uppercase md:text-[16px] text-white text-[12px] font-bold'>
               {content.title}
             </p>
-            <h1 className='uppercase text-white lg:text-[40px] md:text-[36px] text-[25px] font-semibold'>
+            <h2 className='uppercase text-white lg:text-[40px] md:text-[36px] text-[25px] font-semibold'>
               <span className='text-red-500'>800</span> {content.heading}
-            </h1>
+            </h2>
             <p className='md:text-[16px] text-[12px] custom-scroll md:h-[100px] h-[70px] overflow-y-auto font-normal text-gray-200'>
               {content.description}
             </p>

@@ -69,7 +69,7 @@ const WhyChooseUs = () => {
                 <p className='text-[16px] font-bold text-center'>
                     {text.badge}
                 </p>
-                <h1 className='lg:text-[40px] md:text-[35px] sm:text-[30px] text-[26px] font-semibold text-center max-w-[855px]'>
+                <h2 className='lg:text-[40px] md:text-[35px] sm:text-[30px] text-[26px] font-semibold text-center max-w-[855px]'>
                     {locale === "ar" ? (
                         <>
                             <span className='text-red-800'>{text.title1}</span>
@@ -81,12 +81,12 @@ const WhyChooseUs = () => {
                             <span className='text-red-800'> {text.title2}</span>
                         </>
                     )}
-                </h1>
+                </h2>
                 <div className='flex flex-col md:flex-row items-center gap-2 justify-between mt-8'>
                     {data.map((item, index) => (
                         <div className='flex flex-col gap-y-5 items-start bg-white md:p-12 p-4 h-[50ppx] w-[350px]' key={index}>
                             <span className='md:text-[25px] text-[20px]'>{item.icons}</span>
-                            <h2 className='md:text-[24px] text-[18px] font-semibold'>{item.title}</h2>
+                            <h3 className='md:text-[24px] text-[18px] font-semibold'>{item.title}</h3>
                             <p className='md:text-[16px] text-[14px] font-normal text-[#4E4E4E]'>{item.desc}</p>
                         </div>
                     ))}

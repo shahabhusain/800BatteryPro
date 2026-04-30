@@ -60,7 +60,7 @@ const Cards = () => {
                       cards.map((item,index) => (
                          <div key={index} className=' flex flex-col items-start gap-y-3 bg-[#FFFFFF0D] backdrop-blur-lg md:p-6 p-2 rounded-md text-white'>
                       <span className=' md:text-xl text-lg'>{item.icon}</span>
-                      <h2 className=' lg:text-4xl md:text-3xl text-2xl text font-bold'>{item.title}</h2>
+                      <p className=' lg:text-4xl md:text-3xl text-2xl text font-bold'>{item.title}</p>
                       <p>{item.desc}</p>
                     </div>
                       ))

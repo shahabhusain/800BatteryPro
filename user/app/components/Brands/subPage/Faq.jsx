@@ -16,7 +16,7 @@ const Faq = ({faqs}) => {
        <p className='uppercase text-center text-[16px] font-semibold text-gray-600'>
     {locale === "ar" ? "لديك أسئلة؟" : "Got Questions?"}
 </p>
-<h1 className='lg:text-[40px] md:text-[35px] sm:text-[30px] text-[25px] font-semibold text-center mb-12'>
+<h2 className='lg:text-[40px] md:text-[35px] sm:text-[30px] text-[25px] font-semibold text-center mb-12'>
     {locale === "ar" ? (
         <>
             <span className='text-red-700'>لدينا</span>
@@ -30,7 +30,7 @@ const Faq = ({faqs}) => {
             <span className='text-red-700'>answers</span>
         </>
     )}
-</h1>
+</h2>
 
             <div className=''>
                 {faqs.map((faq, index) => (
