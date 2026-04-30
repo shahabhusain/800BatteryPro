@@ -26,9 +26,6 @@ export default function Analytics() {
           `,
         }}
       />
-      
-      {/* Microsoft Clarity
-      <Clarity /> */}
     </>
   );
 }
