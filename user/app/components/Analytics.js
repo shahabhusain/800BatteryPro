@@ -3,7 +3,7 @@ import Script from 'next/script';
 import Clarity from './Clarity';
 
 export default function Analytics() {
-  const gtmId = process.env.NEXT_PUBLIC_GTM_ID || 'GTM-PLKBC2LK';
+  const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
   
   return (
     <>
