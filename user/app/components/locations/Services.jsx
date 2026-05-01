@@ -53,24 +53,16 @@ const Services = ({
       hoverDec: "احصل على فحص وتشخيص متقدم كامل للسيارة في 800BatteryPro. خدمة سريعة وأفضل الأسعار. اتصل بنا الآن!",
       img: service3
     },
-  ]
+  ],
+  text = {
+    desc: "Battery Services We Offer",
+    title1: "Car Battery Services ",
+    title2: "in Dubai & Abu Dhabi",
+    viewAll: "View All",
+  }
 }) => {
   const locale = useLocale()
   const serviceContent = locale === "en" ? englishService : arabicService
-  
-  const text = locale === "ar"
-    ? {
-        desc: "خدمات البطاريات التي نقدمها",
-        title1: "جميع خدمات", 
-        title2: "البطاريات الاحترافية",
-        viewAll: "عرض الكل",
-      }
-    : {
-        desc: "Battery Services We Offer",
-        title1: "Car Battery Services ",
-        title2: "in Dubai & Abu Dhabi",
-        viewAll: "View All",
-      };
 
   return (
     <div className='bg-gradient-to-br from-black via-red-900 to-black p-8 shadow-2xl'>

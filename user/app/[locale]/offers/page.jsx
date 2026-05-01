@@ -15,6 +15,20 @@ export const metadata = {
   },
 };
 
+              // English content
+  const englishContents = {
+    sectionTitle: "What Our Customers Say",
+    headingPrefix: "About Our Dubai & Abu Dhabi ",
+    headingHighlight: "Battery Service",
+  };
+
+  // Arabic content (translated reviews)
+  const arabicContents = {
+    sectionTitle: "ماذا يقول عملاؤنا",
+    headingPrefix: "موثوق من قبل",
+    headingHighlight: "السائقين في كل مكان",
+  };
+
 const Offer = () => {
   return (
     <div>
@@ -24,7 +38,7 @@ const Offer = () => {
       <div className='bg-white  rounded-t-4xl relative z-10'>
          <Banners />
          <Faqs />
-         <Trusted />
+         <Trusted englishContent={englishContents} arabicContent={arabicContents} />
          <Footer />
       </div>
     </div>

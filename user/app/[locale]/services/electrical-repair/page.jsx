@@ -186,6 +186,34 @@ const arabicFaqs = [
                       { image: volcan, name: "Volcan" },
                   ];
 
+                                // English content
+  const englishContents = {
+    sectionTitle: "What Our Customers Say",
+    headingPrefix: "About Our Dubai & Abu Dhabi ",
+    headingHighlight: "Battery Service",
+  };
+
+  // Arabic content (translated reviews)
+  const arabicContents = {
+    sectionTitle: "ماذا يقول عملاؤنا",
+    headingPrefix: "موثوق من قبل",
+    headingHighlight: "السائقين في كل مكان",
+  };
+
+     const text = locale === "ar"
+  ? {
+      desc: "ماركات السيارات التي نخدمها",
+      title1: "يشمل جميع", 
+      title2: "ماركات السيارات الرئيسية",
+      viewAll: "عرض الكل",
+    }
+  : {
+      desc: "Car Brands We Serve",
+      title1: "Car Battery Replacement ",
+      title2: " for All Car Brands in Dubai & Abu Dhabi",
+      viewAll: "View All",
+    };
+
 
   return (
     <div>
@@ -194,10 +222,10 @@ const arabicFaqs = [
       </div>
         <div className='bg-white rounded-t-4xl relative z-10'>
            <Service serviceContent={serviceContent} serviceImg={serviceImg} />
-           <CarBrands />
+           <CarBrands text={text} />
            <Battery brands={batteryBrands} batteryText={batteryText} />
             <WhyChooseUs data={data} />
-           <Trusted />
+           <Trusted englishContent={englishContents} arabicContent={arabicContents} />
            <Faq faqs={faqs} />
            <Footer />
         </div>

@@ -2,7 +2,14 @@ import { useLocale } from 'next-intl'
 import React from 'react'
 import { FaCamera, FaPhone, FaCar, FaChevronRight } from 'react-icons/fa'
 
-const HowItWorks = () => {
+const HowItWorks = ({ 
+    title = {
+        part1: "How Our Car ",
+        highlighted: "Battery Service ",
+        part2: " Works in Dubai & Abu Dhabi"
+    }, 
+    desc = "How it Works?" 
+}) => {
     // English cards
     const englishCards = [
         {
@@ -55,14 +62,14 @@ const HowItWorks = () => {
     return (
         <div className='w-full md:py-28 pb-12 pt-24 px-4 flex flex-col items-center justify-center gap-y-6 bg-gray-50' dir={locale === "ar" ? "rtl" : "ltr"}>
             <span className='py-2 px-6 rounded-full bg-red-100 text-red-700 font-semibold text-sm tracking-wide shadow-sm'>
-                {locale === "en" ? "How it Works?" : locale === "ar" ? "كيف يعمل؟" : "How it Works?"}
+                {desc}
             </span>
             <h2 className='text-4xl md:text-5xl font-extrabold text-center'>
-                {locale === "en" ? "How Our Car  " : ""}
+                {title?.part1 || ''}
                 <span className='text-red-600'>
-                    {locale === "en" ? "Battery Service " : locale === "ar" ? "العمل" : "WORKING"}
+                    {title?.highlighted || ''}
                 </span>
-                {locale === "en" ? " Works in Dubai & Abu Dhabi" : locale === "ar" ? " عملية" : " PROCESS"}
+                {title?.part2 || ''}
             </h2>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-x-1 max-w-6xl w-full mt-8 relative'>
                 {cards.map((item, index) => (

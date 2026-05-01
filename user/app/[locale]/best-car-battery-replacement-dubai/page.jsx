@@ -33,6 +33,37 @@ export const metadata = {
 
 const Dubai = () => {
     const locale = useLocale()
+   const text = locale === "ar"
+  ? {
+      desc: "ماركات السيارات التي نخدمها",
+      title1: "يشمل جميع", 
+      title2: "ماركات السيارات الرئيسية",
+      viewAll: "عرض الكل",
+    }
+  : {
+      desc: "Car Brands We Serve",
+      title1: "Car Battery Replacement ",
+      title2: " for All Car Brands in Dubai",
+      viewAll: "View All",
+    };
+
+     const howItWorksContent = locale === "en" 
+        ? {
+            desc: "How it Works?",
+            title: {
+                part1: "How Our Car ",
+                highlighted: "Battery Service ",
+                part2: " Works in Dubai "
+            }
+          }
+        : {
+            desc: "كيف يعمل؟",
+            title: {
+                part1: "",
+                highlighted: "العمل",
+                part2: " عملية"
+            }
+          }
   // Hero Section
 const heroEnglishContent = {
     desc: "Top Car Brands – 24/7 Emergency Support & Anywhere in Dubai & Abu Dhabi",
@@ -370,6 +401,53 @@ const arabicFaqs = [
     cta: "اعرف المزيد"
   };
 
+              // English content
+  const englishContents = {
+    sectionTitle: "What Our Customers Say",
+    headingPrefix: "About Our Dubai  ",
+    headingHighlight: "Battery Service",
+  };
+
+  // Arabic content (translated reviews)
+  const arabicContents = {
+    sectionTitle: "ماذا يقول عملاؤنا",
+    headingPrefix: "موثوق من قبل",
+    headingHighlight: "السائقين في كل مكان",
+  };
+
+  const Contenttext = {
+    desc: "Battery Services We Offer",
+    title1: "Car Battery Services ",
+    title2: "in Dubai",
+    viewAll: "View All",
+  }
+
+        const whyChooseUsContent = locale === "en" 
+        ? {
+            desc: "Why Choose Us",
+            titlePart1: "Why Dubai Drivers ",
+            titleHighlighted: "Choose 800BatteryPro"
+          }
+        : {
+            desc: "لماذا تختارنا",
+            titlePart1: "خدمة موثوقة لبطارية السيارة",
+            titleHighlighted: "بطارية السيارة"
+          }
+
+             const faqContent = locale === "en" 
+        ? {
+            desc: "Got Questions?",
+            titlePart1: "Frequently Asked Questions  ",
+            titlePart2: " About Car Battery Replacement ",
+            titlePart3: "in Dubai "
+          }
+        : {
+            desc: "لديك أسئلة؟",
+            titlePart1: "لدينا",
+            titlePart2: " إجابات ",
+            titlePart3: "سريعة"
+          }
+
   const hero = locale === "en" ? heroEnglishContent : heroArabicContent
         const data = locale === "en" ? englishContent : locale === "ar" ? arabicContent : null
        const faqs = locale === "ar" ? arabicFaqs : englishFaqs
@@ -384,20 +462,25 @@ const arabicFaqs = [
 
       <div className='bg-white pb-12 rounded-t-4xl relative z-10'>
           <About englishContent={defaultEnglishContent} arabicContent={defaultArabicContent} />
-        <Services englishService={englishService} arabicService={arabicService} /> 
+        <Services text={Contenttext} englishService={englishService} arabicService={arabicService} /> 
          <Banners />
-        <HowItWorks />
+        <HowItWorks title={howItWorksContent.title} desc={howItWorksContent.desc} />
       </div>
 
       <RealExperience />
 
       <div className='bg-white  rounded-t-4xl relative z-10'>
-        <CarBrands />
+        <CarBrands text={text} />
         <BatteryBrands />
   
-        <WhyChooseUs data={data} />
-           <Trusted />
-           <Faq faqs={faqs} />
+        <WhyChooseUs data={data} title={{part1:whyChooseUsContent.titlePart1, highlighted:whyChooseUsContent.titleHighlighted}} desc={whyChooseUsContent.desc} />
+           <Trusted englishContent={englishContents} arabicContent={arabicContents} />
+           <Faq faqs={faqs}  desc={faqContent.desc}
+                title={{
+        part1: faqContent.titlePart1,
+        part2: faqContent.titlePart2,
+        part3: faqContent.titlePart3
+    }} />
         <Footer />
       </div>
 

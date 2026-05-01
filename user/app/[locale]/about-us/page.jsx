@@ -17,6 +17,19 @@ export const metadata = {
     canonical: "https://800batterypro.com/about-us",
   },
 };
+              // English content
+  const englishContents = {
+    sectionTitle: "What Our Customers Say",
+    headingPrefix: "About Our Dubai & Abu Dhabi ",
+    headingHighlight: "Battery Service",
+  };
+
+  // Arabic content (translated reviews)
+  const arabicContents = {
+    sectionTitle: "ماذا يقول عملاؤنا",
+    headingPrefix: "موثوق من قبل",
+    headingHighlight: "السائقين في كل مكان",
+  };
 
 const Abouts = () => {
   return (
@@ -30,7 +43,7 @@ const Abouts = () => {
         <Founder />
         <Team />
         <Faqs />
-        <Trusted />
+        <Trusted englishContent={englishContents} arabicContent={arabicContents} />
          <Footer />
       </div>
     </div>

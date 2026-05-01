@@ -60,6 +60,20 @@ const heroEnglishContent = {
   btn1: "Book Service Now"
 }
 
+              // English content
+  const englishContents = {
+    sectionTitle: "What Our Customers Say",
+    headingPrefix: "About Our Dubai & Abu Dhabi ",
+    headingHighlight: "Battery Service",
+  };
+
+  // Arabic content (translated reviews)
+  const arabicContents = {
+    sectionTitle: "ماذا يقول عملاؤنا",
+    headingPrefix: "موثوق من قبل",
+    headingHighlight: "السائقين في كل مكان",
+  };
+
 const heroArabicContent = {
   desc: "أفضل ماركات السيارات – دعم طارئ 24/7 أينما كنت!",
   title: {
@@ -464,7 +478,7 @@ const text = locale === "ar"
             <Service serviceContent={serviceContent1} serviceImg={serviceImg5} />
             <WhyChooseUs data={data} />
             <Faq faqs={faqs} />
-           <Trusted />
+           <Trusted englishContent={englishContents} arabicContent={arabicContents} />
            <Footer />
         </div>
     </div>

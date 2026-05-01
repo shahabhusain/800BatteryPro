@@ -6,6 +6,7 @@ import Trusted from '@/app/components/Hero/Trusted'
 import BatteryServices from '@/app/components/Services/BatteryServices'
 import Faqs from '@/app/components/Services/Faqs'
 import Hero from '@/app/components/Services/Hero'
+import { useLocale } from 'next-intl'
 import React from 'react'
 
 export const metadata = {
@@ -18,7 +19,38 @@ export const metadata = {
   },
 };
 
+
+
+
 const Services = () => {
+  const locale = useLocale()
+       const text = locale === "ar"
+  ? {
+      desc: "ماركات السيارات التي نخدمها",
+      title1: "يشمل جميع", 
+      title2: "ماركات السيارات الرئيسية",
+      viewAll: "عرض الكل",
+    }
+  : {
+      desc: "Car Brands We Serve",
+      title1: "Car Battery Replacement ",
+      title2: " for All Car Brands in Dubai & Abu Dhabi",
+      viewAll: "View All",
+    };
+
+                  // English content
+  const englishContents = {
+    sectionTitle: "What Our Customers Say",
+    headingPrefix: "About Our Dubai & Abu Dhabi ",
+    headingHighlight: "Battery Service",
+  };
+
+  // Arabic content (translated reviews)
+  const arabicContents = {
+    sectionTitle: "ماذا يقول عملاؤنا",
+    headingPrefix: "موثوق من قبل",
+    headingHighlight: "السائقين في كل مكان",
+  };
   return (
     <div>
       <div className='sticky top-0'>  {/* Removed z-[-1] */}
@@ -26,10 +58,10 @@ const Services = () => {
       </div>
       <div className='bg-white  rounded-t-4xl relative z-10'>
         <BatteryServices />
-        <CarBrands />
+        <CarBrands text={text} />
         <BatteryBrands />
         <Faqs />
-        <Trusted />
+        <Trusted englishContent={englishContents} arabicContent={arabicContents} />
          <Footer />
       </div>
     </div>

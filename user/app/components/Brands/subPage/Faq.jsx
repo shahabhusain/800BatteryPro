@@ -3,41 +3,55 @@ import { useLocale } from 'next-intl'
 import React, { useState } from 'react'
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io'
 
-const Faq = ({faqs}) => {
+const Faq = ({ faqs, title, desc }) => {
     const [openIndex, setOpenIndex] = useState(null)
 
     const toggleFAQ = (index) => {
         setOpenIndex(openIndex === index ? null : index)
     }
     const locale = useLocale()
+    
+    // Use props if provided, otherwise use default values
+    const finalDesc = desc || (locale === "ar" ? "لديك أسئلة؟" : "Got Questions?")
+    
+    const finalTitle = title || (locale === "ar" 
+        ? {
+            part1: "لدينا",
+            part2: " إجابات ",
+            part3: "سريعة"
+          }
+        : {
+            part1: "Frequently Asked Questions  ",
+            part2: " About Car Battery Replacement ",
+            part3: "in Dubai & Abu Dhabi"
+          })
 
     return (
         <div className='w-[85%] mx-auto py-20'>
-       <p className='uppercase text-center text-[16px] font-semibold text-gray-600'>
-    {locale === "ar" ? "لديك أسئلة؟" : "Got Questions?"}
-</p>
-<h2 className='title lg:text-[40px] md:text-[35px] sm:text-[30px] text-[25px] font-semibold text-center mb-12'>
-    {locale === "ar" ? (
-        <>
-            <span className='text-red-700'>لدينا</span>
-            <span className='font-normal'> إجابات </span>
-            <span className='text-red-700'>سريعة</span>
-        </>
-    ) : (
-        <>
-            <span className='font-normal'>Frequently Asked Questions  </span>
-            <span className='text-red-700'> About Car Battery Replacement </span>
-            <span className='text-red-700'>in Dubai & Abu Dhabi</span>
-        </>
-    )}
-</h2>
+            <p className='uppercase text-center text-[16px] font-semibold text-gray-600'>
+                {finalDesc}
+            </p>
+            <h2 className='title lg:text-[40px] md:text-[35px] sm:text-[30px] text-[25px] font-semibold text-center mb-12'>
+                {locale === "ar" ? (
+                    <>
+                        <span className='text-red-700'>{finalTitle.part1}</span>
+                        <span className='font-normal'>{finalTitle.part2}</span>
+                        <span className='text-red-700'>{finalTitle.part3}</span>
+                    </>
+                ) : (
+                    <>
+                        <span className='font-normal'>{finalTitle.part1}</span>
+                        <span className='text-red-700'>{finalTitle.part2}</span>
+                        <span className='text-red-700'>{finalTitle.part3}</span>
+                    </>
+                )}
+            </h2>
 
             <div className=''>
                 {faqs.map((faq, index) => (
                     <div 
                         key={index} 
                         className='mb-4 border border-gray-200 rounded-lg overflow-hidden'
-                      
                     >
                         <button
                             onClick={() => toggleFAQ(index)}

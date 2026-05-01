@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import about from '@/public/Home/about.png'
 import { RiArrowRightDoubleLine } from "react-icons/ri";
+
 import { useLocale } from 'next-intl';
 import { HiOutlineDotsHorizontal } from 'react-icons/hi';
 
@@ -11,7 +12,7 @@ const About = ({
 }) => {
   const defaultEnglishContent = {
     title: "About Us",
-    heading: "battery pro",
+    heading: "trusted car battery services in UAE",
     description: "Welcome to 800BatteryPro—your go-to choice for rapid, reliable car battery services in Dubai and Abu Dhabi. Need the best car battery prices or 24/7 roadside assistance in Dubai? Don't waste time searching for a battery shop near me—our mobile team and fully stocked store make battery emergencies simple and stress-free. Choose 800BatteryPro for superior speed and customer-first solutions.",
     features: [
       "Premium Car Brand Battery Services",

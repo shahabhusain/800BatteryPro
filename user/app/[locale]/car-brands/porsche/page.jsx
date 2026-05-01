@@ -416,6 +416,20 @@ const text = locale === "ar"
                       { image: volcan, name: "Volcan" },
                   ];
 
+                                // English content
+  const englishContents = {
+    sectionTitle: "What Our Customers Say",
+    headingPrefix: "About Our Dubai & Abu Dhabi ",
+    headingHighlight: "Battery Service",
+  };
+
+  // Arabic content (translated reviews)
+  const arabicContents = {
+    sectionTitle: "ماذا يقول عملاؤنا",
+    headingPrefix: "موثوق من قبل",
+    headingHighlight: "السائقين في كل مكان",
+  };
+
 
   return (
     <div>
@@ -432,7 +446,7 @@ const text = locale === "ar"
             <Service serviceContent={serviceContent1} serviceImg={serviceImg5} />
             <WhyChooseUs data={data} />
             <Faq faqs={faqs} />
-           <Trusted />
+           <Trusted englishContent={englishContents} arabicContent={arabicContents} />
            <Footer />
         </div>
     </div>

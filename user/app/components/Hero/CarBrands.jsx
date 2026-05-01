@@ -30,7 +30,7 @@ import { GoArrowRight } from 'react-icons/go'
 import { useLocale } from 'next-intl'
 import Link from 'next/link'
 
-const CarBrands = () => {
+const CarBrands = ({text}) => {
     const brands = [
         {
             logo: bmw,
@@ -108,19 +108,6 @@ const CarBrands = () => {
 
     const locale = useLocale()
 
-   const text = locale === "ar"
-  ? {
-      desc: "ماركات السيارات التي نخدمها",
-      title1: "يشمل جميع", 
-      title2: "ماركات السيارات الرئيسية",
-      viewAll: "عرض الكل",
-    }
-  : {
-      desc: "Car Brands We Serve",
-      title1: "Car Battery Replacement ",
-      title2: " for All Car Brands in Dubai & Abu Dhabi",
-      viewAll: "View All",
-    };
 
     // Function to handle view all click
     const handleViewAll = () => {

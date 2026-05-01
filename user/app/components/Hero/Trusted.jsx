@@ -2,23 +2,20 @@ import React from 'react';
 import { GoArrowRight } from 'react-icons/go';
 import { useLocale } from 'next-intl';
 
-const Trusted = () => {
-  const locale = useLocale();
-  const isRTL = locale === 'ar';
-
-  // English content
-  const englishContent = {
+const Trusted = ({ 
+  englishContent = {
     sectionTitle: "What Our Customers Say",
     headingPrefix: "About Our Dubai & Abu Dhabi ",
     headingHighlight: "Battery Service",
-  };
-
-  // Arabic content (translated reviews)
-  const arabicContent = {
+  },
+  arabicContent = {
     sectionTitle: "ماذا يقول عملاؤنا",
     headingPrefix: "موثوق من قبل",
     headingHighlight: "السائقين في كل مكان",
-  };
+  }
+}) => {
+  const locale = useLocale();
+  const isRTL = locale === 'ar';
 
   const content = locale === 'en' ? englishContent : arabicContent;
 
@@ -149,7 +146,6 @@ const Trusted = () => {
       
       {/* Author info - Name and Title only */}
       <div className={`flex items-center gap-3 ${isRTL ? 'flex-row-reverse' : ''}`}>
-   
         <div className={isRTL ? 'text-right' : ''}>
           <p className="font-semibold text-sm text-gray-900">{card.name}</p>
           <p className="text-xs text-gray-500">{card.title}</p>

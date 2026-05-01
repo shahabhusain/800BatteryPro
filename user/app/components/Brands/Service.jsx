@@ -59,7 +59,7 @@ const arabicServices = [
   return (
     <div className=' w-[85%] mx-auto flex flex-col items-center justify-center gap-y-3 py-20'>
       <p className=' uppercase text-center text-[16px] font-semibold'>sERVICES</p>
-      <h2 className=' ld:text-[40px] md:text-[35px] sm:text-[30px] text-[25px] font-semibold text-center'><span className=' font-normal'>Reliable</span> <span className=' text-red-700'>Car Battery</span> Services</h2>
+      <h2 className=' title lg:text-[40px] md:text-[35px] sm:text-[30px] text-[25px] font-semibold text-center'><span className=' font-normal'>Reliable</span> <span className=' text-red-700'>Car Battery</span> Services</h2>
       <div className=' grid md:grid-cols-4 grid-cols-1 gap-3 mt-5'>
            {
             services.map((item, index) => (

@@ -78,12 +78,12 @@ const arabicServices = [
         </p>
         
         <div className={`flex flex-col ${isRTL ? 'md:flex-row-reverse' : 'md:flex-row'} items-center justify-between mt-4 md:mt-6 gap-4 md:gap-0`}>
-          <h2 className='text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] font-bold leading-tight'>
+          <h2 className='title text-[28px] max-w-3xl sm:text-[32px] md:text-[36px] lg:text-[40px] font-bold leading-tight'>
             {locale === 'en' ? (
               <>
-                <span className='font-normal'>Reliable</span>{' '}
-                <span className='text-[#C1121F]'>Car Battery</span>{' '}
-                <span className='block sm:inline'>Services</span>
+                <span className='font-normal'>Car Battery</span>{' '}
+                <span className='text-[#C1121F]'>Services</span>{' '}
+                <span className='block sm:inline'>in Dubai & Abu Dhabi</span>
               </>
             ) : (
               <>

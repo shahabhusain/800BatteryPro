@@ -162,7 +162,7 @@ const BatteryServices = () => {
             {/* Header Section */}
             <div className='text-center space-y-4'>
                <p className=' uppercase text-center text-[16px] font-semibold'>sERVICES</p>
-      <h2 className=' ld:text-[40px] md:text-[35px] sm:text-[30px] text-[25px] font-semibold text-center'><span className=' font-normal'>Reliable</span> <span className=' text-red-700'>Car Battery</span> Services</h2>
+      <h2 className=' title lg:text-[40px] md:text-[35px] sm:text-[30px] text-[25px] font-semibold text-center'><span className=' font-normal'>Reliable</span> <span className=' text-red-700'>Car Battery</span> Services</h2>
             </div>
             
             {/* Services Grid */}
