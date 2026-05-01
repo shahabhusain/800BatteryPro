@@ -14,18 +14,18 @@ const WhyChooseUs = ({data}) => {
     : "Why Choose Us"}
 </p>
 
-<h2 className='lg:text-[40px] md:text-[35px] sm:text-[30px] text-[26px] font-semibold text-center max-w-[855px]'>
+<h2 className='title lg:text-[40px] md:text-[35px] sm:text-[30px] text-[26px] font-semibold text-center max-w-[855px]'>
   {locale === "en"
-    ? "Reliable Car"
+    ? "Why Dubai & Abu Dhabi Drivers "
     : locale === "ar"
     ? "خدمة موثوقة لبطارية السيارة"
-    : "Reliable Car"}{" "}
+    : "Why Dubai & Abu Dhabi Drivers "}{" "}
   <span className='text-red-800'>
     {locale === "en"
-      ? "Battery Service"
+      ? "Choose 800BatteryPro"
       : locale === "ar"
       ? "بطارية السيارة"
-      : "Battery Service"}
+      : "Choose 800BatteryPro"}
   </span>
 </h2>
 

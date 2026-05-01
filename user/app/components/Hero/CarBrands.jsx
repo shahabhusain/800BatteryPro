@@ -117,8 +117,8 @@ const CarBrands = () => {
     }
   : {
       desc: "Car Brands We Serve",
-      title1: "Includes All",
-      title2: "Major Vehicle Brands",
+      title1: "Car Battery Replacement ",
+      title2: " for All Car Brands in Dubai & Abu Dhabi",
       viewAll: "View All",
     };
 
@@ -136,14 +136,14 @@ const CarBrands = () => {
                 <div className='text-left animate-fade-in-up'>
                     <div className='inline-block'>
                         <div className='relative'>
-                            <h2 className='text-[12px] md:text-[16px] font-bold text-gray-600 uppercase tracking-wider px-2'>
+                            <h2 className=' title text-[12px] md:text-[16px] font-bold text-gray-600 uppercase tracking-wider px-2'>
                                 {text.desc}
                             </h2>
                         </div>
                     </div>
                     
                     <div className='flex flex-col md:flex-row items-center justify-between mt-4 md:mt-6 gap-6 md:gap-0'>
-                        <h3 className='text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold max-w-full md:max-w-[600px] leading-tight text-left bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent'>
+                        <h3 className='title text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold max-w-full md:max-w-[600px] leading-tight text-left bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent'>
                             {text.title1}{' '}
                             <span className='text-[#C1121F] bg-gradient-to-r from-[#C1121F] to-[#E3342F] bg-clip-text text-transparent'>{text.title2}</span>
                         </h3>

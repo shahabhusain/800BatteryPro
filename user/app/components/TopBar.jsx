@@ -1,5 +1,5 @@
 import React from 'react'
-import {FaDribbble, FaFacebook, FaInstagram, FaLocationArrow, FaMailBulk, FaTwitter} from 'react-icons/fa'
+import {FaDribbble, FaFacebook, FaInstagram, FaLocationArrow, FaMailBulk, FaPinterest, FaTwitter, FaYoutube} from 'react-icons/fa'
 import LaguageSwitcher from './LaguageSwitcher'
 const TopBar = () => {
   return (
@@ -14,10 +14,9 @@ const TopBar = () => {
           {/* <LaguageSwitcher /> */}
          {/* language selection */}
          <div className=' text-white flex items-center gap-x-3'>
-            <span className='bg-[#FFFFFF1A] p-2 rounded-full'><FaFacebook /></span>
-             <span className='bg-[#FFFFFF1A] p-2 rounded-full'><FaInstagram /></span>
-              <span className='bg-[#FFFFFF1A] p-2 rounded-full'><FaTwitter /></span>
-               <span className='bg-[#FFFFFF1A] p-2 rounded-full'><FaDribbble /></span>
+                        <a href=" https://www.youtube.com/@800batteryPro" target='_blank'> <FaYoutube size={20} className='md:w-6 md:h-6 hover:text-red-400 transition-colors cursor-pointer' /></a>
+                         <a href="https://www.pinterest.com/800batterypro/" target='_blank'> <FaPinterest size={20} className='md:w-6 md:h-6 hover:text-red-400 transition-colors cursor-pointer' /></a>
+                          <a href="https://www.facebook.com/profile.php?id=61582172574167" target='_blank'> <FaFacebook size={20} className='md:w-6 md:h-6 hover:text-red-400 transition-colors cursor-pointer' /></a>
          </div>
        </div>
     </div>

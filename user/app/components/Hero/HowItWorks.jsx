@@ -58,11 +58,11 @@ const HowItWorks = () => {
                 {locale === "en" ? "How it Works?" : locale === "ar" ? "كيف يعمل؟" : "How it Works?"}
             </span>
             <h2 className='text-4xl md:text-5xl font-extrabold text-center'>
-                {locale === "en" ? "OUR " : ""}
+                {locale === "en" ? "How Our Car  " : ""}
                 <span className='text-red-600'>
-                    {locale === "en" ? "WORKING" : locale === "ar" ? "العمل" : "WORKING"}
+                    {locale === "en" ? "Battery Service " : locale === "ar" ? "العمل" : "WORKING"}
                 </span>
-                {locale === "en" ? " PROCESS" : locale === "ar" ? " عملية" : " PROCESS"}
+                {locale === "en" ? " Works in Dubai & Abu Dhabi" : locale === "ar" ? " عملية" : " PROCESS"}
             </h2>
             <div className='grid grid-cols-1 md:grid-cols-3 gap-x-1 max-w-6xl w-full mt-8 relative'>
                 {cards.map((item, index) => (

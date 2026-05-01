@@ -56,7 +56,7 @@ const RealExperience = () => {
                 {/* Header Section */}
                 <div className='text-center mb-12' dir={locale === "ar" ? "rtl" : "ltr"}>
                     <h2 className='text-4xl md:text-5xl font-bold text-white'>
-                        {locale === "ar" ? "قصصنا" : "Our Stories"}
+                        {locale === "ar" ? "قصصنا" : "See Us in Action"}
                     </h2>
                     <div className='w-20 h-1 bg-red-600 mx-auto mt-4 rounded-full'></div>
                 </div>

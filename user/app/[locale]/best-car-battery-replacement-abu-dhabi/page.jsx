@@ -32,10 +32,10 @@ const AbuDhabi = () => {
     const locale = useLocale()
 // Hero Section
 const heroEnglishContent = {
-    desc: "Top Car Brands – 24/7 Emergency Support & Anywhere!",
+    desc: "Top Car Brands – 24/7 Emergency Support & Anywhere in Dubai & Abu Dhabi",
     title: {
-        span1: "800BatteryPro – Best Car Battery ",
-        span2: "Replacement in Abu Dhabi"
+        span1: " Best Car Battery ",
+        span2: "Replacement in Abu Dhabi under 25 Minutes"
     },
     desc1: "Branded Car Battery Replacement Under 25 Minutes – 24/7 RSA – Quick Jump Start Service",
     btn: "Call Now",
@@ -268,7 +268,7 @@ const arabicFaqs = [
 
   const defaultEnglishContent = {
     title: "About Us",
-    heading: " 800BatteryPro - Car Battery Replacement Under 25 Minutes",
+    heading: " Abu Dhabi's Most Trusted Car Battery Replacement Service",
     description: "Don’t panic if you have a dead car battery as we deliver branded car battery replacement with free battery testing and onsite delivery under 25 minutes. With an experience of over 6+ years and 10,000+ customers in Abu Dhabi, 800BatteryPro is one of best car battery replacement service providers with 30+ Experienced technicians capable of working on all major car brands. We deliver every minor and major car job by partnering with leading car service centers in the UAE with 100% customer satisfaction, our experts deliver 24/7 roadside assistance services under 25 minutes anywhere in Abu Dhabi. With fully equipped rapid response vans and a compassionate customer support at your service, 800BatteryPro ensures you stay safe on the road. Our technicians only use OEM-approved spare parts and branded car batteries for your car with no hidden cost. Our team of car battery specialists are trained to work on all major car brands such as Audi, Alfa Romeo, Aston Martin, BMW, Lamborghini, Bentley, Bugatti, Ferrari, Jaguar, Land Rover, Mercedes, Chevrolet, Mini Cooper, Maybach, Pagani, Range Rover, Jeep, Rolls Royce, Brabus, Mansory, Lexus, Nissan and Volkswagen.",
     features: [
       "Under 25 Minutes & Fast 24/7 Roadside Assistance",
@@ -300,7 +300,7 @@ const arabicFaqs = [
         <Hero hero={hero} herobg={herobg} />
       </div>
 
-      <Review /> {/* move it here */}
+      {/* <Review /> move it here */}
 
       <div className='bg-white pb-12 rounded-t-4xl relative z-10'>
          <About englishContent={defaultEnglishContent} arabicContent={defaultArabicContent}  />

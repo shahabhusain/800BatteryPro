@@ -2,9 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import about from '@/public/Home/about.png'
 import { RiArrowRightDoubleLine } from "react-icons/ri";
-import { GoArrowRight } from 'react-icons/go';
 import { useLocale } from 'next-intl';
-import Link from 'next/link';
 import { HiOutlineDotsHorizontal } from 'react-icons/hi';
 
 const About = ({ 
@@ -112,8 +110,8 @@ const About = ({
             <p className='uppercase md:text-[16px] text-white text-[12px] font-bold'>
               {content.title}
             </p>
-            <h2 className='uppercase text-white lg:text-[40px] md:text-[36px] text-[25px] font-semibold'>
-              <span className='text-red-500'>800</span> {content.heading}
+            <h2 className='title uppercase text-white lg:text-[40px] md:text-[36px] text-[25px] font-semibold'>
+              {content.heading}
             </h2>
             <p className='md:text-[16px] text-[12px] custom-scroll md:h-[100px] h-[70px] overflow-y-auto font-normal text-gray-200'>
               {content.description}

@@ -76,7 +76,7 @@ const Faqs = () => {
             <p className='uppercase text-center text-[16px] font-semibold text-gray-600'>
                 {text.badge}
             </p>
-            <h2 className='lg:text-[40px] md:text-[35px] sm:text-[30px] text-[25px] font-semibold text-center mb-12'>
+            <h2 className='title lg:text-[40px] md:text-[35px] sm:text-[30px] text-[25px] font-semibold text-center mb-12'>
                 {locale === "ar" ? (
                     <>
                         <span className='text-red-700'>{text.title1}</span>

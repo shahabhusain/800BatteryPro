@@ -35,9 +35,9 @@ const Dubai = () => {
     const locale = useLocale()
   // Hero Section
 const heroEnglishContent = {
-    desc: "Top Car Brands – 24/7 Emergency Support & Anywhere!",
+    desc: "Top Car Brands – 24/7 Emergency Support & Anywhere in Dubai & Abu Dhabi",
     title: {
-        span1: "800BatteryPro – Best Car Battery  ",
+        span1: "Best Car Battery  ",
         span2: "Replacement in Dubai Under 25 Minutes"
     },
     desc1: "Branded Car Battery Replacement – 24/7 RSA Under 25 Minutes – Free Battery Testing Zero Cost",
@@ -65,7 +65,7 @@ const englishContent = [
     },
     {
         icons: <TiStarburst />,
-        title: "Certified Technicians & 6+ Years Of Experience",
+        title: "Experienced Technicians & 6+ Years Of Experience",
         desc: "800BatteryPro has partnered with the best and trusted car service centers in Dubai. We have 25+ technicians with over 6+ years of experience working on premium car repairs delivering car jobs with 100% precision and customer satisfaction. Our team of technicians are all well-trained and certified by vendors to work on all major car brands."
     },
     {
@@ -304,22 +304,22 @@ const arabicFaqs = [
   const englishService = [
     {
       title: "Car Battery Replacement",
-      hoverDec: "Call 800BatteryPro at +971528475675 For Premium Car Battery Replacement Services Under 25 Minutes in Dhabi",
+      hoverDec: "Dead car battery in Dubai or Abu Dhabi? 800BatteryPro dispatches a experienced technician to your location with a branded replacement battery — under 25 minutes, 24/7, no hidden costs.",
       img: service
     },
     {
       title: "Car Battery Boosting",
-      hoverDec: "Get 24/7 Car Battery Boosting/jump start services under 25 minutes anywhere in Dhabi with no hidden cost.",
+      hoverDec: "Car won't start? Our mobile technicians provide 24/7 jump start and battery boosting anywhere in Dubai & Abu Dhabi — under 25 minutes. Free battery test included after every boost.",
       img: service2
     },
     {
       title: "24/7 Roadside Assistance",
-      hoverDec: "800BatteryPro has well-equipped mobile vans and 30+ certified car battery replacement technicians providing 24/7 roadside assistance anywhere in the UAE. Fast & Reliable RSA!",
+      hoverDec: "Stuck on the road in Dubai or Abu Dhabi? 800BatteryPro's fully equipped mobile vans and 30+ experienced technicians are available 24/7 for battery replacement, tyre help and roadside emergencies — anywhere, anytime.",
       img: service1
     },
     {
       title: "Car Scanning & Diagnostics",
-      hoverDec: " Get complete Advanced Car Scanning & Diagnostics at 800BatteryPro as we have partnered with trusted car service centers in Abu Dhabi. Fast Service & Best Pricing in Abu Dhabi. Contact Us Now!",
+      hoverDec: "Warning light on your dashboard? Our experienced technicians perform advanced OBD-II car scanning and diagnostics at your location across Dubai & Abu Dhabi. Fast, accurate fault detection with no garage visit needed.",
       img: service3
     },
   ]
@@ -348,7 +348,7 @@ const arabicFaqs = [
 
     const defaultEnglishContent = {
     title: "About Us",
-    heading: " 800BatteryPro - Car Battery Replacement Under 25 Minutes",
+    heading: "Dubai's Most Trusted Car Battery Replacement Service",
     description: "Signs of a Weak Car Battery? Dim lights ? Car Not Starting? 800BatteryPro is just a call away with its fully equipped rapid response mobile van and a team of 30+ technicians. There is no need to panic as we offer 24/7 roadside assistance our technician will do free car battery testing and inspection for you, if its needed our experts will do a branded car battery replacement for you, or else if there is any flat tyre we will also fix it for you all Under 30 Minutes and no hidden cost! Sounds Amazing, Doesn't It? With over 6+ years delivering excellence in every premium car repair and car battery replacement job in Dubai. 800BatteryPro has over 10,000+ satisfied customers, our team of certified technicians always use OEM-approved spare parts and branded car batteries. We have partnered with a well-equipped workshop stacked with the latest technology and equipment for working on all major car brands. If you drive an old model or an exotic car, we have trained professionals who are certified to work on all American and European car brands in Dubai. Car brands we service include Audi, Alfa Romeo, Aston Martin, BMW, Lamborghini, Bentley, Bugatti, Ferrari, Jaguar, Land Rover, Mercedes, Chevrolet, Mini Cooper, Maybach, Pagani, Range Rover, Jeep, Rolls Royce, Brabus, Mansory, Lexus, Nissan and Volkswagen.",
     features: [
       "Under 25 Minutes & Fast 24/7 Roadside Assistance",
@@ -380,7 +380,7 @@ const arabicFaqs = [
         <Hero hero={hero} herobg={herobg} />
       </div>
 
-      <Review /> {/* move it here */}
+      {/* <Review /> move it here */}
 
       <div className='bg-white pb-12 rounded-t-4xl relative z-10'>
           <About englishContent={defaultEnglishContent} arabicContent={defaultArabicContent} />

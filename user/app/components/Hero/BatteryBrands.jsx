@@ -49,16 +49,16 @@ const batteryText =
         viewAll: "عرض الكل",
       }
     : {
-        title1: " We Recommend Reliable",
-        title2: "Battery",
-        title3: "Brand",
+        title1: " Genuine Battery ",
+        title2: "Brands We ",
+        title3: "Install",
         viewAll: "View All",
       };
 
   return (
     <div className="bg-[#FDF8F8] py-20">
            <div className='flex flex-col gap-y-3 md:flex-row items-center md:w-[80%] w-[95%] mx-auto justify-between'>
-                <h2 className='text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] font-semibold max-w-full md:max-w-[544px] leading-tight text-left'>
+                <h2 className=' title text-[28px] sm:text-[32px] md:text-[36px] lg:text-[40px] font-semibold max-w-full md:max-w-[544px] leading-tight text-left'>
                   <span className='font-normal'>{batteryText.title1}</span>{' '}
                   <span className='text-[#C1121F]'>{batteryText.title2} </span>{' '}
                   <span>{batteryText.title3}</span>

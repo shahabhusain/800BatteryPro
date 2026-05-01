@@ -16,7 +16,7 @@ const Faq = ({faqs}) => {
        <p className='uppercase text-center text-[16px] font-semibold text-gray-600'>
     {locale === "ar" ? "لديك أسئلة؟" : "Got Questions?"}
 </p>
-<h2 className='lg:text-[40px] md:text-[35px] sm:text-[30px] text-[25px] font-semibold text-center mb-12'>
+<h2 className='title lg:text-[40px] md:text-[35px] sm:text-[30px] text-[25px] font-semibold text-center mb-12'>
     {locale === "ar" ? (
         <>
             <span className='text-red-700'>لدينا</span>
@@ -25,9 +25,9 @@ const Faq = ({faqs}) => {
         </>
     ) : (
         <>
-            <span className='font-normal'>We've got</span>
-            <span className='text-red-700'> quick </span>
-            <span className='text-red-700'>answers</span>
+            <span className='font-normal'>Frequently Asked Questions  </span>
+            <span className='text-red-700'> About Car Battery Replacement </span>
+            <span className='text-red-700'>in Dubai & Abu Dhabi</span>
         </>
     )}
 </h2>

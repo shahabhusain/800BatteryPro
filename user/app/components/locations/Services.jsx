@@ -13,22 +13,22 @@ const Services = ({
   englishService = [
     {
       title: "Car Battery Replacement",
-      hoverDec: "Call 800BatteryPro at +971528475675 For Premium Car Battery Replacement Services Under 25 Minutes in Abu Dhabi",
+      hoverDec: "Dead car battery in Abu Dhabi? 800BatteryPro dispatches a experienced technician to your location with a branded replacement battery — under 25 minutes, 24/7, no hidden costs.",
       img: service
     },
     {
       title: "Car Battery Boosting",
-      hoverDec: "Get 24/7 Car Battery Boosting/jump start services under 25 minutes anywhere in Abu Dhabi with no hidden cost.",
+      hoverDec: "Car won't start in Abu Dhabi? Our mobile technicians provide 24/7 jump start and battery boosting anywhere in Abu Dhabi — under 25 minutes. Free battery test included after every boost.",
       img: service2
     },
     {
       title: "24/7 Roadside Assistance",
-      hoverDec: "800BatteryPro has well-equipped mobile vans and 30+ certified car battery replacement technicians providing 24/7 roadside assistance anywhere in the UAE. Fast & Reliable RSA!",
+      hoverDec: "Stuck on the road in Abu Dhabi? 800BatteryPro's fully equipped mobile vans and 30+ experienced technicians are available 24/7 for battery replacement, tyre help and roadside emergencies — anywhere, anytime.",
       img: service1
     },
     {
       title: "Car Scanning & Diagnostics",
-      hoverDec: " Get complete Advanced Car Scanning & Diagnostics at 800BatteryPro as we have partnered with trusted car service centers in Abu Dhabi. Fast Service & Best Pricing in Abu Dhabi. Contact Us Now!",
+      hoverDec: "Warning light on your dashboard in Abu Dhabi? Our experienced technicians perform advanced OBD-II car scanning and diagnostics at your location. Fast, accurate fault detection with no garage visit needed.",
       img: service3
     },
   ], 
@@ -67,8 +67,8 @@ const Services = ({
       }
     : {
         desc: "Battery Services We Offer",
-        title1: "Complete Car",
-        title2: "Battery Solutions in Dubai & Abu Dhabi",
+        title1: "Car Battery Services ",
+        title2: "in Dubai & Abu Dhabi",
         viewAll: "View All",
       };
 
@@ -86,7 +86,7 @@ const Services = ({
           </div>
           
           <div className='flex flex-col md:flex-row items-center justify-between mt-4 md:mt-6 gap-6 md:gap-0'>
-            <h2 className='text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold max-w-full md:max-w-[600px] leading-tight text-left text-white'>
+            <h2 className='title text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold max-w-full md:max-w-[600px] leading-tight text-left text-white'>
               {text.title1}{' '}
               <span className='text-red-500'>{text.title2}</span>
             </h2>

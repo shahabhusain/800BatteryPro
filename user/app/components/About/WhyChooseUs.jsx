@@ -69,7 +69,7 @@ const WhyChooseUs = () => {
                 <p className='text-[16px] font-bold text-center'>
                     {text.badge}
                 </p>
-                <h2 className='lg:text-[40px] md:text-[35px] sm:text-[30px] text-[26px] font-semibold text-center max-w-[855px]'>
+                <h2 className='title lg:text-[40px] md:text-[35px] sm:text-[30px] text-[26px] font-semibold text-center max-w-[855px]'>
                     {locale === "ar" ? (
                         <>
                             <span className='text-red-800'>{text.title1}</span>
