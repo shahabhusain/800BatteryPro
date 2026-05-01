@@ -71,7 +71,7 @@ const heroEnglishContent = {
         span1: "Best Car Battery  ",
         span2: "Replacement in Dubai Under 25 Minutes"
     },
-    desc1: "Branded Car Battery Replacement – 24/7 RSA Under 25 Minutes – Free Battery Testing Zero Cost",
+    desc1: "Starting From 299 AED - Up to 18 Months Warranty",
     btn: "Call Now",
     btn1: "Book Service Now"
 }
