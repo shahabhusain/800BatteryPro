@@ -35,7 +35,7 @@ const arabicContent = {
 
 
 const AboutContent = () => {
-  const locale = useLocale()
+    const locale = useLocale()
   const content = locale === "en" ? englishContent : locale === "ar" ? arabicContent : englishContent
   const cards = locale === "en" ? englishCards : locale === "ar" ? arabicCards : englishCards
   const isRTL = locale === 'ar'
