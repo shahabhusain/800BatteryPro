@@ -16,7 +16,6 @@ const Form = () => {
   };
 
   const handleServiceToggle = (serviceValue) => {
-    // Ensure selectService is always an array
     const currentServices = Array.isArray(formData.selectService) ? formData.selectService : [];
     let updatedServices;
     
@@ -34,30 +33,41 @@ const Form = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    // Validate before submitting
+    if (!formData.phoneNumber) {
+      toast.error('Please enter your phone number');
+      return;
+    }
+    if (!formData.location) {
+      toast.error('Please select a location');
+      return;
+    }
+    if (!formData.selectService || formData.selectService.length === 0) {
+      toast.error('Please select at least one service');
+      return;
+    }
+    
     setIsSubmitting(true);
     
     const appointmentData = {
-      email: formData.email,
+      phoneNumber: formData.phoneNumber,
       location: formData.location,
       selectService: Array.isArray(formData.selectService) ? formData.selectService : []
     };
     
-    await dispatch(submitAppointment(appointmentData));
-    setIsSubmitting(false);
+    try {
+      const result = await dispatch(submitAppointment(appointmentData)).unwrap();
+      console.log('Submission successful:', result);
+    } catch (error) {
+      console.error('Submission failed:', error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleClosePopup = () => {
     dispatch(hideSuccessPopup());
-  };
-
-  // Helper function to safely display services
-  const getServicesList = () => {
-    if (Array.isArray(formData.selectService)) {
-      return formData.selectService.join(', ');
-    } else if (typeof formData.selectService === 'string') {
-      return formData.selectService;
-    }
-    return 'No services selected';
   };
 
   return (
@@ -69,18 +79,18 @@ const Form = () => {
             <p className='text-gray-300 text-sm'>Our sales team will contact you soon!</p>
           </div>
           
-          {/* Email Field - Required */}
+          {/* Phone Number Field */}
           <input
-            type='email'
-            name='email'
-            value={formData.email || ''}
+            type='tel'
+            name='phoneNumber'
+            value={formData.phoneNumber || ''}
             onChange={handleChange}
-            placeholder='Email Address *'
+            placeholder='+971'
             required
             className='w-full md:px-4 px-3 md:py-3 py-2 bg-[#FFFFFF0D] border border-gray-600 rounded-full text-white placeholder-gray-400 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/20 transition-all'
           />
           
-          {/* Location Field - Required */}
+          {/* Location Field */}
           <select
             name='location'
             value={formData.location || ''}
@@ -91,9 +101,10 @@ const Form = () => {
             <option value='' className='bg-gray-800'>Select Location *</option>
             <option value='dubai' className='bg-gray-800'>Dubai</option>
             <option value='abu-dhabi' className='bg-gray-800'>Abu Dhabi</option>
+            
           </select>
 
-          {/* Services Selection - Multiple Select */}
+          {/* Services Selection */}
           <div className='space-y-3'>
             <label className='text-white text-sm font-medium block'>Select Services (multiple) *</label>
             <div className='grid grid-cols-2 gap-4'>
@@ -164,20 +175,16 @@ const Form = () => {
       {showSuccessPopup && (
         <div className="fixed inset-0 z-50 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
           <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
-            {/* Background overlay */}
             <div 
-              className="fixed inset-0  bg-opacity-75 transition-opacity" 
+              className="fixed inset-0 bg-[#00000047] bg-opacity-75 transition-opacity" 
               aria-hidden="true"
               onClick={handleClosePopup}
             ></div>
-
-            {/* Center modal */}
             <span className="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
             
             <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
               <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                 <div className="sm:flex sm:items-start">
-                  {/* Success Icon */}
                   <div className="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-green-100 sm:mx-0 sm:h-10 sm:w-10">
                     <svg className="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
@@ -195,7 +202,6 @@ const Form = () => {
                       <p className="text-sm text-gray-500 mt-2">
                         Our sales team will contact you in 5 Minutes
                       </p>
-
                     </div>
                   </div>
                 </div>

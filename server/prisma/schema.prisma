@@ -20,7 +20,7 @@ model User {
 
 model secondAppointment {
   id            Int      @id @default(autoincrement())
-  email         String
+  phoneNumber   String   @unique  // Add back @unique
   location      String
   selectService Json
   createdAt     DateTime @default(now())

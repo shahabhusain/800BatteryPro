@@ -5,9 +5,9 @@ import toast from 'react-hot-toast';
 
 const initialState = {
   formData: {
-    email: '',      // Required field
-    location: '',   // Required field  
-    selectService: '' // Required field
+    phoneNumber: '',      // Required field
+    location: '',         // Required field  
+    selectService: []     // Changed from '' to [] (array)
   },
   loading: false,
   error: null,
@@ -20,8 +20,10 @@ export const submitAppointment = createAsyncThunk(
   'appointment/submitAppointment',
   async (formData, { rejectWithValue }) => {
     try {
+      console.log('Sending to backend:', formData); // Debug log
+      
       const response = await axios.post(
-        `${process.env.NEXT_PUBLIC_API_URL}/create-second-appointment`, 
+        `${process.env.NEXT_PUBLIC_API_URL}/create-second-appointment`, // Added /api/
         formData,
         {
           headers: {
@@ -34,6 +36,8 @@ export const submitAppointment = createAsyncThunk(
       toast.success(response.data.message || 'Appointment created successfully! Sales team will contact you soon!');
       return response.data;
     } catch (error) {
+      console.error('API Error:', error.response?.data || error.message); // Debug log
+      
       // Handle validation errors
       if (error.response?.status === 404) {
         toast.error(error.response?.data?.message || 'Invalid fields provided');
@@ -60,9 +64,9 @@ const appointmentSlice = createSlice({
     },
     resetForm: (state) => {
       state.formData = {
-        email: '',
+        phoneNumber: '',
         location: '',
-        selectService: ''
+        selectService: []  // Changed to []
       };
       state.success = false;
       state.error = null;
@@ -93,9 +97,9 @@ const appointmentSlice = createSlice({
         state.showSuccessPopup = true;
         // Reset form after successful submission
         state.formData = {
-          email: '',
+          phoneNumber: '',
           location: '',
-          selectService: ''
+          selectService: []  // Changed to []
         };
       })
       .addCase(submitAppointment.rejected, (state, action) => {
