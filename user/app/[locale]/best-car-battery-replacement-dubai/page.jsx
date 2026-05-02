@@ -22,7 +22,7 @@ import service2 from '@/public/locations/service6.webp'
 import service3 from '@/public/locations/service7.webp'
 import { TiStarburst } from 'react-icons/ti'
 export const metadata = {
-  title: "Car Battery Replacement & Mobile Repair in Dubai | 800BatteryPro",
+  title: "Car Battery Replacement in Dubai Under 25 Minutes | 800BatteryPro",
   description:
     "Expert mobile car battery replacement, 24/7 roadside assistance & car repair across all areas of Dubai. We come to you — book 800BatteryPro now.",
       keywords: "car battery replacement near me Dubai, car battery change Dubai, dead car battery Dubai, Free Car Battery, Expert Car Battery, car battery price Dubai, mobile battery replacement UAE, replace car battery Dubai, best car battery replacement UAE, battery change at home service Dubai",
@@ -68,7 +68,7 @@ const Dubai = () => {
 const heroEnglishContent = {
     desc: "Top Car Brands – 24/7 Emergency Support & Anywhere in Dubai & Abu Dhabi",
     title: {
-        span1: "Best Car Battery  ",
+        span1: " Car Battery  ",
         span2: "Replacement in Dubai Under 25 Minutes"
     },
     desc1: "Starting From 299 AED - Up to 18 Months Warranty – 24/7 RSA Anywhere Under 25 Minutes – Free Battery Testing Zero Cost",

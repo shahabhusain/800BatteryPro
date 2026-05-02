@@ -19,7 +19,7 @@ import WhyChooseUs from '@/app/components/Brands/subPage/WhyChooseUs'
 import { TiStarburst } from "react-icons/ti";
 
 export const metadata = {
-  title: "Car Battery Replacement & Mobile Repair in Abu Dhabi | 800BatteryPro",
+  title: "Car Battery Replacement in Abu Dhabi Under 25 Minutes | 800BatteryPro",
   description:
     "Expert mobile battery, 24/7 RSA, & car repair across Abu Dhabi city, Khalifa City, Al Ain & surrounds. Doorstep service — book now.",
       keywords: "mobile mechanic Abu Dhabi, car repair at home Abu Dhabi, roadside assistance Abu Dhabi,  car battery replacement near me Abu Dhabi, car battery change Abu Dhabi, dead car battery Abu Dhabi, car battery price Abu Dhabi,  Free Car Battery, Expert Car Battery, mobile battery replacement UAE, replace car battery Abu Dhabi, best car battery replacement UAE, battery change at home service Abu Dhabi",
@@ -69,10 +69,10 @@ const AbuDhabi = () => {
 const heroEnglishContent = {
     desc: "Top Car Brands – 24/7 Emergency Support & Anywhere in Dubai & Abu Dhabi",
     title: {
-        span1: " Best Car Battery ",
+        span1: "  Car Battery ",
         span2: "Replacement in Abu Dhabi under 25 Minutes"
     },
-    desc1: "Starting From 299 AED - Up to 18 Months Warranty – 24/7 RSA – Quick Jump Start Service Under 25 Minutes",
+    desc1: "Starting From 299 AED - Up to 18 Months Warranty – 24/7 RSA – Quick Car Battery Service Under 25 Minutes",
     btn: "Call Now",
     btn1: "Book Service Now"
 }
