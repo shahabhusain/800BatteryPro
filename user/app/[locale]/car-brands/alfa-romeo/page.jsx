@@ -38,6 +38,15 @@ import service1 from '@/public/brands/alfa/ser2.webp'
 import service2 from '@/public/brands/alfa/ser3.webp'
 import service3 from '@/public/brands/alfa/ser4.webp'
 
+export const metadata = {
+  title: "Alfa Romeo Car Battery Replacement & Repair Experts in Dubai | 800BatteryPro",
+  description: "Expert Alfa Romeo battery replacement & advanced repair services in Dubai. 24/7 roadside assistance. Genuine parts. Under 25 minutes arrival.",
+  keywords: "Alfa Romeo battery replacement Dubai, Alfa Romeo repair Dubai, Alfa Romeo service center",
+  alternates: {
+    canonical: "https://800batterypro.com/brands/alfa-romeo",
+  },
+};
+
 const AlfaRomeo = () => {
   const locale = useLocale()
 const heroEnglishContent = {

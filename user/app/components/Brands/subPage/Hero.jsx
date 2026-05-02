@@ -3,6 +3,7 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 
 import { GoArrowRight } from 'react-icons/go'
+import Form from '../../Services/Form'
 import { useLocale } from 'next-intl'
 import AppointmentModal from '../../AppointmentModal'
 

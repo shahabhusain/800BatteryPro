@@ -87,6 +87,7 @@ const arabicContent = {
           className='w-full h-[1100px] sm:h-[700px] md:h-[900px] object-cover' 
           src={footer} 
           alt='footer'
+          
           priority
         />
         
