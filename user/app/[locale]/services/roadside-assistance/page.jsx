@@ -21,9 +21,9 @@ import CarBrands from '@/app/components/Hero/CarBrands'
 import Car from '@/app/components/Services/Car'
 import HowItWorks from '@/app/components/Hero/HowItWorks'
 
-
 const RoadSide = () => {
   const locale = useLocale()
+
 // Hero Section
 const heroEnglishContent = {
     desc: "Top Car Brands – 24/7 Emergency Support & Anywhere!",
@@ -156,17 +156,13 @@ const arabicFaqs = [
     }
 ]
 
+// FIXED: Remove null fallbacks - default to English
+const hero = locale === "ar" ? heroArabicContent : heroEnglishContent
+const serviceContent = locale === "ar" ? serviceArabicContent : serviceEnglishContent
+const data = locale === "ar" ? arabicContent : englishContent
+const faqs = locale === "ar" ? arabicFaqs : englishFaqs
 
-
-
-      const hero = locale === "en" ? heroEnglishContent : locale === "ar" ? heroArabicContent : null
-      const serviceContent = locale === "ar" ? serviceArabicContent : serviceEnglishContent
-      const data = locale === "en" ? englishContent : locale === "ar" ? arabicContent : null
-       const faqs = locale === "ar" ? arabicFaqs : englishFaqs
-
-
-        const batteryText =
-  locale === "ar"
+const batteryText = locale === "ar"
     ? {
         title1: "بطاريات",
         title2: "موثوقة",
@@ -176,38 +172,51 @@ const arabicFaqs = [
         title1: "Reliable",
         title2: "Battery",
         title3: "Brand",
-      };
+      }
 
-              
-                    const batteryBrands = [
-                      { image: varta, name: "Varta" },
-                      { image: acdelco, name: "AC Delco" },
-                      { image: bosh, name: "Bosch" },
-                      { image: amron, name: "Amaron" },
-                      { image: solite, name: "Solite" },
-                      { image: volcan, name: "Volcan" },
-                  ];
+const batteryBrands = [
+    { image: varta, name: "Varta" },
+    { image: acdelco, name: "AC Delco" },
+    { image: bosh, name: "Bosch" },
+    { image: amron, name: "Amaron" },
+    { image: solite, name: "Solite" },
+    { image: volcan, name: "Volcan" },
+]
 
 
-  return (
+                     const text = locale === "ar"
+  ? {
+      desc: "ماركات السيارات التي نخدمها",
+      title1: "يشمل جميع", 
+      title2: "ماركات السيارات الرئيسية",
+      viewAll: "عرض الكل",
+    }
+  : {
+      desc: "Car Brands We Serve",
+      title1: "Car Battery Replacement ",
+      title2: " for All Car Brands in Dubai & Abu Dhabi",
+      viewAll: "View All",
+    };
+
+return (
     <div>
-      <div className='sticky top-0 '>
-        <Hero hero={hero} herobg={herobg} />
-      </div>
-      
+        <div className='sticky top-0'>
+            <Hero hero={hero} herobg={herobg} />
+        </div>
+        
         <div className='bg-white rounded-t-4xl relative z-10'>
-          <Car />
-           <HowItWorks />
-           <Service serviceContent={serviceContent} serviceImg={serviceImg} />
-           <CarBrands />
-           <Battery brands={batteryBrands} batteryText={batteryText} />
+            <Car />
+            <HowItWorks />
+            <Service serviceContent={serviceContent} serviceImg={serviceImg} />
+            <CarBrands text={text} />
+            <Battery brands={batteryBrands} batteryText={batteryText} />
             <WhyChooseUs data={data} />
-           <Trusted />
-           <Faq faqs={faqs} />
-           <Footer />
+            <Trusted />
+            <Faq faqs={faqs} />
+            <Footer />
         </div>
     </div>
-  )
+)
 }
 
 export default RoadSide
