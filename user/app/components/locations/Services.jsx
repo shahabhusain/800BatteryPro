@@ -96,7 +96,7 @@ const Services = ({
         <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12'>
           {serviceContent.map((item, index) => (
             <div key={index} className='relative group overflow-hidden rounded-2xl'>
-              <Image className='w-full h-[503px] object-cover rounded-2xl transition-transform duration-500 group-hover:scale-110' src={item.img} alt='battery-service'/>
+              <Image loading="lazy" className='w-full h-[503px] object-cover rounded-2xl transition-transform duration-500 group-hover:scale-110' src={item.img} alt='battery-service'/>
               <span className='absolute top-4 left-[40%] bg-red-600 p-2 rounded-full animate-bounce'>
                 <FaArrowDown className='text-white' />
               </span>
