@@ -79,7 +79,7 @@ const handleSubmit = async (e) => {
       errorMessage = error;
     }
     
-    console.error('Submission failed. Full error:', error);
+     console.error('Submission failed. Full error:', error);
     setErrorModal({ show: true, message: errorMessage });
     
   } finally {
