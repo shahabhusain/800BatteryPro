@@ -6,7 +6,10 @@ export const createSecondAppointment = async (req, res) => {
     let { phoneNumber, location, selectService } = req.body;
     
     if (!phoneNumber || !location || !selectService) {
-      return res.status(400).json({ message: "Invalid fields" });
+      return res.status(400).json({ 
+        success: false,
+        message: "All fields are required" 
+      });
     }
 
     // Handle selectService as array (multiple services)
@@ -16,12 +19,18 @@ export const createSecondAppointment = async (req, res) => {
     } else if (typeof selectService === 'string') {
       servicesArray = [selectService];
     } else {
-      return res.status(400).json({ message: "Invalid service format" });
+      return res.status(400).json({ 
+        success: false,
+        message: "Invalid service format" 
+      });
     }
 
     // Validate that at least one service is selected
     if (servicesArray.length === 0) {
-      return res.status(400).json({ message: "At least one service must be selected" });
+      return res.status(400).json({ 
+        success: false,
+        message: "At least one service must be selected" 
+      });
     }
 
     // Service validation
@@ -29,78 +38,69 @@ export const createSecondAppointment = async (req, res) => {
     const invalidServices = servicesArray.filter(service => !validServices.includes(service));
     if (invalidServices.length > 0) {
       return res.status(400).json({ 
+        success: false,
         message: `Invalid service(s): ${invalidServices.join(', ')}` 
       });
     }
 
-    // STRICT UAE PHONE NUMBER VALIDATION - ONLY UAE NUMBERS
+    // STRICT UAE PHONE NUMBER VALIDATION
     let cleanPhoneNumber = phoneNumber.toString().trim();
     cleanPhoneNumber = cleanPhoneNumber.replace(/[\s\-\(\)]/g, '');
     
-    // Valid UAE prefixes
     const validMobilePrefixes = ['50', '52', '54', '55', '56', '58'];
     const validLandlinePrefixes = ['2', '3', '4', '6', '7', '9'];
     
     let isValidUAE = false;
     let standardizedPhone = null;
     
-    // Check format: +971XXXXXXXXX (with +)
+    // Check format: +971XXXXXXXXX
     if (cleanPhoneNumber.startsWith('+971')) {
       const numberAfterCode = cleanPhoneNumber.slice(4);
-      // Check mobile (2 digit prefix)
       if (validMobilePrefixes.includes(numberAfterCode.slice(0, 2)) && numberAfterCode.length === 9) {
         isValidUAE = true;
         standardizedPhone = '0' + numberAfterCode;
       }
-      // Check landline (1 digit prefix)
       else if (validLandlinePrefixes.includes(numberAfterCode.slice(0, 1)) && numberAfterCode.length === 8) {
         isValidUAE = true;
         standardizedPhone = '0' + numberAfterCode;
       }
     }
-    // Check format: 971XXXXXXXXX (without +)
+    // Check format: 971XXXXXXXXX
     else if (cleanPhoneNumber.startsWith('971')) {
       const numberAfterCode = cleanPhoneNumber.slice(3);
-      // Check mobile (2 digit prefix)
       if (validMobilePrefixes.includes(numberAfterCode.slice(0, 2)) && numberAfterCode.length === 9) {
         isValidUAE = true;
         standardizedPhone = '0' + numberAfterCode;
       }
-      // Check landline (1 digit prefix)
       else if (validLandlinePrefixes.includes(numberAfterCode.slice(0, 1)) && numberAfterCode.length === 8) {
         isValidUAE = true;
         standardizedPhone = '0' + numberAfterCode;
       }
     }
-    // Check format: 0XXXXXXXXX (with 0)
+    // Check format: 0XXXXXXXXX
     else if (cleanPhoneNumber.startsWith('0')) {
       const numberAfterZero = cleanPhoneNumber.slice(1);
-      // Check mobile (2 digit prefix)
       if (validMobilePrefixes.includes(numberAfterZero.slice(0, 2)) && numberAfterZero.length === 9) {
         isValidUAE = true;
         standardizedPhone = cleanPhoneNumber;
       }
-      // Check landline (1 digit prefix)
       else if (validLandlinePrefixes.includes(numberAfterZero.slice(0, 1)) && numberAfterZero.length === 8) {
         isValidUAE = true;
         standardizedPhone = cleanPhoneNumber;
       }
     }
-    // Check format: XXXXXXXX (without prefix)
+    // Check format: XXXXXXXX
     else if (/^\d+$/.test(cleanPhoneNumber)) {
-      // Check mobile (2 digit prefix, 9 digits total)
       if (validMobilePrefixes.includes(cleanPhoneNumber.slice(0, 2)) && cleanPhoneNumber.length === 9) {
         isValidUAE = true;
         standardizedPhone = '0' + cleanPhoneNumber;
       }
-      // Check landline (1 digit prefix, 8 digits total)
       else if (validLandlinePrefixes.includes(cleanPhoneNumber.slice(0, 1)) && cleanPhoneNumber.length === 8) {
         isValidUAE = true;
         standardizedPhone = '0' + cleanPhoneNumber;
       }
     }
     
-    // REJECT ANY NON-UAE NUMBER
     if (!isValidUAE) {
       return res.status(400).json({ 
         success: false,
@@ -115,11 +115,11 @@ export const createSecondAppointment = async (req, res) => {
     if (!validLocations.includes(cleanLocation)) {
       return res.status(400).json({ 
         success: false,
-        message: "Please select a valid UAE location" 
+        message: "Please select a valid UAE location (Dubai or Abu Dhabi)" 
       });
     }
 
-    // Check for recent duplicate submissions (within last 5 minutes)
+    // Check for recent duplicate submissions
     const fiveMinutesAgo = new Date(Date.now() - 5 * 60 * 1000);
     const recentDuplicate = await prisma.secondAppointment.findFirst({
       where: {
@@ -147,7 +147,6 @@ export const createSecondAppointment = async (req, res) => {
     });
 
     if (existingAppointment) {
-      // Check for too many updates (max 3 updates per hour)
       const oneHourAgo = new Date(Date.now() - 60 * 60 * 1000);
       const recentUpdates = await prisma.secondAppointment.count({
         where: {
@@ -165,7 +164,6 @@ export const createSecondAppointment = async (req, res) => {
         });
       }
 
-      // Check if update is allowed
       const hasChanges = existingAppointment.location !== cleanLocation || 
                         JSON.stringify(existingAppointment.selectService) !== JSON.stringify(servicesArray);
       
@@ -176,8 +174,7 @@ export const createSecondAppointment = async (req, res) => {
         });
       }
 
-      // Update existing appointment
-      const updatedAppointment = await prisma.secondAppointment.update({
+      await prisma.secondAppointment.update({
         where: { id: existingAppointment.id },
         data: {
           location: cleanLocation,
@@ -192,7 +189,7 @@ export const createSecondAppointment = async (req, res) => {
       });
     }
 
-    // Check for many appointments from same phone number (max 5 total)
+    // Check for many appointments from same phone number
     const totalAppointments = await prisma.secondAppointment.count({
       where: { phoneNumber: standardizedPhone }
     });
@@ -204,7 +201,7 @@ export const createSecondAppointment = async (req, res) => {
       });
     }
 
-    // Check for appointments created in last 24 hours (max 2 per day)
+    // Check for appointments in last 24 hours
     const twentyFourHoursAgo = new Date(Date.now() - 24 * 60 * 60 * 1000);
     const todaysAppointments = await prisma.secondAppointment.count({
       where: {
@@ -223,7 +220,7 @@ export const createSecondAppointment = async (req, res) => {
     }
 
     // Create new appointment
-    const appointment = await prisma.secondAppointment.create({
+    await prisma.secondAppointment.create({
       data: {
         phoneNumber: standardizedPhone,
         location: cleanLocation,
@@ -231,7 +228,7 @@ export const createSecondAppointment = async (req, res) => {
       }
     });
 
-    res.status(200).json({
+    return res.status(200).json({
       success: true, 
       message: "Appointment created successfully! Sales team will contact you soon!"
     });
@@ -248,7 +245,7 @@ export const createSecondAppointment = async (req, res) => {
     
     return res.status(500).json({
       success: false,
-      message: "Internal server error"
+      message: "Internal server error. Please try again later."
     });
   }
 };

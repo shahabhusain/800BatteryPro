@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { submitAppointment, updateFormField, selectFormData, selectLoading, selectShowSuccessPopup, hideSuccessPopup } from '@/app/store/slices/appointmentSlice';
-import toast, { Toaster } from 'react-hot-toast';
 
 const Form = () => {
   const dispatch = useDispatch();
@@ -10,6 +9,7 @@ const Form = () => {
   const showSuccessPopup = useSelector(selectShowSuccessPopup);
   
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errorModal, setErrorModal] = useState({ show: false, message: '' });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -32,73 +32,71 @@ const Form = () => {
     }));
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+const handleSubmit = async (e) => {
+  e.preventDefault();
+  
+  // Basic validation
+  if (!formData.phoneNumber) {
+    setErrorModal({ show: true, message: 'Please enter your phone number' });
+    return;
+  }
+  
+  if (!formData.location) {
+    setErrorModal({ show: true, message: 'Please select a location' });
+    return;
+  }
+  
+  if (!formData.selectService || formData.selectService.length === 0) {
+    setErrorModal({ show: true, message: 'Please select at least one service' });
+    return;
+  }
+  
+  setIsSubmitting(true);
+  
+  const appointmentData = {
+    phoneNumber: formData.phoneNumber,
+    location: formData.location,
+    selectService: formData.selectService
+  };
+  
+  try {
+    const result = await dispatch(submitAppointment(appointmentData)).unwrap();
+    // Success - modal shows from Redux state
+    console.log('Success:', result);
     
-    // Only basic validation on frontend (backend handles detailed validation)
-    if (!formData.phoneNumber) {
-      toast.error('Please enter your phone number');
-      return;
+  } catch (error) {
+    // ✅ FIX: Extract error message correctly
+    let errorMessage = 'Something went wrong. Please try again.';
+    
+    // Check different possible error structures
+    if (error?.message) {
+      errorMessage = error.message;
+    } else if (error?.response?.data?.message) {
+      errorMessage = error.response.data.message;
+    } else if (error?.data?.message) {
+      errorMessage = error.data.message;
+    } else if (typeof error === 'string') {
+      errorMessage = error;
     }
     
-    if (!formData.location) {
-      toast.error('Please select a location');
-      return;
-    }
+    console.error('Submission failed. Full error:', error);
+    setErrorModal({ show: true, message: errorMessage });
     
-    if (!formData.selectService || formData.selectService.length === 0) {
-      toast.error('Please select at least one service');
-      return;
-    }
-    
-    setIsSubmitting(true);
-    
-    const loadingToast = toast.loading('Submitting...');
-    
-    const appointmentData = {
-      phoneNumber: formData.phoneNumber,
-      location: formData.location,
-      selectService: formData.selectService
-    };
-    
-    try {
-      await dispatch(submitAppointment(appointmentData)).unwrap();
-      toast.dismiss(loadingToast);
-      // Success modal will show automatically from Redux state
-      
-    } catch (error) {
-      toast.dismiss(loadingToast);
-      
-      // Show error message from backend
-      const errorMessage = error?.response?.data?.message || error?.message || 'Something went wrong';
-      toast.error(errorMessage);
-      
-      console.error('Submission failed:', error);
-    } finally {
-      setIsSubmitting(false);
-    }
+  } finally {
+    setIsSubmitting(false);
+  }
+};
+
+  const handleCloseSuccessPopup = () => {
+    dispatch(hideSuccessPopup());
   };
 
-  const handleClosePopup = () => {
-    dispatch(hideSuccessPopup());
+  const handleCloseErrorModal = () => {
+    setErrorModal({ show: false, message: '' });
   };
 
   return (
     <>
-      <Toaster 
-        position="top-center"
-        toastOptions={{
-          duration: 4000,
-          style: {
-            background: '#363636',
-            color: '#fff',
-            borderRadius: '10px',
-            padding: '12px',
-            fontSize: '14px',
-          },
-        }}
-      />
-      
       <div className='w-full max-w-md mx-auto bg-[#FFFFFF1A] backdrop-blur-lg rounded-2xl shadow-2xl p-6'>
         <form onSubmit={handleSubmit} className='md:space-y-5 space-y-3'>
           <div className='space-y-2'>
@@ -112,10 +110,11 @@ const Form = () => {
             name='phoneNumber'
             value={formData.phoneNumber || ''}
             onChange={handleChange}
-            placeholder='e.g., +97142273680 or 97188888888'
+            placeholder='e.g., 0501234567 or +971501234567'
             required
             className='w-full md:px-4 px-3 md:py-3 py-2 bg-[#FFFFFF0D] border border-gray-600 rounded-full text-white placeholder-gray-400 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/20 transition-all'
           />
+          <p className='text-gray-400 text-xs px-3'>Only UAE numbers accepted: 05XXXXXXXX or +9715XXXXXXXX</p>
           
           {/* Location Field */}
           <select
@@ -197,14 +196,14 @@ const Form = () => {
         </form>
       </div>
 
-      {/* Success Modal/Popup */}
+      {/* SUCCESS MODAL */}
       {showSuccessPopup && (
         <div className="fixed inset-0 z-50 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
           <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
             <div 
               className="fixed inset-0 bg-[#00000047] bg-opacity-75 transition-opacity" 
               aria-hidden="true"
-              onClick={handleClosePopup}
+              onClick={handleCloseSuccessPopup}
             ></div>
             <span className="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
             
@@ -236,10 +235,57 @@ const Form = () => {
               <div className="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
                 <button
                   type="button"
-                  onClick={handleClosePopup}
+                  onClick={handleCloseSuccessPopup}
                   className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm"
                 >
                   Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* ERROR MODAL */}
+      {errorModal.show && (
+        <div className="fixed inset-0 z-50 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+          <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+            <div 
+              className="fixed inset-0 bg-[#00000047] bg-opacity-75 transition-opacity" 
+              aria-hidden="true"
+              onClick={handleCloseErrorModal}
+            ></div>
+            <span className="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
+            
+            <div className="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+              <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                <div className="sm:flex sm:items-start">
+                  <div className="mx-auto flex-shrink-0 flex items-center justify-center h-12 w-12 rounded-full bg-red-100 sm:mx-0 sm:h-10 sm:w-10">
+                    <svg className="h-6 w-6 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  </div>
+                  
+                  <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
+                    <h3 className="text-lg leading-6 font-medium text-gray-900" id="modal-title">
+                      Appointment Failed ❌
+                    </h3>
+                    <div className="mt-2">
+                      <p className="text-sm text-gray-500">
+                        {errorModal.message}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+                <button
+                  type="button"
+                  onClick={handleCloseErrorModal}
+                  className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm"
+                >
+                  Try Again
                 </button>
               </div>
             </div>
