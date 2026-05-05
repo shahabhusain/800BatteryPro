@@ -10,13 +10,11 @@ import {
   FiMapPin,
   FiCalendar, 
   FiSearch,
-  FiFilter,
   FiDownload,
   FiRefreshCw,
   FiChevronLeft,
   FiChevronRight,
-  FiPackage,
-  FiBriefcase
+  FiPhone,
 } from 'react-icons/fi'
 import toast from 'react-hot-toast'
 
@@ -65,7 +63,7 @@ const AppointmentsPage = () => {
     // Search filter
     const searchLower = searchTerm.toLowerCase()
     const matchesSearch = (
-      appointment.email?.toLowerCase().includes(searchLower) ||
+      appointment.phoneNumber?.toLowerCase().includes(searchLower) ||
       appointment.location?.toLowerCase().includes(searchLower) ||
       (Array.isArray(appointment.selectService) && 
        appointment.selectService.some(service => service.toLowerCase().includes(searchLower))) ||
@@ -85,8 +83,8 @@ const AppointmentsPage = () => {
       return new Date(b.createdAt) - new Date(a.createdAt)
     } else if (sortBy === 'oldest') {
       return new Date(a.createdAt) - new Date(b.createdAt)
-    } else if (sortBy === 'email') {
-      return a.email.localeCompare(b.email)
+    } else if (sortBy === 'phoneNumber') {
+      return a.phoneNumber.localeCompare(b.phoneNumber)
     } else if (sortBy === 'location') {
       return a.location.localeCompare(b.location)
     } else if (sortBy === 'services') {
@@ -109,7 +107,7 @@ const AppointmentsPage = () => {
   const exportToCSV = () => {
     const headers = ['Email', 'Location', 'Services', 'Date']
     const csvData = sortedAppointments.map(app => [
-      app.email,
+      app.phoneNumber,
       app.location,
       Array.isArray(app.selectService) ? app.selectService.join(', ') : app.selectService,
       new Date(app.createdAt).toLocaleString()
@@ -146,7 +144,7 @@ const AppointmentsPage = () => {
               <FiSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" />
               <input
                 type="text"
-                placeholder="Search by email, location, services..."
+                placeholder="Search by phoneNumber, location, services..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
                 className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
@@ -174,9 +172,9 @@ const AppointmentsPage = () => {
             >
               <option value="newest">Newest First</option>
               <option value="oldest">Oldest First</option>
-              <option value="email">Sort by Email</option>
+              {/* <option value="phoneNumber">Sort by Email</option>
               <option value="location">Sort by Location</option>
-              <option value="services">Sort by Services Count</option>
+              <option value="services">Sort by Services Count</option> */}
             </select>
             
             <button
@@ -250,11 +248,11 @@ const AppointmentsPage = () => {
                     <td className="py-3 px-4">
                       <div className="flex items-center gap-2">
                         <div className="bg-red-100 rounded-full w-8 h-8 flex items-center justify-center">
-                          <FiMail className="text-red-600" size={16} />
+                          <FiPhone className="text-red-600" size={16} />
                         </div>
                         <div>
-                          <a href={`mailto:${appointment.email}`} className="text-blue-600 hover:underline font-medium break-all">
-                            {appointment.email}
+                          <a href={`mailto:${appointment.phoneNumber}`} className="text-blue-600 hover:underline font-medium break-all">
+                            {appointment.phoneNumber}
                           </a>
                         </div>
                       </div>

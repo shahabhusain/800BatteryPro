@@ -22,9 +22,9 @@ const AppointmentModal = ({ appointment, onClose }) => {
               <FiMail className="text-neutral-600" size={20} />
             </div>
             <div className="flex-1">
-              <label className="text-xs font-medium text-neutral-500 uppercase">Email</label>
-              <a href={`mailto:${appointment.email}`} className="text-blue-600 hover:underline block mt-1 break-all">
-                {appointment.email}
+              <label className="text-xs font-medium text-neutral-500 uppercase">Phone Number</label>
+              <a href={`mailto:${appointment.phoneNumber}`} className="text-blue-600 hover:underline block mt-1 break-all">
+                {appointment.phoneNumber}
               </a>
             </div>
           </div>

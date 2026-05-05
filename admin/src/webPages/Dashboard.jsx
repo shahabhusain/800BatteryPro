@@ -29,7 +29,6 @@ const Dashboard = () => {
       <div className="max-w-7xl mx-auto bg-white rounded-lg shadow-sm p-6">
         <h1 className="text-2xl font-bold mb-4">Admin Dashboard</h1>
         <p>Welcome back, {user?.name}!</p>
-        <p className="mt-4 text-purple-800">You have admin privileges.</p>
       </div>
     </div>
   )
