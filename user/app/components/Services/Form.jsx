@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { submitAppointment, updateFormField, selectFormData, selectLoading, selectShowSuccessPopup, hideSuccessPopup } from '@/app/store/slices/appointmentSlice';
+import toast, { Toaster } from 'react-hot-toast';
 
 const Form = () => {
   const dispatch = useDispatch();
@@ -34,15 +35,17 @@ const Form = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     
-    // Validate before submitting
+    // Only basic validation on frontend (backend handles detailed validation)
     if (!formData.phoneNumber) {
       toast.error('Please enter your phone number');
       return;
     }
+    
     if (!formData.location) {
       toast.error('Please select a location');
       return;
     }
+    
     if (!formData.selectService || formData.selectService.length === 0) {
       toast.error('Please select at least one service');
       return;
@@ -50,16 +53,26 @@ const Form = () => {
     
     setIsSubmitting(true);
     
+    const loadingToast = toast.loading('Submitting...');
+    
     const appointmentData = {
       phoneNumber: formData.phoneNumber,
       location: formData.location,
-      selectService: Array.isArray(formData.selectService) ? formData.selectService : []
+      selectService: formData.selectService
     };
     
     try {
-      const result = await dispatch(submitAppointment(appointmentData)).unwrap();
-      console.log('Submission successful:', result);
+      await dispatch(submitAppointment(appointmentData)).unwrap();
+      toast.dismiss(loadingToast);
+      // Success modal will show automatically from Redux state
+      
     } catch (error) {
+      toast.dismiss(loadingToast);
+      
+      // Show error message from backend
+      const errorMessage = error?.response?.data?.message || error?.message || 'Something went wrong';
+      toast.error(errorMessage);
+      
       console.error('Submission failed:', error);
     } finally {
       setIsSubmitting(false);
@@ -72,6 +85,20 @@ const Form = () => {
 
   return (
     <>
+      <Toaster 
+        position="top-center"
+        toastOptions={{
+          duration: 4000,
+          style: {
+            background: '#363636',
+            color: '#fff',
+            borderRadius: '10px',
+            padding: '12px',
+            fontSize: '14px',
+          },
+        }}
+      />
+      
       <div className='w-full max-w-md mx-auto bg-[#FFFFFF1A] backdrop-blur-lg rounded-2xl shadow-2xl p-6'>
         <form onSubmit={handleSubmit} className='md:space-y-5 space-y-3'>
           <div className='space-y-2'>
@@ -85,7 +112,7 @@ const Form = () => {
             name='phoneNumber'
             value={formData.phoneNumber || ''}
             onChange={handleChange}
-            placeholder='+971'
+            placeholder='e.g., +97142273680 or 97188888888'
             required
             className='w-full md:px-4 px-3 md:py-3 py-2 bg-[#FFFFFF0D] border border-gray-600 rounded-full text-white placeholder-gray-400 focus:outline-none focus:border-red-500 focus:ring-2 focus:ring-red-500/20 transition-all'
           />
@@ -101,7 +128,6 @@ const Form = () => {
             <option value='' className='bg-gray-800'>Select Location *</option>
             <option value='dubai' className='bg-gray-800'>Dubai</option>
             <option value='abu-dhabi' className='bg-gray-800'>Abu Dhabi</option>
-            
           </select>
 
           {/* Services Selection */}

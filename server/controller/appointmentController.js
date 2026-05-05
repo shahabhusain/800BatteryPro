@@ -1,25 +1,187 @@
 import prisma from "../lib/prisma.js";
 
+
 export const createSecondAppointment = async (req, res) => {
   try {
-    const { phoneNumber, location, selectService } = req.body;
+    let { phoneNumber, location, selectService } = req.body;
     
     if (!phoneNumber || !location || !selectService) {
       return res.status(400).json({ message: "Invalid fields" });
     }
 
-    // Changed from findUnique to findFirst since phoneNumber is not unique
+    // Handle selectService as array (multiple services)
+    let servicesArray = [];
+    if (Array.isArray(selectService)) {
+      servicesArray = selectService;
+    } else if (typeof selectService === 'string') {
+      servicesArray = [selectService];
+    } else {
+      return res.status(400).json({ message: "Invalid service format" });
+    }
+
+    // Validate that at least one service is selected
+    if (servicesArray.length === 0) {
+      return res.status(400).json({ message: "At least one service must be selected" });
+    }
+
+    // Service validation
+    const validServices = ['Battery Replacement', 'Jump Start / Boost', '24/7 Roadside Assistance', 'Any Other'];
+    const invalidServices = servicesArray.filter(service => !validServices.includes(service));
+    if (invalidServices.length > 0) {
+      return res.status(400).json({ 
+        message: `Invalid service(s): ${invalidServices.join(', ')}` 
+      });
+    }
+
+    // STRICT UAE PHONE NUMBER VALIDATION - ONLY UAE NUMBERS
+    let cleanPhoneNumber = phoneNumber.toString().trim();
+    cleanPhoneNumber = cleanPhoneNumber.replace(/[\s\-\(\)]/g, '');
+    
+    // Valid UAE prefixes
+    const validMobilePrefixes = ['50', '52', '54', '55', '56', '58'];
+    const validLandlinePrefixes = ['2', '3', '4', '6', '7', '9'];
+    
+    let isValidUAE = false;
+    let standardizedPhone = null;
+    
+    // Check format: +971XXXXXXXXX (with +)
+    if (cleanPhoneNumber.startsWith('+971')) {
+      const numberAfterCode = cleanPhoneNumber.slice(4);
+      // Check mobile (2 digit prefix)
+      if (validMobilePrefixes.includes(numberAfterCode.slice(0, 2)) && numberAfterCode.length === 9) {
+        isValidUAE = true;
+        standardizedPhone = '0' + numberAfterCode;
+      }
+      // Check landline (1 digit prefix)
+      else if (validLandlinePrefixes.includes(numberAfterCode.slice(0, 1)) && numberAfterCode.length === 8) {
+        isValidUAE = true;
+        standardizedPhone = '0' + numberAfterCode;
+      }
+    }
+    // Check format: 971XXXXXXXXX (without +)
+    else if (cleanPhoneNumber.startsWith('971')) {
+      const numberAfterCode = cleanPhoneNumber.slice(3);
+      // Check mobile (2 digit prefix)
+      if (validMobilePrefixes.includes(numberAfterCode.slice(0, 2)) && numberAfterCode.length === 9) {
+        isValidUAE = true;
+        standardizedPhone = '0' + numberAfterCode;
+      }
+      // Check landline (1 digit prefix)
+      else if (validLandlinePrefixes.includes(numberAfterCode.slice(0, 1)) && numberAfterCode.length === 8) {
+        isValidUAE = true;
+        standardizedPhone = '0' + numberAfterCode;
+      }
+    }
+    // Check format: 0XXXXXXXXX (with 0)
+    else if (cleanPhoneNumber.startsWith('0')) {
+      const numberAfterZero = cleanPhoneNumber.slice(1);
+      // Check mobile (2 digit prefix)
+      if (validMobilePrefixes.includes(numberAfterZero.slice(0, 2)) && numberAfterZero.length === 9) {
+        isValidUAE = true;
+        standardizedPhone = cleanPhoneNumber;
+      }
+      // Check landline (1 digit prefix)
+      else if (validLandlinePrefixes.includes(numberAfterZero.slice(0, 1)) && numberAfterZero.length === 8) {
+        isValidUAE = true;
+        standardizedPhone = cleanPhoneNumber;
+      }
+    }
+    // Check format: XXXXXXXX (without prefix)
+    else if (/^\d+$/.test(cleanPhoneNumber)) {
+      // Check mobile (2 digit prefix, 9 digits total)
+      if (validMobilePrefixes.includes(cleanPhoneNumber.slice(0, 2)) && cleanPhoneNumber.length === 9) {
+        isValidUAE = true;
+        standardizedPhone = '0' + cleanPhoneNumber;
+      }
+      // Check landline (1 digit prefix, 8 digits total)
+      else if (validLandlinePrefixes.includes(cleanPhoneNumber.slice(0, 1)) && cleanPhoneNumber.length === 8) {
+        isValidUAE = true;
+        standardizedPhone = '0' + cleanPhoneNumber;
+      }
+    }
+    
+    // REJECT ANY NON-UAE NUMBER
+    if (!isValidUAE) {
+      return res.status(400).json({ 
+        success: false,
+        message: "Only UAE phone numbers are accepted. Valid formats: 05XXXXXXXX, 04XXXXXXX, +9715XXXXXXXX, +9714XXXXXXX"
+      });
+    }
+
+    // Location validation
+    const validLocations = ['dubai', 'abu-dhabi'];
+    const cleanLocation = location.trim().toLowerCase();
+    
+    if (!validLocations.includes(cleanLocation)) {
+      return res.status(400).json({ 
+        success: false,
+        message: "Please select a valid UAE location" 
+      });
+    }
+
+    // Check for recent duplicate submissions (within last 5 minutes)
+    const fiveMinutesAgo = new Date(Date.now() - 5 * 60 * 1000);
+    const recentDuplicate = await prisma.secondAppointment.findFirst({
+      where: {
+        phoneNumber: standardizedPhone,
+        location: cleanLocation,
+        selectService: {
+          equals: servicesArray
+        },
+        createdAt: {
+          gte: fiveMinutesAgo
+        }
+      }
+    });
+
+    if (recentDuplicate) {
+      return res.status(429).json({
+        success: false,
+        message: "Please wait 5 minutes before submitting the same request"
+      });
+    }
+
+    // Check for existing appointment
     const existingAppointment = await prisma.secondAppointment.findFirst({
-      where: { phoneNumber: phoneNumber }
+      where: { phoneNumber: standardizedPhone }
     });
 
     if (existingAppointment) {
+      // Check for too many updates (max 3 updates per hour)
+      const oneHourAgo = new Date(Date.now() - 60 * 60 * 1000);
+      const recentUpdates = await prisma.secondAppointment.count({
+        where: {
+          phoneNumber: standardizedPhone,
+          updatedAt: {
+            gte: oneHourAgo
+          }
+        }
+      });
+
+      if (recentUpdates >= 3) {
+        return res.status(429).json({
+          success: false,
+          message: "Too many update attempts. Please try again later"
+        });
+      }
+
+      // Check if update is allowed
+      const hasChanges = existingAppointment.location !== cleanLocation || 
+                        JSON.stringify(existingAppointment.selectService) !== JSON.stringify(servicesArray);
+      
+      if (!hasChanges) {
+        return res.status(400).json({
+          success: false,
+          message: "No changes detected in your appointment"
+        });
+      }
+
       // Update existing appointment
       const updatedAppointment = await prisma.secondAppointment.update({
-        where: { id: existingAppointment.id }, // Use id instead of phoneNumber
+        where: { id: existingAppointment.id },
         data: {
-          location,
-          selectService,
+          location: cleanLocation,
+          selectService: servicesArray,
           updatedAt: new Date()
         }
       });
@@ -30,24 +192,53 @@ export const createSecondAppointment = async (req, res) => {
       });
     }
 
-    // Create new appointment if phone number doesn't exist
+    // Check for many appointments from same phone number (max 5 total)
+    const totalAppointments = await prisma.secondAppointment.count({
+      where: { phoneNumber: standardizedPhone }
+    });
+
+    if (totalAppointments >= 5) {
+      return res.status(429).json({
+        success: false,
+        message: "Maximum appointment limit reached for this phone number"
+      });
+    }
+
+    // Check for appointments created in last 24 hours (max 2 per day)
+    const twentyFourHoursAgo = new Date(Date.now() - 24 * 60 * 60 * 1000);
+    const todaysAppointments = await prisma.secondAppointment.count({
+      where: {
+        phoneNumber: standardizedPhone,
+        createdAt: {
+          gte: twentyFourHoursAgo
+        }
+      }
+    });
+
+    if (todaysAppointments >= 2) {
+      return res.status(429).json({
+        success: false,
+        message: "Maximum 2 appointments allowed per day. Please try tomorrow"
+      });
+    }
+
+    // Create new appointment
     const appointment = await prisma.secondAppointment.create({
       data: {
-        phoneNumber,
-        location,
-        selectService
+        phoneNumber: standardizedPhone,
+        location: cleanLocation,
+        selectService: servicesArray
       }
     });
 
     res.status(200).json({
       success: true, 
-      message: "Appointment created successfully and sales team will contact you soon!"
+      message: "Appointment created successfully! Sales team will contact you soon!"
     });
 
   } catch (error) {
     console.error("Appointment creation error:", error);
     
-    // Handle specific Prisma errors
     if (error.code === 'P2002') {
       return res.status(409).json({
         success: false,
