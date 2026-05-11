@@ -2,18 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap');
 @import "tailwindcss";
 
-
-/* body{
-  max-width: 1700px;
-  margin: 0 auto;
-} */
-
 .modal-root {
   position: relative;
   z-index: 9999;
 }
-
-
 
 h1{
  font-family: "Unbounded", sans-serif;
@@ -116,4 +108,5 @@ p{
 .dark .custom-scroll {
     scrollbar-color: #ef0e0a rgba(255, 255, 255, 0.05);
 }
+
 

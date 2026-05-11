@@ -13,6 +13,7 @@ import { useLocale } from 'next-intl'
 import Hero from '@/app/components/Brands/subPage/Hero'
 import herobg from '@/public/locations/location.webp'
 import Services from '@/app/components/locations/Services'
+
 import { FaSitemap } from 'react-icons/fa'
 import Faq from '@/app/components/Brands/subPage/Faq'
 import WhyChooseUs from '@/app/components/Brands/subPage/WhyChooseUs'

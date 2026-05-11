@@ -21,6 +21,7 @@ import service1 from '@/public/locations/service5.webp'
 import service2 from '@/public/locations/service6.webp'
 import service3 from '@/public/locations/service7.webp'
 import { TiStarburst } from 'react-icons/ti'
+import SubLocation from '@/app/components/locations/SubLocation'
 export const metadata = {
   title: "Car Battery Replacement in Dubai Under 25 Minutes | 800BatteryPro",
   description:
@@ -475,6 +476,7 @@ const arabicFaqs = [
   
         <WhyChooseUs data={data} title={{part1:whyChooseUsContent.titlePart1, highlighted:whyChooseUsContent.titleHighlighted}} desc={whyChooseUsContent.desc} />
            <Trusted englishContent={englishContents} arabicContent={arabicContents} />
+           {/* <SubLocation /> */}
            <Faq faqs={faqs}  desc={faqContent.desc}
                 title={{
         part1: faqContent.titlePart1,
