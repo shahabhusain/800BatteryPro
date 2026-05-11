@@ -78,7 +78,7 @@ const Services = ({
           </div>
           
           <div className='flex flex-col md:flex-row items-center justify-between mt-4 md:mt-6 gap-6 md:gap-0'>
-            <h2 className='title text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold max-w-full md:max-w-[600px] leading-tight text-left text-white'>
+            <h2 className='title text-[28px] sm:text-[36px] md:text-[42px] lg:text-[48px] font-bold max-w-full md:max-w-[650px] leading-tight text-left text-white'>
               {text.title1}{' '}
               <span className='text-red-500'>{text.title2}</span>
             </h2>
