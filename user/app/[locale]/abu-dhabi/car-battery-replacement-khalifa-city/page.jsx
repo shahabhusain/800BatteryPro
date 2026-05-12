@@ -1,19 +1,19 @@
 import React from 'react'
-import About from '../../components/Hero/About'
+import About from '../../../components/Hero/About'
 // import Services from '../../components/Hero/Services'
-import Banners from '../../components/Hero/Banners'
-import CarBrands from '../../components/Hero/CarBrands'
-import BatteryBrands from '../../components/Hero/BatteryBrands'
-import RealExperience from '../../components/Hero/RealExperience'
-import Trusted from '../../components/Hero/Trusted'
-import Footer from '../../components/Footer'
-// import Review from '../../components/Hero/Review'
-import HowItWorks from '../../components/Hero/HowItWorks'
+import Banners from '../../../components/Hero/Banners'
+import CarBrands from '../../../components/Hero/CarBrands'
+import BatteryBrands from '../../../components/Hero/BatteryBrands'
+import RealExperience from '../../../components/Hero/RealExperience'
+import Trusted from '../../../components/Hero/Trusted'
+import Footer from '../../../components/Footer'
+import Review from '../../../components/Hero/Review'
+import HowItWorks from '../../../components/Hero/HowItWorks'
 import { useLocale } from 'next-intl'
 import Hero from '@/app/components/Brands/subPage/Hero'
 import herobg from '@/public/locations/location.webp'
 import Services from '@/app/components/locations/Services'
-// import { FaSitemap } from 'react-icons/fa'
+import { FaSitemap } from 'react-icons/fa'
 import Faq from '@/app/components/Brands/subPage/Faq'
 import WhyChooseUs from '@/app/components/Brands/subPage/WhyChooseUs'
 import service from '@/public/locations/service4.webp'
@@ -21,7 +21,6 @@ import service1 from '@/public/locations/service5.webp'
 import service2 from '@/public/locations/service6.webp'
 import service3 from '@/public/locations/service7.webp'
 import { TiStarburst } from 'react-icons/ti'
-// import SubLocation from '@/app/components/locations/SubLocation'
 export const metadata = {
   title: "Car Battery Replacement in Dubai Under 25 Minutes | 800BatteryPro",
   description:
@@ -32,7 +31,7 @@ export const metadata = {
   },
 };
 
-const Dubai = () => {
+const Khalifa = () => {
     const locale = useLocale()
    const text = locale === "ar"
   ? {
@@ -44,7 +43,7 @@ const Dubai = () => {
   : {
       desc: "Car Brands We Serve",
       title1: "Car Battery Replacement ",
-      title2: " for All Car Brands in Dubai",
+      title2: " for All Car Brands in Khalifa ",
       viewAll: "View All",
     };
 
@@ -54,7 +53,7 @@ const Dubai = () => {
             title: {
                 part1: "How Our Car ",
                 highlighted: "Battery Service ",
-                part2: " Works in Dubai "
+                part2: " Works in Khalifa  "
             }
           }
         : {
@@ -69,10 +68,10 @@ const Dubai = () => {
 const heroEnglishContent = {
     desc: "Top Car Brands – 24/7 Emergency Support & Anywhere in Dubai & Abu Dhabi",
     title: {
-        span1: " Car Battery  ",
-        span2: "Replacement in Dubai Under 25 Minutes"
+        span1: "Car Battery Replacement in Khalifa City",
+        span2: " Abu Dhabi Under 25 Minutes"
     },
-    desc1: "Starting From 299 AED - Up to 18 Months Warranty – 24/7 RSA Anywhere Under 25 Minutes – Free Battery Testing Zero Cost",
+    desc1: "Starting From AED 299 - Up to 18 Months Warranty - 24/7 RSA - Reaching Every Villa & Compound in Khalifa City Under 25 Minutes",
     btn: "Call Now",
     btn1: "Book Service Now"
 }
@@ -92,23 +91,23 @@ const heroArabicContent = {
 const englishContent = [
     {
         icons: <TiStarburst />,
-        title: "Genuine Car Battery Replacement ",
-        desc: "If you are stuck with a dead car battery or issues in your car electronic system. Don’t Panic !800BatteryPro provides you with 24/7 car battery replacement and free battery testing under 25 minutes, which comes along with expert car electronic system repairs in Dubai. "
+        title: " Battery Replacements in Khalifa City Under 25 Minutes ",
+        desc: "Abu Dhabi's most experienced mobile battery service for Khalifa City's villa community. Reaching every villa street, gated compound, and sector in Khalifa City faster than any competitor. Our technicians know every street and compound in Khalifa City from Street 31 to Al Forsan Village and Golf Gardens."
     },
     {
         icons: <TiStarburst />,
-        title: "Experienced Technicians & 6+ Years Of Experience",
-        desc: "800BatteryPro has partnered with the best and trusted car service centers in Dubai. We have 25+ technicians with over 6+ years of experience working on premium car repairs delivering car jobs with 100% precision and customer satisfaction. Our team of technicians are all well-trained and certified by vendors to work on all major car brands."
+        title: " AED 299 Starting Price Up to 18 Months Warranty ",
+        desc: "Transparent pricing, zero hidden costs, told upfront before work begins. The strongest battery replacement warranty from any mobile service in Abu Dhabi's suburbs."
     },
     {
         icons: <TiStarburst />,
-        title: "OEM-Approved Spare Parts & Genuine Car Battery",
-        desc: "Don’t worry 800BatteryPro only uses OEM-approved spare parts for your car. Our technicians only recommend branded car batteries for installation if needed after a free battery testing. "
+        title: "Genuine Batteries Only Free Battery Testing",
+        desc: "Bosch, Varta, ACDelco and other OEM-approved brands — never counterfeit. Advanced OBD-II diagnostic included with every service call at no extra charge."
     },
     {
         icons: <TiStarburst />,
-        title: "No Hidden Cost & Free Battery Testing",
-        desc: "Unlike other service providers, 800BatteryPro provides every customer with free battery testing services with no hidden costs. If you need a replacement, our technicians will use a branded car battery for replacement services anywhere in Dubai and Abu Dhabi. We provide top-tier car battery services with no hidden cost and free onsite delivery. 800Batterypro has partnered with a well-equipped service center with fully-equipped car workshops and a team of certified technicians who know how to get your car back on the road. You are offered with free battery testing anywhere in Dubai with no hidden costs."
+        title: "24/7 Airport Proximity",
+        desc: "No extra charge for nights, weekends or UAE public holidays in Khalifa City. Just 10-15 minutes from Abu Dhabi International Airport for fastest response times. All Luxury & Family Car Brands Covered - BMW, Mercedes, Land Rover, Porsche, Toyota, Nissan and every brand driven in Khalifa City."
     }
 ]
 
@@ -137,101 +136,46 @@ const arabicContent = [
 
 const englishFaqs = [
     {
-        question: "Which one is the best car service center in Dubai?",
-        answer: "800BatteryPro has partnered with the best car service centers in Dubai and Abu Dhabi. We have a team of 30+ certified technicians who are experienced to work on every major car maker including the American and European car brands."
+        question: "How quickly can 800BatteryPro reach my villa in Khalifa City, Abu Dhabi?",
+        answer: "800BatteryPro reaches any villa, compound, or location in Khalifa City, Abu Dhabi in under 25 minutes — guaranteed. Our fleet of 20+ mobile vans are strategically positioned across Abu Dhabi's mainland and near key Khalifa City entry points, enabling rapid response to every street and compound from the original residential streets near Street 31 to Al Forsan Village, Al Raha Gardens, Golf Gardens, Al Rayyana, Liwa Oasis, and all sectors across this 600+ villa community. Service operates 24 hours a day, 7 days a week with no additional charges for nighttime, weekend, or public holidays."
     },
     {
-        question: "Where do we provide services?",
-        answer: "8000BatteryPro provides 24/7 roadside assistance, car battery replacement under 25 minutes, and advanced car programming services across both Dubai and Abu Dhabi. If you need instant services call us at +971528475675."
+        question: "How much does car battery replacement cost in Khalifa City, Abu Dhabi?",
+        answer: "Car battery replacement in Khalifa City starts from AED 299 at 800BatteryPro. The exact price depends on your car make, model, and the specific battery brand required for your vehicle. Every price is communicated clearly and upfront before any work begins — with absolutely zero hidden costs. Included at no extra charge with every Khalifa City service call: free battery health testing using advanced OBD-II diagnostic equipment, professional on-site installation at your villa or compound, and up to 18 months manufacturer warranty. With 242 completed services in Khalifa City, our technicians are fully prepared for every villa and compound in the area."
     },
     {
-        question: "How much does it cost to do car battery replacement?",
-        answer: "The range of car battery replacement really depends upon your car make and model. You can contact 800BatteryPro for market competitive pricing of the car battery replacement and other services. Our technicians only use genuine car batteries and OEM-approved spare parts for all our customers."
+        question: "Can 800BatteryPro come directly to my villa in Khalifa City?",
+        answer: "Yes — 800BatteryPro comes directly to your villa door or compound entrance anywhere in Khalifa City, Abu Dhabi. Whether you are in a private villa on any of Khalifa City's wide residential streets, inside a gated compound at Al Forsan Village, Al Raha Gardens, Golf Gardens, Al Rayyana, or Liwa Oasis, parked near Al Forsan International Sports Resort or Abu Dhabi Golf Club, or anywhere else across Khalifa City's sprawling community - our mobile technician brings all tools and the replacement battery directly to your vehicle. No need to push your car out, arrange a tow truck, or drive 25 minutes to the city. The full job is completed on the spot in under 25 minutes."
     },
     {
-        question: "Where is our service centre in Dubai?",
-        answer: "800BatteryPro has partnered with well-equipped and ideally located car service centres in Dubai. With our 20+ mobile vans and 50+ certified technicians, we deliver every car battery and advanced repair service with 100% customer satisfaction."
+        question: "Which car battery brands does 800BatteryPro install in Khalifa City?",
+        answer: "800BatteryPro installs only genuine OEM-approved branded car batteries in Khalifa City including Bosch, Varta, ACDelco, and other leading manufacturers. Khalifa City's villa community drives a wide range of vehicles — from European luxury cars like BMW, Mercedes-Benz, Land Rover, Porsche, and Audi to Japanese family favourites like Toyota Land Cruiser, Nissan Patrol, and Lexus, as well as American SUVs like Chevrolet Suburban and Jeep Grand Cherokee. Our technicians carry the correct OEM-approved battery for every make and model, backed by up to 18 months manufacturer warranty on every installation in Khalifa City."
     },
     {
-        question: "How much does a car battery replacement cost in Dubai?",
-        answer: "Car battery replacement in Dubai typically depends on brand and model. 800BatteryPro offers competitive pricing with same-day mobile service — no garage visit needed."
+        question: "Is 800BatteryPro available 24/7 in Khalifa City including early mornings for Etihad Airways employees?",
+        answer: "Yes - 800BatteryPro operates 24 hours a day, 7 days a week across all of Khalifa City with no exceptions. Khalifa City is home to many Etihad Airways employees whose headquarters is located in the district - and Etihad's shift schedules mean battery emergencies can happen at 3 AM, 5 AM, or any other unusual hour. Whether your battery dies before an early morning shift at Etihad Airways HQ, during a late night return from a long-haul flight, on a Friday morning before family plans, or at any other time - our nearest technician reaches you in under 25 minutes with no additional charges for off-peak callouts anywhere in Khalifa City."
     },
     {
-        question: "How long does a car battery replacement take?",
-        answer: "Most car battery replacements take 20–25 minutes. Our mobile technician arrives, fits the new battery and tests the system on-site — zero downtime for you."
+        question: "Which car brands does 800BatteryPro service in Khalifa City?",
+        answer: "800BatteryPro services every car brand driven by Khalifa City villa residents including BMW, Mercedes-Benz, Land Rover, Range Rover, Porsche, Audi, Volkswagen, Toyota Land Cruiser, Toyota Prado, Nissan Patrol, Nissan Pathfinder, Lexus LX, Lexus GX, Chevrolet Suburban, Chevrolet Tahoe, Jeep Grand Cherokee, Ford Expedition, GMC Yukon, Mitsubishi Pajero, Hyundai Santa Fe, Kia Sorento, and all other car brands available in the UAE. Khalifa City's family-oriented villa community predominantly drives large SUVs and luxury vehicles — our technicians carry the right batteries for every make and model."
     },
     {
-        question: "Does 800BatteryPro come to my location in Dubai?",
-        answer: "Yes — 800BatteryPro is a mobile service. We come to your home, office or roadside anywhere in Dubai & Abu Dhabi. No need to visit a garage."
+        question: "My car battery died on the Abu Dhabi-Dubai highway near Khalifa City — can you help?",
+        answer: "Yes — 800BatteryPro provides emergency roadside assistance on Abu Dhabi-Dubai highway (E11), Sheikh Mohammed Bin Zayed Road (E311), Hadaiq Al Raha Street, and all major roads in and around Khalifa City. If your battery dies on the highway near Khalifa City, call +971 52 847 5675 immediately, share your location or nearest landmark (such as Etihad Airways HQ or Al Forsan International Sports Resort), and our mobile technician will reach you in under 25 minutes for safe highway emergency response — any hour, any day, with no extra charge for highway callouts near Khalifa City."
     },
     {
-        question: "Can a dead car battery be boosted instead of replaced?",
-        answer: "Yes, if the battery is not damaged. A boost (jump-start) restores enough charge to start the engine. If the battery fails again quickly, replacement is needed."
+        question: "Does 800BatteryPro offer free battery testing in Khalifa City?",
+        answer: "Yes - every service call in Khalifa City includes a free comprehensive battery health test using advanced OBD-II diagnostic equipment. Khalifa City's unique battery challenge — vehicles sitting in private villa garages and compound parking for extended periods in Abu Dhabi's extreme summer heat, combined with long daily commutes on E11 and E311 - means batteries in Khalifa City typically degrade faster than in central Abu Dhabi. Our technicians test your battery's voltage, cold cranking amps, state of health, and alternator output at your villa location before any work begins. If your battery can be safely boosted rather than replaced, we will always tell you honestly."
     },
     {
-        question: "What does roadside assistance include in Dubai?",
-        answer: "800BatteryPro roadside assistance includes battery jump-start, tyre inflation, minor mechanical first-aid & on-site battery replacement — available 24/7 across Dubai & Abu Dhabi."
+        question: "How do I book a car battery replacement in Khalifa City, Abu Dhabi?",
+        answer: "Booking car battery replacement in Khalifa City with 800BatteryPro takes under one minute. Call or WhatsApp +971 52 847 5675 with your villa street name, compound name, or nearest landmark in Khalifa City and your car details - or fill in the booking form on this page selecting Khalifa City, Abu Dhabi as your location. A team member confirms your booking within minutes and dispatches the nearest available technician to your exact Khalifa City villa or compound location immediately — any hour, any day. With 242 completed services across Khalifa City, our technicians know every compound entrance and residential street in the community."
     },
     {
-        question: "How fast does roadside assistance arrive in Dubai?",
-        answer: "Our technicians typically arrive within 20–25 minutes across Dubai and Abu Dhabi, depending on traffic and your exact location."
+        question: "Does 800BatteryPro cover all of Khalifa City including Al Forsan Village, Golf Gardens, and sectors near Yas Island?",
+        answer: "Yes - 800BatteryPro covers every part of Khalifa City, Abu Dhabi including Al Forsan Village and Al Forsan International Sports Resort, Al Raha Gardens, Golf Gardens near Abu Dhabi Golf Club, Al Rayyana and BOUTIK Mall, Liwa Oasis, Etihad Plaza in Sector 45, Forsan Central Mall, Gardens Plaza on Hadaiq Al Raha Street, the original residential villa streets including Street 31, all gated compounds and single-standing villas across the community, and all sectors bordering Yas Island and Abu Dhabi International Airport. No villa, compound, or sector in Khalifa City is beyond our 25-minute response guarantee - 24 hours a day, 7 days a week, 365 days a year."
     },
-    {
-        question: "How much does a car diagnostic scan cost in Dubai?",
-        answer: "A basic OBD-II diagnostic scan in Dubai typically depends upon your car make and model. 800BatteryPro provides full mobile scanning at your location with a detailed fault report."
-    },
-    {
-        question: "How do I know if my car's ECU is faulty?",
-        answer: "Signs of a faulty ECU include: engine warning light, poor fuel economy, engine misfires, car not starting & erratic sensor readings. A diagnostic scan confirms ECU faults."
-    },
-    {
-        question: "When does ADAS need to be recalibrated?",
-        answer: "ADAS requires recalibration after windscreen replacement, wheel alignment, camera/sensor replacement, accident repair or if driver assistance warnings appear on the dashboard."
-    },
-    {
-        question: "Why is my car AC blowing hot air in Dubai?",
-        answer: "Common causes: low refrigerant, faulty compressor, clogged condenser or blower motor failure. In Dubai's heat, low gas is most frequent. Book a mobile AC check to diagnose."
-    },
-    {
-        question: "How much does brake pad replacement cost in Dubai?",
-        answer: "Brake pad replacement in Dubai ranges per axle, depends on the car brand and pad quality. Get our rapid 24/7 Mobile van service means no towing or garage visit required."
-    },
-    {
-        question: "What type of battery does an Audi need?",
-        answer: "Most modern Audis require AGM (Absorbent Glass Mat) batteries. Older models may use EFB. Always match the exact CCA & Ah rating specified in your Audi owner's manual."
-    },
-    {
-        question: "Is 800BatteryPro available 24 hours in Dubai?",
-        answer: "Yes — 800BatteryPro operates 24/7 across all Dubai districts for battery replacement, boosting & roadside assistance. Call or book online anytime."
-    },
-    {
-        question: "Does 800BatteryPro serve Abu Dhabi?",
-        answer: "Yes — we serve all Abu Dhabi areas including Khalifa City, Al Reem Island, Mussafah, Al Ain & the city centre. Mobile service — we come to you."
-    },
-    {
-        question: "How does 800BatteryPro work?",
-        answer: "Call or book online, tell us your location & car issue. A mobile technician comes to you — home, office or roadside — anywhere in Dubai or Abu Dhabi. No garage needed."
-    },
-    {
-        question: "What areas does 800BatteryPro cover in UAE?",
-        answer: "800BatteryPro currently covers all major areas of Dubai and Abu Dhabi (including Al Ain). See our locations page for a full district-by-district breakdown."
-    },
-    {
-        question: "Can I get an oil change done at home in Dubai?",
-        answer: "Yes — 800BatteryPro offers mobile oil & filter change at your home or office across Dubai & Abu Dhabi. Genuine & OEM oils available. Book online."
-    },
-    {
-        question: "Can a lost car key be programmed in Dubai without going to a dealer?",
-        answer: "Yes — 800BatteryPro offers mobile car key coding & programming for most brands, saving you dealer rates & towing costs. We come to your location in Dubai or Abu Dhabi."
-    },
-    {
-        question: "Can a flood-damaged car be repaired in Dubai?",
-        answer: "Yes, if caught early. Flood damage repair involves drying electrical components, ECU restoration & wiring inspection. Delay causes irreversible corrosion — act immediately."
-    },
-    {
-        question: "Does BMW battery replacement require coding in Dubai?",
-        answer: "Yes — most BMW models (F & G series onwards) require battery registration/coding after replacement so the car's BMS (Battery Management System) resets correctly."
-    },
+    
 ]
 
 const arabicFaqs = [
@@ -335,23 +279,23 @@ const arabicFaqs = [
 
   const englishService = [
     {
-      title: "Car Battery Replacement",
-      hoverDec: "Dead car battery in Dubai or Abu Dhabi? 800BatteryPro dispatches a experienced technician to your location with a branded replacement battery — under 25 minutes, 24/7, no hidden costs.",
+      title: " Car Battery Replacement in Khalifa City",
+      hoverDec: "Dead car battery at your Khalifa City villa or compound? 800BatteryPro dispatches a technician directly to your exact location in under 25 minutes, 24/7 - whether you are in a private villa on Street 31, inside Al Forsan Village compound, at Al Raha Gardens, Golf Gardens, Al Rayyana, near Etihad Plaza in Sector 45, outside Forsan Central Mall, near Abu Dhabi Golf Club, or anywhere across Khalifa City's wide residential streets. We replace your battery on the spot using genuine OEM-approved branded batteries from Bosch, Varta, and ACDelco - with up to 18 months manufacturer warranty and zero hidden costs. All major car brands serviced including BMW, Mercedes, Toyota, Audi, Land Rover, Nissan, Lexus, Porsche and more.",
       img: service
     },
     {
-      title: "Car Battery Boosting",
-      hoverDec: "Car won't start? Our mobile technicians provide 24/7 jump start and battery boosting anywhere in Dubai & Abu Dhabi — under 25 minutes. Free battery test included after every boost.",
+      title: "Car Battery Boosting & Jump Start in Khalifa City",
+      hoverDec: "Car won't start at your Khalifa City villa? Whether you are parked in your private villa garage on any of Khalifa City's residential streets, inside a gated compound at Al Forsan Village or Al Raha Gardens, near Al Forsan International Sports Resort, outside Forsan Central Mall or Gardens Plaza on Hadaiq Al Raha Street, or anywhere across Khalifa City's sprawling community - our mobile technicians provide 24/7 emergency jump start and battery boosting in under 25 minutes. Every jump start includes a free advanced battery health diagnostic - we tell you honestly if your battery needs a boost or a full replacement. No guesswork, no hidden charges. Call +971 52 847 5675 now.",
       img: service2
     },
     {
-      title: "24/7 Roadside Assistance",
-      hoverDec: "Stuck on the road in Dubai or Abu Dhabi? 800BatteryPro's fully equipped mobile vans and 30+ experienced technicians are available 24/7 for battery replacement, tyre help and roadside emergencies — anywhere, anytime.",
+      title: " 24/7 Roadside Assistance in Khalifa City",
+      hoverDec: "Stranded anywhere in Khalifa City, Abu Dhabi? 800BatteryPro's 24/7 roadside assistance covers every street, compound, and sector in Khalifa City including Street 31, Hadaiq Al Raha Street, the Abu Dhabi-Dubai highway (E11), Sheikh Mohammed Bin Zayed Road (E311), and all internal roads across Al Forsan Village, Golf Gardens, Al Raha Gardens, Al Rayyana, and Liwa Oasis. Whether your car battery is dead outside your villa, in a compound parking area, near Abu Dhabi Golf Club, or on the highway approaching Khalifa City - our nearest mobile technician reaches you in under 25 minutes, day or night. No towing needed, no garage visit required. We come to your exact location and fix it on the spot.",
       img: service1
     },
     {
-      title: "Car Scanning & Diagnostics",
-      hoverDec: "Warning light on your dashboard? Our experienced technicians perform advanced OBD-II car scanning and diagnostics at your location across Dubai & Abu Dhabi. Fast, accurate fault detection with no garage visit needed.",
+      title: "  Car Scanning & Diagnostics in Khalifa City",
+      hoverDec: "Dashboard warning light on at your Khalifa City villa? 800BatteryPro's mobile technicians perform advanced OBD-II car scanning and full diagnostics at your exact location anywhere in Khalifa City - no garage visit, no driving to a service centre needed. Whether you are at your villa on any residential street, inside Al Forsan Village, near BOUTIK Mall in Al Rayyana, or anywhere across Khalifa City's 600+ villas and compounds - we accurately identify fault codes, electrical faults, battery health issues, and ECU errors on the spot using professional diagnostic equipment. Accurate results in under 30 minutes, transparent pricing, zero hidden costs.",
       img: service3
     },
   ]
@@ -380,8 +324,8 @@ const arabicFaqs = [
 
     const defaultEnglishContent = {
     title: "About Us",
-    heading: "Dubai's Most Trusted Car Battery Replacement Service",
-    description: "Signs of a Weak Car Battery? Dim lights ? Car Not Starting? 800BatteryPro is just a call away with its fully equipped rapid response mobile van and a team of 30+ technicians. There is no need to panic as we offer 24/7 roadside assistance our technician will do free car battery testing and inspection for you, if its needed our experts will do a branded car battery replacement for you, or else if there is any flat tyre we will also fix it for you all Under 30 Minutes and no hidden cost! Sounds Amazing, Doesn't It? With over 6+ years delivering excellence in every premium car repair and car battery replacement job in Dubai. 800BatteryPro has over 10,000+ satisfied customers, our team of certified technicians always use OEM-approved spare parts and branded car batteries. We have partnered with a well-equipped workshop stacked with the latest technology and equipment for working on all major car brands. If you drive an old model or an exotic car, we have trained professionals who are certified to work on all American and European car brands in Dubai. Car brands we service include Audi, Alfa Romeo, Aston Martin, BMW, Lamborghini, Bentley, Bugatti, Ferrari, Jaguar, Land Rover, Mercedes, Chevrolet, Mini Cooper, Maybach, Pagani, Range Rover, Jeep, Rolls Royce, Brabus, Mansory, Lexus, Nissan and Volkswagen.",
+    heading: "  Reliable Car Battery Services in Khalifa City, Abu Dhabi — Free Battery Testing & Zero Hidden Costs",
+    description: "Khalifa City is Abu Dhabi's most established and beloved family suburb - a vast, peaceful residential community of 600 to 700 spacious villas, gated compounds, and apartment buildings stretching along the Abu Dhabi-Dubai highway, just 25 kilometres from Abu Dhabi city centre and only 10 to 15 minutes from Abu Dhabi International Airport. Home to thousands of families in 3 to 6-bedroom private villas with walled gardens, professionals commuting daily to Abu Dhabi city and Yas Island, Etihad Airways employees whose headquarters is a landmark visible from both sides of the highway, and residents of premier communities including Al Forsan Village, Al Raha Gardens, Golf Gardens, Al Rayyana, and Liwa Oasis - Khalifa City is defined by wide, tree-lined streets, complete privacy, and a strong community spirit.However, Khalifa City's suburban spread creates a unique and serious battery challenge: long daily commutes on Abu Dhabi-Dubai highway (E11) and Sheikh Mohammed Bin Zayed Road (E311) combined with Abu Dhabi's extreme summer heat regularly exceeding 45°C - and vehicles sitting in private villa garages and compound parking for extended periods - accelerate battery drain dramatically. A dead car battery in Khalifa City, far from the city centre, is a genuine emergency that demands the fastest possible on-location response.800BatteryPro covers every villa street, compound, and sector in Khalifa City - from Street 31 and the main residential arteries of Khalifa City A to Al Forsan Village and Al Forsan International Sports Resort, Abu Dhabi Golf Club, Golf Gardens, Al Raha Gardens, BOUTIK Mall in Al Rayyana, Etihad Plaza in Sector 45, Forsan Central Mall, and all roads connecting to Yas Island and Abu Dhabi International Airport. With 242 successful car battery replacements in Khalifa City - our fleet of 20+ fully equipped mobile vans reaches any Khalifa City villa or compound in under 25 minutes, 24 hours a day, 7 days a week. With 30+ experienced technicians, advanced battery diagnostic technology, genuine branded batteries from Bosch and Varta, and up to 18 months manufacturer warranty - one call to +971 52 847 5675 and our nearest technician is at your Khalifa City villa door in under 25 minutes - no towing, no garage visit, zero hidden costs.",
     features: [
       "Under 25 Minutes & Fast 24/7 Roadside Assistance",
       "6+ Years of Experience Delivery 100% Satisfactory Work",
@@ -405,7 +349,7 @@ const arabicFaqs = [
               // English content
   const englishContents = {
     sectionTitle: "What Our Customers Say",
-    headingPrefix: "About Our Dubai  ",
+    headingPrefix: "About Our Khalifa ",
     headingHighlight: "Battery Service",
   };
 
@@ -418,15 +362,15 @@ const arabicFaqs = [
 
   const Contenttext = {
     desc: "Battery Services We Offer",
-    title1: "Car Battery Services ",
-    title2: "in Dubai",
+  title1: "Mobile Car Battery  ",
+title2: " Service in Khalifa ",
     viewAll: "View All",
   }
 
         const whyChooseUsContent = locale === "en" 
         ? {
             desc: "Why Choose Us",
-            titlePart1: "Why Dubai Drivers ",
+            titlePart1: "Why Khalifa  Drivers ",
             titleHighlighted: "Choose 800BatteryPro"
           }
         : {
@@ -440,7 +384,7 @@ const arabicFaqs = [
             desc: "Got Questions?",
             titlePart1: "Frequently Asked Questions  ",
             titlePart2: " About Car Battery Replacement ",
-            titlePart3: "in Dubai "
+            titlePart3: "in Khalifa  "
           }
         : {
             desc: "لديك أسئلة؟",
@@ -476,7 +420,6 @@ const arabicFaqs = [
   
         <WhyChooseUs data={data} title={{part1:whyChooseUsContent.titlePart1, highlighted:whyChooseUsContent.titleHighlighted}} desc={whyChooseUsContent.desc} />
            <Trusted englishContent={englishContents} arabicContent={arabicContents} />
-           {/* <SubLocation /> */}
            <Faq faqs={faqs}  desc={faqContent.desc}
                 title={{
         part1: faqContent.titlePart1,
@@ -490,4 +433,4 @@ const arabicFaqs = [
   )
 }
 
-export default Dubai
+export default Khalifa

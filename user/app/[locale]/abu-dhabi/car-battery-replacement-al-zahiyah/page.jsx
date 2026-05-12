@@ -1,19 +1,19 @@
 import React from 'react'
-import About from '../../components/Hero/About'
+import About from '../../../components/Hero/About'
 // import Services from '../../components/Hero/Services'
-import Banners from '../../components/Hero/Banners'
-import CarBrands from '../../components/Hero/CarBrands'
-import BatteryBrands from '../../components/Hero/BatteryBrands'
-import RealExperience from '../../components/Hero/RealExperience'
-import Trusted from '../../components/Hero/Trusted'
-import Footer from '../../components/Footer'
-// import Review from '../../components/Hero/Review'
-import HowItWorks from '../../components/Hero/HowItWorks'
+import Banners from '../../../components/Hero/Banners'
+import CarBrands from '../../../components/Hero/CarBrands'
+import BatteryBrands from '../../../components/Hero/BatteryBrands'
+import RealExperience from '../../../components/Hero/RealExperience'
+import Trusted from '../../../components/Hero/Trusted'
+import Footer from '../../../components/Footer'
+import Review from '../../../components/Hero/Review'
+import HowItWorks from '../../../components/Hero/HowItWorks'
 import { useLocale } from 'next-intl'
 import Hero from '@/app/components/Brands/subPage/Hero'
 import herobg from '@/public/locations/location.webp'
 import Services from '@/app/components/locations/Services'
-// import { FaSitemap } from 'react-icons/fa'
+import { FaSitemap } from 'react-icons/fa'
 import Faq from '@/app/components/Brands/subPage/Faq'
 import WhyChooseUs from '@/app/components/Brands/subPage/WhyChooseUs'
 import service from '@/public/locations/service4.webp'
@@ -21,7 +21,6 @@ import service1 from '@/public/locations/service5.webp'
 import service2 from '@/public/locations/service6.webp'
 import service3 from '@/public/locations/service7.webp'
 import { TiStarburst } from 'react-icons/ti'
-// import SubLocation from '@/app/components/locations/SubLocation'
 export const metadata = {
   title: "Car Battery Replacement in Dubai Under 25 Minutes | 800BatteryPro",
   description:
@@ -32,7 +31,7 @@ export const metadata = {
   },
 };
 
-const Dubai = () => {
+const AlZayah = () => {
     const locale = useLocale()
    const text = locale === "ar"
   ? {
@@ -44,7 +43,7 @@ const Dubai = () => {
   : {
       desc: "Car Brands We Serve",
       title1: "Car Battery Replacement ",
-      title2: " for All Car Brands in Dubai",
+      title2: " for All Car Brands in Al Zahiyah",
       viewAll: "View All",
     };
 
@@ -54,7 +53,7 @@ const Dubai = () => {
             title: {
                 part1: "How Our Car ",
                 highlighted: "Battery Service ",
-                part2: " Works in Dubai "
+                part2: " Works in Al Zahiyah "
             }
           }
         : {
@@ -69,10 +68,10 @@ const Dubai = () => {
 const heroEnglishContent = {
     desc: "Top Car Brands – 24/7 Emergency Support & Anywhere in Dubai & Abu Dhabi",
     title: {
-        span1: " Car Battery  ",
-        span2: "Replacement in Dubai Under 25 Minutes"
+        span1: "Car Battery Replacement in Al Zahiyah,",
+        span2: " Abu Dhabi Under 25 Minutes"
     },
-    desc1: "Starting From 299 AED - Up to 18 Months Warranty – 24/7 RSA Anywhere Under 25 Minutes – Free Battery Testing Zero Cost",
+    desc1: "Starting From AED 299 — Up to 18 Months Warranty — 24/7 RSA — Reaching Every Tower in Al Zahiyah Under 25 Minutes",
     btn: "Call Now",
     btn1: "Book Service Now"
 }
@@ -92,23 +91,23 @@ const heroArabicContent = {
 const englishContent = [
     {
         icons: <TiStarburst />,
-        title: "Genuine Car Battery Replacement ",
-        desc: "If you are stuck with a dead car battery or issues in your car electronic system. Don’t Panic !800BatteryPro provides you with 24/7 car battery replacement and free battery testing under 25 minutes, which comes along with expert car electronic system repairs in Dubai. "
+        title: "Battery Replacements in Al Zahiyah Under 25 Minutes",
+        desc: "Abu Dhabi's most experienced mobile battery service in the Tourist Club Area district. Reaching every tower and hotel in Al Zahiyah from Corniche Road East to Al Falah Street faster than any competitor Under 25 Minutes."
     },
     {
         icons: <TiStarburst />,
-        title: "Experienced Technicians & 6+ Years Of Experience",
-        desc: "800BatteryPro has partnered with the best and trusted car service centers in Dubai. We have 25+ technicians with over 6+ years of experience working on premium car repairs delivering car jobs with 100% precision and customer satisfaction. Our team of technicians are all well-trained and certified by vendors to work on all major car brands."
+        title: " AED 299 Starting Price Up to 18 Months Warranty",
+        desc: "Transparent pricing, zero hidden costs, told upfront before work begins. The strongest battery replacement warranty from any mobile service in Abu Dhabi's downtown"
     },
     {
         icons: <TiStarburst />,
-        title: "OEM-Approved Spare Parts & Genuine Car Battery",
-        desc: "Don’t worry 800BatteryPro only uses OEM-approved spare parts for your car. Our technicians only recommend branded car batteries for installation if needed after a free battery testing. "
+        title: "Genuine Batteries Only Free Battery Testing",
+        desc: "Bosch, Varta, ACDelco and other OEM-approved brands — never counterfeit. Advanced OBD-II diagnostic included with every service call at no extra charge. All Car Brands Covered - BMW, Mercedes, Toyota, Audi, Land Rover, Nissan and every brand driven in Al Zahiyah"
     },
     {
         icons: <TiStarburst />,
-        title: "No Hidden Cost & Free Battery Testing",
-        desc: "Unlike other service providers, 800BatteryPro provides every customer with free battery testing services with no hidden costs. If you need a replacement, our technicians will use a branded car battery for replacement services anywhere in Dubai and Abu Dhabi. We provide top-tier car battery services with no hidden cost and free onsite delivery. 800Batterypro has partnered with a well-equipped service center with fully-equipped car workshops and a team of certified technicians who know how to get your car back on the road. You are offered with free battery testing anywhere in Dubai with no hidden costs."
+        title: " 10,000+ UAE Customers Served 24/7",
+        desc: "Abu Dhabi's most trusted mobile battery service. No extra charge for nights, weekends or UAE public holidays anywhere in Al Zahiyah. Downtown Abu Dhabi Location - 10 minutes from Abu Dhabi Corniche, 30 minutes from Abu Dhabi International Airport"
     }
 ]
 
@@ -137,101 +136,46 @@ const arabicContent = [
 
 const englishFaqs = [
     {
-        question: "Which one is the best car service center in Dubai?",
-        answer: "800BatteryPro has partnered with the best car service centers in Dubai and Abu Dhabi. We have a team of 30+ certified technicians who are experienced to work on every major car maker including the American and European car brands."
+        question: "How quickly can 800BatteryPro reach me in Al Zahiyah, Abu Dhabi?",
+        answer: "800BatteryPro reaches any tower, hotel, or location in Al Zahiyah (Tourist Club Area), Abu Dhabi in under 25 minutes — guaranteed. Our fleet of 20+ mobile vans are strategically positioned across Abu Dhabi Island, enabling rapid response to every part of Al Zahiyah from the towers on Corniche Road East and Al Falah Street to the hotels near Beach Rotana, Abu Dhabi Mall, Al Zahiyah Shopping Centre, and all surrounding streets. Service operates 24 hours a day, 7 days a week with no additional charges for nighttime, weekend, or UAE public holiday callouts."
     },
     {
-        question: "Where do we provide services?",
-        answer: "8000BatteryPro provides 24/7 roadside assistance, car battery replacement under 25 minutes, and advanced car programming services across both Dubai and Abu Dhabi. If you need instant services call us at +971528475675."
+        question: "How much does car battery replacement cost in Al Zahiyah, Abu Dhabi?",
+        answer: "Car battery replacement in Al Zahiyah starts from AED 299 at 800BatteryPro. The exact price depends on your car make, model, and the specific battery brand required. Every price is communicated clearly and upfront before any work begins - with absolutely zero hidden costs. Included at no extra charge with every Al Zahiyah service call: free battery health testing using advanced OBD-II diagnostic equipment, professional on-site installation at your exact location, and up to 18 months manufacturer warranty. With 281 completed services in Al Zahiyah, our technicians know this district thoroughly and arrive fully prepared for every job."
     },
     {
-        question: "How much does it cost to do car battery replacement?",
-        answer: "The range of car battery replacement really depends upon your car make and model. You can contact 800BatteryPro for market competitive pricing of the car battery replacement and other services. Our technicians only use genuine car batteries and OEM-approved spare parts for all our customers."
+        question: "Does 800BatteryPro come to my tower or hotel in Al Zahiyah?",
+        answer: "Yes - 800BatteryPro comes directly to your exact location anywhere in Al Zahiyah, Abu Dhabi - whether you are in a residential tower on Al Falah Street or Corniche Road East, at Beach Rotana Abu Dhabi on Al Zahiyah Street, at Traders Hotel, at Novotel Abu Dhabi Gate, in the parking structure of Abu Dhabi Mall, at Al Zahiyah Shopping Centre, or anywhere else across this downtown district. There is no need to arrange a tow truck or drive to a garage. Our technician brings all tools and the replacement battery directly to your vehicle and completes the full job on the spot in under 25 minutes."
     },
     {
-        question: "Where is our service centre in Dubai?",
-        answer: "800BatteryPro has partnered with well-equipped and ideally located car service centres in Dubai. With our 20+ mobile vans and 50+ certified technicians, we deliver every car battery and advanced repair service with 100% customer satisfaction."
+        question: "What is Al Zahiyah also known as and does 800BatteryPro serve the whole area?",
+        answer: "Al Zahiyah is the official name given in 2014 to the area previously known as Tourist Club Area (TCA) - one of Abu Dhabi's most central and established downtown districts. 800BatteryPro serves the entire Al Zahiyah district including all residential towers, commercial buildings, hotels, and parking structures across the area bounded by Corniche Road East to the north, Al Falah Street to the south, Al Mina Street to the east, and all roads connecting to Al Bateen, Al Reem Island, and Al Maryah Island - 24/7 with a guaranteed under 25-minute response to any location."
     },
     {
-        question: "How much does a car battery replacement cost in Dubai?",
-        answer: "Car battery replacement in Dubai typically depends on brand and model. 800BatteryPro offers competitive pricing with same-day mobile service — no garage visit needed."
+        question: "Is 800BatteryPro available 24/7 in Al Zahiyah including nights and weekends?",
+        answer: "Yes - 800BatteryPro operates 24 hours a day, 7 days a week across all of Al Zahiyah with no exceptions. Al Zahiyah's round-the-clock activity - from early morning commuters to late-night hotel guests and Abu Dhabi Mall visitors — means battery emergencies happen at all hours. Whether your car battery dies at midnight outside Beach Rotana, early Friday morning near Abu Dhabi Mall, during a UAE public holiday on Corniche Road East, or at any other time - our nearest technician reaches you in under 25 minutes with absolutely no additional charges for off-peak callouts."
     },
     {
-        question: "How long does a car battery replacement take?",
-        answer: "Most car battery replacements take 20–25 minutes. Our mobile technician arrives, fits the new battery and tests the system on-site — zero downtime for you."
+        question: "Which car brands does 800BatteryPro service in Al Zahiyah?",
+        answer: "800BatteryPro services every car brand driven by Al Zahiyah residents, professionals, and hotel guests including BMW, Mercedes-Benz, Toyota, Audi, Land Rover, Range Rover, Nissan, Lexus, Chevrolet, Jeep, Volkswagen, Mini Cooper, Jaguar, Rolls Royce, Bentley, Mitsubishi, Hyundai, Kia, Honda, Ford, and all other car brands available in the UAE. Al Zahiyah's cosmopolitan community of Abu Dhabi locals, Arab expats, and international professionals drives a wide range of vehicles - from everyday Japanese and Korean cars to European luxury vehicles. Our technicians carry the right batteries for every make and model."
     },
     {
-        question: "Does 800BatteryPro come to my location in Dubai?",
-        answer: "Yes — 800BatteryPro is a mobile service. We come to your home, office or roadside anywhere in Dubai & Abu Dhabi. No need to visit a garage."
+        question: "My car battery died near Abu Dhabi Mall or Corniche Road East in Al Zahiyah — can you help?",
+        answer: "Yes - 800BatteryPro provides emergency car battery replacement and roadside assistance across all of Al Zahiyah's main streets and landmarks including Abu Dhabi Mall, Corniche Road East, Al Falah Street, Tourist Club Road, Al Zahiyah Street near Beach Rotana, Al Reem Street, and all connecting roads to Al Mina, Al Bateen, and Al Reem Island. If your battery dies anywhere in Al Zahiyah call +971 52 847 5675 immediately, share your location or nearest landmark, and our mobile technician will reach you in under 25 minutes — day or night, any day of the week, with no extra charge for emergency callouts anywhere in the district."
     },
     {
-        question: "Can a dead car battery be boosted instead of replaced?",
-        answer: "Yes, if the battery is not damaged. A boost (jump-start) restores enough charge to start the engine. If the battery fails again quickly, replacement is needed."
+        question: "Does 800BatteryPro offer free battery testing in Al Zahiyah?",
+        answer: "Yes - every service call in Al Zahiyah includes a free comprehensive battery health test using advanced OBD-II diagnostic equipment. Al Zahiyah's basement car parks across its high-rise towers and hotel parking structures - where vehicles sit stationary in Abu Dhabi's intense heat for extended periods - accelerate battery degradation significantly. Our technicians test your battery's voltage, cold cranking amps, state of health, and alternator charging output at your exact Al Zahiyah location.Having completed 281 battery services in Al Zahiyah, we know this district's parking conditions and battery challenges better than any other service in Abu Dhabi."
     },
     {
-        question: "What does roadside assistance include in Dubai?",
-        answer: "800BatteryPro roadside assistance includes battery jump-start, tyre inflation, minor mechanical first-aid & on-site battery replacement — available 24/7 across Dubai & Abu Dhabi."
+        question: "How do I book a car battery replacement in Al Zahiyah, Abu Dhabi?",
+        answer: "Booking car battery replacement in Al Zahiyah with 800BatteryPro takes under one minute. Call or WhatsApp +971 52 847 5675 with your tower name, hotel name, or nearest landmark in Al Zahiyah and your car details - or fill in the booking form on this page by selecting Al Zahiyah, Abu Dhabi as your location. A team member confirms your booking within minutes and dispatches the nearest available technician to your exact Al Zahiyah location immediately - any hour, any day. With 281 completed services in Al Zahiyah, our technicians know every parking structure and street in this district."
     },
     {
-        question: "How fast does roadside assistance arrive in Dubai?",
-        answer: "Our technicians typically arrive within 20–25 minutes across Dubai and Abu Dhabi, depending on traffic and your exact location."
+        question: "Does 800BatteryPro cover all of Al Zahiyah including hotels near Beach Rotana and towers near Al Reem Island?",
+        answer: "Yes — 800BatteryPro covers every part of Al Zahiyah, Abu Dhabi including the hotel strip near Beach Rotana Abu Dhabi on Al Zahiyah Street, Traders Hotel, Novotel Abu Dhabi Gate, all residential towers on Corniche Road East and Al Falah Street, Abu Dhabi Mall and its surrounding parking structures, Al Zahiyah Shopping Centre with its 16 stores, towers near the border with Al Reem Island to the north, buildings adjacent to Al Maryah Island and Al Mina, and every other residential and commercial tower across this 2014-renamed downtown district — 24/7 with a guaranteed under 25-minute response to any location in Al Zahiyah."
     },
-    {
-        question: "How much does a car diagnostic scan cost in Dubai?",
-        answer: "A basic OBD-II diagnostic scan in Dubai typically depends upon your car make and model. 800BatteryPro provides full mobile scanning at your location with a detailed fault report."
-    },
-    {
-        question: "How do I know if my car's ECU is faulty?",
-        answer: "Signs of a faulty ECU include: engine warning light, poor fuel economy, engine misfires, car not starting & erratic sensor readings. A diagnostic scan confirms ECU faults."
-    },
-    {
-        question: "When does ADAS need to be recalibrated?",
-        answer: "ADAS requires recalibration after windscreen replacement, wheel alignment, camera/sensor replacement, accident repair or if driver assistance warnings appear on the dashboard."
-    },
-    {
-        question: "Why is my car AC blowing hot air in Dubai?",
-        answer: "Common causes: low refrigerant, faulty compressor, clogged condenser or blower motor failure. In Dubai's heat, low gas is most frequent. Book a mobile AC check to diagnose."
-    },
-    {
-        question: "How much does brake pad replacement cost in Dubai?",
-        answer: "Brake pad replacement in Dubai ranges per axle, depends on the car brand and pad quality. Get our rapid 24/7 Mobile van service means no towing or garage visit required."
-    },
-    {
-        question: "What type of battery does an Audi need?",
-        answer: "Most modern Audis require AGM (Absorbent Glass Mat) batteries. Older models may use EFB. Always match the exact CCA & Ah rating specified in your Audi owner's manual."
-    },
-    {
-        question: "Is 800BatteryPro available 24 hours in Dubai?",
-        answer: "Yes — 800BatteryPro operates 24/7 across all Dubai districts for battery replacement, boosting & roadside assistance. Call or book online anytime."
-    },
-    {
-        question: "Does 800BatteryPro serve Abu Dhabi?",
-        answer: "Yes — we serve all Abu Dhabi areas including Khalifa City, Al Reem Island, Mussafah, Al Ain & the city centre. Mobile service — we come to you."
-    },
-    {
-        question: "How does 800BatteryPro work?",
-        answer: "Call or book online, tell us your location & car issue. A mobile technician comes to you — home, office or roadside — anywhere in Dubai or Abu Dhabi. No garage needed."
-    },
-    {
-        question: "What areas does 800BatteryPro cover in UAE?",
-        answer: "800BatteryPro currently covers all major areas of Dubai and Abu Dhabi (including Al Ain). See our locations page for a full district-by-district breakdown."
-    },
-    {
-        question: "Can I get an oil change done at home in Dubai?",
-        answer: "Yes — 800BatteryPro offers mobile oil & filter change at your home or office across Dubai & Abu Dhabi. Genuine & OEM oils available. Book online."
-    },
-    {
-        question: "Can a lost car key be programmed in Dubai without going to a dealer?",
-        answer: "Yes — 800BatteryPro offers mobile car key coding & programming for most brands, saving you dealer rates & towing costs. We come to your location in Dubai or Abu Dhabi."
-    },
-    {
-        question: "Can a flood-damaged car be repaired in Dubai?",
-        answer: "Yes, if caught early. Flood damage repair involves drying electrical components, ECU restoration & wiring inspection. Delay causes irreversible corrosion — act immediately."
-    },
-    {
-        question: "Does BMW battery replacement require coding in Dubai?",
-        answer: "Yes — most BMW models (F & G series onwards) require battery registration/coding after replacement so the car's BMS (Battery Management System) resets correctly."
-    },
+    
 ]
 
 const arabicFaqs = [
@@ -335,23 +279,23 @@ const arabicFaqs = [
 
   const englishService = [
     {
-      title: "Car Battery Replacement",
-      hoverDec: "Dead car battery in Dubai or Abu Dhabi? 800BatteryPro dispatches a experienced technician to your location with a branded replacement battery — under 25 minutes, 24/7, no hidden costs.",
+      title: " Car Battery Replacement in Al Zahiyah",
+      hoverDec: "Dead car battery anywhere in Al Zahiyah, Abu Dhabi? 800BatteryPro dispatches a technician directly to your exact location in under 25 minutes, 24/7 — whether you are in a tower basement near Abu Dhabi Mall, outside Beach Rotana Abu Dhabi on Al Zahiyah Street, in the hotel parking of Traders Hotel, parked on Corniche Road East or Al Falah Street, near Al Zahiyah Shopping Centre, or anywhere across this vibrant downtown district. We replace your battery on the spot using genuine OEM-approved branded batteries from Bosch, Varta, and ACDelco - with up to 18 months manufacturer warranty and zero hidden costs. All major car brands serviced including BMW, Mercedes, Toyota, Audi, Land Rover, Nissan, Lexus and more.",
       img: service
     },
     {
-      title: "Car Battery Boosting",
-      hoverDec: "Car won't start? Our mobile technicians provide 24/7 jump start and battery boosting anywhere in Dubai & Abu Dhabi — under 25 minutes. Free battery test included after every boost.",
+      title: "Car Battery Boosting & Jump Start in Al Zahiyah",
+      hoverDec: "Car won't start in Al Zahiyah, Abu Dhabi? Whether you are in the basement parking of a tower on Al Falah Street, outside Abu Dhabi Mall, in the valet parking area of Beach Rotana, near Al Ittihad Square on the way to the Corniche, or anywhere across Al Zahiyah's busy downtown streets - our mobile technicians provide 24/7 emergency jump start and battery boosting in under 25 minutes. Every jump start includes a free advanced battery health diagnostic - we tell you honestly if your battery needs a boost or a full replacement. No guesswork, no hidden charges. Call +971 52 847 5675 now.",
       img: service2
     },
     {
-      title: "24/7 Roadside Assistance",
-      hoverDec: "Stuck on the road in Dubai or Abu Dhabi? 800BatteryPro's fully equipped mobile vans and 30+ experienced technicians are available 24/7 for battery replacement, tyre help and roadside emergencies — anywhere, anytime.",
+      title: " 24/7 Roadside Assistance in Al Zahiyah",
+      hoverDec: "Stranded anywhere in Al Zahiyah, Abu Dhabi? 800BatteryPro's 24/7 roadside assistance covers every street in Al Zahiyah including Corniche Road East, Al Falah Street, Tourist Club Road, Al Reem Street, Al Zahiyah Street, and all connecting roads to Al Mina, Al Reem Island, and Al Maryah Island. Whether your car battery is dead outside your tower, in a hotel parking structure, near Abu Dhabi Mall, or on any of Al Zahiyah's main arteries - our nearest mobile technician reaches you in under 25 minutes, day or night. No towing needed, no garage visit required. We fix it on the spot and get you back on the road fast.",
       img: service1
     },
     {
-      title: "Car Scanning & Diagnostics",
-      hoverDec: "Warning light on your dashboard? Our experienced technicians perform advanced OBD-II car scanning and diagnostics at your location across Dubai & Abu Dhabi. Fast, accurate fault detection with no garage visit needed.",
+      title: " Car Scanning & Diagnostics in Al Zahiyah",
+      hoverDec: "Dashboard warning light on in Al Zahiyah, Abu Dhabi? 800BatteryPro's mobile technicians perform advanced OBD-II car scanning and full diagnostics at your exact location anywhere in Al Zahiyah - no garage visit needed. Whether you are parked near Abu Dhabi Mall, outside Beach Rotana, near Al Zahiyah Shopping Centre on Corniche Road East, or anywhere across this downtown district - we accurately identify fault codes, electrical faults, battery health issues, and ECU errors on the spot. Accurate results in under 30 minutes, transparent pricing, zero hidden costs.",
       img: service3
     },
   ]
@@ -380,8 +324,8 @@ const arabicFaqs = [
 
     const defaultEnglishContent = {
     title: "About Us",
-    heading: "Dubai's Most Trusted Car Battery Replacement Service",
-    description: "Signs of a Weak Car Battery? Dim lights ? Car Not Starting? 800BatteryPro is just a call away with its fully equipped rapid response mobile van and a team of 30+ technicians. There is no need to panic as we offer 24/7 roadside assistance our technician will do free car battery testing and inspection for you, if its needed our experts will do a branded car battery replacement for you, or else if there is any flat tyre we will also fix it for you all Under 30 Minutes and no hidden cost! Sounds Amazing, Doesn't It? With over 6+ years delivering excellence in every premium car repair and car battery replacement job in Dubai. 800BatteryPro has over 10,000+ satisfied customers, our team of certified technicians always use OEM-approved spare parts and branded car batteries. We have partnered with a well-equipped workshop stacked with the latest technology and equipment for working on all major car brands. If you drive an old model or an exotic car, we have trained professionals who are certified to work on all American and European car brands in Dubai. Car brands we service include Audi, Alfa Romeo, Aston Martin, BMW, Lamborghini, Bentley, Bugatti, Ferrari, Jaguar, Land Rover, Mercedes, Chevrolet, Mini Cooper, Maybach, Pagani, Range Rover, Jeep, Rolls Royce, Brabus, Mansory, Lexus, Nissan and Volkswagen.",
+    heading: " Reliable Car Battery Services in Al Zahiyah, Abu Dhabi — Free Battery Testing & Zero Hidden Costs",
+    description: "Al Zahiyah - meaning the colorful and bright in Arabic - is one of Abu Dhabi's most established and vibrant downtown districts, formerly known as Tourist Club Area (TCA) and officially renamed by Abu Dhabi Municipality in 2014 as part of the capital's modernization initiative. Strategically located at the junction of Corniche Road East and Al Falah Street on the eastern side of Abu Dhabi Island - Al Zahiyah sits at the absolute heart of the capital's downtown, just 10 minutes from Abu Dhabi Corniche and 30 minutes from Abu Dhabi International Airport. Home to thousands of residents in high-rise towers, professionals working in the district's commercial buildings, and guests at landmark hotels including Beach Rotana Abu Dhabi, Traders Hotel, Centro Yas Island, and Novotel Abu Dhabi Gate - and with Abu Dhabi Mall, one of the capital's premier shopping destinations with over 200 shops, located in the heart of the district - Al Zahiyah never stops moving. With heavy traffic on Corniche Road East, Al Falah Street, and Tourist Club Road, and Abu Dhabi's extreme summer heat regularly exceeding 45°C accelerating battery drain on vehicles parked in tower basements and hotel parking structures - a dead car battery in Al Zahiyah is one of the most urgent roadside emergencies in Abu Dhabi's downtown. 800BatteryPro covers every tower, hotel, and street in Al Zahiyah - from the high-rise residential blocks on Corniche Road East and Al Falah Street to the towers surrounding Abu Dhabi Mall, Al Zahiyah Shopping Centre, and all streets connecting to Al Mina, Al Bateen, Al Reem Island, and Al Maryah Island. With 281 successful car battery replacements in Al Zahiyah alone - our fleet of 20+ fully equipped mobile vans reaches any Al Zahiyah location in under 25 minutes, 24 hours a day, 7 days a week. With 30+ experienced technicians, advanced battery diagnostic technology, genuine branded batteries from Bosch and Varta, and up to 18 months manufacturer warranty - one call to +971 52 847 5675 and our nearest technician is on his way to your exact Al Zahiyah location in under 25 minutes - no towing, no garage visit, zero hidden costs.",
     features: [
       "Under 25 Minutes & Fast 24/7 Roadside Assistance",
       "6+ Years of Experience Delivery 100% Satisfactory Work",
@@ -405,7 +349,7 @@ const arabicFaqs = [
               // English content
   const englishContents = {
     sectionTitle: "What Our Customers Say",
-    headingPrefix: "About Our Dubai  ",
+    headingPrefix: "About Our Al Zahiyah",
     headingHighlight: "Battery Service",
   };
 
@@ -418,15 +362,15 @@ const arabicFaqs = [
 
   const Contenttext = {
     desc: "Battery Services We Offer",
-    title1: "Car Battery Services ",
-    title2: "in Dubai",
+  title1: "Mobile Car Battery  ",
+title2: " Service in Al Zahiyah",
     viewAll: "View All",
   }
 
         const whyChooseUsContent = locale === "en" 
         ? {
             desc: "Why Choose Us",
-            titlePart1: "Why Dubai Drivers ",
+            titlePart1: "Why Al Zahiyah Drivers ",
             titleHighlighted: "Choose 800BatteryPro"
           }
         : {
@@ -440,7 +384,7 @@ const arabicFaqs = [
             desc: "Got Questions?",
             titlePart1: "Frequently Asked Questions  ",
             titlePart2: " About Car Battery Replacement ",
-            titlePart3: "in Dubai "
+            titlePart3: "in Al Zahiyah "
           }
         : {
             desc: "لديك أسئلة؟",
@@ -476,7 +420,6 @@ const arabicFaqs = [
   
         <WhyChooseUs data={data} title={{part1:whyChooseUsContent.titlePart1, highlighted:whyChooseUsContent.titleHighlighted}} desc={whyChooseUsContent.desc} />
            <Trusted englishContent={englishContents} arabicContent={arabicContents} />
-           {/* <SubLocation /> */}
            <Faq faqs={faqs}  desc={faqContent.desc}
                 title={{
         part1: faqContent.titlePart1,
@@ -490,4 +433,4 @@ const arabicFaqs = [
   )
 }
 
-export default Dubai
+export default AlZayah
