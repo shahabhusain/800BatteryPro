@@ -43,7 +43,7 @@ const Khalifa = () => {
   : {
       desc: "Car Brands We Serve",
       title1: "Car Battery Replacement ",
-      title2: " for All Car Brands in Khalifa ",
+      title2: " for All Car Brands in Khalifa City ",
       viewAll: "View All",
     };
 
@@ -53,7 +53,7 @@ const Khalifa = () => {
             title: {
                 part1: "How Our Car ",
                 highlighted: "Battery Service ",
-                part2: " Works in Khalifa  "
+                part2: " Works in Khalifa City  "
             }
           }
         : {
@@ -349,7 +349,7 @@ const arabicFaqs = [
               // English content
   const englishContents = {
     sectionTitle: "What Our Customers Say",
-    headingPrefix: "About Our Khalifa ",
+    headingPrefix: "About Our Khalifa City ",
     headingHighlight: "Battery Service",
   };
 
@@ -363,7 +363,7 @@ const arabicFaqs = [
   const Contenttext = {
     desc: "Battery Services We Offer",
   title1: "Mobile Car Battery  ",
-title2: " Service in Khalifa ",
+title2: " Service in Khalifa City ",
     viewAll: "View All",
   }
 
@@ -384,7 +384,7 @@ title2: " Service in Khalifa ",
             desc: "Got Questions?",
             titlePart1: "Frequently Asked Questions  ",
             titlePart2: " About Car Battery Replacement ",
-            titlePart3: "in Khalifa  "
+            titlePart3: "in Khalifa City "
           }
         : {
             desc: "لديك أسئلة؟",

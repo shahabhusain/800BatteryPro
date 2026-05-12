@@ -43,7 +43,7 @@ const Zayed = () => {
   : {
       desc: "Car Brands We Serve",
       title1: "Car Battery Replacement ",
-      title2: " for All Car Brands in Al Barsha",
+      title2: " for All Car Brands in MBZ City",
       viewAll: "View All",
     };
 
@@ -53,7 +53,7 @@ const Zayed = () => {
             title: {
                 part1: "How Our Car ",
                 highlighted: "Battery Service ",
-                part2: " Works in Al Barsha "
+                part2: " Works in MBZ City"
             }
           }
         : {

@@ -69,8 +69,8 @@ const AlBarSha = () => {
 const heroEnglishContent = {
     desc: "Top Car Brands – 24/7 Emergency Support & Anywhere in Dubai & Abu Dhabi",
     title: {
-        span1: "Road & Emirates Road – 24/7 Emergency ",
-        span2: "Support – 18 Month Warranty"
+        span1: "Car Battery Replacement in ",
+        span2: "Al Barsha 3, Dubai Under 25 Minutes"
     },
     desc1: "Starting From AED 299 — Up to 18 Months Warranty — 24/7 RSA — Reaching Every Villa in Al Barsha 3 Under 25 Minutes",
     btn: "Call Now",
