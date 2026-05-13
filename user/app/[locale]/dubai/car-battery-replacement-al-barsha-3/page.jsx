@@ -67,7 +67,7 @@ const AlBarSha = () => {
           }
   // Hero Section
 const heroEnglishContent = {
-    desc: "Top Car Brands – 24/7 Emergency Support & Anywhere in Dubai & Abu Dhabi",
+    desc: "All Al Barsha 3 Villas Covered – Sheikh Zayed Road & Emirates Road – 24/7 RSA",
     title: {
         span1: "Car Battery Replacement in ",
         span2: "Al Barsha 3, Dubai Under 25 Minutes"

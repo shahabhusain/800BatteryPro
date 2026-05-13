@@ -66,7 +66,7 @@ const AlZayah = () => {
           }
   // Hero Section
 const heroEnglishContent = {
-    desc: "Top Car Brands – 24/7 Emergency Support & Anywhere in Dubai & Abu Dhabi",
+    desc: "Corniche Road East to Al Falah Street Covered – Abu Dhabi Mall to Beach Rotana – 24/7 RSA",
     title: {
         span1: "Car Battery Replacement in Al Zahiyah,",
         span2: " Abu Dhabi Under 25 Minutes"

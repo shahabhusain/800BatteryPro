@@ -66,12 +66,12 @@ const Danah = () => {
           }
   // Hero Section
 const heroEnglishContent = {
-    desc: "Top Car Brands – 24/7 Emergency Support & Anywhere in Dubai & Abu Dhabi",
+    desc: "Corniche Road to Electra Street Covered – 24/7 Emergency Support",
     title: {
         span1: " Car Battery Replacement in Al Danah, ",
         span2: "Abu Dhabi Under 25 Minutes"
     },
-    desc1: "Danah in under 25 minutes, 24/7. Genuine batteries, 18-month warranty, zero hidden costs. Call +971 52 847 5675",
+    desc1: "Starting From AED 299 — Up to 18 Months Warranty — 24/7 RSA — Reaching Every Street in Al Danah Under 25 Minutes",
     btn: "Call Now",
     btn1: "Book Service Now"
 }

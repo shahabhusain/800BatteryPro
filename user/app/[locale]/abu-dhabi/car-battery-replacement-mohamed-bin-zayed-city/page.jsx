@@ -66,7 +66,7 @@ const Zayed = () => {
           }
   // Hero Section
 const heroEnglishContent = {
-    desc: "Top Car Brands – 24/7 Emergency Support & Anywhere in Dubai & Abu Dhabi",
+    desc: "All 34 Zones Covered – 24/7 Emergency Support – Genuine Batteries – 18 Month Warranty",
     title: {
         span1: " Car Battery Replacement in Mohamed ",
         span2: "Bin Zayed City Under 25 Minutes"

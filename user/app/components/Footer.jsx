@@ -13,7 +13,7 @@ const Footer = () => {
 
   // English content
   const englishContent = {
-    locations: [{name:"Dubai", link:"best-car-battery-replacement-dubai"}, {name:"Abu Dhabi", link:"best-car-battery-replacement-abu-dhabi"}],
+    locations: [{name:"Dubai", link:"/best-car-battery-replacement-dubai"}, {name:"Abu Dhabi", link:"/best-car-battery-replacement-abu-dhabi"}],
     headline: 'Your Roadside Lifeline - Faster Than You Expect!',
     quickLinks: {
       title: 'Quick Links',
@@ -36,7 +36,7 @@ const Footer = () => {
 
   // Arabic content
 const arabicContent = {
-    locations: [{name:"دبي", link:"best-car-battery-replacement-dubai"}, {name:"أبو ظبي", link:"best-car-battery-replacement-abu-dhabi/"}],
+    locations: [{name:"دبي", link:"/best-car-battery-replacement-dubai"}, {name:"أبو ظبي", link:"/best-car-battery-replacement-abu-dhabi"}],
     headline: 'شريان حياتك على الطريق - أسرع مما تتوقع!',
     quickLinks: {
         title: 'روابط سريعة',

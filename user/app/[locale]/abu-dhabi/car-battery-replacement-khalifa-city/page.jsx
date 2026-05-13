@@ -66,7 +66,7 @@ const Khalifa = () => {
           }
   // Hero Section
 const heroEnglishContent = {
-    desc: "Top Car Brands – 24/7 Emergency Support & Anywhere in Dubai & Abu Dhabi",
+    desc: "Al Forsan Village to Golf Gardens Covered – Etihad Airways HQ to Abu Dhabi Golf Club – 24/7 RSA",
     title: {
         span1: "Car Battery Replacement in Khalifa City",
         span2: " Abu Dhabi Under 25 Minutes"

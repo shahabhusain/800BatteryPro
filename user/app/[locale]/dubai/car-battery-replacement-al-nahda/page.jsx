@@ -66,12 +66,12 @@ const AlNahda = () => {
           }
   // Hero Section
 const heroEnglishContent = {
-    desc: "Top Car Brands – 24/7 Emergency Support & Anywhere in Dubai & Abu Dhabi",
+    desc: "Al Nahda 1 & Al Nahda 2 Fully Covered – Al Ittihad Road to Baghdad Street",
     title: {
         span1: "Car Battery Replacement ",
         span2: "in Al Nahda, Dubai Under 25 Minutes"
     },
-    desc1: "Dead battery in Al Nahda, Dubai? 800BatteryPro reaches any building in Al Nahda 1 or Al Nahda 2 in under 25 minutes, 24/7. Genuine batteries, 18 month warranty, zero hidden costs. Call +971 52 847 5675",
+    desc1: "Starting From AED 299 — Up to 18 Months Warranty — 24/7 RSA — Reaching Every Building in Al Nahda Under 25 Minutes",
     btn: "Call Now",
     btn1: "Book Service Now"
 }
