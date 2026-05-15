@@ -41,25 +41,92 @@ export default function sitemap() {
       priority: 0.9,
     },
 
+     // locations
+
+        {
+      url: 'https://800batterypro.com/best-car-battery-replacement-dubai',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.7,
+    },
+
+      {
+      url: 'https://800batterypro.com/best-car-battery-replacement-abu-dhabi',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.7,
+    },
+
+    // dubai-locations
+
+    {
+      url: 'https://800batterypro.com/dubai/car-battery-replacement-al-barsha-3',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.7,
+    },
+    {
+      url: 'https://800batterypro.com/dubai/car-battery-replacement-al-nahda',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.7,
+    },
+
+    // abu-dhabi-locations
+     
+      {
+      url: 'https://800batterypro.com/abu-dhabi/car-battery-replacement-al-danah',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.7,
+    },
+
+      {
+      url: 'https://800batterypro.com/abu-dhabi/car-battery-replacement-mohamed-bin-zayed-city',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.7,
+    },
+      {
+      url: 'https://800batterypro.com/abu-dhabi/car-battery-replacement-al-zahiyah',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.7,
+    },
+      {
+      url: 'https://800batterypro.com/abu-dhabi/car-battery-replacement-khalifa-city',
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.7,
+    },
+
+
+
+
+
+   
+
     // Service pages - Battery & Roadside
     {
-      url: 'https://800batterypro.com/services/battery-replacement/',
+      url: 'https://800batterypro.com/services/battery-replacement',
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.7,
     },
     {
-      url: 'https://800batterypro.com/services/battery-boosting/',
+      url: 'https://800batterypro.com/services/battery-boosting',
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.7,
     },
     {
-      url: 'https://800batterypro.com/services/roadside-assistance/',
+      url: 'https://800batterypro.com/services/roadside-assistance',
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.7,
     },
+
+
 
     // Service pages - Car Scanning & Diagnostics
     {

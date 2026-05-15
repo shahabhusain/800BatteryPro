@@ -64,7 +64,7 @@ const HowItWorks = ({
             <span className='py-2 px-6 rounded-full bg-red-100 text-red-700 font-semibold text-sm tracking-wide shadow-sm'>
                 {desc}
             </span>
-            <h2 className='text-4xl md:text-5xl font-extrabold text-center'>
+            <h2 className='text-3xl max-w-4xl md:text-5xl font-extrabold text-center'>
                 {title?.part1 || ''}
                 <span className='text-red-600'>
                     {title?.highlighted || ''}

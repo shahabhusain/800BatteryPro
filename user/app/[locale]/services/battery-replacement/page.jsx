@@ -311,6 +311,7 @@ const arabicFaqs = [
            <CarBrands text={text} />
            <Battery brands={batteryBrands} batteryText={batteryText} />
             <WhyChooseUs data={data} />
+          
            <Trusted englishContent={englishContents} arabicContent={arabicContents} />
            <Faq faqs={faqs} />
            <Footer />
