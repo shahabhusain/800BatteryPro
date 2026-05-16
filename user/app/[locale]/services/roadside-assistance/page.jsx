@@ -58,7 +58,7 @@ const serviceEnglishContent = {
     services: [
         {
             id: 1,
-            description: "When you're stranded in Dubai's heat or broken down on a busy Abu Dhabi highway, every minute matters. 800BatteryPro operates a 24/7 rapid-response fleet covering every area of Dubai and Abu Dhabi — from Sheikh Zayed Road and Business Bay to JBR, Deira, Al Barsha, JLT, DIFC, and beyond. Our certified technicians arrive fully equipped to resolve your situation on-site without towing in most cases. Whether you need a jump start, a tyre change, sand extraction, fuel delivery, or an emergency battery replacement — we handle it all at your exact location, for any vehicle including luxury, exotic, and 4×4 models."
+            description: "When you're stranded in Dubai's heat or broken down on a busy Abu Dhabi highway, every minute matters. 800BatteryPro operates a 24/7 rapid-response fleet covering every area of Dubai and Abu Dhabi - from Sheikh Zayed Road and Business Bay to JBR, Deira, Al Barsha, JLT, DIFC, and beyond. Our certified technicians arrive fully equipped to resolve your situation on-site without towing in most cases. Whether you need a jump start, a tyre change, sand extraction, fuel delivery, or an emergency battery replacement - we handle it all at your exact location, for any vehicle including luxury, exotic, and 4×4 models."
         },
           {
             id: 2,
@@ -133,7 +133,7 @@ const englishFaqs = [
     },
     {
         question: "How fast can you reach me anywhere in Dubai?",
-        answer: "Our average response time is under 25 minutes anywhere in Dubai and Abu Dhabi. We position our fleet of 20+ vans across strategic locations including Marina, DIFC, Business Bay, Deira, Bur Dubai, Al Barsha, JLT, and the major highways — so there's always a technician nearby. Peak traffic hours may extend arrival by 5–10 minutes, and we'll always inform you with live updates."
+        answer: "Our average response time is under 25 minutes anywhere in Dubai and Abu Dhabi. We position our fleet of 20+ vans across strategic locations including Marina, DIFC, Business Bay, Deira, Bur Dubai, Al Barsha, JLT, and the major highways - so there's always a technician nearby. Peak traffic hours may extend arrival by 5–10 minutes, and we'll always inform you with live updates."
     },
     {
         question: "Do you cover Sheikh Zayed Road, E311, and all Dubai highways?",
@@ -141,20 +141,20 @@ const englishFaqs = [
     },
     {
         question: "Can you tow luxury, exotic, and sports cars in Dubai?",
-        answer: "Yes. We have specialised flatbed and covered transport vehicles for low-clearance sports cars, exotic vehicles, and high-value luxury cars including Ferrari, Lamborghini, Rolls-Royce, Bentley, and Bugatti. We never use wheel-lift towing for exotic or sports cars — only flatbed or covered enclosed transport that protects your vehicle's body and undercarriage."
+        answer: "Yes. We have specialised flatbed and covered transport vehicles for low-clearance sports cars, exotic vehicles, and high-value luxury cars including Ferrari, Lamborghini, Rolls-Royce, Bentley, and Bugatti. We never use wheel-lift towing for exotic or sports cars - only flatbed or covered enclosed transport that protects your vehicle's body and undercarriage."
     },
 
       {
         question: "What if I'm stuck in an underground parking garage in Dubai?",
-        answer: "Standard tow trucks cannot enter most underground or multi-storey parking garages in Dubai due to height restrictions. We operate specialised low-profile extraction vehicles — built specifically for low-clearance environments in mall car parks, hotel basements, and residential building garages. We can safely extract your vehicle from any underground parking structure in Dubai and Abu Dhabi."
+        answer: "Standard tow trucks cannot enter most underground or multi-storey parking garages in Dubai due to height restrictions. We operate specialised low-profile extraction vehicles - built specifically for low-clearance environments in mall car parks, hotel basements, and residential building garages. We can safely extract your vehicle from any underground parking structure in Dubai and Abu Dhabi."
     },
       {
         question: "Do you help with sand recovery in Dubai's desert areas?",
-        answer: "Yes. Dubai and Abu Dhabi's desert outskirts — including Al Qudra, Hatta, and areas near the E66 and E77 highways — are popular driving areas where vehicles get stuck in soft sand regularly. Our specialist off-road recovery team is equipped with kinetic recovery ropes, traction boards, and 4×4 support vehicles to extract any vehicle stuck in sand or mud."
+        answer: "Yes. Dubai and Abu Dhabi's desert outskirts - including Al Qudra, Hatta, and areas near the E66 and E77 highways - are popular driving areas where vehicles get stuck in soft sand regularly. Our specialist off-road recovery team is equipped with kinetic recovery ropes, traction boards, and 4×4 support vehicles to extract any vehicle stuck in sand or mud."
     },
       {
         question: "How do I pay for roadside assistance in Dubai?",
-        answer: "We accept cash, credit and debit card, and bank transfer — all processed on-site by our technician. You do not need to pay anything upfront when booking. Payment is only collected after the service is completed to your satisfaction. We provide a full receipt for all services."
+        answer: "We accept cash, credit and debit card, and bank transfer - all processed on-site by our technician. You do not need to pay anything upfront when booking. Payment is only collected after the service is completed to your satisfaction. We provide a full receipt for all services."
     },
       {
         question: "Is roadside assistance available in Abu Dhabi as well?",
