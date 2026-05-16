@@ -12,7 +12,7 @@ const Service = ({ serviceContent, serviceImg }) => {
   }, [])
 
   return (
-    <div className={`md:w-[85%] w-[90%] mx-auto flex flex-col md:flex-row items-center py-20 gap-12 justify-between transition-all duration-300`}>
+    <div className={`md:w-[85%] w-[90%] mx-auto flex flex-col md:flex-row items-center md:py-20 pb-10 gap-12 justify-between transition-all duration-300`}>
 
       {/* Left Section */}
       <div className="md:w-1/2 flex flex-col gap-y-4">
@@ -35,7 +35,7 @@ const Service = ({ serviceContent, serviceImg }) => {
       </div>
 
       {/* Right Section */}
-      <div className="flex flex-col h-[450px] overflow-y-auto gap-y-6 md:w-1/2 pr-4 custom-scrollbar">
+      <div className="flex flex-col md:h-[450px] overflow-y-auto gap-y-6 md:w-1/2 pr-4 custom-scrollbar">
         {serviceContent.services.map((item, index) => (
           <div
             key={item.id}

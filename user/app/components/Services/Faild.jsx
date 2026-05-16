@@ -43,9 +43,9 @@ const Faild = ({content = [
             <div className=' grid md:grid-cols-2 grid-cols-1 gap-4'>
                 {
                    content.map((item,index) => (
-                    <div className=' border-[4px] bg-gradient-to-r from-white to-transparent  flex flex-col items-start gap-y-3 border-white rounded-md p-8'>
+                    <div className=' border-[4px] bg-gradient-to-r from-white to-transparent  flex flex-col items-start gap-y-3 border-white rounded-md md:p-8 p-3'>
                         <span className=' bg-red-100 p-3 rounded-md text-red-700'>{item.icon}</span>
-                         <h3 className=' text-[24px] font-bold'>{item.title}</h3>
+                         <h3 className=' md:text-[24px] text-[20px] font-bold'>{item.title}</h3>
                          <p className=' font-normal text-[#4E4E4E]'>{item.desc}</p>
                     </div>
                    ))

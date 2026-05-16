@@ -35,7 +35,7 @@ const heroEnglishContent = {
         span1: "24/7 Roadside Assistance in Dubai & Abu Dhabi ",
         span2: " Under 25 Minutes "
     },
-    desc1: "Stuck on Sheikh Zayed Road, JBR, Business Bay, or anywhere across Dubai and Abu Dhabi? 800BatteryPro reaches your exact location in under 25 minutes — any time of day or night. Roadside assistance starts from AED 150. No hidden fees. Free battery test included.",
+    desc1: "Stuck on Sheikh Zayed Road, JBR, Business Bay, or anywhere across Dubai and Abu Dhabi? 800BatteryPro reaches your exact location in under 25 minutes. RSA starts from AED 150. Free battery test included.",
     btn: "Call Now",
     btn1: "Book Service Now"
 }
