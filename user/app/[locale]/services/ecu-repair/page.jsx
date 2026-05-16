@@ -23,6 +23,16 @@ import Serve from '@/app/components/Services/Serve'
 import Faild from '@/app/components/Services/Faild'
 import ECU from '@/app/components/Services/ECU'
 
+export const metadata = {
+  title: "ECU Repair in Dubai & Abu Dhabi | ECU Diagnostics & Programming",
+  description:
+    "Expert ECU repair in Dubai & Abu Dhabi. Advanced diagnostics, ECU programming & reprogramming for all car brands with fast on-site service.",
+  keywords:
+    "ECU repair Dubai, ECU programming Abu Dhabi, car ECU diagnostics UAE, ECU reprogramming Dubai, engine control unit repair UAE, car ECU service",
+  alternates: {
+    canonical: "https://800batterypro.com/services/ecu-repair",
+  },
+};
 
 const ECURepair = () => {
   const locale = useLocale()

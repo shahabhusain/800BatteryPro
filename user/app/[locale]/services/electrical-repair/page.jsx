@@ -16,8 +16,19 @@ import solite from "@/public/batteryBrands/solit.png";
 import volcan from "@/public/batteryBrands/volcan.png";
 import Battery from '@/app/components/Brands/subPage/Battery'
 import WhyChooseUs from '@/app/components/Brands/subPage/WhyChooseUs'
-import herobg from '@/public/brands/serviceBanners/rsa.webp'
+import herobg from '@/public/brands/serviceBanners/rsa.jpeg'
 import CarBrands from '@/app/components/Hero/CarBrands'
+
+export const metadata = {
+  title: "Car Electrical Repair Services in Dubai & Abu Dhabi | 800BatteryPro",
+  description:
+    "Expert car electrical repair in Dubai & Abu Dhabi. Skilled technicians for wiring, battery, alternator & ECU issues with fast reliable service.",
+  keywords:
+    "car electrical repair Dubai, auto electrician Abu Dhabi, car wiring repair UAE, ECU repair Dubai, car electrical fault Dubai, vehicle electrician service",
+  alternates: {
+    canonical: "https://800batterypro.com/services/electrical-repair",
+  },
+};
 
 
 const ElectricalRepair = () => {

@@ -23,6 +23,16 @@ import Serve from '@/app/components/Services/Serve'
 import Faild from '@/app/components/Services/Faild'
 import ECU from '@/app/components/Services/ECU'
 
+export const metadata = {
+  title: "BCM Repair in Dubai & Abu Dhabi | Body Control Module Fix",
+  description:
+    "Professional BCM repair in Dubai & Abu Dhabi. Fast diagnostics, programming & repair for all car brands at your location. Call 800BatteryPro.",
+  keywords:
+    "BCM repair Dubai, body control module repair Abu Dhabi, BCM diagnostics UAE, BCM programming Dubai, car BCM repair service UAE, body control module fix",
+  alternates: {
+    canonical: "https://800batterypro.com/services/bcm-repair",
+  },
+};
 
 const BCMRepair = () => {
   const locale = useLocale()

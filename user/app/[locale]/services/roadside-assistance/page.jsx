@@ -16,7 +16,7 @@ import solite from "@/public/batteryBrands/solit.png";
 import volcan from "@/public/batteryBrands/volcan.png";
 import Battery from '@/app/components/Brands/subPage/Battery'
 import WhyChooseUs from '@/app/components/Brands/subPage/WhyChooseUs'
-import herobg from '@/public/brands/serviceBanners/rsa.webp'
+import herobg from '@/public/brands/serviceBanners/rsa.jpeg'
 import CarBrands from '@/app/components/Hero/CarBrands'
 import Car from '@/app/components/Services/Car'
 import HowItWorks from '@/app/components/Hero/HowItWorks'
@@ -24,6 +24,17 @@ import Serve from '@/app/components/Services/Serve'
 import Faild from '@/app/components/Services/Faild'
 import { MdAlarm, MdCarRental } from 'react-icons/md'
 import SubLocation from '@/app/components/locations/SubLocation'
+
+export const metadata = {
+  title: "24/7 Roadside Assistance in Dubai & Abu Dhabi | 800BatteryPro",
+  description:
+    "24/7 roadside assistance in Dubai & Abu Dhabi. Fast help in under 25 minutes for breakdowns, towing, and battery issues. Call now.",
+  keywords:
+    "roadside assistance Dubai, roadside help Abu Dhabi, emergency car service UAE, car breakdown service Dubai, towing service UAE, car rescue Dubai",
+  alternates: {
+    canonical: "https://800batterypro.com/services/roadside-assistance",
+  },
+};
 
 const RoadSide = () => {
   const locale = useLocale()

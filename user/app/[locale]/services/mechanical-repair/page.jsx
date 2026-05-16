@@ -19,6 +19,16 @@ import WhyChooseUs from '@/app/components/Brands/subPage/WhyChooseUs'
 import herobg from '@/public/brands/serviceBanners/mecha.webp'
 import CarBrands from '@/app/components/Hero/CarBrands'
 
+export const metadata = {
+  title: "Mechanical Repair Services in Dubai & Abu Dhabi | 800BatteryPro",
+  description:
+    "Professional mechanical repair services in Dubai & Abu Dhabi. Expert technicians, advanced tools, and fast reliable car repairs for all brands.",
+  keywords:
+    "car mechanical repair Dubai, auto repair Abu Dhabi, engine repair UAE, car workshop Dubai, vehicle repair service UAE, car garage Dubai Abu Dhabi",
+  alternates: {
+    canonical: "https://800batterypro.com/services/mechanical-repair",
+  },
+};
 
 const MechanicalRepair = () => {
   const locale = useLocale()

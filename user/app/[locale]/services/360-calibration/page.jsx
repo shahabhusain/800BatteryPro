@@ -24,6 +24,17 @@ import Faild from '@/app/components/Services/Faild'
 import ECU from '@/app/components/Services/ECU'
 
 
+export const metadata = {
+  title: "360 Camera Calibration in Dubai & Abu Dhabi | ADAS Calibration",
+  description:
+    "Professional 360 camera & ADAS calibration in Dubai & Abu Dhabi. OEM-grade equipment for parking sensors, blind spot & safety systems.",
+  keywords:
+    "360 camera calibration Dubai, ADAS calibration Abu Dhabi, parking sensor calibration UAE, blind spot monitoring calibration Dubai, car camera calibration UAE",
+  alternates: {
+    canonical: "https://800batterypro.com/services/360-calibration",
+  },
+};
+
 const Calibration = () => {
   const locale = useLocale()
 // Hero Section
@@ -225,7 +236,7 @@ const arabicFaqs = [
 ]
 
 
-const carIssuesFaqs = [
+         const carIssuesFaqs = [
          {
             question:"After Windshield Replacement",
             answer:"Any windshield glass change requires front camera and rain sensor recalibration. This is mandatory, not optional. Calibration is essential after windshield or bumper replacements to ensure all safety systems function as designed."
@@ -388,8 +399,8 @@ const carIssuesFaqs = [
             <Serve span1='When Does Your Cars 360 Camera & ' span2='ADAS System Need Calibration in the UAE?' carIssuesFaqs={carIssuesFaqs}  />
             <Faild title='Our 360 Camera & ADAS Calibration Services in Dubai & Abu Dhabi' content={failContent} />
             <ECU title='Static vs Dynamic 360 Camera Calibration - Whats the Difference and Which Does Your Car Need?' content={ECUcontent} />
-           <Trusted englishContent={englishContents} arabicContent={arabicContents} />
-           <Faq faqs={faqs}  />
+            <Trusted englishContent={englishContents} arabicContent={arabicContents} />
+            <Faq faqs={faqs}  />
            <Footer />
         </div>
     </div>

@@ -20,6 +20,17 @@ import herobg from '@/public/brands/serviceBanners/boost.webp'
 import CarBrands from '@/app/components/Hero/CarBrands'
 import HowItWorks from '@/app/components/Hero/HowItWorks'
 
+export const metadata = {
+  title: "Car Battery Boosting in Dubai & Abu Dhabi | 800BatteryPro",
+  description:
+    "24/7 car battery boosting in Dubai & Abu Dhabi. Fast roadside jump-start service by expert technicians in under 25 minutes.",
+  keywords:
+    "car battery boosting Dubai, jump start service Abu Dhabi, emergency car boost UAE, roadside battery boost Dubai, car jump start service",
+  alternates: {
+    canonical: "https://800batterypro.com/services/battery-boosting",
+  },
+};
+
 
 const BatteryBoosting = () => {
   const locale = useLocale()

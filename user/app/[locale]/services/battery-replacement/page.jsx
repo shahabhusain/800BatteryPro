@@ -21,6 +21,17 @@ import CarBrands from '@/app/components/Hero/CarBrands'
 import HowItWorks from '@/app/components/Hero/HowItWorks'
 
 
+export const metadata = {
+  title: "Car Battery Replacement in Dubai & Abu Dhabi | 800BatteryPro",
+  description:
+    "24/7 car battery replacement in Dubai & Abu Dhabi. Fast roadside service by expert technicians. Get your battery replaced in under 25 minutes.",
+  keywords:
+    "car battery replacement Dubai, battery replacement Abu Dhabi, emergency car battery service UAE, mobile car battery replacement, roadside battery service Dubai, 800BatteryPro",
+  alternates: {
+    canonical: "https://800batterypro.com/services/battery-replacement",
+  },
+};
+
 const BatteryReplacement = () => {
   const locale = useLocale()
 // Hero Section

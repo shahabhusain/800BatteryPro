@@ -19,6 +19,16 @@ import WhyChooseUs from '@/app/components/Brands/subPage/WhyChooseUs'
 import herobg from '@/public/brands/serviceBanners/scan.webp'
 import CarBrands from '@/app/components/Hero/CarBrands'
 
+export const metadata = {
+  title: "Car Scanning & Diagnostics in Dubai & Abu Dhabi | 800BatteryPro",
+  description:
+    "Advanced car scanning & diagnostics in Dubai & Abu Dhabi. Quick fault detection for all car brands with expert technicians in under 25 minutes.",
+  keywords:
+    "car scanning Dubai, car diagnostics Abu Dhabi, OBD scanning UAE, engine diagnostics Dubai, car fault detection UAE, vehicle scanning service",
+  alternates: {
+    canonical: "https://800batterypro.com/services/car-scanning",
+  },
+};
 
 const CarScanning = () => {
   const locale = useLocale()
