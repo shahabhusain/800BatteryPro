@@ -5,7 +5,7 @@ const Car = () => {
   return (
       <div className=' flex items-center justify-center md:mt-72'>
          <div className=' absolute md:-top-[26rem] '>
-      <Image className='w-[860px] h-[560px] object-contain' src={car} alt='car'/>
+      <Image className='w-[860px] md:h-[560px] h-[150px] object-contain' src={car} alt='car'/>
     </div>
       </div>
   )

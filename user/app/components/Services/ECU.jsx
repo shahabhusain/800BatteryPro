@@ -12,10 +12,10 @@ const ECU = ({content = [
     ], desc="Car Brands We Serve", title="ECU Repair vs ECU Replacement — Which Is Right for Your Car in the UAE?"}) => {
     
   return (
-    <div className='bg-[#C1121F] p-12 flex flex-col items-center justify-center gap-y-4 text-white rounded-2xl w-[90%] mx-auto my-20'>
+    <div className='bg-[#C1121F] md:p-12 p-3 flex flex-col items-center justify-center gap-y-4 text-white rounded-2xl w-[90%] mx-auto md:my-20 my-10'>
          <p className=' font-bold title text-[#FFFFFF99]'>{desc}</p>
            <h2 className=' max-w-5xl text-center title lg:text-[40px] md:text-[35px] sm:text-[30px] text-[25px] font-bold'>{title}</h2>
-            <div className=' grid grid-cols-2 gap-4 mt-12'>
+            <div className=' grid md:grid-cols-2 grid-cols-1 gap-4 md:mt-12 mt-6'>
                 {
                   content.map((item, index) => (
                      <div key={index} className='border-[2px] flex flex-col gap-y-3 backdrop-blur-xl bg-[#ffffff1f] border-[#ffffff42] p-6 rounded-md'>

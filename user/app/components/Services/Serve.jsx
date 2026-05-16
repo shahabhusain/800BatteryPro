@@ -22,7 +22,7 @@ const Serve = ({carIssuesFaqs = [
         setOpenFaq(openFaq === index ? null : index)
     }
   return (
-    <div className=' flex flex-col md:flex-row my-20 justify-between items-center gap-x-12 w-[90%] mx-auto'>
+    <div className=' flex flex-col md:flex-row md:my-20 my-10 justify-between items-center gap-x-12 w-[90%] mx-auto'>
       <div className=' md:w-[60%] flex flex-col md:gap-y-6 gap-3'>
          <p className=' font-bold title'>{desc}</p>
          <h2 className=' title lg:text-[40px] md:text-[35px] sm:text-[30px] text-[25px] font-semibold text-black'>{span1} <span className=' text-red-600'> {span2}</span></h2>

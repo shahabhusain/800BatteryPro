@@ -1,6 +1,6 @@
 import { useLocale } from 'next-intl'
 import React from 'react'
-import { FaCamera, FaPhone, FaCar, FaChevronRight } from 'react-icons/fa'
+import { FaCamera, FaPhone, FaCar, FaChevronRight, FaMobile } from 'react-icons/fa'
 
 const HowItWorks = ({ 
     title = {
@@ -13,21 +13,21 @@ const HowItWorks = ({
     // English cards
     const englishCards = [
         {
-            icon: <FaCamera />,
+            icon: <FaMobile />,
             title: "01",
-            desc: "Stuck with dead car battery?",
+            desc: "Call, WhatsApp, or Book Online - Takes 5 Seconds",
             bg: "bg-gradient-to-br from-red-600 to-red-800 text-white"
         },
         {
             icon: <FaPhone />,
             title: "02",
-            desc: "Call or Whatsapp at +971528475675",
+            desc: "Experienced Technician Dispatched (+971528475675) - Arrives in Under 25 Minutes",
             bg: "bg-white border-2 border-gray-100 shadow-lg text-gray-800"
         },
         {
             icon: <FaCar />,
             title: "03",
-            desc: "Get professional help at your location",
+            desc: "Problem Solved On-Site - You're Back on the Road",
             bg: "bg-gradient-to-br from-red-600 to-red-800 text-white"
         },
     ]

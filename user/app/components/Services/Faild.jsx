@@ -36,11 +36,11 @@ const Faild = ({content = [
     ], desc="Car Brands We Serve", title="Signs Your ECU Has Failed — Warning Symptoms to Watch For" }) => {
     
   return (
-    <div className='bg-[#FDF8F8] py-20 my-20'>
+    <div className='bg-[#FDF8F8] md:py-20 md:my-20 py-10 my-10'>
        <div className=' w-[90%] mx-auto flex flex-col gap-y-3 items-center justify-center'>
            <p className=' font-bold title'>{desc}</p>
            <h2 className=' max-w-5xl text-center title lg:text-[40px] md:text-[35px] sm:text-[30px] text-[25px] font-bold'>{title}</h2>
-            <div className=' grid grid-cols-2 gap-4'>
+            <div className=' grid md:grid-cols-2 grid-cols-1 gap-4'>
                 {
                    content.map((item,index) => (
                     <div className=' border-[4px] bg-gradient-to-r from-white to-transparent  flex flex-col items-start gap-y-3 border-white rounded-md p-8'>
