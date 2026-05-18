@@ -114,7 +114,7 @@ export default function sitemap() {
       priority: 0.7,
     },
     {
-      url: 'https://800batterypro.com/services/battery-boosting',
+      url: 'https://800batterypro.com/services/jump-start',
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.7,

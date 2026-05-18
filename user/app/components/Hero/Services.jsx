@@ -19,9 +19,9 @@ const Services = () => {
       image: service1
     },
     {
-      link:"/services/battery-boosting",
-      title: "Battery Boosting",
-      description: "Stop searching for 'battery boosting near me'! Our mobile team and fully equipped service vehicles are ready to handle your battery emergencies with ease. We make the process simple, stress-free, and fast.",
+      link:"/services//jump-start ",
+      title: "Jump Start",
+      description: "Dead battery in Dubai or Abu Dhabi? 800BatteryPro jump starts your car at your location in under 25 minutes. ECU-safe. Free battery test. From AED 99. Call 24/7. ",
       image: service2
     },
     {
