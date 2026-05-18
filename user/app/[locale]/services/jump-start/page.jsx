@@ -37,7 +37,7 @@ const BatteryBoosting = () => {
   const locale = useLocale()
 // Hero Section
 const heroEnglishContent = {
-    desc: "Dubai & Abu Dhabi · Rated 4.9★ on Google · ECU-Safe Jump Start Technology",
+    desc: "Dubai & Abu Dhabi · 10,000+ Happy Customers  · ECU-Safe Jump Start Technology",
     title: {
         span1: "Car Battery Jump Start in ",
         span2: "Dubai or Abu Dhabi Under 25 Minutes"
