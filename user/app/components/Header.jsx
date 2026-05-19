@@ -78,7 +78,7 @@ const Header = () => {
       name: "Services",
       subpages: [
         { path: "/services/battery-replacement/", name: "Battery Replacement" },
-        { path: "/services//jump-start ", name: "Jump Start" },
+        { path: "/services/jump-start ", name: "Jump Start" },
         { path: "/services/roadside-assistance/", name: "Roadside Assistance" },
         { 
           path: "/services/car-scanning/", 
@@ -135,7 +135,7 @@ const Header = () => {
       name: "الخدمات",
       subpages: [
         { path: "/services/battery-replacement/", name: "استبدال البطارية" },
-        { path: "/services//jump-start ", name: "تشغيل البطارية" },
+        { path: "/services/jump-start ", name: "تشغيل البطارية" },
         { path: "/services/roadside-assistance/", name: "المساعدة على الطريق" },
         { 
           path: "/services/car-scanning/", 

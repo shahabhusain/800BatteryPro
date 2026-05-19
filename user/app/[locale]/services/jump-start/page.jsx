@@ -40,7 +40,7 @@ const heroEnglishContent = {
     desc: "Dubai & Abu Dhabi · 10,000+ Happy Customers  · ECU-Safe Jump Start Technology",
     title: {
         span1: "Car Battery Jump Start in ",
-        span2: "Dubai or Abu Dhabi Under 25 Minutes"
+        span2: "Dubai & Abu Dhabi Under 25 Minutes"
     },
     desc1: "Car won't start in Dubai, Abu Dhabi, or anywhere across the UAE? 800BatteryPro dispatches a experienced technician to your exact location in under 25 minutes - home, office, mall car park, highway, or roadside. No towing. No waiting. Jump start from AED 99. Free battery test included. No hidden fees.",
     btn: "Call Now",

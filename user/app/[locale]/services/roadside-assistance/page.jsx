@@ -41,7 +41,7 @@ const RoadSide = () => {
 
 // Hero Section
 const heroEnglishContent = {
-    desc: "Dubai & Abu Dhabi · Rated 4.9★ on Google · 10,000+ Drivers Served",
+    desc: "Dubai & Abu Dhabi · Rated 4.9★ By Customers · 10,000+ Drivers Served",
     title: {
         span1: "24/7 Roadside Assistance in Dubai & Abu Dhabi ",
         span2: " Under 25 Minutes "
